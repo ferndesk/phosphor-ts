@@ -1,7 +1,7 @@
 {
   "name": "phosphor-universal",
   "version": "1.0.0",
-  "description": "Icon catalog and assets for Phosphor",
+  "description": "Framework-agnostic, typescript port of phosphor icons that supports tree-shaking out of the box.",
   "license": "MIT",
   "repository": "https://github.com/ferndesk/phosphor-universal.git",
   "private": false,
