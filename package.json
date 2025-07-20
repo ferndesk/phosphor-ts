@@ -17,7 +17,6 @@
       "require": "./dist/index.umd.js",
       "types": "./dist/index.d.ts"
     },
-    "./icons.mjs": "./dist/icons.mjs",
     "./assets/bold/*.svg": "./assets/bold/*.svg",
     "./assets/duotone/*.svg": "./assets/duotone/*.svg",
     "./assets/fill/*.svg": "./assets/fill/*.svg",
@@ -53,11 +52,10 @@
   "packageManager": "bun",
   "scripts": {
     "prebuild": "bun x tsx ./scripts/gen-icons.ts",
-    "postbuild": "cp ./src/icons.mjs ./src/icons.mjs.d.ts ./dist/",
     "collate": "tsx ./scripts/collate.ts",
-    "catalog": "tsx ./scripts/catalog.ts && pnpm format",
-    "format": "prettier --write ./src/** ./scripts/**",
-    "build": "vite build && tsc --emitDeclarationOnly"
+    "build": "tsc && vite build",
+    "postbuild": "cp ./src/index.mjs ./src/index.d.ts ./src/index.mjs.d.ts ./dist/",
+    "verify": "tsx ./scripts/verify.ts"
   },
   "devDependencies": {
     "@types/node": "^18",

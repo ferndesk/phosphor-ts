@@ -1,6 +1,6 @@
 {
   "include": ["src"],
-  "exclude": ["src/icons.mjs"],
+  "exclude": ["src/index.mjs"],
   "compilerOptions": {
     "module": "ESNext",
     "lib": ["ESNext"],

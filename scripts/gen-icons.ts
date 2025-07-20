@@ -7,33 +7,23 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const ICONS_PATH = resolve(__dirname, "..", "src", "icons");
-const ASSETS_PATH = resolve(__dirname, "..", "assets");
-const ICONS_TS_PATH = resolve(__dirname, "..", "src", "icons.ts");
+const INDEX_MJS_PATH = resolve(__dirname, "..", "src", "index.mjs");
+const INDEX_DTS_PATH = resolve(__dirname, "..", "src", "index.d.ts");
+const INDEX_MJS_DTS_PATH = resolve(__dirname, "..", "src", "index.mjs.d.ts");
 const INDEX_TS_PATH = resolve(__dirname, "..", "src", "index.ts");
-const DTS_TS_PATH = resolve(__dirname, "..", "src", "types.ts");
-
-const ICONS_JS_PATH = resolve(__dirname, "..", "src", "icons.mjs");
-const ICONS_DTS_PATH = resolve(__dirname, "..", "src", "icons.mjs.d.ts");
-
-const DIST_PATH = resolve(__dirname, "..", "dist");
-const DIST_ICONS_JS_PATH = resolve(DIST_PATH, "icons.mjs");
-const DIST_ICONS_DTS_PATH = resolve(DIST_PATH, "icons.mjs.d.ts");
-
-const iconInterface = `export interface PhosphorIcon {
-  name: string;
-  content: string;
-}`;
+const ASSETS_PATH = resolve(__dirname, "..", "assets");
 
 const main = async () => {
   // Ensure output directory exists
   await ensureDir(resolve(__dirname, "..", "src"));
-  await ensureDir(DIST_PATH);
 
   // Remove previous outputs
-  await remove(ICONS_JS_PATH);
-  await remove(ICONS_DTS_PATH);
-  await remove(DTS_TS_PATH);
+  await remove(INDEX_MJS_PATH);
+  await remove(INDEX_DTS_PATH);
+  await remove(INDEX_MJS_DTS_PATH);
+  await remove(INDEX_TS_PATH);
+  // Remove old types.ts if it exists
+  await remove(resolve(__dirname, "..", "src", "types.ts"));
 
   const files = glob.sync(`${ASSETS_PATH}/**/*.svg`);
   const jsLines: string[] = [];
@@ -43,7 +33,7 @@ const main = async () => {
     const name = basename(file, ".svg");
     const content = await readFile(file, "utf-8");
     const varName = upperFirst(camelCase(name));
-    const svgContent = content.match(/<svg[^>]*>([\s\S]*)<\/svg>/)?.[1] ?? "";
+    const svgContent = content.match(/<svg[^>]*>(.*?)<\/svg>/s)?.[1] || "";
 
     jsLines.push(
       `export const ${varName} = { name: '${name}', content: \`${svgContent}\` };`
@@ -51,25 +41,26 @@ const main = async () => {
     dtsLines.push(`export declare const ${varName}: PhosphorIcon;`);
   }
 
-  // Write icons.js and icons.d.ts
-  await outputFile(ICONS_JS_PATH, jsLines.join("\n\n") + "\n");
-  await outputFile(
-    ICONS_DTS_PATH,
-    `import type { PhosphorIcon } from './types.js';\n` +
-      dtsLines.join("\n") +
-      "\n"
-  );
+  // Write the main index.mjs file with all icons
+  await outputFile(INDEX_MJS_PATH, jsLines.join("\n\n") + "\n");
 
-  // Write types.ts (icon interface)
-  await outputFile(DTS_TS_PATH, iconInterface);
+  // Write the index.d.ts file with the interface and all icon declarations
+  const indexDtsContent = `export interface PhosphorIcon {
+  name: string;
+  content: string;
+}
 
-  // Rewrite index.ts to export from the new single file
-  await outputFile(INDEX_TS_PATH, `export * from './icons.mjs';\n`);
+${dtsLines.join("\n")}
+`;
+  await outputFile(INDEX_DTS_PATH, indexDtsContent);
 
-  console.log("Single-file icon bundle generated!");
+  // Write index.mjs.d.ts that TypeScript can find for the index.mjs import
+  await outputFile(INDEX_MJS_DTS_PATH, `export * from './index.d.ts';\n`);
+
+  // Write a simple index.ts that re-exports from index.mjs for TypeScript compilation
+  await outputFile(INDEX_TS_PATH, `export * from './index.mjs';\n`);
+
+  console.log(`✅ Generated ${files.length} icons in index.mjs and index.d.ts`);
 };
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+main().catch(console.error);

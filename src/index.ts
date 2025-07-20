@@ -1,1 +1,1 @@
-export * from './icons.mjs';
+export * from './index.mjs';
