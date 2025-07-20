@@ -13,7 +13,7 @@ const ICONS_TS_PATH = resolve(__dirname, "..", "src", "icons.ts");
 const INDEX_TS_PATH = resolve(__dirname, "..", "src", "index.ts");
 const DTS_TS_PATH = resolve(__dirname, "..", "src", "types.ts");
 
-const iconInterface = `export interface Icon {
+const iconInterface = `export interface PhosphorIcon {
   name: string;
   content: string;
 }`;
@@ -37,9 +37,9 @@ const main = async () => {
 
     const svgContent = content.match(/<svg[^>]*>([\s\S]*)<\/svg>/)?.[1] ?? "";
 
-    const iconFile = `import type { Icon } from '../types.js';
+    const iconFile = `import type { PhosphorIcon } from '../types.js';
 
-export const ${componentName}: Icon = {
+export const ${componentName}: PhosphorIcon = {
   name: '${name}',
   content: \`${svgContent}\`
 }

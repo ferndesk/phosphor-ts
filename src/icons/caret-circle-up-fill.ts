@@ -1,6 +1,6 @@
-import type { Icon } from '../types.js';
+import type { PhosphorIcon } from '../types.js';
 
-export const CaretCircleUpFill: Icon = {
+export const CaretCircleUpFill: PhosphorIcon = {
   name: 'caret-circle-up-fill',
   content: `<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,125.66a8,8,0,0,1-11.32,0L128,115.31,93.66,149.66a8,8,0,0,1-11.32-11.32l40-40a8,8,0,0,1,11.32,0l40,40A8,8,0,0,1,173.66,149.66Z"/>`
 }

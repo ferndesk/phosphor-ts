@@ -1,6 +1,6 @@
-import type { Icon } from '../types.js';
+import type { PhosphorIcon } from '../types.js';
 
-export const TextT: Icon = {
+export const TextT: PhosphorIcon = {
   name: 'text-t',
   content: `<path d="M208,56V88a8,8,0,0,1-16,0V64H136V192h24a8,8,0,0,1,0,16H96a8,8,0,0,1,0-16h24V64H64V88a8,8,0,0,1-16,0V56a8,8,0,0,1,8-8H200A8,8,0,0,1,208,56Z"/>`
 }

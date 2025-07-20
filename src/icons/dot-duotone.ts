@@ -1,6 +1,6 @@
-import type { Icon } from '../types.js';
+import type { PhosphorIcon } from '../types.js';
 
-export const DotDuotone: Icon = {
+export const DotDuotone: PhosphorIcon = {
   name: 'dot-duotone',
   content: `<path d="M176,128a48,48,0,1,1-48-48A48,48,0,0,1,176,128Z" opacity="0.2"/><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z"/>`
 }

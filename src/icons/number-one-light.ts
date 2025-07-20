@@ -1,6 +1,6 @@
-import type { Icon } from '../types.js';
+import type { PhosphorIcon } from '../types.js';
 
-export const NumberOneLight: Icon = {
+export const NumberOneLight: PhosphorIcon = {
   name: 'number-one-light',
   content: `<path d="M142,48V208a6,6,0,0,1-12,0V58.6L99.09,77.14a6,6,0,0,1-6.18-10.29l40-24A6,6,0,0,1,142,48Z"/>`
 }

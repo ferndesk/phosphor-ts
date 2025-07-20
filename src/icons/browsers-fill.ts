@@ -1,6 +1,6 @@
-import type { Icon } from '../types.js';
+import type { PhosphorIcon } from '../types.js';
 
-export const BrowsersFill: Icon = {
+export const BrowsersFill: PhosphorIcon = {
   name: 'browsers-fill',
   content: `<path d="M216,40H72A16,16,0,0,0,56,56V72H40A16,16,0,0,0,24,88V200a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V184h16a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM184,88v16H40V88Zm32,80H200V88a16,16,0,0,0-16-16H72V56H216Z"/>`
 }

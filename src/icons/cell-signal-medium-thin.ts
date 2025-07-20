@@ -1,6 +1,6 @@
-import type { Icon } from '../types.js';
+import type { PhosphorIcon } from '../types.js';
 
-export const CellSignalMediumThin: Icon = {
+export const CellSignalMediumThin: PhosphorIcon = {
   name: 'cell-signal-medium-thin',
   content: `<path d="M124,112v88a4,4,0,0,1-8,0V112a4,4,0,0,1,8,0ZM80,148a4,4,0,0,0-4,4v48a4,4,0,0,0,8,0V152A4,4,0,0,0,80,148ZM40,188a4,4,0,0,0-4,4v8a4,4,0,0,0,8,0v-8A4,4,0,0,0,40,188Z"/>`
 }

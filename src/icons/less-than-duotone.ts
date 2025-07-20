@@ -1,6 +1,6 @@
-import type { Icon } from '../types.js';
+import type { PhosphorIcon } from '../types.js';
 
-export const LessThanDuotone: Icon = {
+export const LessThanDuotone: PhosphorIcon = {
   name: 'less-than-duotone',
   content: `<path d="M200,56V200L48,128Z" opacity="0.2"/><path d="M207.23,203.42a8,8,0,0,1-10.66,3.81l-152-72a8,8,0,0,1,0-14.46l152-72a8,8,0,1,1,6.85,14.46L66.69,128l136.73,64.77A8,8,0,0,1,207.23,203.42Z"/>`
 }
