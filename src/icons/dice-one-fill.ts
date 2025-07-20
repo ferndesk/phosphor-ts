@@ -1,0 +1,6 @@
+import type { Icon } from '../types.js';
+
+export const DiceOneFill: Icon = {
+  name: 'dice-one-fill',
+  content: `<path d="M192,32H64A32,32,0,0,0,32,64V192a32,32,0,0,0,32,32H192a32,32,0,0,0,32-32V64A32,32,0,0,0,192,32ZM128,140a12,12,0,1,1,12-12A12,12,0,0,1,128,140Z"/>`
+}

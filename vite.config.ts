@@ -8,5 +8,8 @@ export default defineConfig({
       name: "Phosphor",
       fileName: "index",
     },
+    rollupOptions: {
+      external: (id) => id.includes("/icons/"),
+    },
   },
-})
+});

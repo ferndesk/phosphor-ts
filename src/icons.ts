@@ -1,20593 +1,9072 @@
-import { IconEntry, IconCategory, FigmaCategory } from "./types";
-
-export type PhosphorIcon = (typeof icons)[number];
-
-export const icons = (<const>[
-  {
-    name: "acorn",
-    pascal_name: "Acorn",
-    categories: [IconCategory.FINANCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "*new*",
-      "savings",
-      "nut",
-      "vegetable",
-      "veggies",
-      "food",
-      "groceries",
-      "market",
-    ],
-    codepoint: 60314,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "address-book",
-    pascal_name: "AddressBook",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["contacts", "directory", "roledex"],
-    codepoint: 59128,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "address-book-tabs",
-    pascal_name: "AddressBookTabs",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["*new*", "contacts", "directory", "roledex"],
-    codepoint: 61006,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "air-traffic-control",
-    pascal_name: "AirTrafficControl",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["airport", "travel", "transportation", "buildings"],
-    codepoint: 60632,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "airplane",
-    pascal_name: "Airplane",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "vehicles",
-      "airports",
-      "flights",
-      "flying",
-      "planes",
-      "transit",
-      "transportation",
-      "traveling",
-    ],
-    codepoint: 57346,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "airplane-in-flight",
-    pascal_name: "AirplaneInFlight",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "vehicles",
-      "airports",
-      "flights",
-      "flying",
-      "planes",
-      "transit",
-      "transportation",
-      "traveling",
-      "arrival",
-    ],
-    codepoint: 58622,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "airplane-landing",
-    pascal_name: "AirplaneLanding",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "vehicles",
-      "airports",
-      "flights",
-      "flying",
-      "planes",
-      "transit",
-      "transportation",
-      "traveling",
-      "arrival",
-    ],
-    codepoint: 58626,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "airplane-takeoff",
-    pascal_name: "AirplaneTakeoff",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "vehicles",
-      "airports",
-      "flights",
-      "flying",
-      "planes",
-      "transit",
-      "transportation",
-      "traveling",
-      "departure",
-    ],
-    codepoint: 58628,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "airplane-taxiing",
-    pascal_name: "AirplaneTaxiing",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "vehicles",
-      "airports",
-      "flights",
-      "flying",
-      "planes",
-      "transit",
-      "transportation",
-      "traveling",
-      "arrival",
-    ],
-    codepoint: 58624,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "airplane-tilt",
-    pascal_name: "AirplaneTilt",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "vehicles",
-      "airports",
-      "flights",
-      "flying",
-      "planes",
-      "transit",
-      "transportation",
-      "traveling",
-      "departure",
-    ],
-    codepoint: 58838,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "airplay",
-    pascal_name: "Airplay",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["apple", "screencasting", "television", "tv"],
-    codepoint: 57348,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "alarm",
-    pascal_name: "Alarm",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["times", "timer", "clock", "schedule", "events", "watch"],
-    codepoint: 57350,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "alien",
-    pascal_name: "Alien",
-    categories: [IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["ufo", "space", "flying saucer", "extra terrestrial", "sci-fi"],
-    codepoint: 59558,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "align-bottom",
-    pascal_name: "AlignBottom",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "flush bottom"],
-    codepoint: 58630,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "align-bottom-simple",
-    pascal_name: "AlignBottomSimple",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "flush bottom"],
-    codepoint: 60172,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "align-center-horizontal",
-    pascal_name: "AlignCenterHorizontal",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "centered", "middle"],
-    codepoint: 58634,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "align-center-horizontal-simple",
-    pascal_name: "AlignCenterHorizontalSimple",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "centered", "middle"],
-    codepoint: 60174,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "align-center-vertical",
-    pascal_name: "AlignCenterVertical",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "centered", "middle"],
-    codepoint: 58636,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "align-center-vertical-simple",
-    pascal_name: "AlignCenterVerticalSimple",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "centered", "middle"],
-    codepoint: 60176,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "align-left",
-    pascal_name: "AlignLeft",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "flush left"],
-    codepoint: 58638,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "align-left-simple",
-    pascal_name: "AlignLeftSimple",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "flush left"],
-    codepoint: 60142,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "align-right",
-    pascal_name: "AlignRight",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "flush right"],
-    codepoint: 58640,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "align-right-simple",
-    pascal_name: "AlignRightSimple",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "flush right"],
-    codepoint: 60178,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "align-top",
-    pascal_name: "AlignTop",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "flush top"],
-    codepoint: 58642,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "align-top-simple",
-    pascal_name: "AlignTopSimple",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["alignment", "arrangement", "layout", "flush top"],
-    codepoint: 60180,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "amazon-logo",
-    pascal_name: "AmazonLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["ecommerce", "shopping", "logos"],
-    codepoint: 59756,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "ambulance",
-    pascal_name: "Ambulance",
-    categories: [IconCategory.HEALTH, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "*new*",
-      "first-aid",
-      "emt",
-      "medical",
-      "medicine",
-      "injury",
-      "safety",
-      "emergency",
-      "doctor",
-      "vehicles",
-    ],
-    codepoint: 58738,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "anchor",
-    pascal_name: "Anchor",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MAP,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.MAP,
-    tags: ["nautical", "boats", "ships", "hope", "safety", "insurance"],
-    codepoint: 58644,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "anchor-simple",
-    pascal_name: "AnchorSimple",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MAP,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.MAP,
-    tags: ["nautical", "boats", "ships", "hope", "safety", "insurance"],
-    codepoint: 58840,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "android-logo",
-    pascal_name: "AndroidLogo",
-    categories: [
-      IconCategory.BRAND,
-      IconCategory.DEVELOPMENT,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "google", "mobile", "phone", "cellular", "cellphone"],
-    codepoint: 57352,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "angle",
-    pascal_name: "Angle",
-    categories: [IconCategory.DESIGN, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "*new*",
-      "geometry",
-      "trigonometry",
-      "degrees",
-      "radians",
-      "measurement",
-      "protractor",
-      "compass",
-      "arc",
-    ],
-    codepoint: 59324,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "angular-logo",
-    pascal_name: "AngularLogo",
-    categories: [IconCategory.BRAND, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["framework", "javascript", "google", "web"],
-    codepoint: 60288,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "aperture",
-    pascal_name: "Aperture",
-    categories: [IconCategory.DESIGN, IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["photography", "cameras", "pictures", "lens"],
-    codepoint: 57354,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "app-store-logo",
-    pascal_name: "AppStoreLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["macintosh", "imac", "iphone", "ipad", "macos", "ios"],
-    codepoint: 59764,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "app-window",
-    pascal_name: "AppWindow",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["windows", "software", "programs", "applications"],
-    codepoint: 58842,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "apple-logo",
-    pascal_name: "AppleLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["macintosh", "imac", "iphone", "ipad", "macos", "ios"],
-    codepoint: 58646,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "apple-podcasts-logo",
-    pascal_name: "ApplePodcastsLogo",
-    categories: [IconCategory.BRAND, IconCategory.MEDIA],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["macintosh", "imac", "iphone", "ipad", "macos", "ios"],
-    codepoint: 60310,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "approximate-equals",
-    pascal_name: "ApproximateEquals",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "≈",
-      "is approximately equal to",
-      "congruent",
-      "equality",
-      "equivalent",
-      "equivalence",
-      "comparison",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60842,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "archive",
-    pascal_name: "Archive",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "saved",
-      "saving",
-      "archived",
-      "archiving",
-      "archival",
-      "downloaded",
-      "downloading",
-    ],
-    codepoint: 57356,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "armchair",
-    pascal_name: "Armchair",
-    categories: [IconCategory.OBJECTS, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["seat", "furniture"],
-    codepoint: 57362,
-    published_in: 1.2,
-    updated_in: 1.4,
-  },
-  {
-    name: "arrow-arc-left",
-    pascal_name: "ArrowArcLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57364,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-arc-right",
-    pascal_name: "ArrowArcRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57366,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-bend-double-up-left",
-    pascal_name: "ArrowBendDoubleUpLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "reply-all"],
-    codepoint: 57402,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-bend-double-up-right",
-    pascal_name: "ArrowBendDoubleUpRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57404,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-bend-down-left",
-    pascal_name: "ArrowBendDownLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57368,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-bend-down-right",
-    pascal_name: "ArrowBendDownRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57370,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-bend-left-down",
-    pascal_name: "ArrowBendLeftDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57372,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-bend-left-up",
-    pascal_name: "ArrowBendLeftUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57374,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-bend-right-down",
-    pascal_name: "ArrowBendRightDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57376,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-bend-right-up",
-    pascal_name: "ArrowBendRightUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57378,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-bend-up-left",
-    pascal_name: "ArrowBendUpLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "reply", "re"],
-    codepoint: 57380,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-bend-up-right",
-    pascal_name: "ArrowBendUpRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "forward", "fwd"],
-    codepoint: 57382,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-circle-down",
-    pascal_name: "ArrowCircleDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57384,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-circle-down-left",
-    pascal_name: "ArrowCircleDownLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57386,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-circle-down-right",
-    pascal_name: "ArrowCircleDownRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57388,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-circle-left",
-    pascal_name: "ArrowCircleLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57434,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-circle-right",
-    pascal_name: "ArrowCircleRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57390,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-circle-up",
-    pascal_name: "ArrowCircleUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57392,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-circle-up-left",
-    pascal_name: "ArrowCircleUpLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57394,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-circle-up-right",
-    pascal_name: "ArrowCircleUpRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57396,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-clockwise",
-    pascal_name: "ArrowClockwise",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "redo",
-      "refreshing",
-      "rotate",
-      "spin",
-      "flip",
-    ],
-    codepoint: 57398,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrow-counter-clockwise",
-    pascal_name: "ArrowCounterClockwise",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "undo",
-      "refreshing",
-      "rotate",
-      "spin",
-      "flip",
-    ],
-    codepoint: 57400,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrow-down",
-    pascal_name: "ArrowDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57406,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-down-left",
-    pascal_name: "ArrowDownLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57408,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-down-right",
-    pascal_name: "ArrowDownRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57410,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-elbow-down-left",
-    pascal_name: "ArrowElbowDownLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57412,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-elbow-down-right",
-    pascal_name: "ArrowElbowDownRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57414,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-elbow-left",
-    pascal_name: "ArrowElbowLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57416,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-elbow-left-down",
-    pascal_name: "ArrowElbowLeftDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57418,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-elbow-left-up",
-    pascal_name: "ArrowElbowLeftUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57420,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-elbow-right",
-    pascal_name: "ArrowElbowRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57422,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-elbow-right-down",
-    pascal_name: "ArrowElbowRightDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57424,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-elbow-right-up",
-    pascal_name: "ArrowElbowRightUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57426,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-elbow-up-left",
-    pascal_name: "ArrowElbowUpLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57428,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-elbow-up-right",
-    pascal_name: "ArrowElbowUpRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57430,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-fat-down",
-    pascal_name: "ArrowFatDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "outlined"],
-    codepoint: 58648,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-left",
-    pascal_name: "ArrowFatLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "outlined"],
-    codepoint: 58650,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-line-down",
-    pascal_name: "ArrowFatLineDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "outlined"],
-    codepoint: 58652,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-line-left",
-    pascal_name: "ArrowFatLineLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "outlined"],
-    codepoint: 58654,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-line-right",
-    pascal_name: "ArrowFatLineRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "outlined"],
-    codepoint: 58656,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-line-up",
-    pascal_name: "ArrowFatLineUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "caps lock",
-      "outlined",
-    ],
-    codepoint: 58658,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-lines-down",
-    pascal_name: "ArrowFatLinesDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "outlined"],
-    codepoint: 58660,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-lines-left",
-    pascal_name: "ArrowFatLinesLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "outlined"],
-    codepoint: 58662,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-lines-right",
-    pascal_name: "ArrowFatLinesRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "outlined"],
-    codepoint: 58664,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-lines-up",
-    pascal_name: "ArrowFatLinesUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "outlined"],
-    codepoint: 58666,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-right",
-    pascal_name: "ArrowFatRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "outlined"],
-    codepoint: 58668,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-fat-up",
-    pascal_name: "ArrowFatUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "shift",
-      "outlined",
-    ],
-    codepoint: 58670,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "arrow-left",
-    pascal_name: "ArrowLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57432,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-line-down",
-    pascal_name: "ArrowLineDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "bottom"],
-    codepoint: 57436,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-line-down-left",
-    pascal_name: "ArrowLineDownLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57438,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-line-down-right",
-    pascal_name: "ArrowLineDownRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57440,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-line-left",
-    pascal_name: "ArrowLineLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57442,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-line-right",
-    pascal_name: "ArrowLineRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57444,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-line-up",
-    pascal_name: "ArrowLineUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead", "top"],
-    codepoint: 57446,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-line-up-left",
-    pascal_name: "ArrowLineUpLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57448,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-line-up-right",
-    pascal_name: "ArrowLineUpRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57450,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-right",
-    pascal_name: "ArrowRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57452,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-square-down",
-    pascal_name: "ArrowSquareDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57454,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-square-down-left",
-    pascal_name: "ArrowSquareDownLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57456,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-square-down-right",
-    pascal_name: "ArrowSquareDownRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57458,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-square-in",
-    pascal_name: "ArrowSquareIn",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["import", "directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 58844,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "arrow-square-left",
-    pascal_name: "ArrowSquareLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57460,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-square-out",
-    pascal_name: "ArrowSquareOut",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "export",
-      "external",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-    ],
-    codepoint: 58846,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "arrow-square-right",
-    pascal_name: "ArrowSquareRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57462,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-square-up",
-    pascal_name: "ArrowSquareUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57464,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-square-up-left",
-    pascal_name: "ArrowSquareUpLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57466,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-square-up-right",
-    pascal_name: "ArrowSquareUpRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57468,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-u-down-left",
-    pascal_name: "ArrowUDownLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "undo",
-      "return",
-      "u-turns",
-    ],
-    codepoint: 57470,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-u-down-right",
-    pascal_name: "ArrowUDownRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "redo",
-      "u-turns",
-    ],
-    codepoint: 57472,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-u-left-down",
-    pascal_name: "ArrowULeftDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "undo",
-      "return",
-      "u-turns",
-    ],
-    codepoint: 57474,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-u-left-up",
-    pascal_name: "ArrowULeftUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "redo",
-      "u-turns",
-    ],
-    codepoint: 57476,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-u-right-down",
-    pascal_name: "ArrowURightDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "undo",
-      "return",
-      "u-turns",
-    ],
-    codepoint: 57478,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-u-right-up",
-    pascal_name: "ArrowURightUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "redo",
-      "u-turns",
-    ],
-    codepoint: 57480,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-u-up-left",
-    pascal_name: "ArrowUUpLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "undo",
-      "return",
-      "u-turns",
-    ],
-    codepoint: 57482,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-u-up-right",
-    pascal_name: "ArrowUUpRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "redo",
-      "u-turns",
-    ],
-    codepoint: 57484,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-up",
-    pascal_name: "ArrowUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57486,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-up-left",
-    pascal_name: "ArrowUpLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57488,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrow-up-right",
-    pascal_name: "ArrowUpRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57490,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "arrows-clockwise",
-    pascal_name: "ArrowsClockwise",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "redo",
-      "refreshing",
-      "sync",
-      "synchronize",
-      "rotate",
-      "spin",
-      "flip",
-    ],
-    codepoint: 57492,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-counter-clockwise",
-    pascal_name: "ArrowsCounterClockwise",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "undo",
-      "refreshing",
-      "rotate",
-      "spin",
-      "flip",
-    ],
-    codepoint: 57494,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-down-up",
-    pascal_name: "ArrowsDownUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["*updated*", "directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57496,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-horizontal",
-    pascal_name: "ArrowsHorizontal",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "cursor",
-      "resize",
-      "expand",
-      "left",
-      "right",
-    ],
-    codepoint: 60166,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-in",
-    pascal_name: "ArrowsIn",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "collapse",
-      "minimize",
-      "resize",
-      "shrink",
-    ],
-    codepoint: 57498,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-in-cardinal",
-    pascal_name: "ArrowsInCardinal",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "collapse",
-      "minimize",
-      "resize",
-      "shrink",
-    ],
-    codepoint: 57500,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-in-line-horizontal",
-    pascal_name: "ArrowsInLineHorizontal",
-    categories: [IconCategory.ARROWS, IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "close",
-      "center",
-      "align",
-    ],
-    codepoint: 58672,
-    published_in: 1.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-in-line-vertical",
-    pascal_name: "ArrowsInLineVertical",
-    categories: [IconCategory.ARROWS, IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "close",
-      "center",
-      "align",
-    ],
-    codepoint: 58674,
-    published_in: 1.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-in-simple",
-    pascal_name: "ArrowsInSimple",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "collapse",
-      "minimize",
-      "resize",
-    ],
-    codepoint: 57502,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-left-right",
-    pascal_name: "ArrowsLeftRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["*updated*", "directional", "pointer", "pointing", "arrowhead"],
-    codepoint: 57504,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-merge",
-    pascal_name: "ArrowsMerge",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["*updated*", "arrowheads", "join", "combine"],
-    codepoint: 60734,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-out",
-    pascal_name: "ArrowsOut",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "expand",
-      "fullscreen",
-      "resize",
-      "grow",
-    ],
-    codepoint: 57506,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-out-cardinal",
-    pascal_name: "ArrowsOutCardinal",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "expand",
-      "fullscreen",
-      "resize",
-      "pan",
-      "move",
-      "grow",
-    ],
-    codepoint: 57508,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-out-line-horizontal",
-    pascal_name: "ArrowsOutLineHorizontal",
-    categories: [IconCategory.ARROWS, IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "open",
-      "split",
-    ],
-    codepoint: 58676,
-    published_in: 1.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-out-line-vertical",
-    pascal_name: "ArrowsOutLineVertical",
-    categories: [IconCategory.ARROWS, IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "open",
-      "split",
-    ],
-    codepoint: 58678,
-    published_in: 1.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-out-simple",
-    pascal_name: "ArrowsOutSimple",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "expand",
-      "fullscreen",
-      "resize",
-    ],
-    codepoint: 57510,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-split",
-    pascal_name: "ArrowsSplit",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["*updated*", "arrowheads", "fork"],
-    codepoint: 60732,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "arrows-vertical",
-    pascal_name: "ArrowsVertical",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*updated*",
-      "directional",
-      "pointer",
-      "cursor",
-      "resize",
-      "expand",
-      "up",
-      "down",
-    ],
-    codepoint: 60164,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "article",
-    pascal_name: "Article",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "reading",
-      "writing",
-      "journals",
-      "periodicals",
-      "text",
-      "newspaper",
-    ],
-    codepoint: 57512,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "article-medium",
-    pascal_name: "ArticleMedium",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "*updated*",
-      "reading",
-      "writing",
-      "journals",
-      "periodicals",
-      "text",
-      "newspaper",
-    ],
-    codepoint: 58848,
-    published_in: 1.2,
-    updated_in: 2.1,
-  },
-  {
-    name: "article-ny-times",
-    pascal_name: "ArticleNyTimes",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "*updated*",
-      "reading",
-      "writing",
-      "journals",
-      "periodicals",
-      "text",
-      "news",
-      "newspaper",
-      "nyt",
-      "new york times",
-    ],
-    codepoint: 58850,
-    published_in: 1.2,
-    updated_in: 2.1,
-  },
-  {
-    name: "asclepius",
-    pascal_name: "Asclepius",
-    alias: { name: "caduceus", pascal_name: "Caduceus" },
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "*new*",
-      "caduceus",
-      "staff",
-      "mythology",
-      "rx",
-      "medicine",
-      "drugs",
-      "pharmacy",
-      "pharmacist",
-      "pharmaceuticals",
-      "doctor",
-      "hospital",
-      "snake",
-      "mercury",
-      "hermes",
-    ],
-    codepoint: 60980,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "asterisk",
-    pascal_name: "Asterisk",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["star", "wildcard", "bullet point", "6", "emergency"],
-    codepoint: 57514,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "asterisk-simple",
-    pascal_name: "AsteriskSimple",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["*updated*", "star", "wildcard", "bullet point", "5", "emergency"],
-    codepoint: 59442,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "at",
-    pascal_name: "At",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["@", "address", "email", "at symbol", "commercial at", "arobase"],
-    codepoint: 57516,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "atom",
-    pascal_name: "Atom",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "atomic",
-      "nucleus",
-      "nuclear",
-      "reactor",
-      "science",
-      "physics",
-      "electron",
-      "automation",
-      "react",
-    ],
-    codepoint: 58852,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "avocado",
-    pascal_name: "Avocado",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "food",
-      "vegetable",
-      "veggie",
-      "fruit",
-      "groceries",
-      "market",
-    ],
-    codepoint: 60932,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "axe",
-    pascal_name: "Axe",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "tools", "carpentry", "forestry", "construction"],
-    codepoint: 59900,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "baby",
-    pascal_name: "Baby",
-    categories: [IconCategory.PEOPLE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["infant", "child", "children", "toddler"],
-    codepoint: 59252,
-    published_in: 1.3,
-    updated_in: 1.4,
-  },
-  {
-    name: "baby-carriage",
-    pascal_name: "BabyCarriage",
-    categories: [IconCategory.COMMERCE, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "pram",
-      "stroller",
-      "infant",
-      "child",
-      "children",
-      "toddler",
-    ],
-    codepoint: 59416,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "backpack",
-    pascal_name: "Backpack",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["knapsack", "camping", "school", "bag"],
-    codepoint: 59682,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "backspace",
-    pascal_name: "Backspace",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["keyboard", "remove", "delete"],
-    codepoint: 57518,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bag",
-    pascal_name: "Bag",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["suitcase", "valise", "baggage", "folders", "portfolio"],
-    codepoint: 57520,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bag-simple",
-    pascal_name: "BagSimple",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["suitcase", "valise", "baggage", "folders", "portfolio"],
-    codepoint: 58854,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "balloon",
-    pascal_name: "Balloon",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["helium", "birthday", "party"],
-    codepoint: 59244,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "bandaids",
-    pascal_name: "Bandaids",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["bandages", "medical", "medicine", "first aid", "injury"],
-    codepoint: 57522,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bank",
-    pascal_name: "Bank",
-    categories: [IconCategory.FINANCE, IconCategory.MAP],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "banking",
-      "checking",
-      "money",
-      "savings",
-      "deposit",
-      "withdraw",
-      "places",
-      "locations",
-    ],
-    codepoint: 57524,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "barbell",
-    pascal_name: "Barbell",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "gym",
-      "weights",
-      "dumbbells",
-      "strength training",
-      "workout",
-      "exercises",
-      "fitness",
-    ],
-    codepoint: 57526,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "barcode",
-    pascal_name: "Barcode",
-    categories: [IconCategory.COMMERCE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["upc", "qr", "products", "shopping", "scanner"],
-    codepoint: 57528,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "barn",
-    pascal_name: "Barn",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "animals",
-      "livestock",
-      "buildings",
-      "farming",
-      "agriculture",
-    ],
-    codepoint: 60530,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "barricade",
-    pascal_name: "Barricade",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["construction", "safety", "gate"],
-    codepoint: 59720,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "baseball",
-    pascal_name: "Baseball",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["sports", "mlb"],
-    codepoint: 59162,
-    published_in: 1.3,
-    updated_in: 1.4,
-  },
-  {
-    name: "baseball-cap",
-    pascal_name: "BaseballCap",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["clothes", "clothing", "sports", "hat"],
-    codepoint: 59944,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "baseball-helmet",
-    pascal_name: "BaseballHelmet",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "mlb"],
-    codepoint: 61002,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "basket",
-    pascal_name: "Basket",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "ecommerce",
-      "market",
-      "cart",
-      "buying",
-      "shopping",
-      "groceries",
-      "checkout",
-      "places",
-      "locations",
-    ],
-    codepoint: 59748,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "basketball",
-    pascal_name: "Basketball",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["sports", "nba"],
-    codepoint: 59172,
-    published_in: 1.3,
-    updated_in: 1.4,
-  },
-  {
-    name: "bathtub",
-    pascal_name: "Bathtub",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["bath", "shower", "bathroom", "faucet"],
-    codepoint: 59422,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "battery-charging",
-    pascal_name: "BatteryCharging",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 57530,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-charging-vertical",
-    pascal_name: "BatteryChargingVertical",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 57532,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-empty",
-    pascal_name: "BatteryEmpty",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power", "dead"],
-    codepoint: 57534,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-full",
-    pascal_name: "BatteryFull",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power", "filled"],
-    codepoint: 57536,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-high",
-    pascal_name: "BatteryHigh",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 57538,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-low",
-    pascal_name: "BatteryLow",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 57540,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-medium",
-    pascal_name: "BatteryMedium",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 57542,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-plus",
-    pascal_name: "BatteryPlus",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 59400,
-    published_in: 1.4,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-plus-vertical",
-    pascal_name: "BatteryPlusVertical",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 60496,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-vertical-empty",
-    pascal_name: "BatteryVerticalEmpty",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power", "dead"],
-    codepoint: 59334,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-vertical-full",
-    pascal_name: "BatteryVerticalFull",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 59332,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-vertical-high",
-    pascal_name: "BatteryVerticalHigh",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 59330,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-vertical-low",
-    pascal_name: "BatteryVerticalLow",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 59326,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-vertical-medium",
-    pascal_name: "BatteryVerticalMedium",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power"],
-    codepoint: 59328,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "battery-warning",
-    pascal_name: "BatteryWarning",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power", "empty", "critical"],
-    codepoint: 57544,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "battery-warning-vertical",
-    pascal_name: "BatteryWarningVertical",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["charged", "charger", "charging", "power", "empty", "critical"],
-    codepoint: 57546,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "beach-ball",
-    pascal_name: "BeachBall",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "ocean", "party"],
-    codepoint: 60708,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "beanie",
-    pascal_name: "Beanie",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "clothes", "clothing", "sports", "hat", "winter"],
-    codepoint: 59946,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "bed",
-    pascal_name: "Bed",
-    categories: [IconCategory.HEALTH, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "hotels",
-      "accommodations",
-      "sleeping",
-      "places",
-      "locations",
-      "medical",
-      "hospital",
-    ],
-    codepoint: 57548,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "beer-bottle",
-    pascal_name: "BeerBottle",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "drinks",
-      "beverages",
-      "places",
-      "locations",
-      "bars",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 59312,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "beer-stein",
-    pascal_name: "BeerStein",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "drinks",
-      "beverages",
-      "places",
-      "locations",
-      "bars",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 60258,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "behance-logo",
-    pascal_name: "BehanceLogo",
-    categories: [IconCategory.BRAND, IconCategory.DESIGN],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "illustration", "ui", "interface"],
-    codepoint: 59380,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "bell",
-    pascal_name: "Bell",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "alarm",
-      "notifications",
-      "times",
-      "timer",
-      "clock",
-      "schedule",
-      "events",
-      "ringer",
-      "calls",
-    ],
-    codepoint: 57550,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bell-ringing",
-    pascal_name: "BellRinging",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "alarm",
-      "notifications",
-      "times",
-      "timer",
-      "clock",
-      "schedule",
-      "events",
-      "ringer",
-      "calls",
-    ],
-    codepoint: 58856,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "bell-simple",
-    pascal_name: "BellSimple",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "alarm",
-      "notifications",
-      "times",
-      "timer",
-      "clock",
-      "schedule",
-      "events",
-      "ringer",
-      "calls",
-    ],
-    codepoint: 57552,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bell-simple-ringing",
-    pascal_name: "BellSimpleRinging",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "alarm",
-      "notifications",
-      "times",
-      "timer",
-      "clock",
-      "schedule",
-      "events",
-      "ringer",
-      "calls",
-    ],
-    codepoint: 58858,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "bell-simple-slash",
-    pascal_name: "BellSimpleSlash",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "alarm",
-      "notifications",
-      "times",
-      "timer",
-      "clock",
-      "schedule",
-      "events",
-      "ringer",
-      "silent",
-      "silenced",
-      "disabled",
-    ],
-    codepoint: 57554,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bell-simple-z",
-    pascal_name: "BellSimpleZ",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "alarm",
-      "notifications",
-      "times",
-      "timer",
-      "clock",
-      "schedule",
-      "events",
-      "ringer",
-      "snooze",
-    ],
-    codepoint: 58860,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "bell-slash",
-    pascal_name: "BellSlash",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "alarm",
-      "notifications",
-      "times",
-      "timer",
-      "clock",
-      "schedule",
-      "events",
-      "silent",
-      "silenced",
-      "ringer",
-      "calls",
-      "disabled",
-    ],
-    codepoint: 57556,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bell-z",
-    pascal_name: "BellZ",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "alarm",
-      "notifications",
-      "times",
-      "timer",
-      "clock",
-      "schedule",
-      "events",
-      "ringer",
-      "snooze",
-    ],
-    codepoint: 58862,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "belt",
-    pascal_name: "Belt",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "clothes", "clothing"],
-    codepoint: 59948,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "bezier-curve",
-    pascal_name: "BezierCurve",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["shapes", "drawing", "path", "pen", "vector"],
-    codepoint: 60160,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "bicycle",
-    pascal_name: "Bicycle",
-    categories: [IconCategory.HEALTH, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "bikers",
-      "bicycling",
-      "cyclists",
-      "transit",
-      "transportation",
-      "commuter",
-      "exercises",
-      "fitness",
-    ],
-    codepoint: 57558,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "binary",
-    pascal_name: "Binary",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["*new*", "digital", "0", "1", "programming", "coding", "executable"],
-    codepoint: 61024,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "binoculars",
-    pascal_name: "Binoculars",
-    categories: [IconCategory.NATURE, IconCategory.OBJECTS, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["telescope", "glasses", "search", "find", "explore"],
-    codepoint: 60004,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "biohazard",
-    pascal_name: "Biohazard",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "*new*",
-      "contamination",
-      "quarantine",
-      "toxic",
-      "poison",
-      "danger",
-      "caution",
-    ],
-    codepoint: 59872,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "bird",
-    pascal_name: "Bird",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["*updated*", "animals", "pets"],
-    codepoint: 59180,
-    published_in: 1.3,
-    updated_in: 2.1,
-  },
-  {
-    name: "blueprint",
-    pascal_name: "Blueprint",
-    categories: [IconCategory.COMMERCE, IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "*new*",
-      "architecture",
-      "layout",
-      "floorplan",
-      "building",
-      "construction",
-    ],
-    codepoint: 60832,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "bluetooth",
-    pascal_name: "Bluetooth",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["wireless", "connection", "connected", "connectivity"],
-    codepoint: 57562,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bluetooth-connected",
-    pascal_name: "BluetoothConnected",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["wireless", "connection", "connected", "connectivity"],
-    codepoint: 57564,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bluetooth-slash",
-    pascal_name: "BluetoothSlash",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "wireless",
-      "connection",
-      "connectivity",
-      "disconnected",
-      "disabled",
-    ],
-    codepoint: 57566,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bluetooth-x",
-    pascal_name: "BluetoothX",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["wireless", "connection", "connectivity", "disconnected", "errors"],
-    codepoint: 57568,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "boat",
-    pascal_name: "Boat",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "ferry",
-      "ship",
-      "cruise",
-      "vehicles",
-      "public transit",
-      "transportation",
-      "commuter",
-      "traveling",
-      "sailing",
-      "places",
-      "locations",
-    ],
-    codepoint: 59270,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "bomb",
-    pascal_name: "Bomb",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "gaming", "grenade", "explosive", "war", "weapon", "fuse"],
-    codepoint: 60938,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "bone",
-    pascal_name: "Bone",
-    categories: [IconCategory.NATURE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["dogbone"],
-    codepoint: 59378,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "book",
-    pascal_name: "Book",
-    categories: [IconCategory.OFFICE, IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: ["reading", "reader", "novel", "story", "library"],
-    codepoint: 57570,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "book-bookmark",
-    pascal_name: "BookBookmark",
-    categories: [IconCategory.OFFICE, IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "reading",
-      "reader",
-      "novel",
-      "story",
-      "library",
-      "favorites",
-      "favorited",
-    ],
-    codepoint: 57572,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "book-open",
-    pascal_name: "BookOpen",
-    categories: [IconCategory.OFFICE, IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: ["*updated*", "reading", "reader", "novel", "story", "library"],
-    codepoint: 57574,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "book-open-text",
-    pascal_name: "BookOpenText",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.MEDIA,
-      IconCategory.OBJECTS,
-      IconCategory.MAP,
-    ],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: ["*updated*", "reading", "reader", "novel", "story", "library"],
-    codepoint: 59634,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "book-open-user",
-    pascal_name: "BookOpenUser",
-    categories: [IconCategory.OFFICE, IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "*new*",
-      "reading",
-      "reader",
-      "easy read",
-      "library",
-      "places",
-      "locations",
-    ],
-    codepoint: 60896,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "bookmark",
-    pascal_name: "Bookmark",
-    categories: [IconCategory.OFFICE, IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "reading",
-      "reader",
-      "novel",
-      "story",
-      "placeholder",
-      "favorites",
-      "favorited",
-      "library",
-    ],
-    codepoint: 57576,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bookmark-simple",
-    pascal_name: "BookmarkSimple",
-    categories: [IconCategory.OFFICE, IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "reading",
-      "reader",
-      "novel",
-      "story",
-      "placeholder",
-      "favorites",
-      "favorited",
-      "library",
-    ],
-    codepoint: 57578,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bookmarks",
-    pascal_name: "Bookmarks",
-    categories: [IconCategory.OFFICE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "reading",
-      "reader",
-      "novel",
-      "story",
-      "placeholder",
-      "favorites",
-      "favorited",
-      "library",
-    ],
-    codepoint: 57580,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bookmarks-simple",
-    pascal_name: "BookmarksSimple",
-    categories: [IconCategory.OFFICE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "reading",
-      "reader",
-      "novel",
-      "story",
-      "placeholder",
-      "favorites",
-      "favorited",
-      "library",
-    ],
-    codepoint: 58864,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "books",
-    pascal_name: "Books",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.MAP,
-      IconCategory.MEDIA,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: ["reading", "reader", "bookshelf", "library", "places", "locations"],
-    codepoint: 59224,
-    published_in: 1.3,
-    updated_in: 2.0,
-  },
-  {
-    name: "boot",
-    pascal_name: "Boot",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.OBJECTS,
-      IconCategory.HEALTH,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["hiking", "shoes", "sports", "exercise"],
-    codepoint: 60618,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "boules",
-    pascal_name: "Boules",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "*new*",
-      "balls",
-      "sports",
-      "pétanque",
-      "raffa",
-      "bocce",
-      "boule lyonnaise",
-      "lawn bowls",
-    ],
-    codepoint: 59170,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "bounding-box",
-    pascal_name: "BoundingBox",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["polygon", "shapes", "outline", "corners", "rectangle"],
-    codepoint: 59086,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "bowl-food",
-    pascal_name: "BowlFood",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "ramen",
-      "food",
-      "meal",
-      "eating",
-      "restaurants",
-      "dining",
-      "locations",
-    ],
-    codepoint: 60068,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "bowl-steam",
-    pascal_name: "BowlSteam",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "food",
-      "meal",
-      "eating",
-      "restaurants",
-      "dining",
-      "locations",
-    ],
-    codepoint: 59620,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "bowling-ball",
-    pascal_name: "BowlingBall",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "alley"],
-    codepoint: 59956,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "box-arrow-down",
-    pascal_name: "BoxArrowDown",
-    alias: { name: "archive-box", pascal_name: "ArchiveBox" },
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "saved",
-      "saving",
-      "archived",
-      "archiving",
-      "archival",
-      "downloaded",
-      "downloading",
-    ],
-    codepoint: 57358,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "box-arrow-up",
-    pascal_name: "BoxArrowUp",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "unarchive", "archival", "upload"],
-    codepoint: 61012,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "boxing-glove",
-    pascal_name: "BoxingGlove",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "combat", "martial arts", "fight", "gym"],
-    codepoint: 59958,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "brackets-angle",
-    pascal_name: "BracketsAngle",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["code", "angle brackets", "angle braces"],
-    codepoint: 59490,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "brackets-curly",
-    pascal_name: "BracketsCurly",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["code", "curly brackets", "curly braces"],
-    codepoint: 59488,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "brackets-round",
-    pascal_name: "BracketsRound",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["code", "parentheses", "round brackets", "round braces"],
-    codepoint: 59492,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "brackets-square",
-    pascal_name: "BracketsSquare",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["code", "square brackets", "square braces", "array"],
-    codepoint: 59486,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "brain",
-    pascal_name: "Brain",
-    categories: [IconCategory.HEALTH, IconCategory.NATURE],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["mind", "mental"],
-    codepoint: 59214,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "brandy",
-    pascal_name: "Brandy",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "drinks",
-      "beverages",
-      "whiskey",
-      "cocktail",
-      "places",
-      "locations",
-      "bars",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 59060,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "bread",
-    pascal_name: "Bread",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "food",
-      "meal",
-      "bakery",
-      "sandwich",
-      "gluten",
-      "loaf",
-      "toast",
-      "slice",
-    ],
-    codepoint: 59420,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "bridge",
-    pascal_name: "Bridge",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["travel", "transportation", "infrastucture"],
-    codepoint: 60008,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "briefcase",
-    pascal_name: "Briefcase",
-    categories: [IconCategory.OFFICE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["suitcase", "valise", "baggage", "folders", "portfolio"],
-    codepoint: 57582,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "briefcase-metal",
-    pascal_name: "BriefcaseMetal",
-    categories: [IconCategory.OFFICE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["suitcase", "valise", "baggage", "folders", "portfolio"],
-    codepoint: 58866,
-    published_in: 1.2,
-    updated_in: 1.4,
-  },
-  {
-    name: "broadcast",
-    pascal_name: "Broadcast",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MEDIA,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["radio", "hotspot", "wifi", "emit"],
-    codepoint: 57586,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "broom",
-    pascal_name: "Broom",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["sweeping", "cleaning"],
-    codepoint: 60500,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "browser",
-    pascal_name: "Browser",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "web browsers",
-      "windows",
-      "internet",
-      "website",
-      "webpage",
-      "chrome",
-      "edge",
-      "firefox",
-    ],
-    codepoint: 57588,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "browsers",
-    pascal_name: "Browsers",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "web browsers",
-      "windows",
-      "internet",
-      "website",
-      "webpage",
-      "chrome",
-      "edge",
-      "firefox",
-    ],
-    codepoint: 57590,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "bug",
-    pascal_name: "Bug",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.NATURE],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["debug", "errors", "insect", "ladybug"],
-    codepoint: 58868,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "bug-beetle",
-    pascal_name: "BugBeetle",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.NATURE],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["debug", "errors", "insect", "ladybug"],
-    codepoint: 58870,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "bug-droid",
-    pascal_name: "BugDroid",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.NATURE],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["debug", "errors", "insect", "android", "google"],
-    codepoint: 58872,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "building",
-    pascal_name: "Building",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "places", "locations", "company", "business", "buildings"],
-    codepoint: 57600,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "building-apartment",
-    pascal_name: "BuildingApartment",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "places", "locations", "buildings"],
-    codepoint: 57598,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "building-office",
-    pascal_name: "BuildingOffice",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "places", "locations", "company", "business", "buildings"],
-    codepoint: 57598,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "buildings",
-    pascal_name: "Buildings",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["places", "locations", "company", "business"],
-    codepoint: 57602,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "bulldozer",
-    pascal_name: "Bulldozer",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "vehicles", "construction", "earth mover", "dig", "digger"],
-    codepoint: 60524,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "bus",
-    pascal_name: "Bus",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "vehicles",
-      "automobile",
-      "public transit",
-      "transportation",
-      "commuter",
-      "traveling",
-      "places",
-      "locations",
-    ],
-    codepoint: 57606,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "butterfly",
-    pascal_name: "Butterfly",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["animals", "insects", "moth"],
-    codepoint: 60014,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "cable-car",
-    pascal_name: "CableCar",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "vehicles",
-      "gondola",
-      "skiing",
-      "mountains",
-      "public transit",
-      "transportation",
-      "commuter",
-      "traveling",
-      "places",
-      "locations",
-    ],
-    codepoint: 58524,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "cactus",
-    pascal_name: "Cactus",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["*updated*", "plants", "cacti", "desert", "western"],
-    codepoint: 59672,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "cake",
-    pascal_name: "Cake",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["dessert", "birthday", "celebration", "event"],
-    codepoint: 59264,
-    published_in: 1.3,
-    updated_in: 2.0,
-  },
-  {
-    name: "calculator",
-    pascal_name: "Calculator",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.FINANCE,
-      IconCategory.OFFICE,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "addition",
-      "sum",
-      "subtraction",
-      "difference",
-      "multiply",
-      "multiplication",
-      "product",
-      "divide",
-      "division",
-      "divisor",
-      "dividend",
-      "quotient",
-      "equals",
-      "equality",
-      "mathematics",
-      "arithmetic",
-      "+",
-      "-",
-      "±",
-      "×",
-      "÷",
-      "=",
-    ],
-    codepoint: 58680,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "calendar",
-    pascal_name: "Calendar",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["dates", "times", "events", "schedule", "12"],
-    codepoint: 57608,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "calendar-blank",
-    pascal_name: "CalendarBlank",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["dates", "times", "events", "schedule", "none"],
-    codepoint: 57610,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "calendar-check",
-    pascal_name: "CalendarCheck",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["dates", "times", "events", "schedule", "todo", "checklist"],
-    codepoint: 59154,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "calendar-dot",
-    pascal_name: "CalendarDot",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["*new*", "dates", "times", "events", "schedule", "today"],
-    codepoint: 59314,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "calendar-dots",
-    pascal_name: "CalendarDots",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["*new*", "dates", "times", "events", "schedule"],
-    codepoint: 59316,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "calendar-heart",
-    pascal_name: "CalendarHeart",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["*new*", "dates", "times", "events", "schedule", "favorite", "star"],
-    codepoint: 59568,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "calendar-minus",
-    pascal_name: "CalendarMinus",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["*new*", "dates", "times", "events", "schedule", "remove", "delete"],
-    codepoint: 59924,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "calendar-plus",
-    pascal_name: "CalendarPlus",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["dates", "times", "events", "schedule", "add"],
-    codepoint: 59156,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "calendar-slash",
-    pascal_name: "CalendarSlash",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "*new*",
-      "dates",
-      "times",
-      "events",
-      "schedule",
-      "remove",
-      "delete",
-      "cancel. unavailable",
-    ],
-    codepoint: 59922,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "calendar-star",
-    pascal_name: "CalendarStar",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["*new*", "dates", "times", "events", "schedule", "favorite", "star"],
-    codepoint: 59570,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "calendar-x",
-    pascal_name: "CalendarX",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["dates", "times", "events", "schedule", "closed", "cancelled"],
-    codepoint: 57612,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "call-bell",
-    pascal_name: "CallBell",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["service bell", "reception", "attendant", "concierge bell"],
-    codepoint: 59358,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "camera",
-    pascal_name: "Camera",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["photography", "pictures", "lens"],
-    codepoint: 57614,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "camera-plus",
-    pascal_name: "CameraPlus",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["photography", "pictures", "album", "add"],
-    codepoint: 60504,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "camera-rotate",
-    pascal_name: "CameraRotate",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "photography",
-      "pictures",
-      "orientation",
-      "portrait",
-      "landscape",
-      "selfie",
-      "flip",
-    ],
-    codepoint: 59300,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "camera-slash",
-    pascal_name: "CameraSlash",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["photography", "pictures", "lens", "disabled"],
-    codepoint: 57616,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "campfire",
-    pascal_name: "Campfire",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["camping", "flame", "bonfire", "outdoors"],
-    codepoint: 59864,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "car",
-    pascal_name: "Car",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*updated*",
-      "cars",
-      "vehicles",
-      "automobile",
-      "transit",
-      "transportation",
-      "traveling",
-    ],
-    codepoint: 57618,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "car-battery",
-    pascal_name: "CarBattery",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "charged",
-      "charger",
-      "charging",
-      "power",
-      "voltage",
-      "electricity",
-    ],
-    codepoint: 60976,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "car-profile",
-    pascal_name: "CarProfile",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "cars",
-      "vehicles",
-      "automobile",
-      "transit",
-      "transportation",
-      "traveling",
-    ],
-    codepoint: 59596,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "car-simple",
-    pascal_name: "CarSimple",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "cars",
-      "vehicles",
-      "automobile",
-      "transit",
-      "transportation",
-      "traveling",
-    ],
-    codepoint: 57620,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "cardholder",
-    pascal_name: "Cardholder",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["wallet", "money", "payment", "paying", "purchase"],
-    codepoint: 58874,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "cards",
-    pascal_name: "Cards",
-    categories: [IconCategory.DESIGN, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "card",
-      "slides",
-      "slideshow",
-      "windows",
-      "website",
-      "webpage",
-      "layers",
-    ],
-    codepoint: 57592,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "cards-three",
-    pascal_name: "CardsThree",
-    categories: [IconCategory.DESIGN, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*new*",
-      "card",
-      "slides",
-      "slideshow",
-      "windows",
-      "website",
-      "webpage",
-      "layers",
-      "stack",
-    ],
-    codepoint: 61008,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "caret-circle-double-down",
-    pascal_name: "CaretCircleDoubleDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57622,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-circle-double-left",
-    pascal_name: "CaretCircleDoubleLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57624,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-circle-double-right",
-    pascal_name: "CaretCircleDoubleRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57626,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-circle-double-up",
-    pascal_name: "CaretCircleDoubleUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57628,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-circle-down",
-    pascal_name: "CaretCircleDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57630,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-circle-left",
-    pascal_name: "CaretCircleLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57632,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-circle-right",
-    pascal_name: "CaretCircleRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57634,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-circle-up",
-    pascal_name: "CaretCircleUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57636,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-circle-up-down",
-    pascal_name: "CaretCircleUpDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57662,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "caret-double-down",
-    pascal_name: "CaretDoubleDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57638,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-double-left",
-    pascal_name: "CaretDoubleLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57640,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-double-right",
-    pascal_name: "CaretDoubleRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57642,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-double-up",
-    pascal_name: "CaretDoubleUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57644,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-down",
-    pascal_name: "CaretDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57654,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-left",
-    pascal_name: "CaretLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57656,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-line-down",
-    pascal_name: "CaretLineDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*new*",
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57652,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "caret-line-left",
-    pascal_name: "CaretLineLeft",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*new*",
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57650,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "caret-line-right",
-    pascal_name: "CaretLineRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*new*",
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57648,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "caret-line-up",
-    pascal_name: "CaretLineUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*new*",
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57646,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "caret-right",
-    pascal_name: "CaretRight",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57658,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-up",
-    pascal_name: "CaretUp",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57660,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "caret-up-down",
-    pascal_name: "CaretUpDown",
-    categories: [IconCategory.ARROWS],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "chevron",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-      "triangle",
-    ],
-    codepoint: 57664,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "carrot",
-    pascal_name: "Carrot",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["food", "vegetable", "veggie", "groceries", "market"],
-    codepoint: 60728,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cash-register",
-    pascal_name: "CashRegister",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "retail",
-      "point-of-sale",
-      "pos",
-      "transaction",
-      "sales",
-      "till",
-    ],
-    codepoint: 60800,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "cassette-tape",
-    pascal_name: "CassetteTape",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["recording", "audio", "album", "music"],
-    codepoint: 60718,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "castle-turret",
-    pascal_name: "CastleTurret",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS, IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*updated*", "chess", "rook"],
-    codepoint: 59856,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "cat",
-    pascal_name: "Cat",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["pets", "animals", "kitty", "kitten"],
-    codepoint: 59208,
-    published_in: 1.3,
-    updated_in: 1.4,
-  },
-  {
-    name: "cell-signal-full",
-    pascal_name: "CellSignalFull",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "wireless",
-      "cellular",
-      "phone",
-      "mobile",
-      "network",
-      "connection",
-      "connectivity",
-      "reception",
-      "service",
-    ],
-    codepoint: 57666,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cell-signal-high",
-    pascal_name: "CellSignalHigh",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "wireless",
-      "cellular",
-      "phone",
-      "mobile",
-      "network",
-      "connection",
-      "connectivity",
-      "reception",
-      "service",
-    ],
-    codepoint: 57668,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cell-signal-low",
-    pascal_name: "CellSignalLow",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "wireless",
-      "cellular",
-      "phone",
-      "mobile",
-      "network",
-      "connection",
-      "connectivity",
-      "reception",
-      "service",
-    ],
-    codepoint: 57670,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cell-signal-medium",
-    pascal_name: "CellSignalMedium",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "wireless",
-      "cellular",
-      "phone",
-      "mobile",
-      "network",
-      "connection",
-      "connectivity",
-      "reception",
-      "service",
-    ],
-    codepoint: 57672,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cell-signal-none",
-    pascal_name: "CellSignalNone",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "wireless",
-      "cellular",
-      "phone",
-      "mobile",
-      "network",
-      "connection",
-      "connectivity",
-      "reception",
-      "service",
-    ],
-    codepoint: 57674,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cell-signal-slash",
-    pascal_name: "CellSignalSlash",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "wireless",
-      "cellular",
-      "phone",
-      "mobile",
-      "network",
-      "connection",
-      "connectivity",
-      "disconnected",
-      "disabled",
-      "reception",
-      "service",
-    ],
-    codepoint: 57676,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cell-signal-x",
-    pascal_name: "CellSignalX",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "wireless",
-      "cellular",
-      "phone",
-      "mobile",
-      "network",
-      "connection",
-      "connectivity",
-      "reception",
-      "disconnected",
-      "errors",
-      "service",
-    ],
-    codepoint: 57678,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cell-tower",
-    pascal_name: "CellTower",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "*new*",
-      "wireless",
-      "cellular",
-      "broadcast",
-      "phone",
-      "mobile",
-      "network",
-      "connection",
-      "connectivity",
-    ],
-    codepoint: 60330,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "certificate",
-    pascal_name: "Certificate",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: ["*updated*", "awards", "certification", "degree", "diploma"],
-    codepoint: 59238,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "chair",
-    pascal_name: "Chair",
-    categories: [IconCategory.OBJECTS, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["seat", "furniture"],
-    codepoint: 59728,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "chalkboard",
-    pascal_name: "Chalkboard",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "blackboard",
-      "whiteboard",
-      "classroom",
-      "teacher",
-      "education",
-      "school",
-      "college",
-      "university",
-    ],
-    codepoint: 58876,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "chalkboard-simple",
-    pascal_name: "ChalkboardSimple",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "*updated*",
-      "blackboard",
-      "whiteboard",
-      "classroom",
-      "teacher",
-      "education",
-      "school",
-      "college",
-      "university",
-    ],
-    codepoint: 58878,
-    published_in: 1.2,
-    updated_in: 2.1,
-  },
-  {
-    name: "chalkboard-teacher",
-    pascal_name: "ChalkboardTeacher",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "blackboard",
-      "whiteboard",
-      "classroom",
-      "education",
-      "school",
-      "college",
-      "university",
-    ],
-    codepoint: 58880,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "champagne",
-    pascal_name: "Champagne",
-    categories: [IconCategory.MAP, IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "glass",
-      "drinks",
-      "beverages",
-      "wine",
-      "places",
-      "locations",
-      "bars",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 60106,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "charging-station",
-    pascal_name: "ChargingStation",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["ev", "charge", "fuel", "pump"],
-    codepoint: 59600,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "chart-bar",
-    pascal_name: "ChartBar",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "histogram",
-      "analyze",
-      "analysis",
-    ],
-    codepoint: 57680,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chart-bar-horizontal",
-    pascal_name: "ChartBarHorizontal",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "histogram",
-      "analyze",
-      "analysis",
-    ],
-    codepoint: 57682,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chart-donut",
-    pascal_name: "ChartDonut",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-      "circle",
-    ],
-    codepoint: 60070,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "chart-line",
-    pascal_name: "ChartLine",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-      "stocks",
-    ],
-    codepoint: 57684,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chart-line-down",
-    pascal_name: "ChartLineDown",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*updated*",
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-      "stocks",
-    ],
-    codepoint: 59574,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "chart-line-up",
-    pascal_name: "ChartLineUp",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*updated*",
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-      "stocks",
-    ],
-    codepoint: 57686,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "chart-pie",
-    pascal_name: "ChartPie",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "circle",
-      "analyze",
-      "analysis",
-    ],
-    codepoint: 57688,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chart-pie-slice",
-    pascal_name: "ChartPieSlice",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*updated*",
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "circle",
-      "analyze",
-      "analysis",
-    ],
-    codepoint: 57690,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "chart-polar",
-    pascal_name: "ChartPolar",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-      "circle",
-    ],
-    codepoint: 60072,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "chart-scatter",
-    pascal_name: "ChartScatter",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: ["graphs", "graphing", "charts", "statistics", "analyze", "analysis"],
-    codepoint: 60076,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "chat",
-    pascal_name: "Chat",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "square",
-      "bubble",
-    ],
-    codepoint: 57692,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-centered",
-    pascal_name: "ChatCentered",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "square",
-      "bubble",
-    ],
-    codepoint: 57696,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-centered-dots",
-    pascal_name: "ChatCenteredDots",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "square",
-      "bubble",
-    ],
-    codepoint: 57700,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-centered-slash",
-    pascal_name: "ChatCenteredSlash",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "*new*",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "square",
-      "bubble",
-    ],
-    codepoint: 57698,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "chat-centered-text",
-    pascal_name: "ChatCenteredText",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "square",
-      "bubble",
-    ],
-    codepoint: 57702,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-circle",
-    pascal_name: "ChatCircle",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "round",
-      "bubble",
-    ],
-    codepoint: 57704,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-circle-dots",
-    pascal_name: "ChatCircleDots",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "round",
-      "bubble",
-    ],
-    codepoint: 57708,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-circle-slash",
-    pascal_name: "ChatCircleSlash",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "*new*",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "round",
-      "bubble",
-    ],
-    codepoint: 57706,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "chat-circle-text",
-    pascal_name: "ChatCircleText",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "round",
-      "bubble",
-    ],
-    codepoint: 57710,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-dots",
-    pascal_name: "ChatDots",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "square",
-      "bubble",
-    ],
-    codepoint: 57712,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-slash",
-    pascal_name: "ChatSlash",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "*new*",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "square",
-      "bubble",
-    ],
-    codepoint: 57694,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "chat-teardrop",
-    pascal_name: "ChatTeardrop",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "bubble",
-    ],
-    codepoint: 57714,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-teardrop-dots",
-    pascal_name: "ChatTeardropDots",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "bubble",
-    ],
-    codepoint: 57718,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-teardrop-slash",
-    pascal_name: "ChatTeardropSlash",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "*new*",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "bubble",
-    ],
-    codepoint: 57716,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "chat-teardrop-text",
-    pascal_name: "ChatTeardropText",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "bubble",
-    ],
-    codepoint: 57720,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chat-text",
-    pascal_name: "ChatText",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "square",
-      "bubble",
-    ],
-    codepoint: 57722,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chats",
-    pascal_name: "Chats",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "square",
-      "bubble",
-    ],
-    codepoint: 57724,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chats-circle",
-    pascal_name: "ChatsCircle",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "round",
-      "bubble",
-    ],
-    codepoint: 57726,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "chats-teardrop",
-    pascal_name: "ChatsTeardrop",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "sms",
-      "texting",
-      "comment",
-      "bubble",
-    ],
-    codepoint: 57728,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "check",
-    pascal_name: "Check",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["todo", "to-do", "task", "list", "checkbox", "ok", "done"],
-    codepoint: 57730,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "check-circle",
-    pascal_name: "CheckCircle",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["todo", "to-do", "task", "list", "checkbox", "round", "ok", "done"],
-    codepoint: 57732,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "check-fat",
-    pascal_name: "CheckFat",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["todo", "to-do", "task", "list", "checkbox", "ok", "done"],
-    codepoint: 60326,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "check-square",
-    pascal_name: "CheckSquare",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "todo",
-      "to-do",
-      "task",
-      "list",
-      "checkbox",
-      "rectangle",
-      "ok",
-      "done",
-    ],
-    codepoint: 57734,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "check-square-offset",
-    pascal_name: "CheckSquareOffset",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "*updated*",
-      "todo",
-      "to-do",
-      "task",
-      "list",
-      "checkbox",
-      "rectangle",
-      "ok",
-      "done",
-    ],
-    codepoint: 57736,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "checkerboard",
-    pascal_name: "Checkerboard",
-    categories: [IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "crossword"],
-    codepoint: 59588,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "checks",
-    pascal_name: "Checks",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "*updated*",
-      "todo",
-      "task",
-      "to-do",
-      "list",
-      "checkbox",
-      "ok",
-      "done",
-    ],
-    codepoint: 58682,
-    published_in: 1.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "cheers",
-    pascal_name: "Cheers",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "glass",
-      "drinks",
-      "beverages",
-      "champagne",
-      "toast",
-      "places",
-      "locations",
-      "bars",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 59978,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "cheese",
-    pascal_name: "Cheese",
-    categories: [IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "dairy", "wedge", "food", "dining"],
-    codepoint: 59902,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "chef-hat",
-    pascal_name: "ChefHat",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "cooking", "cuisine", "kitchen", "clothes", "clothing"],
-    codepoint: 60814,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "cherries",
-    pascal_name: "Cherries",
-    categories: [IconCategory.NATURE, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "food", "fruit", "cherry", "groceries", "market"],
-    codepoint: 59440,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "church",
-    pascal_name: "Church",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["christ", "christianity", "cathedral", "religion", "worship"],
-    codepoint: 60650,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cigarette",
-    pascal_name: "Cigarette",
-    categories: [IconCategory.COMMERCE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "smoking", "tobacco"],
-    codepoint: 60816,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "cigarette-slash",
-    pascal_name: "CigaretteSlash",
-    categories: [IconCategory.COMMERCE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "non-smoking", "tobacco"],
-    codepoint: 60818,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "circle",
-    pascal_name: "Circle",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["round", "shapes", "polygons"],
-    codepoint: 57738,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "circle-dashed",
-    pascal_name: "CircleDashed",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["missing", "round", "shapes", "polygons"],
-    codepoint: 58882,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "circle-half",
-    pascal_name: "CircleHalf",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["round", "shapes", "contrast", "brightness"],
-    codepoint: 57740,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "circle-half-tilt",
-    pascal_name: "CircleHalfTilt",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["round", "shapes", "contrast", "brightness"],
-    codepoint: 57742,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "circle-notch",
-    pascal_name: "CircleNotch",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "round",
-      "shapes",
-      "loading",
-      "loader",
-      "spinner",
-      "waiting",
-      "progress",
-    ],
-    codepoint: 60228,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "circles-four",
-    pascal_name: "CirclesFour",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["round", "shapes", "polygons", "4"],
-    codepoint: 57744,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "circles-three",
-    pascal_name: "CirclesThree",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["round", "shapes", "polygons", "3", "asana"],
-    codepoint: 57746,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "circles-three-plus",
-    pascal_name: "CirclesThreePlus",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["round", "shapes", "polygons", "3", "+"],
-    codepoint: 57748,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "circuitry",
-    pascal_name: "Circuitry",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "processor",
-      "microchip",
-      "computer",
-      "circuit",
-      "electronics",
-      "motherboard",
-    ],
-    codepoint: 59842,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "city",
-    pascal_name: "City",
-    categories: [IconCategory.MAP, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "skyline",
-      "skyscrapers",
-      "places",
-      "locations",
-      "buildings",
-    ],
-    codepoint: 60010,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "clipboard",
-    pascal_name: "Clipboard",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["copy", "copied", "checklist"],
-    codepoint: 57750,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "clipboard-text",
-    pascal_name: "ClipboardText",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["copy", "copied", "checklist"],
-    codepoint: 57752,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "clock",
-    pascal_name: "Clock",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: ["times", "timer", "alarm", "schedule", "events", "watch"],
-    codepoint: 57754,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "clock-afternoon",
-    pascal_name: "ClockAfternoon",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["times", "timer", "alarm", "schedule", "events", "watch"],
-    codepoint: 57756,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "clock-clockwise",
-    pascal_name: "ClockClockwise",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarm",
-      "schedule",
-      "events",
-      "restore",
-      "fast forward",
-      "update",
-    ],
-    codepoint: 57758,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "clock-countdown",
-    pascal_name: "ClockCountdown",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["times", "timer", "alarm", "schedule", "events", "watch"],
-    codepoint: 60716,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "clock-counter-clockwise",
-    pascal_name: "ClockCounterClockwise",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarm",
-      "schedule",
-      "events",
-      "backup",
-      "rewind",
-      "history",
-    ],
-    codepoint: 57760,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "clock-user",
-    pascal_name: "ClockUser",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.TIME,
-    tags: ["*new*", "times", "timer", "shift", "schedule", "events", "watch"],
-    codepoint: 60908,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "closed-captioning",
-    pascal_name: "ClosedCaptioning",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "subtitles",
-      "television",
-      "tv",
-      "transcribed",
-      "transcription",
-      "accessibility",
-      "a11y",
-    ],
-    codepoint: 57764,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "cloud",
-    pascal_name: "Cloud",
-    categories: [IconCategory.SYSTEM, IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "serverless",
-      "backup",
-      "storage",
-      "meteorology",
-      "cloudy",
-      "overcast",
-    ],
-    codepoint: 57770,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "cloud-arrow-down",
-    pascal_name: "CloudArrowDown",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["serverless", "backup", "storage", "download"],
-    codepoint: 57772,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "cloud-arrow-up",
-    pascal_name: "CloudArrowUp",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["serverless", "backup", "storage", "upload"],
-    codepoint: 57774,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "cloud-check",
-    pascal_name: "CloudCheck",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["serverless", "backup", "storage", "sync", "synchronized"],
-    codepoint: 57776,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "cloud-fog",
-    pascal_name: "CloudFog",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["meteorology", "cloudy", "overcast", "foggy", "mist", "haze"],
-    codepoint: 58684,
-    published_in: 1.1,
-    updated_in: 1.4,
-  },
-  {
-    name: "cloud-lightning",
-    pascal_name: "CloudLightning",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["meteorology", "cloudy", "overcast", "stormy", "thunderstorm"],
-    codepoint: 57778,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "cloud-moon",
-    pascal_name: "CloudMoon",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["meteorology", "cloudy", "partly cloudy", "night", "evening"],
-    codepoint: 58686,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "cloud-rain",
-    pascal_name: "CloudRain",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["meteorology", "cloudy", "rainy", "raining", "stormy", "rainstorm"],
-    codepoint: 57780,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "cloud-slash",
-    pascal_name: "CloudSlash",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["serverless", "backup", "storage", "sync", "disabled"],
-    codepoint: 57782,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "cloud-snow",
-    pascal_name: "CloudSnow",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["meteorology", "cloudy", "snowy", "snowing", "stormy", "snowstorm"],
-    codepoint: 57784,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "cloud-sun",
-    pascal_name: "CloudSun",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["meteorology", "cloudy", "partly cloudy", "partly sunny"],
-    codepoint: 58688,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "cloud-warning",
-    pascal_name: "CloudWarning",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["serverless", "backup", "storage", "errors"],
-    codepoint: 60056,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cloud-x",
-    pascal_name: "CloudX",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["serverless", "backup", "storage", "errors"],
-    codepoint: 60054,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "clover",
-    pascal_name: "Clover",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["*new*", "four leaf clover", "plants", "luck", "lucky", "irish"],
-    codepoint: 60872,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "club",
-    pascal_name: "Club",
-    categories: [IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["clubs", "suits", "cards", "gambling", "casino", "gaming"],
-    codepoint: 57786,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "coat-hanger",
-    pascal_name: "CoatHanger",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["clothing", "clothes", "closet"],
-    codepoint: 59390,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "coda-logo",
-    pascal_name: "CodaLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: [
-      "project management",
-      "productivity",
-      "documentation",
-      "wiki",
-      "logos",
-    ],
-    codepoint: 59342,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "code",
-    pascal_name: "Code",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["angle brackets", "angle braces", "snippets"],
-    codepoint: 57788,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "code-block",
-    pascal_name: "CodeBlock",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["angle brackets", "angle braces", "snippets"],
-    codepoint: 60158,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "code-simple",
-    pascal_name: "CodeSimple",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["angle brackets", "angle braces", "snippets"],
-    codepoint: 57790,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "codepen-logo",
-    pascal_name: "CodepenLogo",
-    categories: [IconCategory.BRAND, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["ide", "logos"],
-    codepoint: 59768,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "codesandbox-logo",
-    pascal_name: "CodesandboxLogo",
-    categories: [IconCategory.BRAND, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["ide", "logos"],
-    codepoint: 59910,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "coffee",
-    pascal_name: "Coffee",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "tea",
-      "java",
-      "beverages",
-      "drinks",
-      "cafe",
-      "cup",
-      "mug",
-      "espresso",
-      "cappuccino",
-      "latte",
-      "places",
-      "locations",
-      "bars",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 57794,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "coffee-bean",
-    pascal_name: "CoffeeBean",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "tea",
-      "java",
-      "beverages",
-      "drinks",
-      "cafe",
-      "cup",
-      "mug",
-      "espresso",
-      "cappuccino",
-      "latte",
-      "places",
-      "locations",
-      "bars",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 57792,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "coin",
-    pascal_name: "Coin",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "coins",
-      "cents",
-      "change",
-      "money",
-      "currency",
-      "payment",
-      "paying",
-      "purchase",
-      "price",
-      "sell",
-    ],
-    codepoint: 58894,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "coin-vertical",
-    pascal_name: "CoinVertical",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "cents",
-      "change",
-      "money",
-      "currency",
-      "payment",
-      "paying",
-      "purchase",
-      "price",
-      "sell",
-    ],
-    codepoint: 60232,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "coins",
-    pascal_name: "Coins",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "cents",
-      "change",
-      "money",
-      "currency",
-      "payment",
-      "paying",
-      "purchase",
-      "price",
-      "sell",
-    ],
-    codepoint: 59278,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "columns",
-    pascal_name: "Columns",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["2", "shapes", "polygons", "box", "stack", "list", "table", "cards"],
-    codepoint: 58694,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "columns-plus-left",
-    pascal_name: "ColumnsPlusLeft",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "*new*",
-      "2",
-      "shapes",
-      "polygons",
-      "box",
-      "stack",
-      "list",
-      "table",
-      "cards",
-      "prepend",
-      "insert",
-    ],
-    codepoint: 58692,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "columns-plus-right",
-    pascal_name: "ColumnsPlusRight",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "*new*",
-      "2",
-      "shapes",
-      "polygons",
-      "box",
-      "stack",
-      "list",
-      "table",
-      "cards",
-      "append",
-      "insert",
-    ],
-    codepoint: 58690,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "command",
-    pascal_name: "Command",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "apple",
-      "keyboard",
-      "shortcut",
-      "modifier",
-      "looped square",
-      "bowen knot",
-      "saint john's arms",
-    ],
-    codepoint: 57796,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "compass",
-    pascal_name: "Compass",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["navigation", "directions", "maps", "safari", "apple"],
-    codepoint: 57800,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "compass-rose",
-    pascal_name: "CompassRose",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "navigation",
-      "directions",
-      "maps",
-      "cardinal",
-      "cartography",
-    ],
-    codepoint: 57798,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "compass-tool",
-    pascal_name: "CompassTool",
-    categories: [IconCategory.DESIGN, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "drawing",
-      "geometry",
-      "trigonometry",
-      "degrees",
-      "radians",
-      "measurement",
-      "protractor",
-      "compass",
-      "arc",
-    ],
-    codepoint: 59918,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "computer-tower",
-    pascal_name: "ComputerTower",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["desktop", "pc", "imac"],
-    codepoint: 58696,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "confetti",
-    pascal_name: "Confetti",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["tada", "party", "emoji"],
-    codepoint: 59418,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "contactless-payment",
-    pascal_name: "ContactlessPayment",
-    categories: [IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["purchase", "credit card", "nfc"],
-    codepoint: 60738,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "control",
-    pascal_name: "Control",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["ctrl", "key", "keyboard", "shortcut", "caret"],
-    codepoint: 60582,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cookie",
-    pascal_name: "Cookie",
-    categories: [
-      IconCategory.MAP,
-      IconCategory.OBJECTS,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["privacy", "dessert", "food", "dining"],
-    codepoint: 59082,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "cooking-pot",
-    pascal_name: "CookingPot",
-    categories: [IconCategory.OBJECTS, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["stew", "kitchen", "steaming", "restaurants", "food", "dining"],
-    codepoint: 59236,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "copy",
-    pascal_name: "Copy",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["duplicated", "copied", "clipboard"],
-    codepoint: 57802,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "copy-simple",
-    pascal_name: "CopySimple",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["duplicated", "copied", "clipboard"],
-    codepoint: 57804,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "copyleft",
-    pascal_name: "Copyleft",
-    categories: [IconCategory.COMMERCE, IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["🄯", "intellectual property", "copr.", "symbol"],
-    codepoint: 59498,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "copyright",
-    pascal_name: "Copyright",
-    categories: [IconCategory.COMMERCE, IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["©", "intellectual property", "copr.", "symbol"],
-    codepoint: 58698,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "corners-in",
-    pascal_name: "CornersIn",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "collapse", "windowed", "minimized"],
-    codepoint: 57806,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "corners-out",
-    pascal_name: "CornersOut",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "expand", "fullscreen", "maximized"],
-    codepoint: 57808,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "couch",
-    pascal_name: "Couch",
-    categories: [IconCategory.OBJECTS, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["furniture", "seat"],
-    codepoint: 59382,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "court-basketball",
-    pascal_name: "CourtBasketball",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.MAP],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "nba"],
-    codepoint: 60982,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "cow",
-    pascal_name: "Cow",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["*new*", "animals", "livestock", "beef", "bull", "milk", "dairy"],
-    codepoint: 60094,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "cowboy-hat",
-    pascal_name: "CowboyHat",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "clothes", "clothing", "stetson"],
-    codepoint: 60690,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "cpu",
-    pascal_name: "Cpu",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["processor", "microchip", "computer", "circuit"],
-    codepoint: 58896,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "crane",
-    pascal_name: "Crane",
-    categories: [IconCategory.COMMERCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "construction", "industry"],
-    codepoint: 60744,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "crane-tower",
-    pascal_name: "CraneTower",
-    categories: [IconCategory.COMMERCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "construction", "industry"],
-    codepoint: 60744,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "credit-card",
-    pascal_name: "CreditCard",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "debit",
-      "visa",
-      "mastercard",
-      "money",
-      "payment",
-      "paying",
-      "purchase",
-      "swipe",
-    ],
-    codepoint: 57810,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "cricket",
-    pascal_name: "Cricket",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "ball", "bat"],
-    codepoint: 60946,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "crop",
-    pascal_name: "Crop",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["photography", "clip", "screenshots"],
-    codepoint: 57812,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "cross",
-    pascal_name: "Cross",
-    categories: [IconCategory.DESIGN, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "dagger",
-      "crucifix",
-      "christ",
-      "christianity",
-      "religion",
-      "worship",
-      "symbol",
-    ],
-    codepoint: 59552,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "crosshair",
-    pascal_name: "Crosshair",
-    categories: [IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: ["geolocation", "gps", "aiming", "targeting"],
-    codepoint: 57814,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "crosshair-simple",
-    pascal_name: "CrosshairSimple",
-    categories: [IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: ["geolocation", "gps", "aiming", "targeting"],
-    codepoint: 57816,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "crown",
-    pascal_name: "Crown",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "*updated*",
-      "king",
-      "queen",
-      "royalty",
-      "monarch",
-      "ruler",
-      "leader",
-      "chess",
-    ],
-    codepoint: 58900,
-    published_in: 1.2,
-    updated_in: 2.1,
-  },
-  {
-    name: "crown-cross",
-    pascal_name: "CrownCross",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "*new*",
-      "king",
-      "queen",
-      "royalty",
-      "monarch",
-      "ruler",
-      "leader",
-      "chess",
-    ],
-    codepoint: 61022,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "crown-simple",
-    pascal_name: "CrownSimple",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "*updated*",
-      "king",
-      "queen",
-      "royalty",
-      "monarch",
-      "ruler",
-      "leader",
-      "chess",
-    ],
-    codepoint: 58902,
-    published_in: 1.2,
-    updated_in: 2.1,
-  },
-  {
-    name: "cube",
-    pascal_name: "Cube",
-    categories: [IconCategory.DESIGN, IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["square", "box", "3d", "volume", "blocks"],
-    codepoint: 57818,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "cube-focus",
-    pascal_name: "CubeFocus",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["augmented reality", "ar", "virual reality", "vr", "3d", "scan"],
-    codepoint: 60682,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cube-transparent",
-    pascal_name: "CubeTransparent",
-    categories: [IconCategory.DESIGN, IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["square", "box", "3d", "volume", "blocks", "necker"],
-    codepoint: 60540,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "currency-btc",
-    pascal_name: "CurrencyBtc",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "money",
-      "btc",
-      "bitcoin",
-      "crypto",
-      "cryptocurrency",
-      "payment",
-      "paying",
-      "purchase",
-    ],
-    codepoint: 58904,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "currency-circle-dollar",
-    pascal_name: "CurrencyCircleDollar",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "usd", "payment", "paying", "purchase"],
-    codepoint: 58700,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "currency-cny",
-    pascal_name: "CurrencyCny",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "yuan", "payment", "paying", "purchase"],
-    codepoint: 58702,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "currency-dollar",
-    pascal_name: "CurrencyDollar",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "usd", "payment", "paying", "purchase"],
-    codepoint: 58704,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "currency-dollar-simple",
-    pascal_name: "CurrencyDollarSimple",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "usd", "payment", "paying", "purchase"],
-    codepoint: 58706,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "currency-eth",
-    pascal_name: "CurrencyEth",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "money",
-      "ethereum",
-      "crypto",
-      "cryptocurrency",
-      "payment",
-      "paying",
-      "purchase",
-    ],
-    codepoint: 60122,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "currency-eur",
-    pascal_name: "CurrencyEur",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "euros", "payment", "paying", "purchase"],
-    codepoint: 58708,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "currency-gbp",
-    pascal_name: "CurrencyGbp",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "pounds sterling", "payment", "paying", "purchase"],
-    codepoint: 58710,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "currency-inr",
-    pascal_name: "CurrencyInr",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "rupees", "payment", "paying", "purchase"],
-    codepoint: 58712,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "currency-jpy",
-    pascal_name: "CurrencyJpy",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "yen", "payment", "paying", "purchase"],
-    codepoint: 58714,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "currency-krw",
-    pascal_name: "CurrencyKrw",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "won", "payment", "paying", "purchase"],
-    codepoint: 58716,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "currency-kzt",
-    pascal_name: "CurrencyKzt",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "kazakhstan", "tenge", "payment", "paying", "purchase"],
-    codepoint: 60492,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "currency-ngn",
-    pascal_name: "CurrencyNgn",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "nigeria", "naira", "payment", "paying", "purchase"],
-    codepoint: 60242,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "currency-rub",
-    pascal_name: "CurrencyRub",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "rubles", "payment", "paying", "purchase"],
-    codepoint: 58718,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "cursor",
-    pascal_name: "Cursor",
-    categories: [IconCategory.DESIGN, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["pointer", "arrowhead", "mouse", "click"],
-    codepoint: 57820,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cursor-click",
-    pascal_name: "CursorClick",
-    categories: [IconCategory.DESIGN, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["pointer", "arrowhead", "mouse"],
-    codepoint: 59336,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "cursor-text",
-    pascal_name: "CursorText",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["i-beam", "input", "select"],
-    codepoint: 59352,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "cylinder",
-    pascal_name: "Cylinder",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["shapes", "tube"],
-    codepoint: 59644,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "database",
-    pascal_name: "Database",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: [
-      "saved",
-      "saving",
-      "archived",
-      "archiving",
-      "archival",
-      "hard disk",
-      "storage",
-      "hdd",
-      "servers",
-      "databases",
-    ],
-    codepoint: 57822,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "desk",
-    pascal_name: "Desk",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.OBJECTS,
-      IconCategory.OFFICE,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "furniture", "workspace", "table"],
-    codepoint: 60694,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "desktop",
-    pascal_name: "Desktop",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["computer", "pc", "imac", "tower"],
-    codepoint: 58720,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "desktop-tower",
-    pascal_name: "DesktopTower",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*updated*", "computer", "pc", "imac"],
-    codepoint: 58722,
-    published_in: 1.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "detective",
-    pascal_name: "Detective",
-    categories: [IconCategory.PEOPLE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["incognito", "police", "law enforcement", "spy", "secret"],
-    codepoint: 59454,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "dev-to-logo",
-    pascal_name: "DevToLogo",
-    categories: [IconCategory.BRAND, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["reading", "writing", "social media", "logos"],
-    codepoint: 60686,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "device-mobile",
-    pascal_name: "DeviceMobile",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["cellphone", "cellular"],
-    codepoint: 57824,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "device-mobile-camera",
-    pascal_name: "DeviceMobileCamera",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["cellphone", "cellular"],
-    codepoint: 57826,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "device-mobile-slash",
-    pascal_name: "DeviceMobileSlash",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "cellphone", "cellular"],
-    codepoint: 60998,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "device-mobile-speaker",
-    pascal_name: "DeviceMobileSpeaker",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["cellphone", "cellular"],
-    codepoint: 57828,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "device-rotate",
-    pascal_name: "DeviceRotate",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "orientation", "landscape", "portrait", "spin", "flip"],
-    codepoint: 60914,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "device-tablet",
-    pascal_name: "DeviceTablet",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["cellphone", "cellular", "ipad", "phablet"],
-    codepoint: 57830,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "device-tablet-camera",
-    pascal_name: "DeviceTabletCamera",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["cellphone", "cellular", "ipad", "phablet"],
-    codepoint: 57832,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "device-tablet-speaker",
-    pascal_name: "DeviceTabletSpeaker",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["cellphone", "cellular", "ipad", "phablet"],
-    codepoint: 57834,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "devices",
-    pascal_name: "Devices",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["responsive", "cellphone", "cellular", "tablet", "desktop"],
-    codepoint: 60324,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "diamond",
-    pascal_name: "Diamond",
-    categories: [IconCategory.DESIGN, IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "rectangle",
-      "shapes",
-      "polygons",
-      "diamonds",
-      "suits",
-      "cards",
-      "gambling",
-      "casino",
-      "gaming",
-    ],
-    codepoint: 57836,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "diamonds-four",
-    pascal_name: "DiamondsFour",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["shapes", "grid", "component"],
-    codepoint: 59636,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "dice-five",
-    pascal_name: "DiceFive",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["die", "rolling", "gamble", "gambling", "casino", "gaming", "5"],
-    codepoint: 57838,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dice-four",
-    pascal_name: "DiceFour",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["die", "rolling", "gamble", "gambling", "casino", "gaming", "4"],
-    codepoint: 57840,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dice-one",
-    pascal_name: "DiceOne",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["die", "rolling", "gamble", "gambling", "casino", "gaming", "1"],
-    codepoint: 57842,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dice-six",
-    pascal_name: "DiceSix",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["die", "rolling", "gamble", "gambling", "casino", "gaming", "6"],
-    codepoint: 57844,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dice-three",
-    pascal_name: "DiceThree",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["die", "rolling", "gamble", "gambling", "casino", "gaming", "3"],
-    codepoint: 57846,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dice-two",
-    pascal_name: "DiceTwo",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["die", "rolling", "gamble", "gambling", "casino", "gaming", "2"],
-    codepoint: 57848,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "disc",
-    pascal_name: "Disc",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.MEDIA,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["cd-rom", "compact disk", "album", "record"],
-    codepoint: 58724,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "disco-ball",
-    pascal_name: "DiscoBall",
-    categories: [IconCategory.GAMES, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "danging", "club", "70s"],
-    codepoint: 60824,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "discord-logo",
-    pascal_name: "DiscordLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "messages", "messaging", "chat"],
-    codepoint: 58906,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "divide",
-    pascal_name: "Divide",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "division",
-      "divisor",
-      "dividend",
-      "quotient",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 57850,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dna",
-    pascal_name: "Dna",
-    categories: [IconCategory.HEALTH, IconCategory.NATURE],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["double helix", "gene", "genetics"],
-    codepoint: 59684,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "dog",
-    pascal_name: "Dog",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["pets", "animals", "puppy"],
-    codepoint: 59210,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "door",
-    pascal_name: "Door",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["entrance", "exit"],
-    codepoint: 58908,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "door-open",
-    pascal_name: "DoorOpen",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["entrance", "exit"],
-    codepoint: 59366,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "dot",
-    pascal_name: "Dot",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["dots", "circles", "shapes", "polygons"],
-    codepoint: 60638,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "dot-outline",
-    pascal_name: "DotOutline",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["dots", "circles", "shapes", "polygons"],
-    codepoint: 60640,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "dots-nine",
-    pascal_name: "DotsNine",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["grid", "circles", "shapes", "polygons", "9"],
-    codepoint: 57852,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dots-six",
-    pascal_name: "DotsSix",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "*updated*",
-      "drag handle",
-      "knurling",
-      "circles",
-      "shapes",
-      "polygons",
-      "6",
-    ],
-    codepoint: 59284,
-    published_in: 1.3,
-    updated_in: 2.1,
-  },
-  {
-    name: "dots-six-vertical",
-    pascal_name: "DotsSixVertical",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "*updated*",
-      "drag handle",
-      "knurling",
-      "circles",
-      "shapes",
-      "polygons",
-      "6",
-    ],
-    codepoint: 60130,
-    published_in: 1.3,
-    updated_in: 2.1,
-  },
-  {
-    name: "dots-three",
-    pascal_name: "DotsThree",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "menu",
-      "overflow",
-      "circles",
-      "shapes",
-      "polygons",
-      "3",
-      "ellipsis",
-      "ellipses",
-      "more",
-    ],
-    codepoint: 57854,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dots-three-circle",
-    pascal_name: "DotsThreeCircle",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "menu",
-      "overflow",
-      "circles",
-      "shapes",
-      "polygons",
-      "3",
-      "ellipsis",
-      "ellipses",
-      "more",
-    ],
-    codepoint: 57856,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dots-three-circle-vertical",
-    pascal_name: "DotsThreeCircleVertical",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "menu",
-      "overflow",
-      "circles",
-      "shapes",
-      "polygons",
-      "3",
-      "ellipsis",
-      "ellipses",
-      "more",
-    ],
-    codepoint: 57858,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dots-three-outline",
-    pascal_name: "DotsThreeOutline",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "menu",
-      "overflow",
-      "circles",
-      "shapes",
-      "polygons",
-      "3",
-      "ellipsis",
-      "ellipses",
-      "more",
-    ],
-    codepoint: 57860,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dots-three-outline-vertical",
-    pascal_name: "DotsThreeOutlineVertical",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "menu",
-      "overflow",
-      "circles",
-      "shapes",
-      "polygons",
-      "3",
-      "ellipsis",
-      "ellipses",
-      "more",
-    ],
-    codepoint: 57862,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "dots-three-vertical",
-    pascal_name: "DotsThreeVertical",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "menu",
-      "overflow",
-      "circles",
-      "shapes",
-      "polygons",
-      "3",
-      "ellipsis",
-      "ellipses",
-      "more",
-    ],
-    codepoint: 57864,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "download",
-    pascal_name: "Download",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "saved",
-      "saving",
-      "archived",
-      "archiving",
-      "archival",
-      "downloaded",
-      "downloading",
-      "hard drive",
-      "disk",
-    ],
-    codepoint: 57866,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "download-simple",
-    pascal_name: "DownloadSimple",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "*updated*",
-      "saved",
-      "saving",
-      "archived",
-      "archiving",
-      "archival",
-      "downloaded",
-      "downloading",
-      "hard drive",
-      "disk",
-      "import",
-    ],
-    codepoint: 57868,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "dress",
-    pascal_name: "Dress",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["clothes", "clothing"],
-    codepoint: 60030,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "dresser",
-    pascal_name: "Dresser",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "furniture", "bedroom", "storage", "drawers", "wardrobe"],
-    codepoint: 59726,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "dribbble-logo",
-    pascal_name: "DribbbleLogo",
-    categories: [IconCategory.BRAND, IconCategory.DESIGN],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "round", "basketball", "sports", "design"],
-    codepoint: 57870,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "drone",
-    pascal_name: "Drone",
-    categories: [
-      IconCategory.GAMES,
-      IconCategory.OBJECTS,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "aerial", "uav", "photography", "remote"],
-    codepoint: 60788,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "drop",
-    pascal_name: "Drop",
-    categories: [IconCategory.NATURE, IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "droplet",
-      "teardrop",
-      "raindrop",
-      "raining",
-      "meteorology",
-      "water",
-      "blur",
-    ],
-    codepoint: 57872,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "drop-half",
-    pascal_name: "DropHalf",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.NATURE,
-      IconCategory.WEATHER,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "droplet",
-      "teardrop",
-      "raindrop",
-      "humidity",
-      "water",
-      "contrast",
-      "brightness",
-    ],
-    codepoint: 58726,
-    published_in: 1.1,
-    updated_in: 1.4,
-  },
-  {
-    name: "drop-half-bottom",
-    pascal_name: "DropHalfBottom",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.NATURE,
-      IconCategory.WEATHER,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "droplet",
-      "teardrop",
-      "raindrop",
-      "humidity",
-      "water",
-      "contrast",
-      "brightness",
-    ],
-    codepoint: 60224,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "drop-simple",
-    pascal_name: "DropSimple",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.NATURE,
-      IconCategory.WEATHER,
-    ],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "*new*",
-      "droplet",
-      "teardrop",
-      "raindrop",
-      "raining",
-      "humidity",
-      "meteorology",
-      "water",
-      "blur",
-    ],
-    codepoint: 60978,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "drop-slash",
-    pascal_name: "DropSlash",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.NATURE,
-      IconCategory.WEATHER,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "*new*",
-      "droplet",
-      "teardrop",
-      "raindrop",
-      "raining",
-      "humidity",
-      "meteorology",
-      "water",
-      "blur",
-      "disabled",
-    ],
-    codepoint: 59732,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "dropbox-logo",
-    pascal_name: "DropboxLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["cloud", "storage", "backup", "logos"],
-    codepoint: 59344,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "ear",
-    pascal_name: "Ear",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["hearing", "audio", "sound"],
-    codepoint: 59148,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "ear-slash",
-    pascal_name: "EarSlash",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["hearing", "audio", "sound", "mute", "accessible"],
-    codepoint: 59150,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "egg",
-    pascal_name: "Egg",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["chicken", "food", "meal", "baby", "hatch"],
-    codepoint: 59410,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "egg-crack",
-    pascal_name: "EggCrack",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["chicken", "food", "meal", "baby", "hatch", "break"],
-    codepoint: 60260,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "eject",
-    pascal_name: "Eject",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["disconnect"],
-    codepoint: 57874,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "eject-simple",
-    pascal_name: "EjectSimple",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["disconnect"],
-    codepoint: 59054,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "elevator",
-    pascal_name: "Elevator",
-    categories: [IconCategory.OBJECTS, IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["lift"],
-    codepoint: 60608,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "empty",
-    pascal_name: "Empty",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "∅",
-      "empty set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-      "null",
-    ],
-    codepoint: 60860,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "engine",
-    pascal_name: "Engine",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["*updated*", "motor", "repair", "vehicles", "automobile"],
-    codepoint: 60032,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "envelope",
-    pascal_name: "Envelope",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["mail", "email", "send", "sent", "message", "post", "letter"],
-    codepoint: 57876,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "envelope-open",
-    pascal_name: "EnvelopeOpen",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "mail",
-      "email",
-      "send",
-      "sent",
-      "message",
-      "read",
-      "post",
-      "letter",
-    ],
-    codepoint: 57878,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "envelope-simple",
-    pascal_name: "EnvelopeSimple",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["mail", "email", "send", "sent", "message", "post", "letter"],
-    codepoint: 57880,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "envelope-simple-open",
-    pascal_name: "EnvelopeSimpleOpen",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "mail",
-      "email",
-      "send",
-      "sent",
-      "message",
-      "read",
-      "post",
-      "letter",
-    ],
-    codepoint: 57882,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "equalizer",
-    pascal_name: "Equalizer",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "meter", "volume", "spectrum", "eq", "deezer"],
-    codepoint: 60348,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "equals",
-    pascal_name: "Equals",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "=",
-      "equality",
-      "equivalent",
-      "equivalence",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 57884,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "eraser",
-    pascal_name: "Eraser",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["write", "writing", "editing", "undo", "deleted"],
-    codepoint: 57886,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "escalator-down",
-    pascal_name: "EscalatorDown",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["stairs"],
-    codepoint: 60602,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "escalator-up",
-    pascal_name: "EscalatorUp",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["stairs"],
-    codepoint: 60604,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "exam",
-    pascal_name: "Exam",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: ["text", "examination", "paper", "school", "grade"],
-    codepoint: 59202,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "exclamation-mark",
-    pascal_name: "ExclamationMark",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "*new*",
-      "!",
-      "alert",
-      "warning",
-      "caution",
-      "interjection",
-      "punctuation",
-      "symbol",
-    ],
-    codepoint: 60996,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "exclude",
-    pascal_name: "Exclude",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["venn-diagram", "difference", "intersection"],
-    codepoint: 59522,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "exclude-square",
-    pascal_name: "ExcludeSquare",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["venn-diagram", "difference", "intersection"],
-    codepoint: 59520,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "export",
-    pascal_name: "Export",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["share", "send to", "arrows"],
-    codepoint: 60144,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "eye",
-    pascal_name: "Eye",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["visible", "hidden", "show", "hide", "visibility", "view"],
-    codepoint: 57888,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "eye-closed",
-    pascal_name: "EyeClosed",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "visible",
-      "hidden",
-      "show",
-      "hide",
-      "visibility",
-      "view",
-      "invisible",
-      "private",
-    ],
-    codepoint: 57890,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "eye-slash",
-    pascal_name: "EyeSlash",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "visible",
-      "hidden",
-      "show",
-      "hide",
-      "visibility",
-      "view",
-      "invisible",
-      "eyelashes",
-      "disabled",
-      "private",
-    ],
-    codepoint: 57892,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "eyedropper",
-    pascal_name: "Eyedropper",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["colors", "color picker", "sample", "arts"],
-    codepoint: 58728,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "eyedropper-sample",
-    pascal_name: "EyedropperSample",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["colors", "color picker", "arts"],
-    codepoint: 60100,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "eyeglasses",
-    pascal_name: "Eyeglasses",
-    categories: [IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["vision", "spectacles"],
-    codepoint: 59322,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "eyes",
-    pascal_name: "Eyes",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["*new*", "look", "glance"],
-    codepoint: 61020,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "face-mask",
-    pascal_name: "FaceMask",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["ppe", "facemask", "covid-19", "coronavirus", "flu", "cold"],
-    codepoint: 58730,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "facebook-logo",
-    pascal_name: "FacebookLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "social media"],
-    codepoint: 57894,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "factory",
-    pascal_name: "Factory",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["industry", "manufacture", "buildings", "places", "locations"],
-    codepoint: 59232,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "faders",
-    pascal_name: "Faders",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "music",
-      "audio",
-      "sliders",
-      "filters",
-      "equalizer",
-      "volume",
-      "settings",
-      "preferences",
-    ],
-    codepoint: 57896,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "faders-horizontal",
-    pascal_name: "FadersHorizontal",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "music",
-      "audio",
-      "sliders",
-      "filters",
-      "equalizer",
-      "volume",
-      "settings",
-      "preferences",
-    ],
-    codepoint: 57898,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "fallout-shelter",
-    pascal_name: "FalloutShelter",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "*new*",
-      "radiation",
-      "radioactive",
-      "nuclear",
-      "bunker",
-      "contamination",
-      "quarantine",
-      "toxic",
-      "danger",
-      "caution",
-    ],
-    codepoint: 59870,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "fan",
-    pascal_name: "Fan",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["desk fan", "air conditioning"],
-    codepoint: 59890,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "farm",
-    pascal_name: "Farm",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "farmer", "field", "farming", "agriculture"],
-    codepoint: 60528,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "fast-forward",
-    pascal_name: "FastForward",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["audio", "music", "seek", "scrub", "scan", "ahead", "skip"],
-    codepoint: 59046,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "fast-forward-circle",
-    pascal_name: "FastForwardCircle",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["audio", "music", "seek", "scrub", "scan", "ahead", "skip"],
-    codepoint: 57900,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "feather",
-    pascal_name: "Feather",
-    categories: [IconCategory.NATURE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["bird"],
-    codepoint: 59840,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "fediverse-logo",
-    pascal_name: "FediverseLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "social media", "decentralized"],
-    codepoint: 60774,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "figma-logo",
-    pascal_name: "FigmaLogo",
-    categories: [IconCategory.BRAND, IconCategory.DESIGN],
-    figma_category: FigmaCategory.BRAND,
-    tags: [
-      "*updated*",
-      "logos",
-      "drawing",
-      "art",
-      "illustration",
-      "ui",
-      "interface",
-      "prototype",
-      "prototyping",
-    ],
-    codepoint: 57902,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "file",
-    pascal_name: "File",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "files", "save", "write", "page"],
-    codepoint: 57904,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "file-archive",
-    pascal_name: "FileArchive",
-    categories: [IconCategory.SYSTEM, IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "zip", "compression"],
-    codepoint: 60202,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "file-arrow-down",
-    pascal_name: "FileArrowDown",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "documents",
-      "files",
-      "save",
-      "write",
-      "download",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-    ],
-    codepoint: 57906,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "file-arrow-up",
-    pascal_name: "FileArrowUp",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "documents",
-      "files",
-      "save",
-      "write",
-      "upload",
-      "directional",
-      "pointer",
-      "pointing",
-      "arrowhead",
-    ],
-    codepoint: 58910,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "file-audio",
-    pascal_name: "FileAudio",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.MEDIA],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "music", "sound"],
-    codepoint: 59936,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-c",
-    pascal_name: "FileC",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "documents", "code"],
-    codepoint: 60210,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "file-c-sharp",
-    pascal_name: "FileCSharp",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "documents", "code", "c#"],
-    codepoint: 60208,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "file-cloud",
-    pascal_name: "FileCloud",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "sync"],
-    codepoint: 59742,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-code",
-    pascal_name: "FileCode",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents"],
-    codepoint: 59668,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-cpp",
-    pascal_name: "FileCpp",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "documents", "code", "c++"],
-    codepoint: 60206,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "file-css",
-    pascal_name: "FileCss",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "code"],
-    codepoint: 60212,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-csv",
-    pascal_name: "FileCsv",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "data"],
-    codepoint: 60188,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-dashed",
-    pascal_name: "FileDashed",
-    alias: { name: "file-dotted", pascal_name: "FileDotted" },
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "files", "browse", "draft", "open", "dotted"],
-    codepoint: 59140,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "file-doc",
-    pascal_name: "FileDoc",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "word", "microsoft"],
-    codepoint: 60190,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-html",
-    pascal_name: "FileHtml",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*updated*", "documents", "code"],
-    codepoint: 60216,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "file-image",
-    pascal_name: "FileImage",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.MEDIA],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "pictures", "photograph"],
-    codepoint: 59940,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-ini",
-    pascal_name: "FileIni",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "documents"],
-    codepoint: 60210,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "file-jpg",
-    pascal_name: "FileJpg",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.MEDIA],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "pictures", "photograph", "jpeg"],
-    codepoint: 60186,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-js",
-    pascal_name: "FileJs",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "code", "javascript"],
-    codepoint: 60196,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-jsx",
-    pascal_name: "FileJsx",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "code", "javascript"],
-    codepoint: 60218,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-lock",
-    pascal_name: "FileLock",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "secure", "locked", "private"],
-    codepoint: 59740,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-magnifying-glass",
-    pascal_name: "FileMagnifyingGlass",
-    alias: { name: "file-search", pascal_name: "FileSearch" },
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "documents",
-      "files",
-      "search",
-      "find",
-      "locate",
-      "browse",
-      "missing",
-    ],
-    codepoint: 57912,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "file-md",
-    pascal_name: "FileMd",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "documents", "notes", "markdown"],
-    codepoint: 60752,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "file-minus",
-    pascal_name: "FileMinus",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "files", "delete", "write", "remove", "-"],
-    codepoint: 57908,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "file-pdf",
-    pascal_name: "FilePdf",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "files", "acrobat"],
-    codepoint: 59138,
-    published_in: 1.3,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-plus",
-    pascal_name: "FilePlus",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "files", "save", "write", "add", "new", "create", "+"],
-    codepoint: 57910,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "file-png",
-    pascal_name: "FilePng",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.MEDIA],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "pictures", "photograph"],
-    codepoint: 60184,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-ppt",
-    pascal_name: "FilePpt",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "powerpoint", "microsoft"],
-    codepoint: 60192,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-py",
-    pascal_name: "FilePy",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "documents", "code", "python"],
-    codepoint: 60204,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "file-rs",
-    pascal_name: "FileRs",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "code", "rust"],
-    codepoint: 60200,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-sql",
-    pascal_name: "FileSql",
-    categories: [IconCategory.SYSTEM, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "database"],
-    codepoint: 60750,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "file-svg",
-    pascal_name: "FileSvg",
-    categories: [IconCategory.SYSTEM, IconCategory.MEDIA],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "images", "vector"],
-    codepoint: 60680,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "file-text",
-    pascal_name: "FileText",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "files", "save", "write"],
-    codepoint: 57914,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "file-ts",
-    pascal_name: "FileTs",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "code", "typescript"],
-    codepoint: 60198,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-tsx",
-    pascal_name: "FileTsx",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "code", "typescript"],
-    codepoint: 60220,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-txt",
-    pascal_name: "FileTxt",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "documents"],
-    codepoint: 60210,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "file-video",
-    pascal_name: "FileVideo",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.MEDIA],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "movie"],
-    codepoint: 59938,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-vue",
-    pascal_name: "FileVue",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "code"],
-    codepoint: 60222,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-x",
-    pascal_name: "FileX",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "files", "cancelled", "deleted", "removed", "errors"],
-    codepoint: 57916,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "file-xls",
-    pascal_name: "FileXls",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "excel", "microsoft"],
-    codepoint: 60194,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "file-zip",
-    pascal_name: "FileZip",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "archive", "compression"],
-    codepoint: 59736,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "files",
-    pascal_name: "Files",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["documents", "open", "library"],
-    codepoint: 59152,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "film-reel",
-    pascal_name: "FilmReel",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["videography", "films", "movies", "recording"],
-    codepoint: 59584,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "film-script",
-    pascal_name: "FilmScript",
-    categories: [IconCategory.OFFICE, IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["screenplay", "movie"],
-    codepoint: 60240,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "film-slate",
-    pascal_name: "FilmSlate",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "clapper", "movie"],
-    codepoint: 59586,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "film-strip",
-    pascal_name: "FilmStrip",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["camera", "photography", "darkroom", "movie", "analog"],
-    codepoint: 59282,
-    published_in: 1.3,
-    updated_in: 1.4,
-  },
-  {
-    name: "fingerprint",
-    pascal_name: "Fingerprint",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "security",
-      "secured",
-      "authentication",
-      "authenticated",
-      "login",
-      "locked",
-      "biometrics",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 57918,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "fingerprint-simple",
-    pascal_name: "FingerprintSimple",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "security",
-      "secured",
-      "authentication",
-      "authenticated",
-      "login",
-      "locked",
-      "biometrics",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 57920,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "finn-the-human",
-    pascal_name: "FinnTheHuman",
-    categories: [IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["adventure time", "cartoons", "television", "tv", "character"],
-    codepoint: 58732,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "fire",
-    pascal_name: "Fire",
-    categories: [IconCategory.NATURE, IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["flame", "burning", "match", "lighter"],
-    codepoint: 57922,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "fire-extinguisher",
-    pascal_name: "FireExtinguisher",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["safety", "prevention", "emergency", "hazard", "danger", "caution"],
-    codepoint: 59880,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "fire-simple",
-    pascal_name: "FireSimple",
-    categories: [IconCategory.NATURE, IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["flame", "burning", "match", "lighter"],
-    codepoint: 58912,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "fire-truck",
-    pascal_name: "FireTruck",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "*new*",
-      "first-aid",
-      "emt",
-      "medical",
-      "medicine",
-      "injury",
-      "safety",
-      "emergency",
-      "firefighter",
-    ],
-    codepoint: 58740,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "first-aid",
-    pascal_name: "FirstAid",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "hospital",
-      "cross",
-      "medical",
-      "medicine",
-      "injury",
-      "safety",
-      "emergency",
-      "doctor",
-    ],
-    codepoint: 58734,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "first-aid-kit",
-    pascal_name: "FirstAidKit",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "bandages",
-      "medical",
-      "medicine",
-      "injury",
-      "safety",
-      "emergency",
-      "doctor",
-    ],
-    codepoint: 58736,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "fish",
-    pascal_name: "Fish",
-    categories: [IconCategory.NATURE, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["animals", "pets", "food", "seafood", "restaurants", "dining"],
-    codepoint: 59176,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "fish-simple",
-    pascal_name: "FishSimple",
-    categories: [IconCategory.NATURE, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["animals", "pets", "food", "seafood", "restaurants", "dining"],
-    codepoint: 59178,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "flag",
-    pascal_name: "Flag",
-    categories: [IconCategory.OBJECTS, IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: ["country", "countries", "finished", "completed", "flags"],
-    codepoint: 57924,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "flag-banner",
-    pascal_name: "FlagBanner",
-    categories: [IconCategory.OBJECTS, IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "ribbon",
-      "country",
-      "countries",
-      "finished",
-      "completed",
-      "flags",
-      "swallowtail",
-    ],
-    codepoint: 58914,
-    published_in: 1.2,
-    updated_in: 2.0,
-  },
-  {
-    name: "flag-banner-fold",
-    pascal_name: "FlagBannerFold",
-    categories: [IconCategory.OBJECTS, IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "ribbon",
-      "country",
-      "countries",
-      "finished",
-      "completed",
-      "flags",
-      "swallowtail",
-    ],
-    codepoint: 60658,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "flag-checkered",
-    pascal_name: "FlagCheckered",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS, IconCategory.GAMES],
-    figma_category: FigmaCategory.MAP,
-    tags: ["flags", "race", "racing", "finish line"],
-    codepoint: 59960,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "flag-pennant",
-    pascal_name: "FlagPennant",
-    categories: [
-      IconCategory.OBJECTS,
-      IconCategory.MAP,
-      IconCategory.SYSTEM,
-      IconCategory.GAMES,
-    ],
-    figma_category: FigmaCategory.MAP,
-    tags: ["flags", "race", "sports", "team"],
-    codepoint: 60656,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "flame",
-    pascal_name: "Flame",
-    categories: [IconCategory.NATURE, IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["fire", "burning", "match", "lighter"],
-    codepoint: 58916,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "flashlight",
-    pascal_name: "Flashlight",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["torch", "find", "search", "locate"],
-    codepoint: 57926,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "flask",
-    pascal_name: "Flask",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.NATURE,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["beaker", "science", "chemistry", "experiment", "erlenmeyer"],
-    codepoint: 59294,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "flip-horizontal",
-    pascal_name: "FlipHorizontal",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "mirror", "rotate", "invert"],
-    codepoint: 60778,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "flip-vertical",
-    pascal_name: "FlipVertical",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "mirror", "rotate", "invert"],
-    codepoint: 60780,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "floppy-disk",
-    pascal_name: "FloppyDisk",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "diskette",
-      "directory",
-      "directories",
-      "folders",
-      "documents",
-      "files",
-      "save",
-      "write",
-    ],
-    codepoint: 57928,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "floppy-disk-back",
-    pascal_name: "FloppyDiskBack",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*updated*",
-      "diskette",
-      "directory",
-      "directories",
-      "folders",
-      "documents",
-      "files",
-      "save",
-      "write",
-    ],
-    codepoint: 60148,
-    published_in: 1.3,
-    updated_in: 2.1,
-  },
-  {
-    name: "flow-arrow",
-    pascal_name: "FlowArrow",
-    categories: [IconCategory.ARROWS, IconCategory.DESIGN, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*updated*", "flowchart", "arrowhead"],
-    codepoint: 59116,
-    published_in: 1.3,
-    updated_in: 2.1,
-  },
-  {
-    name: "flower",
-    pascal_name: "Flower",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["plants", "green", "environmental"],
-    codepoint: 59230,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "flower-lotus",
-    pascal_name: "FlowerLotus",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["plants", "green", "environmental", "spirituality"],
-    codepoint: 59084,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "flower-tulip",
-    pascal_name: "FlowerTulip",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["plants", "green", "environmental"],
-    codepoint: 60108,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "flying-saucer",
-    pascal_name: "FlyingSaucer",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["ufo", "space", "aliens", "extra terrestrial", "sci-fi"],
-    codepoint: 60234,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "folder",
-    pascal_name: "Folder",
-    alias: { name: "folder-notch", pascal_name: "FolderNotch" },
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["directory", "directories", "files", "folders"],
-    codepoint: 57930,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "folder-dashed",
-    pascal_name: "FolderDashed",
-    alias: { name: "folder-dotted", pascal_name: "FolderDotted" },
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "directory",
-      "directories",
-      "files",
-      "folders",
-      "missing",
-      "temporary",
-      "dotted",
-    ],
-    codepoint: 59640,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "folder-lock",
-    pascal_name: "FolderLock",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["directory", "directories", "files", "folders", "private", "secure"],
-    codepoint: 59964,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "folder-minus",
-    pascal_name: "FolderMinus",
-    alias: { name: "folder-notch-minus", pascal_name: "FolderNotchMinus" },
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "directory",
-      "directories",
-      "files",
-      "delete",
-      "write",
-      "remove",
-      "-",
-    ],
-    codepoint: 57940,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "folder-open",
-    pascal_name: "FolderOpen",
-    alias: { name: "folder-notch-open", pascal_name: "FolderNotchOpen" },
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["directory", "directories", "files", "folders", "load"],
-    codepoint: 57942,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "folder-plus",
-    pascal_name: "FolderPlus",
-    alias: { name: "folder-notch-plus", pascal_name: "FolderNotchPlus" },
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "directory",
-      "directories",
-      "files",
-      "save",
-      "write",
-      "add",
-      "new",
-      "create",
-      "+",
-    ],
-    codepoint: 57944,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "folder-simple",
-    pascal_name: "FolderSimple",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["directory", "directories", "files", "folders"],
-    codepoint: 57946,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "folder-simple-dashed",
-    pascal_name: "FolderSimpleDashed",
-    alias: { name: "folder-simple-dotted", pascal_name: "FolderSimpleDotted" },
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "directory",
-      "directories",
-      "files",
-      "folders",
-      "missing",
-      "temporary",
-      "dotted",
-    ],
-    codepoint: 60458,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "folder-simple-lock",
-    pascal_name: "FolderSimpleLock",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["directory", "directories", "files", "folders", "private", "secure"],
-    codepoint: 60254,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "folder-simple-minus",
-    pascal_name: "FolderSimpleMinus",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "directory",
-      "directories",
-      "files",
-      "delete",
-      "write",
-      "remove",
-      "-",
-    ],
-    codepoint: 57948,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "folder-simple-plus",
-    pascal_name: "FolderSimplePlus",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "directory",
-      "directories",
-      "files",
-      "save",
-      "write",
-      "add",
-      "new",
-      "create",
-      "+",
-    ],
-    codepoint: 57950,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "folder-simple-star",
-    pascal_name: "FolderSimpleStar",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "directory",
-      "directories",
-      "files",
-      "folders",
-      "favorite",
-      "starred",
-    ],
-    codepoint: 60462,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "folder-simple-user",
-    pascal_name: "FolderSimpleUser",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["directory", "directories", "files", "folders", "personal"],
-    codepoint: 60256,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "folder-star",
-    pascal_name: "FolderStar",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "directory",
-      "directories",
-      "files",
-      "folders",
-      "favorite",
-      "starred",
-    ],
-    codepoint: 60038,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "folder-user",
-    pascal_name: "FolderUser",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["directory", "directories", "files", "folders", "personal"],
-    codepoint: 60230,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "folders",
-    pascal_name: "Folders",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "directory",
-      "directories",
-      "files",
-      "folders",
-      "copy",
-      "copied",
-      "duplicated",
-    ],
-    codepoint: 57952,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "football",
-    pascal_name: "Football",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["sports", "american football", "nfl"],
-    codepoint: 59160,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "football-helmet",
-    pascal_name: "FootballHelmet",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "american football", "nfl"],
-    codepoint: 61004,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "footprints",
-    pascal_name: "Footprints",
-    categories: [IconCategory.HEALTH, IconCategory.MAP],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["path", "trail", "walk", "route", "hike", "hiking"],
-    codepoint: 60040,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "fork-knife",
-    pascal_name: "ForkKnife",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["food", "meal", "eating", "restaurants", "dining", "utensils"],
-    codepoint: 57954,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "four-k",
-    pascal_name: "FourK",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*new*", "uhd", "resolution", "video"],
-    codepoint: 59996,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "frame-corners",
-    pascal_name: "FrameCorners",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "expand",
-      "fullscreen",
-      "maximized",
-      "resize",
-      "windowed",
-      "capture",
-    ],
-    codepoint: 58918,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "framer-logo",
-    pascal_name: "FramerLogo",
-    categories: [IconCategory.BRAND, IconCategory.DESIGN],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "interface", "ui", "motion", "prototype", "prototyping"],
-    codepoint: 57956,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "function",
-    pascal_name: "Function",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: ["mathematics", "arithmetic", "f-stop"],
-    codepoint: 60388,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "funnel",
-    pascal_name: "Funnel",
-    categories: [IconCategory.EDITOR, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["filters", "refine", "sorting"],
-    codepoint: 57958,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "funnel-simple",
-    pascal_name: "FunnelSimple",
-    categories: [IconCategory.EDITOR, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["filters", "refine", "sorting"],
-    codepoint: 57960,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "funnel-simple-x",
-    pascal_name: "FunnelSimpleX",
-    categories: [IconCategory.EDITOR, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "filters", "refine", "sorting"],
-    codepoint: 57962,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "funnel-x",
-    pascal_name: "FunnelX",
-    categories: [IconCategory.EDITOR, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "filters", "refine", "sorting"],
-    codepoint: 57964,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "game-controller",
-    pascal_name: "GameController",
-    categories: [IconCategory.GAMES, IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "gaming",
-      "video games",
-      "nintendo switch",
-      "sony playstation",
-      "microsoft xbox",
-    ],
-    codepoint: 57966,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "garage",
-    pascal_name: "Garage",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["vehicles", "automobile", "buildings", "transportation"],
-    codepoint: 60630,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "gas-can",
-    pascal_name: "GasCan",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["jerrycan", "petrol", "fuel", "gasoline"],
-    codepoint: 59598,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "gas-pump",
-    pascal_name: "GasPump",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["gas station", "petrol", "fuel", "gasoline"],
-    codepoint: 59240,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "gauge",
-    pascal_name: "Gauge",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.OBJECTS,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "dashboard",
-      "meter",
-      "speed",
-      "speedometer",
-      "odometer",
-      "performance",
-    ],
-    codepoint: 58920,
-    published_in: 1.2,
-    updated_in: 1.4,
-  },
-  {
-    name: "gavel",
-    pascal_name: "Gavel",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["judge", "justice", "legal", "law", "court", "hammer", "government"],
-    codepoint: 59954,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "gear",
-    pascal_name: "Gear",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "8",
-      "settings",
-      "setup",
-      "preferences",
-      "cogs",
-      "gears",
-      "machinery",
-      "mechanical",
-    ],
-    codepoint: 57968,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "gear-fine",
-    pascal_name: "GearFine",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["setup", "preferences", "cogs", "gears", "machinery", "mechanical"],
-    codepoint: 59516,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "gear-six",
-    pascal_name: "GearSix",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "6",
-      "settings",
-      "setup",
-      "preferences",
-      "cogs",
-      "gears",
-      "machinery",
-      "mechanical",
-    ],
-    codepoint: 57970,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "gender-female",
-    pascal_name: "GenderFemale",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["woman", "feminine", "venus"],
-    codepoint: 59104,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "gender-intersex",
-    pascal_name: "GenderIntersex",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["transgender", "non-binary"],
-    codepoint: 59110,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "gender-male",
-    pascal_name: "GenderMale",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["man", "masculine", "mars"],
-    codepoint: 59106,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "gender-neuter",
-    pascal_name: "GenderNeuter",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["agender", "non-binary", "asexual"],
-    codepoint: 59114,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "gender-nonbinary",
-    pascal_name: "GenderNonbinary",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["intersex", "non-binary"],
-    codepoint: 59108,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "gender-transgender",
-    pascal_name: "GenderTransgender",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["intersex", "non-binary"],
-    codepoint: 59112,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "ghost",
-    pascal_name: "Ghost",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["pac-man", "spirit", "scary", "halloween"],
-    codepoint: 58922,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "gif",
-    pascal_name: "Gif",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["gifs", ".gif", "giphy"],
-    codepoint: 57972,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "gift",
-    pascal_name: "Gift",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["presents", "holiday", "birthday"],
-    codepoint: 57974,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "git-branch",
-    pascal_name: "GitBranch",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: [
-      "*updated*",
-      "github",
-      "vcs",
-      "source control",
-      "version control",
-      "versioning",
-      "branches",
-    ],
-    codepoint: 57976,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "git-commit",
-    pascal_name: "GitCommit",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: [
-      "github",
-      "vcs",
-      "source control",
-      "version control",
-      "versioning",
-      "commits",
-    ],
-    codepoint: 57978,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "git-diff",
-    pascal_name: "GitDiff",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: [
-      "*updated*",
-      "github",
-      "vcs",
-      "source control",
-      "version control",
-      "versioning",
-      "difference",
-      "compare",
-    ],
-    codepoint: 57980,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "git-fork",
-    pascal_name: "GitFork",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: [
-      "*updated*",
-      "github",
-      "vcs",
-      "source control",
-      "version control",
-      "versioning",
-      "split",
-    ],
-    codepoint: 57982,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "git-merge",
-    pascal_name: "GitMerge",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: [
-      "*updated*",
-      "github",
-      "vcs",
-      "source control",
-      "version control",
-      "versioning",
-      "split",
-    ],
-    codepoint: 57984,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "git-pull-request",
-    pascal_name: "GitPullRequest",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: [
-      "*updated*",
-      "github",
-      "vcs",
-      "source control",
-      "version control",
-      "versioning",
-      "merge request",
-    ],
-    codepoint: 57986,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "github-logo",
-    pascal_name: "GithubLogo",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: [
-      "octocat",
-      "vcs",
-      "source control",
-      "version control",
-      "versioning",
-      "branches",
-    ],
-    codepoint: 58742,
-    published_in: 1.1,
-    updated_in: 2.0,
-  },
-  {
-    name: "gitlab-logo",
-    pascal_name: "GitlabLogo",
-    categories: [IconCategory.BRAND, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.BRAND,
-    tags: [
-      "vcs",
-      "source control",
-      "version control",
-      "versioning",
-      "branches",
-    ],
-    codepoint: 59028,
-    published_in: 1.3,
-    updated_in: 2.0,
-  },
-  {
-    name: "gitlab-logo-simple",
-    pascal_name: "GitlabLogoSimple",
-    categories: [IconCategory.BRAND, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.BRAND,
-    tags: [
-      "vcs",
-      "source control",
-      "version control",
-      "versioning",
-      "branches",
-    ],
-    codepoint: 59030,
-    published_in: 1.3,
-    updated_in: 2.0,
-  },
-  {
-    name: "globe",
-    pascal_name: "Globe",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "world",
-      "earth",
-      "global",
-      "planet",
-      "circle",
-      "round",
-      "internationalization",
-      "i18n",
-      "languages",
-      "country",
-      "countries",
-      "geography",
-      "internet",
-    ],
-    codepoint: 57992,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "globe-hemisphere-east",
-    pascal_name: "GlobeHemisphereEast",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "world",
-      "earth",
-      "global",
-      "planet",
-      "circle",
-      "round",
-      "internationalization",
-      "i18n",
-      "languages",
-      "country",
-      "countries",
-      "geography",
-      "europe",
-      "africa",
-      "asia",
-      "australia",
-    ],
-    codepoint: 57994,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "globe-hemisphere-west",
-    pascal_name: "GlobeHemisphereWest",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "world",
-      "earth",
-      "global",
-      "planet",
-      "circle",
-      "round",
-      "internationalization",
-      "i18n",
-      "languages",
-      "country",
-      "countries",
-      "geography",
-      "north america",
-      "south america",
-    ],
-    codepoint: 57996,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "globe-simple",
-    pascal_name: "GlobeSimple",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "world",
-      "earth",
-      "global",
-      "planet",
-      "circle",
-      "round",
-      "internationalization",
-      "i18n",
-      "languages",
-      "country",
-      "countries",
-      "geography",
-    ],
-    codepoint: 57998,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "globe-simple-x",
-    pascal_name: "GlobeSimpleX",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "world",
-      "earth",
-      "global",
-      "planet",
-      "circle",
-      "round",
-      "internationalization",
-      "i18n",
-      "languages",
-      "country",
-      "countries",
-      "geography",
-      "internet",
-    ],
-    codepoint: 57988,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "globe-stand",
-    pascal_name: "GlobeStand",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "world",
-      "global",
-      "planet",
-      "circle",
-      "round",
-      "internationalization",
-      "i18n",
-      "languages",
-      "country",
-      "countries",
-      "geography",
-    ],
-    codepoint: 58000,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "globe-x",
-    pascal_name: "GlobeX",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "world",
-      "earth",
-      "global",
-      "planet",
-      "circle",
-      "round",
-      "internationalization",
-      "i18n",
-      "languages",
-      "country",
-      "countries",
-      "geography",
-      "internet",
-    ],
-    codepoint: 57990,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "goggles",
-    pascal_name: "Goggles",
-    categories: [IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["swim", "swimming", "sports", "exercise", "olympics", "aquatics"],
-    codepoint: 60596,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "golf",
-    pascal_name: "Golf",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "pga", "tee", "ball"],
-    codepoint: 59966,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "goodreads-logo",
-    pascal_name: "GoodreadsLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*updated*", "reading", "books", "social media", "logos"],
-    codepoint: 60688,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "google-cardboard-logo",
-    pascal_name: "GoogleCardboardLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["virtual reality", "vr", "logos"],
-    codepoint: 59318,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "google-chrome-logo",
-    pascal_name: "GoogleChromeLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["web browsers", "internet"],
-    codepoint: 59766,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "google-drive-logo",
-    pascal_name: "GoogleDriveLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["cloud", "storage", "backup", "logos"],
-    codepoint: 59638,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "google-logo",
-    pascal_name: "GoogleLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "search engine", "phone", "mobile", "android"],
-    codepoint: 58002,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "google-photos-logo",
-    pascal_name: "GooglePhotosLogo",
-    categories: [IconCategory.BRAND, IconCategory.MEDIA],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["album", "pictures", "photography"],
-    codepoint: 60306,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "google-play-logo",
-    pascal_name: "GooglePlayLogo",
-    categories: [IconCategory.BRAND, IconCategory.SYSTEM, IconCategory.MEDIA],
-    figma_category: FigmaCategory.BRAND,
-    tags: [
-      "logos",
-      "games",
-      "apps",
-      "applications",
-      "play store",
-      "app store",
-      "phone",
-      "mobile",
-      "android",
-    ],
-    codepoint: 58004,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "google-podcasts-logo",
-    pascal_name: "GooglePodcastsLogo",
-    categories: [IconCategory.BRAND, IconCategory.MEDIA],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["audio"],
-    codepoint: 60308,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "gps",
-    pascal_name: "Gps",
-    categories: [IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: ["*new*", "geolocation", "location", "navigation"],
-    codepoint: 60888,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "gps-fix",
-    pascal_name: "GpsFix",
-    categories: [IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: ["*new*", "geolocation", "location", "navigation"],
-    codepoint: 60886,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "gps-slash",
-    pascal_name: "GpsSlash",
-    categories: [IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: ["*new*", "geolocation", "location", "navigation", "disabled"],
-    codepoint: 60884,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "gradient",
-    pascal_name: "Gradient",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["fade", "ombre", "opacity"],
-    codepoint: 60226,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "graduation-cap",
-    pascal_name: "GraduationCap",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "classroom",
-      "teacher",
-      "education",
-      "school",
-      "college",
-      "university",
-      "degree",
-      "graduate",
-      "hat",
-    ],
-    codepoint: 58924,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "grains",
-    pascal_name: "Grains",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["wheat", "gluten", "farm", "farming", "agriculture"],
-    codepoint: 60520,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "grains-slash",
-    pascal_name: "GrainsSlash",
-    categories: [IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["gluten-free", "wheat", "gluten", "farm", "farming", "agriculture"],
-    codepoint: 60522,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "graph",
-    pascal_name: "Graph",
-    categories: [IconCategory.OFFICE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: ["nodes", "tree"],
-    codepoint: 60248,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "graphics-card",
-    pascal_name: "GraphicsCard",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["*new*", "graphics card", "microchip", "computer", "circuit"],
-    codepoint: 58898,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "greater-than",
-    pascal_name: "GreaterThan",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      ">",
-      "greater than",
-      "gt",
-      "comparison",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60868,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "greater-than-or-equal",
-    pascal_name: "GreaterThanOrEqual",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "≥",
-      "greater than or equal",
-      "gte",
-      "comparison",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60834,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "grid-four",
-    pascal_name: "GridFour",
-    categories: [IconCategory.DESIGN, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "4",
-      "apps",
-      "applications",
-      "squares",
-      "tiles",
-      "cells",
-      "tables",
-      "tabular",
-      "spreadsheets",
-      "excel",
-    ],
-    codepoint: 58006,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "grid-nine",
-    pascal_name: "GridNine",
-    categories: [IconCategory.DESIGN, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "9",
-      "apps",
-      "applications",
-      "squares",
-      "tiles",
-      "cells",
-      "tables",
-      "tabular",
-      "spreadsheets",
-      "excel",
-    ],
-    codepoint: 60556,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "guitar",
-    pascal_name: "Guitar",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "instrument"],
-    codepoint: 60042,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "hair-dryer",
-    pascal_name: "HairDryer",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "blow dryer", "beauty", "grooming", "salon"],
-    codepoint: 60006,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "hamburger",
-    pascal_name: "Hamburger",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "fast food",
-      "party",
-      "places",
-      "locations",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 59280,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "hammer",
-    pascal_name: "Hammer",
-    categories: [
-      IconCategory.OBJECTS,
-      IconCategory.SYSTEM,
-      IconCategory.COMMERCE,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["tools", "carpentry", "construction"],
-    codepoint: 59406,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "hand",
-    pascal_name: "Hand",
-    categories: [IconCategory.SYSTEM, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["pointers", "cursors", "emoji", "backhand"],
-    codepoint: 58008,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hand-arrow-down",
-    pascal_name: "HandArrowDown",
-    categories: [
-      IconCategory.PEOPLE,
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-    ],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["*new*", "take", "receive", "remove", "withdraw", "emoji"],
-    codepoint: 59982,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "hand-arrow-up",
-    pascal_name: "HandArrowUp",
-    categories: [
-      IconCategory.PEOPLE,
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-    ],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["*new*", "give", "insert", "deposit", "donation", "emoji"],
-    codepoint: 61018,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "hand-coins",
-    pascal_name: "HandCoins",
-    categories: [
-      IconCategory.PEOPLE,
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["donation", "payment", "money", "paying", "purchase"],
-    codepoint: 60044,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "hand-deposit",
-    pascal_name: "HandDeposit",
-    categories: [
-      IconCategory.PEOPLE,
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-    ],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["*new*", "give", "insert", "donation", "atm", "emoji"],
-    codepoint: 61058,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "hand-eye",
-    pascal_name: "HandEye",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["*updated*", "emoji", "hamsa", "evil eye"],
-    codepoint: 59980,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "hand-fist",
-    pascal_name: "HandFist",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["emoji", "power", "protest", "blm"],
-    codepoint: 58746,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "hand-grabbing",
-    pascal_name: "HandGrabbing",
-    categories: [IconCategory.SYSTEM, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["pointers", "cursors", "emoji", "drag", "hold"],
-    codepoint: 58748,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "hand-heart",
-    pascal_name: "HandHeart",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["donation", "care", "emoji"],
-    codepoint: 59408,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "hand-palm",
-    pascal_name: "HandPalm",
-    categories: [IconCategory.SYSTEM, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "pointers",
-      "cursors",
-      "emoji",
-      "palm",
-      "stop",
-      "wait",
-      "hamsa",
-      "5",
-    ],
-    codepoint: 58750,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "hand-peace",
-    pascal_name: "HandPeace",
-    categories: [IconCategory.PEOPLE, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["*new*", "emoji", "victory"],
-    codepoint: 59340,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "hand-pointing",
-    pascal_name: "HandPointing",
-    categories: [IconCategory.SYSTEM, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["pointers", "cursors", "emoji", "fingers", "clicks", "mouse"],
-    codepoint: 58010,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hand-soap",
-    pascal_name: "HandSoap",
-    categories: [IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "dispenser",
-      "pump",
-      "sanitizer",
-      "disinfectant",
-      "lotion",
-      "bottle",
-    ],
-    codepoint: 58928,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "hand-swipe-left",
-    pascal_name: "HandSwipeLeft",
-    categories: [IconCategory.PEOPLE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["pointers", "cursors", "gesture"],
-    codepoint: 60564,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "hand-swipe-right",
-    pascal_name: "HandSwipeRight",
-    categories: [IconCategory.PEOPLE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["pointers", "cursors", "gesture"],
-    codepoint: 60562,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "hand-tap",
-    pascal_name: "HandTap",
-    categories: [IconCategory.PEOPLE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["pointers", "cursors", "gesture"],
-    codepoint: 60560,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "hand-waving",
-    pascal_name: "HandWaving",
-    categories: [IconCategory.SYSTEM, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["emoji", "palm", "wave", "hello", "goodbye"],
-    codepoint: 58752,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "hand-withdraw",
-    pascal_name: "HandWithdraw",
-    categories: [
-      IconCategory.PEOPLE,
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-    ],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["*new*", "take", "remove", "withdrawal", "atm", "emoji"],
-    codepoint: 61056,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "handbag",
-    pascal_name: "Handbag",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["suitcases", "valises", "baggage", "purses"],
-    codepoint: 58012,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "handbag-simple",
-    pascal_name: "HandbagSimple",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["suitcases", "valises", "baggage", "purses"],
-    codepoint: 58926,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "hands-clapping",
-    pascal_name: "HandsClapping",
-    categories: [IconCategory.SYSTEM, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["emoji", "clap", "applause"],
-    codepoint: 59040,
-    published_in: 1.3,
-    updated_in: 1.4,
-  },
-  {
-    name: "hands-praying",
-    pascal_name: "HandsPraying",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["emoji", "religion", "worship", "prayer", "thanks", "thank you"],
-    codepoint: 60616,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "handshake",
-    pascal_name: "Handshake",
-    categories: [IconCategory.PEOPLE, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["emoji", "deal", "agreement"],
-    codepoint: 58754,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "hard-drive",
-    pascal_name: "HardDrive",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "saved",
-      "saving",
-      "archived",
-      "archiving",
-      "archival",
-      "hard disk",
-      "storage",
-      "hdd",
-      "servers",
-      "databases",
-    ],
-    codepoint: 58014,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hard-drives",
-    pascal_name: "HardDrives",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "saved",
-      "saving",
-      "archived",
-      "archiving",
-      "archival",
-      "hard disk",
-      "storage",
-      "hdd",
-      "servers",
-      "databases",
-    ],
-    codepoint: 58016,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hard-hat",
-    pascal_name: "HardHat",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.OBJECTS,
-      IconCategory.DEVELOPMENT,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "safety", "construction", "industry", "helmet", "ppe"],
-    codepoint: 60742,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "hash",
-    pascal_name: "Hash",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "hashtag",
-      "octothorpe",
-      "pound sign",
-      "number sign",
-      "tic-tac-toe",
-      "symbol",
-    ],
-    codepoint: 58018,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hash-straight",
-    pascal_name: "HashStraight",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "hashtag",
-      "octothorpe",
-      "pound sign",
-      "number sign",
-      "tic-tac-toe",
-      "symbol",
-    ],
-    codepoint: 58020,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "head-circuit",
-    pascal_name: "HeadCircuit",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["*new*", "automaton", "artificial intelligence", "ai"],
-    codepoint: 59348,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "headlights",
-    pascal_name: "Headlights",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["brights", "high beams"],
-    codepoint: 59134,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "headphones",
-    pascal_name: "Headphones",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "listening"],
-    codepoint: 58022,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "headset",
-    pascal_name: "Headset",
-    categories: [IconCategory.MEDIA, IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "music",
-      "audio",
-      "listening",
-      "gaming",
-      "voice chat",
-      "microphone",
-      "headphones",
-      "support",
-      "customer-service",
-      "call-center",
-    ],
-    codepoint: 58756,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "heart",
-    pascal_name: "Heart",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.GAMES,
-      IconCategory.HEALTH,
-    ],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "wellness",
-      "love",
-      "healthy",
-      "like",
-      "favorites",
-      "favorited",
-      "suits",
-      "cards",
-      "gambling",
-      "casino",
-      "gaming",
-      "emoji",
-    ],
-    codepoint: 58024,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "heart-break",
-    pascal_name: "HeartBreak",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["love", "hate", "crack", "split", "divorce", "emoji"],
-    codepoint: 60392,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "heart-half",
-    pascal_name: "HeartHalf",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.GAMES,
-      IconCategory.HEALTH,
-    ],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["wellness", "love", "healthy", "like", "favorites", "favorited"],
-    codepoint: 60488,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "heart-straight",
-    pascal_name: "HeartStraight",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.GAMES,
-      IconCategory.HEALTH,
-    ],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "wellness",
-      "love",
-      "healthy",
-      "like",
-      "favorites",
-      "favorited",
-      "suits",
-      "cards",
-      "gambling",
-      "casino",
-      "gaming",
-      "emoji",
-    ],
-    codepoint: 58026,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "heart-straight-break",
-    pascal_name: "HeartStraightBreak",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["love", "hate", "crack", "split", "divorce", "emoji"],
-    codepoint: 60312,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "heartbeat",
-    pascal_name: "Heartbeat",
-    categories: [IconCategory.HEALTH, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["wellness", "healthy", "ecg", "ekg", "vitals", "monitor"],
-    codepoint: 58028,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "hexagon",
-    pascal_name: "Hexagon",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["6", "shapes", "polygons"],
-    codepoint: 58030,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "high-definition",
-    pascal_name: "HighDefinition",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*new*", "hd", "resolution", "video"],
-    codepoint: 60046,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "high-heel",
-    pascal_name: "HighHeel",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*updated*", "pumps", "clothes", "clothing", "shoes"],
-    codepoint: 59624,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "highlighter",
-    pascal_name: "Highlighter",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "marker", "write", "writing", "editing"],
-    codepoint: 60534,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "highlighter-circle",
-    pascal_name: "HighlighterCircle",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["write", "writing", "editing", "drawing"],
-    codepoint: 58930,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "hockey",
-    pascal_name: "Hockey",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "nhl", "stick", "puck"],
-    codepoint: 60550,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "hoodie",
-    pascal_name: "Hoodie",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["clothes", "clothing", "sweatshirt"],
-    codepoint: 60624,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "horse",
-    pascal_name: "Horse",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.NATURE],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["animals", "equestrian", "chess", "knight", "sports"],
-    codepoint: 58032,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hospital",
-    pascal_name: "Hospital",
-    categories: [IconCategory.MAP, IconCategory.HEALTH],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "places",
-      "locations",
-      "medical",
-      "medicine",
-      "emergency",
-      "doctor",
-      "buildings",
-    ],
-    codepoint: 59460,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "hourglass",
-    pascal_name: "Hourglass",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarms",
-      "clock",
-      "schedule",
-      "events",
-      "waiting",
-      "progress",
-    ],
-    codepoint: 58034,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hourglass-high",
-    pascal_name: "HourglassHigh",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarms",
-      "clock",
-      "schedule",
-      "events",
-      "waiting",
-      "progress",
-    ],
-    codepoint: 58036,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hourglass-low",
-    pascal_name: "HourglassLow",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarms",
-      "clock",
-      "schedule",
-      "events",
-      "waiting",
-      "progress",
-    ],
-    codepoint: 58038,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hourglass-medium",
-    pascal_name: "HourglassMedium",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarms",
-      "clock",
-      "schedule",
-      "events",
-      "waiting",
-      "progress",
-    ],
-    codepoint: 58040,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hourglass-simple",
-    pascal_name: "HourglassSimple",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarms",
-      "clock",
-      "schedule",
-      "events",
-      "waiting",
-      "progress",
-    ],
-    codepoint: 58042,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hourglass-simple-high",
-    pascal_name: "HourglassSimpleHigh",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarms",
-      "clock",
-      "schedule",
-      "events",
-      "waiting",
-      "progress",
-    ],
-    codepoint: 58044,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hourglass-simple-low",
-    pascal_name: "HourglassSimpleLow",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarms",
-      "clock",
-      "schedule",
-      "events",
-      "waiting",
-      "progress",
-    ],
-    codepoint: 58046,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hourglass-simple-medium",
-    pascal_name: "HourglassSimpleMedium",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarms",
-      "clock",
-      "schedule",
-      "events",
-      "waiting",
-      "progress",
-    ],
-    codepoint: 58048,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "house",
-    pascal_name: "House",
-    categories: [IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: ["homes", "buildings", "places", "locations"],
-    codepoint: 58050,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "house-line",
-    pascal_name: "HouseLine",
-    categories: [IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: ["*updated*", "homes", "buildings", "places", "locations"],
-    codepoint: 58052,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "house-simple",
-    pascal_name: "HouseSimple",
-    categories: [IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MAP,
-    tags: ["homes", "buildings", "places", "locations"],
-    codepoint: 58054,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "hurricane",
-    pascal_name: "Hurricane",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["*new*", "meteorology", "cyclone", "storm", "disaster", "wind"],
-    codepoint: 59534,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "ice-cream",
-    pascal_name: "IceCream",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["food", "dessert", "cone"],
-    codepoint: 59396,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "identification-badge",
-    pascal_name: "IdentificationBadge",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["license", "credentials", "nametag", "user", "verification"],
-    codepoint: 59126,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "identification-card",
-    pascal_name: "IdentificationCard",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "license",
-      "badge",
-      "credentials",
-      "nametag",
-      "user",
-      "verification",
-    ],
-    codepoint: 58056,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "image",
-    pascal_name: "Image",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "*updated*",
-      "pictures",
-      "photographs",
-      "photography",
-      "wallpapers",
-      "gallery",
-      "landscape",
-    ],
-    codepoint: 58058,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "image-broken",
-    pascal_name: "ImageBroken",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "*new*",
-      "pictures",
-      "photographs",
-      "photography",
-      "wallpapers",
-      "gallery",
-      "landscape",
-      "missing",
-      "error",
-      "404",
-    ],
-    codepoint: 59304,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "image-square",
-    pascal_name: "ImageSquare",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "pictures",
-      "photographs",
-      "photography",
-      "wallpapers",
-      "gallery",
-      "landscape",
-    ],
-    codepoint: 58060,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "images",
-    pascal_name: "Images",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "*updated*",
-      "pictures",
-      "photographs",
-      "photography",
-      "wallpapers",
-      "gallery",
-      "landscape",
-      "album",
-    ],
-    codepoint: 59446,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "images-square",
-    pascal_name: "ImagesSquare",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "pictures",
-      "photographs",
-      "photography",
-      "wallpapers",
-      "gallery",
-      "landscape",
-      "album",
-    ],
-    codepoint: 59444,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "infinity",
-    pascal_name: "Infinity",
-    alias: { name: "lemniscate", pascal_name: "Lemniscate" },
-    categories: [IconCategory.DEVELOPMENT, IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "infinite",
-      "lemniscate",
-      "figure-eight",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-      "∞",
-    ],
-    codepoint: 58932,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "info",
-    pascal_name: "Info",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["information", "help", "support"],
-    codepoint: 58062,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "instagram-logo",
-    pascal_name: "InstagramLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "social media", "photography", "camera"],
-    codepoint: 58064,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "intersect",
-    pascal_name: "Intersect",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "round",
-      "join",
-      "union",
-      "merge",
-      "combine",
-      "intersecting",
-      "intersection",
-    ],
-    codepoint: 58066,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "intersect-square",
-    pascal_name: "IntersectSquare",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["venn-diagram", "join", "intersection"],
-    codepoint: 59514,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "intersect-three",
-    pascal_name: "IntersectThree",
-    categories: [IconCategory.PEOPLE, IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["venn-diagram", "join", "intersection", "gender", "pronouns"],
-    codepoint: 60612,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "intersection",
-    pascal_name: "Intersection",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "∩",
-      "intersection",
-      "set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60858,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "invoice",
-    pascal_name: "Invoice",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-      IconCategory.OFFICE,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "receipt", "expense", "bill"],
-    codepoint: 60994,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "island",
-    pascal_name: "Island",
-    categories: [IconCategory.MAP, IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "*new*",
-      "geography",
-      "beach",
-      "ocean",
-      "tropical",
-      "palm",
-      "vacation",
-      "trip",
-      "locations",
-      "places",
-    ],
-    codepoint: 60934,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "jar",
-    pascal_name: "Jar",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "mason jar",
-      "kitchen",
-      "pantry",
-      "canning",
-      "preserves",
-      "food",
-      "condiments",
-    ],
-    codepoint: 59360,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "jar-label",
-    pascal_name: "JarLabel",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "mason jar",
-      "kitchen",
-      "pantry",
-      "canning",
-      "preserves",
-      "food",
-      "condiments",
-    ],
-    codepoint: 59360,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "jeep",
-    pascal_name: "Jeep",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*updated*",
-      "vehicles",
-      "automobile",
-      "suv",
-      "cars",
-      "trucks",
-      "wrangler",
-      "off-road",
-      "transit",
-      "transportation",
-      "traveling",
-    ],
-    codepoint: 58068,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "joystick",
-    pascal_name: "Joystick",
-    categories: [IconCategory.GAMES, IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "*new*",
-      "gaming",
-      "game controller",
-      "video games",
-      "arcade game",
-      "atari",
-    ],
-    codepoint: 59998,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "kanban",
-    pascal_name: "Kanban",
-    categories: [IconCategory.OFFICE],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "scheduling",
-      "tasks",
-      "project management",
-      "process",
-      "lean",
-      "agile",
-    ],
-    codepoint: 60244,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "key",
-    pascal_name: "Key",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "padlock",
-      "security",
-      "secured",
-      "authentication",
-      "authenticated",
-      "login",
-      "locked",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 58070,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "key-return",
-    pascal_name: "KeyReturn",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["keyboard", "enter"],
-    codepoint: 59266,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "keyboard",
-    pascal_name: "Keyboard",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["typing", "type", "keys", "input"],
-    codepoint: 58072,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "keyhole",
-    pascal_name: "Keyhole",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "lock",
-      "security",
-      "secured",
-      "authentication",
-      "authenticated",
-      "login",
-      "locked",
-      "encrypted",
-      "encryption",
-      "privacy",
-      "private",
-    ],
-    codepoint: 60024,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "knife",
-    pascal_name: "Knife",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "tools",
-      "food",
-      "meal",
-      "eating",
-      "restaurants",
-      "dining",
-      "utensils",
-    ],
-    codepoint: 58934,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "ladder",
-    pascal_name: "Ladder",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["stairs", "steps", "climbing"],
-    codepoint: 59876,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "ladder-simple",
-    pascal_name: "LadderSimple",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["stairs", "steps", "climbing"],
-    codepoint: 60454,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "lamp",
-    pascal_name: "Lamp",
-    categories: [IconCategory.OBJECTS, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["light", "furniture", "appliances"],
-    codepoint: 58936,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "lamp-pendant",
-    pascal_name: "LampPendant",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "light", "furniture", "appliances"],
-    codepoint: 60974,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "laptop",
-    pascal_name: "Laptop",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["computer", "notebook", "pc", "macbook"],
-    codepoint: 58758,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "lasso",
-    pascal_name: "Lasso",
-    categories: [IconCategory.DESIGN, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "select", "selection", "loop", "rope", "cowboy"],
-    codepoint: 60870,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "lastfm-logo",
-    pascal_name: "LastfmLogo",
-    categories: [IconCategory.BRAND, IconCategory.MEDIA],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "scrobble", "music", "social media"],
-    codepoint: 59458,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "layout",
-    pascal_name: "Layout",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["wireframe", "sidebar", "ui", "interface"],
-    codepoint: 59094,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "leaf",
-    pascal_name: "Leaf",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "plants",
-      "trees",
-      "branches",
-      "leaves",
-      "nodes",
-      "green",
-      "environmental",
-    ],
-    codepoint: 58074,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "lectern",
-    pascal_name: "Lectern",
-    categories: [
-      IconCategory.OBJECTS,
-      IconCategory.FINANCE,
-      IconCategory.OFFICE,
-    ],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "*new*",
-      "lecture",
-      "podium",
-      "pulpit",
-      "stand",
-      "speech",
-      "presentation",
-      "keynote",
-    ],
-    codepoint: 59738,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "lego",
-    pascal_name: "Lego",
-    categories: [IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "toys", "blocks", "bricks"],
-    codepoint: 59590,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "lego-smiley",
-    pascal_name: "LegoSmiley",
-    categories: [
-      IconCategory.GAMES,
-      IconCategory.COMMUNICATION,
-      IconCategory.PEOPLE,
-    ],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "face", "emoji", "toys", "blocks", "bricks"],
-    codepoint: 59590,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "less-than",
-    pascal_name: "LessThan",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "<",
-      "less than",
-      "lt",
-      "comparison",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60844,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "less-than-or-equal",
-    pascal_name: "LessThanOrEqual",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "≤",
-      "less than or equal",
-      "lte",
-      "comparison",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60836,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "letter-circle-h",
-    pascal_name: "LetterCircleH",
-    categories: [IconCategory.EDITOR, IconCategory.MAP, IconCategory.DESIGN],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["*new*", "hospital", "letter", "glyph", "character"],
-    codepoint: 60408,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "letter-circle-p",
-    pascal_name: "LetterCircleP",
-    categories: [IconCategory.EDITOR, IconCategory.MAP, IconCategory.DESIGN],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "*new*",
-      "parking lot",
-      "valet",
-      "vehicles",
-      "letter",
-      "glyph",
-      "character",
-    ],
-    codepoint: 60424,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "letter-circle-v",
-    pascal_name: "LetterCircleV",
-    categories: [
-      IconCategory.EDITOR,
-      IconCategory.DESIGN,
-      IconCategory.COMMERCE,
-    ],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["*new*", "vegan", "letter", "glyph", "character"],
-    codepoint: 60436,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "lifebuoy",
-    pascal_name: "Lifebuoy",
-    categories: [
-      IconCategory.HEALTH,
-      IconCategory.OBJECTS,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "lifebelt",
-      "lifesaver",
-      "safety",
-      "help",
-      "support",
-      "nautical",
-      "boats",
-      "ships",
-    ],
-    codepoint: 58938,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "lightbulb",
-    pascal_name: "Lightbulb",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["flashlight", "bulbs", "lighting", "led", "energy", "idea"],
-    codepoint: 58076,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "lightbulb-filament",
-    pascal_name: "LightbulbFilament",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["flashlight", "bulbs", "lighting", "led", "energy", "idea"],
-    codepoint: 58940,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "lighthouse",
-    pascal_name: "Lighthouse",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["buildings", "nautical", "navigation", "boats", "ships", "safety"],
-    codepoint: 59894,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "lightning",
-    pascal_name: "Lightning",
-    categories: [IconCategory.WEATHER, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "meteorology",
-      "stormy",
-      "thunderstorm",
-      "thunderbolt",
-      "charged",
-      "charger",
-      "charging",
-      "power",
-      "electricity",
-      "flash",
-    ],
-    codepoint: 58078,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "lightning-a",
-    pascal_name: "LightningA",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["flash", "auto"],
-    codepoint: 60036,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "lightning-slash",
-    pascal_name: "LightningSlash",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "thunderbolt",
-      "charged",
-      "charger",
-      "charging",
-      "power",
-      "electricity",
-      "disabled",
-      "flash",
-    ],
-    codepoint: 58080,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "line-segment",
-    pascal_name: "LineSegment",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["shapes", "drawing", "path", "pen", "vector"],
-    codepoint: 59090,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "line-segments",
-    pascal_name: "LineSegments",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["shapes", "drawing", "path", "pen", "vector"],
-    codepoint: 59092,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "line-vertical",
-    pascal_name: "LineVertical",
-    categories: [IconCategory.DESIGN, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "bar", "pipe", "|", "divider. symbol"],
-    codepoint: 60784,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "link",
-    pascal_name: "Link",
-    categories: [IconCategory.COMMUNICATION, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "*updated*",
-      "anchor",
-      "hyperlink",
-      "hypertext",
-      "chains",
-      "chained",
-    ],
-    codepoint: 58082,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "link-break",
-    pascal_name: "LinkBreak",
-    categories: [IconCategory.COMMUNICATION, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "anchor",
-      "hyperlink",
-      "hypertext",
-      "chains",
-      "chained",
-      "errors",
-      "broken",
-    ],
-    codepoint: 58084,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "link-simple",
-    pascal_name: "LinkSimple",
-    categories: [IconCategory.COMMUNICATION, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["anchor", "hyperlink", "hypertext", "chains", "chained"],
-    codepoint: 58086,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "link-simple-break",
-    pascal_name: "LinkSimpleBreak",
-    categories: [IconCategory.COMMUNICATION, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "anchor",
-      "hyperlink",
-      "hypertext",
-      "chains",
-      "chained",
-      "errors",
-      "broken",
-    ],
-    codepoint: 58088,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "link-simple-horizontal",
-    pascal_name: "LinkSimpleHorizontal",
-    categories: [IconCategory.COMMUNICATION, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["anchor", "hyperlink", "hypertext", "chains", "chained"],
-    codepoint: 58090,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "link-simple-horizontal-break",
-    pascal_name: "LinkSimpleHorizontalBreak",
-    categories: [IconCategory.COMMUNICATION, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "anchor",
-      "hyperlink",
-      "hypertext",
-      "chains",
-      "chained",
-      "errors",
-      "broken",
-    ],
-    codepoint: 58092,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "linkedin-logo",
-    pascal_name: "LinkedinLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "jobs", "employment", "social media"],
-    codepoint: 58094,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "linktree-logo",
-    pascal_name: "LinktreeLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "social media", "links"],
-    codepoint: 60910,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "linux-logo",
-    pascal_name: "LinuxLogo",
-    categories: [IconCategory.BRAND, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["penguin", "computer", "animals"],
-    codepoint: 60162,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "list",
-    pascal_name: "List",
-    categories: [IconCategory.SYSTEM, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*updated*",
-      "hamburger menu",
-      "overflow menu",
-      "sidebar",
-      "3",
-      "ul",
-      "ol",
-      "unordered list",
-      "ordered list",
-      "checklist",
-      "lines",
-    ],
-    codepoint: 58096,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "list-bullets",
-    pascal_name: "ListBullets",
-    categories: [IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*updated*", "ul", "unordered list", "bulleted list", "checklist"],
-    codepoint: 58098,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "list-checks",
-    pascal_name: "ListChecks",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*updated*", "checklist", "todo"],
-    codepoint: 60124,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "list-dashes",
-    pascal_name: "ListDashes",
-    categories: [IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*updated*", "ul", "unordered list", "dashed list", "checklist"],
-    codepoint: 58100,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "list-heart",
-    pascal_name: "ListHeart",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "favorites", "wishlist", "liked"],
-    codepoint: 60382,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "list-magnifying-glass",
-    pascal_name: "ListMagnifyingGlass",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["search", "find", "locate", "query", "inspect"],
-    codepoint: 60384,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "list-numbers",
-    pascal_name: "ListNumbers",
-    categories: [IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*updated*", "ol", "ordered list", "numbered list", "checklist"],
-    codepoint: 58102,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "list-plus",
-    pascal_name: "ListPlus",
-    categories: [IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*updated*",
-      "ul",
-      "ol",
-      "unordered list",
-      "ordered list",
-      "checklist",
-      "add",
-      "+",
-    ],
-    codepoint: 58104,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "list-star",
-    pascal_name: "ListStar",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "favorites", "wishlist", "liked"],
-    codepoint: 60380,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "lock",
-    pascal_name: "Lock",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "padlock",
-      "security",
-      "secured",
-      "authentication",
-      "authenticated",
-      "login",
-      "locked",
-      "encrypted",
-      "encryption",
-      "privacy",
-      "private",
-    ],
-    codepoint: 58106,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "lock-key",
-    pascal_name: "LockKey",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "padlock",
-      "security",
-      "secured",
-      "authentication",
-      "authenticated",
-      "login",
-      "locked",
-      "encrypted",
-      "encryption",
-      "privacy",
-      "private",
-    ],
-    codepoint: 58110,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "lock-key-open",
-    pascal_name: "LockKeyOpen",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "padlock",
-      "security",
-      "unsecured",
-      "authentication",
-      "unauthenticated",
-      "login",
-      "unlocked",
-      "unencrypted",
-      "encryption",
-      "privacy",
-    ],
-    codepoint: 58112,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "lock-laminated",
-    pascal_name: "LockLaminated",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "padlock",
-      "security",
-      "secured",
-      "authentication",
-      "authenticated",
-      "login",
-      "locked",
-      "encrypted",
-      "encryption",
-      "privacy",
-      "private",
-    ],
-    codepoint: 58114,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "lock-laminated-open",
-    pascal_name: "LockLaminatedOpen",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "padlock",
-      "security",
-      "unsecured",
-      "authentication",
-      "unauthenticated",
-      "login",
-      "unlocked",
-      "unencrypted",
-      "encryption",
-      "privacy",
-      "private",
-    ],
-    codepoint: 58116,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "lock-open",
-    pascal_name: "LockOpen",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "padlock",
-      "security",
-      "unsecured",
-      "authentication",
-      "unauthenticated",
-      "login",
-      "unlocked",
-      "unencrypted",
-      "encryption",
-      "privacy",
-    ],
-    codepoint: 58118,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "lock-simple",
-    pascal_name: "LockSimple",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "padlock",
-      "security",
-      "secured",
-      "authentication",
-      "authenticated",
-      "login",
-      "locked",
-      "encrypted",
-      "encryption",
-      "privacy",
-      "private",
-    ],
-    codepoint: 58120,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "lock-simple-open",
-    pascal_name: "LockSimpleOpen",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "padlock",
-      "security",
-      "unsecured",
-      "authentication",
-      "unauthenticated",
-      "login",
-      "unlocked",
-      "unencrypted",
-      "encryption",
-      "privacy",
-      "private",
-    ],
-    codepoint: 58122,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "lockers",
-    pascal_name: "Lockers",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["locker room", "gym", "storage"],
-    codepoint: 60600,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "log",
-    pascal_name: "Log",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["*new*", "tree", "stump", "stick", "branch"],
-    codepoint: 60802,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "magic-wand",
-    pascal_name: "MagicWand",
-    categories: [IconCategory.DESIGN, IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["selection", "wizard", "games"],
-    codepoint: 59062,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "magnet",
-    pascal_name: "Magnet",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["magnetism", "science", "physics"],
-    codepoint: 59008,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "magnet-straight",
-    pascal_name: "MagnetStraight",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["magnetism", "science", "physics"],
-    codepoint: 59010,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "magnifying-glass",
-    pascal_name: "MagnifyingGlass",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["search", "find", "locate", "query", "inspect"],
-    codepoint: 58124,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "magnifying-glass-minus",
-    pascal_name: "MagnifyingGlassMinus",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["search", "find", "locate", "query", "inspect", "zoom out", "-"],
-    codepoint: 58126,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "magnifying-glass-plus",
-    pascal_name: "MagnifyingGlassPlus",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["search", "find", "locate", "query", "inspect", "zoom in", "+"],
-    codepoint: 58128,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "mailbox",
-    pascal_name: "Mailbox",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.OBJECTS,
-      IconCategory.MAP,
-    ],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["*new*", "email", "letters", "messaging", "post"],
-    codepoint: 60446,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "map-pin",
-    pascal_name: "MapPin",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "maps",
-      "places",
-      "markers",
-      "pins",
-      "locations",
-      "poi",
-      "point of interest",
-    ],
-    codepoint: 58134,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "map-pin-area",
-    pascal_name: "MapPinArea",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "maps",
-      "places",
-      "markers",
-      "pins",
-      "locations",
-      "poi",
-      "point of interest",
-    ],
-    codepoint: 60986,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "map-pin-line",
-    pascal_name: "MapPinLine",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "maps",
-      "places",
-      "markers",
-      "pins",
-      "locations",
-      "poi",
-      "point of interest",
-    ],
-    codepoint: 58136,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "map-pin-plus",
-    pascal_name: "MapPinPlus",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "maps",
-      "places",
-      "markers",
-      "pins",
-      "locations",
-      "add",
-      "point of interest",
-    ],
-    codepoint: 58132,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "map-pin-simple",
-    pascal_name: "MapPinSimple",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "maps",
-      "places",
-      "markers",
-      "pins",
-      "locations",
-      "poi",
-      "point of interest",
-    ],
-    codepoint: 60990,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "map-pin-simple-area",
-    pascal_name: "MapPinSimpleArea",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "maps",
-      "places",
-      "markers",
-      "pins",
-      "locations",
-      "poi",
-      "point of interest",
-    ],
-    codepoint: 60988,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "map-pin-simple-line",
-    pascal_name: "MapPinSimpleLine",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "maps",
-      "places",
-      "markers",
-      "pins",
-      "locations",
-      "poi",
-      "point of interest",
-    ],
-    codepoint: 60984,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "map-trifold",
-    pascal_name: "MapTrifold",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["maps", "places", "locations", "cartography", "geography"],
-    codepoint: 58138,
-    published_in: 1.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "markdown-logo",
-    pascal_name: "MarkdownLogo",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.OFFICE,
-      IconCategory.MEDIA,
-      IconCategory.BRAND,
-    ],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["*new*", "markup", "editor", ".md"],
-    codepoint: 58632,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "marker-circle",
-    pascal_name: "MarkerCircle",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["write", "writing", "editing", "drawing"],
-    codepoint: 58944,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "martini",
-    pascal_name: "Martini",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "glass",
-      "drinks",
-      "beverages",
-      "cocktails",
-      "places",
-      "locations",
-      "bars",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 58140,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "mask-happy",
-    pascal_name: "MaskHappy",
-    categories: [IconCategory.COMMUNICATION, IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["theater", "costume", "smile", "smiling", "thalia"],
-    codepoint: 59892,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "mask-sad",
-    pascal_name: "MaskSad",
-    categories: [IconCategory.COMMUNICATION, IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["theater", "costume", "cry", "crying", "melpomene"],
-    codepoint: 60318,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "mastodon-logo",
-    pascal_name: "MastodonLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "fediverse", "social media", "decentralized"],
-    codepoint: 60776,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "math-operations",
-    pascal_name: "MathOperations",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "addition",
-      "sum",
-      "subtraction",
-      "difference",
-      "multiply",
-      "multiplication",
-      "product",
-      "divide",
-      "division",
-      "divisor",
-      "dividend",
-      "quotient",
-      "equals",
-      "equality",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-      "+",
-      "-",
-      "±",
-      "×",
-      "÷",
-      "=",
-    ],
-    codepoint: 58142,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "matrix-logo",
-    pascal_name: "MatrixLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["*new*", "matrix protocol", "brands", "logos"],
-    codepoint: 60772,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "medal",
-    pascal_name: "Medal",
-    categories: [IconCategory.OBJECTS, IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["ribbons", "winning", "victory", "awards", "rosette"],
-    codepoint: 58144,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "medal-military",
-    pascal_name: "MedalMilitary",
-    categories: [IconCategory.OBJECTS, IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["ribbons", "winning", "victory", "awards", "military"],
-    codepoint: 60668,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "medium-logo",
-    pascal_name: "MediumLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "reading", "writing", "news", "social media"],
-    codepoint: 58146,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "megaphone",
-    pascal_name: "Megaphone",
-    categories: [IconCategory.COMMUNICATION, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["bullhorn", "announcements", "loudspeaker", "broadcast"],
-    codepoint: 58148,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "megaphone-simple",
-    pascal_name: "MegaphoneSimple",
-    categories: [IconCategory.COMMUNICATION, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["bullhorn", "announcements", "loudspeaker", "broadcast"],
-    codepoint: 58946,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "member-of",
-    pascal_name: "MemberOf",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "∈",
-      "is element of",
-      "set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60866,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "memory",
-    pascal_name: "Memory",
-    categories: [IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "ram", "microchip", "computer", "circuit", "electronics"],
-    codepoint: 59844,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "messenger-logo",
-    pascal_name: "MessengerLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "facebook", "social media"],
-    codepoint: 59096,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "meta-logo",
-    pascal_name: "MetaLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*updated*", "facebook", "logos", "social media", "logos"],
-    codepoint: 60674,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "meteor",
-    pascal_name: "Meteor",
-    categories: [IconCategory.WEATHER, IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["*new*", "astronomy", "asteroid", "fireball"],
-    codepoint: 59834,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "metronome",
-    pascal_name: "Metronome",
-    categories: [IconCategory.OBJECTS, IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "beat", "tempo", "bpm"],
-    codepoint: 60558,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "microphone",
-    pascal_name: "Microphone",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MEDIA,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["audio", "recording", "music", "sound", "podcast", "studio"],
-    codepoint: 58150,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "microphone-slash",
-    pascal_name: "MicrophoneSlash",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MEDIA,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "audio",
-      "recording",
-      "music",
-      "sound",
-      "podcast",
-      "studio",
-      "muted",
-      "disabled",
-    ],
-    codepoint: 58152,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "microphone-stage",
-    pascal_name: "MicrophoneStage",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MEDIA,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["audio", "recording", "music", "sound", "performance", "concert"],
-    codepoint: 59228,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "microscope",
-    pascal_name: "Microscope",
-    categories: [
-      IconCategory.NATURE,
-      IconCategory.DEVELOPMENT,
-      IconCategory.OBJECTS,
-      IconCategory.HEALTH,
-    ],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["*new*", "science", "biology", "experiment", "magnify"],
-    codepoint: 60538,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "microsoft-excel-logo",
-    pascal_name: "MicrosoftExcelLogo",
-    categories: [IconCategory.BRAND, IconCategory.OFFICE],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["tables", "spreadsheets", "tabular"],
-    codepoint: 60268,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "microsoft-outlook-logo",
-    pascal_name: "MicrosoftOutlookLogo",
-    categories: [
-      IconCategory.BRAND,
-      IconCategory.COMMUNICATION,
-      IconCategory.OFFICE,
-    ],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["email", "logos"],
-    codepoint: 60272,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "microsoft-powerpoint-logo",
-    pascal_name: "MicrosoftPowerpointLogo",
-    categories: [IconCategory.BRAND, IconCategory.OFFICE],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["slides", "slideshow", "presentation"],
-    codepoint: 60110,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "microsoft-teams-logo",
-    pascal_name: "MicrosoftTeamsLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["chat", "video conference"],
-    codepoint: 60262,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "microsoft-word-logo",
-    pascal_name: "MicrosoftWordLogo",
-    categories: [IconCategory.BRAND, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["documents", "word processor", "doc", "docx"],
-    codepoint: 60266,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "minus",
-    pascal_name: "Minus",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.FINANCE,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "-",
-      "subtraction",
-      "difference",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-      "line",
-      "horizontal",
-      "divider",
-    ],
-    codepoint: 58154,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "minus-circle",
-    pascal_name: "MinusCircle",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.FINANCE,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "-",
-      "subtraction",
-      "difference",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-      "round",
-    ],
-    codepoint: 58156,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "minus-square",
-    pascal_name: "MinusSquare",
-    categories: [IconCategory.FINANCE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "-",
-      "subtraction",
-      "difference",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60748,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "money",
-    pascal_name: "Money",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["cash", "dollars", "paper bills", "payment", "paying", "purchase"],
-    codepoint: 58760,
-    published_in: 1.1,
-    updated_in: 2.0,
-  },
-  {
-    name: "money-wavy",
-    pascal_name: "MoneyWavy",
-    categories: [IconCategory.FINANCE, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "cash",
-      "dollars",
-      "paper bills",
-      "payment",
-      "paying",
-      "purchase",
-    ],
-    codepoint: 61032,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "monitor",
-    pascal_name: "Monitor",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["screen", "television", "tv", "displays"],
-    codepoint: 58158,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "monitor-arrow-up",
-    pascal_name: "MonitorArrowUp",
-    categories: [IconCategory.SYSTEM, IconCategory.MEDIA],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "*new*",
-      "screen",
-      "screencast",
-      "screenshare",
-      "upload",
-      "video",
-      "movie",
-    ],
-    codepoint: 58762,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "monitor-play",
-    pascal_name: "MonitorPlay",
-    categories: [IconCategory.SYSTEM, IconCategory.MEDIA],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "screen",
-      "television",
-      "tv",
-      "displays",
-      "screencast",
-      "video",
-      "movie",
-    ],
-    codepoint: 58764,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "moon",
-    pascal_name: "Moon",
-    categories: [
-      IconCategory.NATURE,
-      IconCategory.SYSTEM,
-      IconCategory.WEATHER,
-    ],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "night",
-      "evening",
-      "clear",
-      "sleep",
-      "snooze",
-      "night mode",
-      "dark mode",
-      "astronomy",
-      "stargazing",
-    ],
-    codepoint: 58160,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "moon-stars",
-    pascal_name: "MoonStars",
-    categories: [IconCategory.NATURE, IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "night",
-      "evening",
-      "clear",
-      "sleep",
-      "snooze",
-      "night mode",
-      "dark mode",
-      "astronomy",
-      "stargazing",
-      "constellation",
-    ],
-    codepoint: 58766,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "moped",
-    pascal_name: "Moped",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["scooter", "vehicles", "vespa", "transportation", "travel"],
-    codepoint: 59428,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "moped-front",
-    pascal_name: "MopedFront",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["scooter", "vehicles", "vespa", "transportation", "travel"],
-    codepoint: 59426,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "mosque",
-    pascal_name: "Mosque",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["islam", "muslim", "religion", "worship"],
-    codepoint: 60654,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "motorcycle",
-    pascal_name: "Motorcycle",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["vehicles", "motorbike", "transportation", "travel"],
-    codepoint: 59402,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "mountains",
-    pascal_name: "Mountains",
-    categories: [IconCategory.NATURE, IconCategory.MAP],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["*updated*", "hills", "outdoors", "terrain", "geology", "adventure"],
-    codepoint: 59310,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "mouse",
-    pascal_name: "Mouse",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*updated*", "clicks", "input"],
-    codepoint: 58170,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "mouse-left-click",
-    pascal_name: "MouseLeftClick",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "clicks", "input"],
-    codepoint: 58164,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "mouse-middle-click",
-    pascal_name: "MouseMiddleClick",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "clicks", "input"],
-    codepoint: 58168,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "mouse-right-click",
-    pascal_name: "MouseRightClick",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "clicks", "input"],
-    codepoint: 58166,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "mouse-scroll",
-    pascal_name: "MouseScroll",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "clicks", "input"],
-    codepoint: 58162,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "mouse-simple",
-    pascal_name: "MouseSimple",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["clicks", "input"],
-    codepoint: 58948,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "music-note",
-    pascal_name: "MusicNote",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["songs", "audio", "playlist", "albums"],
-    codepoint: 58172,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "music-note-simple",
-    pascal_name: "MusicNoteSimple",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["songs", "audio", "playlist", "albums"],
-    codepoint: 58174,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "music-notes",
-    pascal_name: "MusicNotes",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["songs", "audio", "playlist", "albums"],
-    codepoint: 58176,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "music-notes-minus",
-    pascal_name: "MusicNotesMinus",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "*new*",
-      "songs",
-      "audio",
-      "playlist",
-      "albums",
-      "remove",
-      "subtract",
-    ],
-    codepoint: 60940,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "music-notes-plus",
-    pascal_name: "MusicNotesPlus",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["songs", "audio", "playlist", "albums", "add"],
-    codepoint: 60284,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "music-notes-simple",
-    pascal_name: "MusicNotesSimple",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["songs", "audio", "playlist", "albums"],
-    codepoint: 58178,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "navigation-arrow",
-    pascal_name: "NavigationArrow",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["location", "directions", "compass", "gps"],
-    codepoint: 60126,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "needle",
-    pascal_name: "Needle",
-    categories: [IconCategory.OBJECTS, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["sewing", "thread", "awl", "tailor"],
-    codepoint: 59438,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "network",
-    pascal_name: "Network",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "internet", "ethernet", "lan"],
-    codepoint: 60894,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "network-slash",
-    pascal_name: "NetworkSlash",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "internet", "ethernet", "lan", "error"],
-    codepoint: 60892,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "network-x",
-    pascal_name: "NetworkX",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "internet", "ethernet", "lan", "disabled"],
-    codepoint: 60890,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "newspaper",
-    pascal_name: "Newspaper",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["reading", "writing", "journals", "periodicals"],
-    codepoint: 58180,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "newspaper-clipping",
-    pascal_name: "NewspaperClipping",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "reading", "writing", "journals", "periodicals"],
-    codepoint: 58182,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "not-equals",
-    pascal_name: "NotEquals",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "≠",
-      "equality",
-      "equivalent",
-      "equivalence",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60838,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "not-member-of",
-    pascal_name: "NotMemberOf",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "∉",
-      "is not element of",
-      "set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60846,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "not-subset-of",
-    pascal_name: "NotSubsetOf",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "⊄",
-      "not subset of",
-      "set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60848,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "not-superset-of",
-    pascal_name: "NotSupersetOf",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "⊉",
-      "not superset of",
-      "set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60850,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "notches",
-    pascal_name: "Notches",
-    categories: [IconCategory.SYSTEM, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["textarea", "resize", "drag handle", "knurling"],
-    codepoint: 60730,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "note",
-    pascal_name: "Note",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["notes", "note-taking", "memorandum", "post-it", "reminders"],
-    codepoint: 58184,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "note-blank",
-    pascal_name: "NoteBlank",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["notes", "note-taking", "memorandum", "post-it", "reminders"],
-    codepoint: 58186,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "note-pencil",
-    pascal_name: "NotePencil",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["notes", "note-taking", "memorandum", "post-it", "reminders"],
-    codepoint: 58188,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "notebook",
-    pascal_name: "Notebook",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "notes",
-      "note-taking",
-      "memorandum",
-      "journal",
-      "diary",
-      "logs",
-      "logbook",
-    ],
-    codepoint: 58190,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "notepad",
-    pascal_name: "Notepad",
-    categories: [IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*updated*",
-      "logs",
-      "logbook",
-      "notes",
-      "note-taking",
-      "memorandum",
-      "journal",
-      "diary",
-    ],
-    codepoint: 58942,
-    published_in: 1.2,
-    updated_in: 2.1,
-  },
-  {
-    name: "notification",
-    pascal_name: "Notification",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["badge", "pip"],
-    codepoint: 59130,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "notion-logo",
-    pascal_name: "NotionLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["documentation", "productivity", "wiki", "logos"],
-    codepoint: 59808,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "nuclear-plant",
-    pascal_name: "NuclearPlant",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "renewable", "energy", "power", "electricity"],
-    codepoint: 60796,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "number-circle-eight",
-    pascal_name: "NumberCircleEight",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "8",
-      "round",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58194,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-circle-five",
-    pascal_name: "NumberCircleFive",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "5",
-      "round",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58200,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-circle-four",
-    pascal_name: "NumberCircleFour",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*updated*",
-      "4",
-      "round",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58206,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "number-circle-nine",
-    pascal_name: "NumberCircleNine",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "9",
-      "round",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58212,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-circle-one",
-    pascal_name: "NumberCircleOne",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "1",
-      "round",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58218,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-circle-seven",
-    pascal_name: "NumberCircleSeven",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "7",
-      "round",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58224,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-circle-six",
-    pascal_name: "NumberCircleSix",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "6",
-      "round",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58230,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-circle-three",
-    pascal_name: "NumberCircleThree",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "3",
-      "round",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58236,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-circle-two",
-    pascal_name: "NumberCircleTwo",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "2",
-      "round",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58242,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-circle-zero",
-    pascal_name: "NumberCircleZero",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "0",
-      "round",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58248,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-eight",
-    pascal_name: "NumberEight",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "8",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58192,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-five",
-    pascal_name: "NumberFive",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "5",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58198,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-four",
-    pascal_name: "NumberFour",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*updated*",
-      "4",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58204,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "number-nine",
-    pascal_name: "NumberNine",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "9",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58210,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-one",
-    pascal_name: "NumberOne",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "1",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58216,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-seven",
-    pascal_name: "NumberSeven",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "7",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58222,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-six",
-    pascal_name: "NumberSix",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "6",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58228,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-square-eight",
-    pascal_name: "NumberSquareEight",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "8",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58196,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-square-five",
-    pascal_name: "NumberSquareFive",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "5",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58202,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-square-four",
-    pascal_name: "NumberSquareFour",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*updated*",
-      "4",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58208,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "number-square-nine",
-    pascal_name: "NumberSquareNine",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "9",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58214,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-square-one",
-    pascal_name: "NumberSquareOne",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "1",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58220,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-square-seven",
-    pascal_name: "NumberSquareSeven",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "7",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58226,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-square-six",
-    pascal_name: "NumberSquareSix",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "6",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58232,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-square-three",
-    pascal_name: "NumberSquareThree",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "3",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58238,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-square-two",
-    pascal_name: "NumberSquareTwo",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "2",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58244,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-square-zero",
-    pascal_name: "NumberSquareZero",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "0",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58250,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-three",
-    pascal_name: "NumberThree",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "3",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58234,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-two",
-    pascal_name: "NumberTwo",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "2",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58240,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "number-zero",
-    pascal_name: "NumberZero",
-    categories: [IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "0",
-      "numbers",
-      "numerals",
-      "digits",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58246,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "numpad",
-    pascal_name: "Numpad",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "*new*",
-      "dialer",
-      "dialpad",
-      "call-center",
-      "telephone",
-      "landline",
-      "password",
-      "passcode",
-    ],
-    codepoint: 58312,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "nut",
-    pascal_name: "Nut",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["bolts", "screws", "machinery", "tools", "hexagon"],
-    codepoint: 58252,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "ny-times-logo",
-    pascal_name: "NyTimesLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: [
-      "nyt",
-      "new york times",
-      "logos",
-      "reading",
-      "writing",
-      "news",
-      "newspaper",
-    ],
-    codepoint: 58950,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "octagon",
-    pascal_name: "Octagon",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["8", "shapes", "polygons"],
-    codepoint: 58254,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "office-chair",
-    pascal_name: "OfficeChair",
-    categories: [IconCategory.OBJECTS, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["furniture", "seat"],
-    codepoint: 59974,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "onigiri",
-    pascal_name: "Onigiri",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "rice ball", "japanese", "food", "restaurant"],
-    codepoint: 60972,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "open-ai-logo",
-    pascal_name: "OpenAiLogo",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "artificial intelligence", "ai", "chatgpt", "llm", "logos"],
-    codepoint: 59346,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "option",
-    pascal_name: "Option",
-    categories: [IconCategory.SYSTEM, IconCategory.EDITOR],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["keyboard", "shortcut", "modifier"],
-    codepoint: 59560,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "orange",
-    pascal_name: "Orange",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "food", "fruit", "juice", "citrus", "groceries", "market"],
-    codepoint: 60992,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "orange-slice",
-    pascal_name: "OrangeSlice",
-    categories: [IconCategory.MAP, IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["food", "fruit", "juice", "citrus", "groceries", "market"],
-    codepoint: 60726,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "oven",
-    pascal_name: "Oven",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "stove",
-      "stovetop",
-      "food",
-      "cooking",
-      "cuisine",
-      "kitchen",
-    ],
-    codepoint: 60812,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "package",
-    pascal_name: "Package",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "packages",
-      "boxes",
-      "delivery",
-      "mail",
-      "postal service",
-      "bundles",
-      "library",
-      "libraries",
-      "shipping",
-    ],
-    codepoint: 58256,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "paint-brush",
-    pascal_name: "PaintBrush",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["colors", "color picker", "arts"],
-    codepoint: 59120,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "paint-brush-broad",
-    pascal_name: "PaintBrushBroad",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["fill", "colors", "color picker", "arts"],
-    codepoint: 58768,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "paint-brush-household",
-    pascal_name: "PaintBrushHousehold",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["colors", "color picker", "arts"],
-    codepoint: 59122,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "paint-bucket",
-    pascal_name: "PaintBucket",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "*updated*",
-      "paintbucket",
-      "colors",
-      "color picker",
-      "fill",
-      "arts",
-    ],
-    codepoint: 58258,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "paint-roller",
-    pascal_name: "PaintRoller",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["colors", "color picker", "fill", "arts", "theme"],
-    codepoint: 59124,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "palette",
-    pascal_name: "Palette",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["paint", "colors", "color picker", "arts"],
-    codepoint: 59080,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "panorama",
-    pascal_name: "Panorama",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*new*", "image", "picture", "photography", "landscape", "360"],
-    codepoint: 60066,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "pants",
-    pascal_name: "Pants",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["clothing", "clothes", "jeans"],
-    codepoint: 60552,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "paper-plane",
-    pascal_name: "PaperPlane",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MAP,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "mail",
-      "email",
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "toys",
-      "games",
-    ],
-    codepoint: 58260,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "paper-plane-right",
-    pascal_name: "PaperPlaneRight",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MAP,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "mail",
-      "email",
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "toys",
-      "games",
-    ],
-    codepoint: 58262,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "paper-plane-tilt",
-    pascal_name: "PaperPlaneTilt",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MAP,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "mail",
-      "email",
-      "send",
-      "sent",
-      "messages",
-      "messaging",
-      "toys",
-      "games",
-    ],
-    codepoint: 58264,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "paperclip",
-    pascal_name: "Paperclip",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.EDITOR,
-      IconCategory.OFFICE,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["attachments", "mail", "email", "office"],
-    codepoint: 58266,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "paperclip-horizontal",
-    pascal_name: "PaperclipHorizontal",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.EDITOR,
-      IconCategory.OFFICE,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["attachments", "mail", "email", "office"],
-    codepoint: 58770,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "parachute",
-    pascal_name: "Parachute",
-    categories: [IconCategory.OBJECTS, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["skydiving", "safety"],
-    codepoint: 60028,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "paragraph",
-    pascal_name: "Paragraph",
-    categories: [IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["pilcrow"],
-    codepoint: 59744,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "parallelogram",
-    pascal_name: "Parallelogram",
-    categories: [IconCategory.BRAND, IconCategory.MEDIA, IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["shapes", "bandcamp", "logos"],
-    codepoint: 60614,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "park",
-    pascal_name: "Park",
-    categories: [IconCategory.MAP, IconCategory.NATURE],
-    figma_category: FigmaCategory.MAP,
-    tags: ["bench", "outdoors"],
-    codepoint: 60594,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "password",
-    pascal_name: "Password",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "security",
-      "secured",
-      "authentication",
-      "authenticated",
-      "login",
-      "locked",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 59218,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "path",
-    pascal_name: "Path",
-    categories: [IconCategory.DESIGN, IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "transit",
-      "travel",
-      "trail",
-      "gps",
-      "navigation",
-      "route",
-      "destination",
-      "vector",
-    ],
-    codepoint: 58268,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "patreon-logo",
-    pascal_name: "PatreonLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*updated*", "crowdfunding", "logos"],
-    codepoint: 59786,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "pause",
-    pascal_name: "Pause",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "resume", "start", "stop"],
-    codepoint: 58270,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "pause-circle",
-    pascal_name: "PauseCircle",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "resume", "start", "stop", "round"],
-    codepoint: 58272,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "paw-print",
-    pascal_name: "PawPrint",
-    categories: [
-      IconCategory.NATURE,
-      IconCategory.COMMERCE,
-      IconCategory.HEALTH,
-    ],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "pets",
-      "pet store",
-      "pet shop",
-      "animals",
-      "cat",
-      "dog",
-      "veterinarian",
-    ],
-    codepoint: 58952,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "paypal-logo",
-    pascal_name: "PaypalLogo",
-    categories: [
-      IconCategory.BRAND,
-      IconCategory.FINANCE,
-      IconCategory.COMMERCE,
-    ],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["payments", "paying", "purchase", "logos"],
-    codepoint: 59788,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "peace",
-    pascal_name: "Peace",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["love", "hippies", "peace sign", "symbols"],
-    codepoint: 58274,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "pen",
-    pascal_name: "Pen",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["ink", "write", "writing", "editing", "sign", "signature"],
-    codepoint: 58282,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "pen-nib",
-    pascal_name: "PenNib",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "ink",
-      "write",
-      "writing",
-      "editing",
-      "sign",
-      "signature",
-      "fountain pen",
-      "illustrator",
-    ],
-    codepoint: 58284,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "pen-nib-straight",
-    pascal_name: "PenNibStraight",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "ink",
-      "write",
-      "writing",
-      "editing",
-      "sign",
-      "signature",
-      "fountain pen",
-      "illustrator",
-    ],
-    codepoint: 58954,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "pencil",
-    pascal_name: "Pencil",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["write", "writing", "editing", "sign", "signature"],
-    codepoint: 58286,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "pencil-circle",
-    pascal_name: "PencilCircle",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["write", "writing", "editing", "sign", "signature"],
-    codepoint: 58288,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "pencil-line",
-    pascal_name: "PencilLine",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["write", "writing", "editing", "sign", "signature"],
-    codepoint: 58290,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "pencil-ruler",
-    pascal_name: "PencilRuler",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "drawing", "drafting", "construction", "tools"],
-    codepoint: 59654,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "pencil-simple",
-    pascal_name: "PencilSimple",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["write", "writing", "editing", "sign", "signature"],
-    codepoint: 58292,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "pencil-simple-line",
-    pascal_name: "PencilSimpleLine",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["write", "writing", "editing", "sign", "signature"],
-    codepoint: 60358,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "pencil-simple-slash",
-    pascal_name: "PencilSimpleSlash",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["read-only", "write", "writing", "editing"],
-    codepoint: 60662,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "pencil-slash",
-    pascal_name: "PencilSlash",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["read-only", "write", "writing", "editing"],
-    codepoint: 60664,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "pentagon",
-    pascal_name: "Pentagon",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "shapes", "polygons", "5"],
-    codepoint: 60542,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "pentagram",
-    pascal_name: "Pentagram",
-    categories: [IconCategory.GAMES, IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "star",
-      "wicca",
-      "satan",
-      "satanism",
-      "religion",
-      "spirituality",
-      "evil",
-      "magic",
-    ],
-    codepoint: 60508,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "pepper",
-    pascal_name: "Pepper",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["food", "spicy", "chile", "vegetable"],
-    codepoint: 59722,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "percent",
-    pascal_name: "Percent",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "%",
-      "percentage",
-      "percentile",
-      "ratio",
-      "delta",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58294,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "person",
-    pascal_name: "Person",
-    categories: [IconCategory.MAP, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "walking",
-      "human",
-      "woman",
-      "man",
-      "body",
-      "transit",
-      "transportation",
-      "travel",
-      "commuter",
-      "user",
-    ],
-    codepoint: 58280,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "person-arms-spread",
-    pascal_name: "PersonArmsSpread",
-    categories: [IconCategory.HEALTH, IconCategory.MAP, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["accessibility", "vitruvian", "stretch", "sports"],
-    codepoint: 60670,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "person-simple",
-    pascal_name: "PersonSimple",
-    categories: [IconCategory.MAP, IconCategory.PEOPLE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "pedestrian",
-      "walking",
-      "human",
-      "woman",
-      "man",
-      "body",
-      "transit",
-      "transportation",
-      "travel",
-      "commuter",
-      "user",
-      "exercise",
-    ],
-    codepoint: 59182,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "person-simple-bike",
-    pascal_name: "PersonSimpleBike",
-    categories: [IconCategory.MAP, IconCategory.PEOPLE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "pedestrian",
-      "biking",
-      "bicycle",
-      "human",
-      "woman",
-      "man",
-      "body",
-      "sports",
-      "exercise",
-    ],
-    codepoint: 59188,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "person-simple-circle",
-    pascal_name: "PersonSimpleCircle",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["*new*", "human", "accessibility", "a11y", "vitruvius", "vitruvian"],
-    codepoint: 61016,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "person-simple-hike",
-    pascal_name: "PersonSimpleHike",
-    categories: [
-      IconCategory.NATURE,
-      IconCategory.HEALTH,
-      IconCategory.MAP,
-      IconCategory.PEOPLE,
-    ],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["*new*", "pedestrian", "climbing", "mountaineering", "bouldering"],
-    codepoint: 60756,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "person-simple-run",
-    pascal_name: "PersonSimpleRun",
-    categories: [IconCategory.MAP, IconCategory.PEOPLE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "pedestrian",
-      "running",
-      "human",
-      "woman",
-      "man",
-      "body",
-      "transit",
-      "transportation",
-      "travel",
-      "commuter",
-      "user",
-      "exercise",
-    ],
-    codepoint: 59184,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "person-simple-ski",
-    pascal_name: "PersonSimpleSki",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "skiing", "winter", "mountain"],
-    codepoint: 59164,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "person-simple-snowboard",
-    pascal_name: "PersonSimpleSnowboard",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "snowboarding", "winter", "mountain"],
-    codepoint: 59166,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "person-simple-swim",
-    pascal_name: "PersonSimpleSwim",
-    categories: [IconCategory.MAP, IconCategory.PEOPLE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "*new*",
-      "pedestrian",
-      "swimming",
-      "human",
-      "woman",
-      "man",
-      "body",
-      "sports",
-      "exercise",
-    ],
-    codepoint: 59190,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "person-simple-tai-chi",
-    pascal_name: "PersonSimpleTaiChi",
-    categories: [IconCategory.HEALTH, IconCategory.MAP, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "*new*",
-      "mindfulness",
-      "martial arts",
-      "meditation",
-      "sports",
-      "exercise",
-      "yoga",
-    ],
-    codepoint: 60764,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "person-simple-throw",
-    pascal_name: "PersonSimpleThrow",
-    categories: [IconCategory.MAP, IconCategory.PEOPLE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "pedestrian",
-      "tennis",
-      "human",
-      "woman",
-      "man",
-      "body",
-      "sports",
-      "exercise",
-    ],
-    codepoint: 59186,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "person-simple-walk",
-    pascal_name: "PersonSimpleWalk",
-    categories: [IconCategory.MAP, IconCategory.PEOPLE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "pedestrian",
-      "walking",
-      "human",
-      "woman",
-      "man",
-      "body",
-      "transit",
-      "transportation",
-      "travel",
-      "commuter",
-      "user",
-      "exercise",
-    ],
-    codepoint: 59194,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "perspective",
-    pascal_name: "Perspective",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["3d", "skew", "warp", "trapezoid"],
-    codepoint: 60390,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "phone",
-    pascal_name: "Phone",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["calls", "telephone", "landline", "talk"],
-    codepoint: 58296,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "phone-call",
-    pascal_name: "PhoneCall",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["calls", "calling", "ringing", "telephone", "landline", "talk"],
-    codepoint: 58298,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "phone-disconnect",
-    pascal_name: "PhoneDisconnect",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["calls", "hang up", "disconnected", "telephone", "landline", "talk"],
-    codepoint: 58300,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "phone-incoming",
-    pascal_name: "PhoneIncoming",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["calls", "calling", "telephone", "landline", "talk"],
-    codepoint: 58302,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "phone-list",
-    pascal_name: "PhoneList",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["*new*", "calls", "call-center", "telephone", "landline", "talk"],
-    codepoint: 58316,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "phone-outgoing",
-    pascal_name: "PhoneOutgoing",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["calls", "calling", "telephone", "landline", "talk"],
-    codepoint: 58304,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "phone-pause",
-    pascal_name: "PhonePause",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "*new*",
-      "calls",
-      "hold",
-      "call-center",
-      "telephone",
-      "landline",
-      "talk",
-    ],
-    codepoint: 58314,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "phone-plus",
-    pascal_name: "PhonePlus",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["calls", "telephone", "landline", "talk", "conference", "add"],
-    codepoint: 60502,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "phone-slash",
-    pascal_name: "PhoneSlash",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "calls",
-      "disabled",
-      "disconnected",
-      "telephone",
-      "landline",
-      "talk",
-    ],
-    codepoint: 58306,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "phone-transfer",
-    pascal_name: "PhoneTransfer",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["*new*", "calls", "call-center", "telephone", "landline", "talk"],
-    codepoint: 58310,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "phone-x",
-    pascal_name: "PhoneX",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["calls", "missed", "errors", "telephone", "landline", "talk"],
-    codepoint: 58308,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "phosphor-logo",
-    pascal_name: "PhosphorLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos"],
-    codepoint: 58318,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "pi",
-    pascal_name: "Pi",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: ["π", "symbol", "mathematics", "circle"],
-    codepoint: 60544,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "piano-keys",
-    pascal_name: "PianoKeys",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "instrument", "keyboard"],
-    codepoint: 59848,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "picnic-table",
-    pascal_name: "PicnicTable",
-    categories: [IconCategory.MAP, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "bench", "park", "outdoors"],
-    codepoint: 60966,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "picture-in-picture",
-    pascal_name: "PictureInPicture",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["pip", "pop-out", "minimize", "maximize"],
-    codepoint: 58956,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "piggy-bank",
-    pascal_name: "PiggyBank",
-    categories: [IconCategory.FINANCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["savings", "deposit", "money", "coins"],
-    codepoint: 59908,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "pill",
-    pascal_name: "Pill",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "capsule",
-      "medicine",
-      "rx",
-      "pharmacy",
-      "pharmacist",
-      "pharmaceuticals",
-      "prescription",
-      "drugs",
-    ],
-    codepoint: 59136,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "ping-pong",
-    pascal_name: "PingPong",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "paddle"],
-    codepoint: 59970,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "pint-glass",
-    pascal_name: "PintGlass",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.HEALTH,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "water",
-      "beverage",
-      "drinks",
-      "beverages",
-      "food",
-      "dining",
-    ],
-    codepoint: 60880,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "pinterest-logo",
-    pascal_name: "PinterestLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "vision board", "mood board", "social media"],
-    codepoint: 58958,
-    published_in: 1.2,
-    updated_in: 1.4,
-  },
-  {
-    name: "pinwheel",
-    pascal_name: "Pinwheel",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["toys", "whirligig"],
-    codepoint: 60316,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "pipe",
-    pascal_name: "Pipe",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "tube", "plumber", "plumbing", "construction"],
-    codepoint: 60806,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "pipe-wrench",
-    pascal_name: "PipeWrench",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "plumber", "plumbing", "tools", "construction"],
-    codepoint: 60808,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "pix-logo",
-    pascal_name: "PixLogo",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "payments", "paying", "purchase", "logos"],
-    codepoint: 60610,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "pizza",
-    pascal_name: "Pizza",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "fast food",
-      "party",
-      "places",
-      "locations",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 59286,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "placeholder",
-    pascal_name: "Placeholder",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["empty", "notdef", "tofu", "rectangle slash", "missing"],
-    codepoint: 58960,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "planet",
-    pascal_name: "Planet",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["saturn", "world", "globe", "astronomy", "space"],
-    codepoint: 58962,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "plant",
-    pascal_name: "Plant",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["sprout", "vegan", "farm", "farming", "garden", "gardening"],
-    codepoint: 60334,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "play",
-    pascal_name: "Play",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "resume", "start"],
-    codepoint: 58320,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "play-circle",
-    pascal_name: "PlayCircle",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "resume", "start", "round"],
-    codepoint: 58322,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "play-pause",
-    pascal_name: "PlayPause",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "resume", "start", "stop"],
-    codepoint: 59582,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "playlist",
-    pascal_name: "Playlist",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "music", "audio", "queue"],
-    codepoint: 59050,
-    published_in: 1.3,
-    updated_in: 2.1,
-  },
-  {
-    name: "plug",
-    pascal_name: "Plug",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["outlet", "socket", "plugin", "integration"],
-    codepoint: 59718,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "plug-charging",
-    pascal_name: "PlugCharging",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["outlet", "socket", "plugin", "integration", "charge", "charging"],
-    codepoint: 60252,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "plugs",
-    pascal_name: "Plugs",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["outlet", "socket", "plugin", "integration", "disconnected"],
-    codepoint: 60246,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "plugs-connected",
-    pascal_name: "PlugsConnected",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*updated*", "outlet", "socket", "plugin", "integration"],
-    codepoint: 60250,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "plus",
-    pascal_name: "Plus",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.FINANCE,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.FINANCE,
-    tags: ["addition", "sum", "mathematics", "arithmetic", "calculator", "+"],
-    codepoint: 58324,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "plus-circle",
-    pascal_name: "PlusCircle",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.FINANCE,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "addition",
-      "sum",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-      "round",
-      "+",
-    ],
-    codepoint: 58326,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "plus-minus",
-    pascal_name: "PlusMinus",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "plus or minus",
-      "plus/minus",
-      "add/subtract",
-      "addition",
-      "sum",
-      "subtraction",
-      "difference",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-      "+",
-      "-",
-      "±",
-    ],
-    codepoint: 58328,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "plus-square",
-    pascal_name: "PlusSquare",
-    categories: [
-      IconCategory.FINANCE,
-      IconCategory.DEVELOPMENT,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.FINANCE,
-    tags: ["addition", "sum", "mathematics", "arithmetic", "calculator", "+"],
-    codepoint: 60746,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "poker-chip",
-    pascal_name: "PokerChip",
-    categories: [IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["chips", "tokens", "cards", "gambling", "casino"],
-    codepoint: 58772,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "police-car",
-    pascal_name: "PoliceCar",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["*updated*", "vehicles", "cars", "automobiles", "law enforcement"],
-    codepoint: 60490,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "polygon",
-    pascal_name: "Polygon",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["shapes", "drawing"],
-    codepoint: 59088,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "popcorn",
-    pascal_name: "Popcorn",
-    categories: [IconCategory.MAP, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["food", "movies", "theater"],
-    codepoint: 60238,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "popsicle",
-    pascal_name: "Popsicle",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "ice cream", "dessert", "summer", "food"],
-    codepoint: 60350,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "potted-plant",
-    pascal_name: "PottedPlant",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["sprout", "vegan", "garden", "gardening"],
-    codepoint: 60450,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "power",
-    pascal_name: "Power",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "charged",
-      "charger",
-      "charging",
-      "on",
-      "off",
-      "on/off",
-      "switch",
-      "power switch",
-    ],
-    codepoint: 58330,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "prescription",
-    pascal_name: "Prescription",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "rx",
-      "medicine",
-      "drugs",
-      "pharmacy",
-      "pharmacist",
-      "pharmaceuticals",
-      "doctor",
-    ],
-    codepoint: 59298,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "presentation",
-    pascal_name: "Presentation",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "whiteboard",
-      "flipchart",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-      "meeting",
-    ],
-    codepoint: 58964,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "presentation-chart",
-    pascal_name: "PresentationChart",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "whiteboard",
-      "flipchart",
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-      "meeting",
-    ],
-    codepoint: 58966,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "printer",
-    pascal_name: "Printer",
-    categories: [IconCategory.EDITOR, IconCategory.OFFICE],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["printing"],
-    codepoint: 58332,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "prohibit",
-    pascal_name: "Prohibit",
-    categories: [IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "forbidden",
-      "prohibited",
-      "cancelled",
-      "prevent",
-      "stop",
-      "do not enter",
-    ],
-    codepoint: 58334,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "prohibit-inset",
-    pascal_name: "ProhibitInset",
-    categories: [IconCategory.MAP, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "forbidden",
-      "prohibited",
-      "cancelled",
-      "prevent",
-      "stop",
-      "do not enter",
-    ],
-    codepoint: 58336,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "projector-screen",
-    pascal_name: "ProjectorScreen",
-    categories: [IconCategory.FINANCE, IconCategory.MEDIA, IconCategory.OFFICE],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "projection",
-      "presentation",
-      "slideshow",
-      "movies",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-    ],
-    codepoint: 58968,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "projector-screen-chart",
-    pascal_name: "ProjectorScreenChart",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "projection",
-      "presentation",
-      "slideshow",
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-    ],
-    codepoint: 58970,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "pulse",
-    pascal_name: "Pulse",
-    alias: { name: "activity", pascal_name: "Activity" },
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "activity",
-      "heartbeat",
-      "medical",
-      "ecg",
-      "ekg",
-      "vitals",
-      "monitor",
-      "medicine",
-    ],
-    codepoint: 57344,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "push-pin",
-    pascal_name: "PushPin",
-    categories: [IconCategory.OFFICE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["favorites", "favorited", "pushpin"],
-    codepoint: 58338,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "push-pin-simple",
-    pascal_name: "PushPinSimple",
-    categories: [IconCategory.OFFICE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["favorites", "favorited", "pushpin"],
-    codepoint: 58972,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "push-pin-simple-slash",
-    pascal_name: "PushPinSimpleSlash",
-    categories: [IconCategory.OFFICE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["favorites", "favorited", "pushpin", "disabled"],
-    codepoint: 58974,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "push-pin-slash",
-    pascal_name: "PushPinSlash",
-    categories: [IconCategory.OFFICE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["favorites", "favorited", "pushpin", "disabled"],
-    codepoint: 58340,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "puzzle-piece",
-    pascal_name: "PuzzlePiece",
-    categories: [IconCategory.GAMES, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["board game", "element", "component", "extension", "plugin"],
-    codepoint: 58774,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "qr-code",
-    pascal_name: "QrCode",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["upc", "barcode", "products", "shopping", "scanner"],
-    codepoint: 58342,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "question",
-    pascal_name: "Question",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["information", "help", "support", "questions"],
-    codepoint: 58344,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "question-mark",
-    pascal_name: "QuestionMark",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "*new*",
-      "?",
-      "information",
-      "help",
-      "support",
-      "questions",
-      "punctuation",
-      "symbol",
-    ],
-    codepoint: 58344,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "queue",
-    pascal_name: "Queue",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "music", "audio", "playlist"],
-    codepoint: 59052,
-    published_in: 1.3,
-    updated_in: 2.1,
-  },
-  {
-    name: "quotes",
-    pascal_name: "Quotes",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.EDITOR,
-      IconCategory.MEDIA,
-    ],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["quoations", "quotation marks", "double-quotes", "writing", "books"],
-    codepoint: 58976,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "rabbit",
-    pascal_name: "Rabbit",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["*new*", "hare", "fast", "animal"],
-    codepoint: 60098,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "racquet",
-    pascal_name: "Racquet",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "sports", "tennis", "squash", "pickleball"],
-    codepoint: 60930,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "radical",
-    pascal_name: "Radical",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.FINANCE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "√",
-      "radix",
-      "radicand",
-      "square root",
-      "squareroot",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58346,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "radio",
-    pascal_name: "Radio",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MEDIA,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["broadcast", "fm", "am", "xm", "transmitter", "receiver"],
-    codepoint: 59262,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "radio-button",
-    pascal_name: "RadioButton",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["input", "checkbox", "checked"],
-    codepoint: 60168,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "radioactive",
-    pascal_name: "Radioactive",
-    categories: [IconCategory.NATURE, IconCategory.HEALTH],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["radiation", "danger", "warning", "nuclear", "atomic"],
-    codepoint: 59868,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "rainbow",
-    pascal_name: "Rainbow",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["meteorology", "rainstorm", "arc", "pride", "lgbtq+", "leprechaun"],
-    codepoint: 58776,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "rainbow-cloud",
-    pascal_name: "RainbowCloud",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "meteorology",
-      "rainstorm",
-      "cloudy",
-      "partly cloudy",
-      "partly sunny",
-      "pride",
-      "lgbtq+",
-      "leprechaun",
-    ],
-    codepoint: 58778,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "ranking",
-    pascal_name: "Ranking",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*new*", "medal", "rank", "leaderboard", "winner", "sports"],
-    codepoint: 60770,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "read-cv-logo",
-    pascal_name: "ReadCvLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["resume", "jobs", "logos"],
-    codepoint: 60684,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "receipt",
-    pascal_name: "Receipt",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["purchase", "money", "clipping", "expense"],
-    codepoint: 58348,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "receipt-x",
-    pascal_name: "ReceiptX",
-    categories: [IconCategory.COMMERCE, IconCategory.FINANCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["purchase", "money", "clipping", "expense", "cancel"],
-    codepoint: 60736,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "record",
-    pascal_name: "Record",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "recording", "recorder", "voice memo"],
-    codepoint: 58350,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "rectangle",
-    pascal_name: "Rectangle",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["4", "shapes", "polygons", "box"],
-    codepoint: 58352,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "rectangle-dashed",
-    pascal_name: "RectangleDashed",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "4", "shapes", "polygons", "box", "missing"],
-    codepoint: 58354,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "recycle",
-    pascal_name: "Recycle",
-    categories: [IconCategory.ARROWS, IconCategory.NATURE],
-    figma_category: FigmaCategory.ARROWS,
-    tags: ["recycling", "trash", "environmental", "green"],
-    codepoint: 59226,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "reddit-logo",
-    pascal_name: "RedditLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "subreddit", "snoo", "social media"],
-    codepoint: 58780,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "repeat",
-    pascal_name: "Repeat",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "recycle"],
-    codepoint: 58358,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "repeat-once",
-    pascal_name: "RepeatOnce",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "recycle"],
-    codepoint: 58360,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "replit-logo",
-    pascal_name: "ReplitLogo",
-    categories: [IconCategory.BRAND, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "logos", "ide", "editor", "coding"],
-    codepoint: 60298,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "resize",
-    pascal_name: "Resize",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "maximize", "expand", "grow"],
-    codepoint: 60782,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "rewind",
-    pascal_name: "Rewind",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "music",
-      "audio",
-      "seek",
-      "scrub",
-      "scan",
-      "skip",
-      "back",
-      "backwards",
-      "reverse",
-    ],
-    codepoint: 59048,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "rewind-circle",
-    pascal_name: "RewindCircle",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "music",
-      "audio",
-      "seek",
-      "scrub",
-      "scan",
-      "skip",
-      "back",
-      "backwards",
-      "reverse",
-    ],
-    codepoint: 58362,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "road-horizon",
-    pascal_name: "RoadHorizon",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["trip", "drive", "road", "travel", "transportation", "highway"],
-    codepoint: 59448,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "robot",
-    pascal_name: "Robot",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["automaton", "artificial intelligence", "ai"],
-    codepoint: 59234,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "rocket",
-    pascal_name: "Rocket",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.MAP,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.MAP,
-    tags: ["spaceship", "launch", "deployment", "rocketship"],
-    codepoint: 58364,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "rocket-launch",
-    pascal_name: "RocketLaunch",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.MAP,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*updated*",
-      "spaceship",
-      "flying",
-      "blastoff",
-      "deployment",
-      "rocketship",
-    ],
-    codepoint: 58366,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "rows",
-    pascal_name: "Rows",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["2", "shapes", "polygons", "box", "stack", "list", "table", "cards"],
-    codepoint: 58786,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "rows-plus-bottom",
-    pascal_name: "RowsPlusBottom",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "*new*",
-      "2",
-      "shapes",
-      "polygons",
-      "box",
-      "stack",
-      "list",
-      "table",
-      "cards",
-      "prepend",
-      "insert",
-    ],
-    codepoint: 58782,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "rows-plus-top",
-    pascal_name: "RowsPlusTop",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "*new*",
-      "2",
-      "shapes",
-      "polygons",
-      "box",
-      "stack",
-      "list",
-      "table",
-      "cards",
-      "prepend",
-      "insert",
-    ],
-    codepoint: 58784,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "rss",
-    pascal_name: "Rss",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["radio", "broadcast", "web feed", "news", "aggregator"],
-    codepoint: 58368,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "rss-simple",
-    pascal_name: "RssSimple",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["radio", "broadcast", "web feed", "news", "aggregator"],
-    codepoint: 58370,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "rug",
-    pascal_name: "Rug",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*updated*", "tapestry", "carpet"],
-    codepoint: 59930,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "ruler",
-    pascal_name: "Ruler",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["measure", "scale", "distance"],
-    codepoint: 59064,
-    published_in: 1.3,
-    updated_in: 1.4,
-  },
-  {
-    name: "sailboat",
-    pascal_name: "Sailboat",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "sailing",
-      "ship",
-      "vehicles",
-      "transportation",
-      "sports",
-      "places",
-      "locations",
-    ],
-    codepoint: 59274,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "scales",
-    pascal_name: "Scales",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["measure", "balance", "law", "justice", "government"],
-    codepoint: 59216,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "scan",
-    pascal_name: "Scan",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["upc", "barcode", "products", "shopping", "scanner"],
-    codepoint: 60342,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "scan-smiley",
-    pascal_name: "ScanSmiley",
-    categories: [IconCategory.SYSTEM, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "facial recognition", "face unlock", "scanner"],
-    codepoint: 60340,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "scissors",
-    pascal_name: "Scissors",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OFFICE,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*updated*", "cut", "snip", "clipboard"],
-    codepoint: 60128,
-    published_in: 1.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "scooter",
-    pascal_name: "Scooter",
-    categories: [IconCategory.MAP, IconCategory.HEALTH],
-    figma_category: FigmaCategory.MAP,
-    tags: ["vehicles", "transportation", "travel", "transit"],
-    codepoint: 59424,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "screencast",
-    pascal_name: "Screencast",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "apple",
-      "airplay",
-      "screencasting",
-      "screen share",
-      "television",
-      "tv",
-    ],
-    codepoint: 58372,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "screwdriver",
-    pascal_name: "Screwdriver",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "tools", "construction", "flathead", "drill"],
-    codepoint: 59502,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "scribble",
-    pascal_name: "Scribble",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "doodles", "squiggle", "drawing", "sign", "signature"],
-    codepoint: 59398,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "scribble-loop",
-    pascal_name: "ScribbleLoop",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["doodles", "drawing", "sign", "signature"],
-    codepoint: 58978,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "scroll",
-    pascal_name: "Scroll",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*updated*", "parchment", "paper", "script", "spell", "fantasy"],
-    codepoint: 60282,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "seal",
-    pascal_name: "Seal",
-    alias: { name: "circle-wavy", pascal_name: "CircleWavy" },
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "verified",
-      "verification",
-      "shapes",
-      "polygons",
-      "circle-wavy",
-    ],
-    codepoint: 58884,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "seal-check",
-    pascal_name: "SealCheck",
-    alias: { name: "circle-wavy-check", pascal_name: "CircleWavyCheck" },
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "verified",
-      "verification",
-      "shapes",
-      "polygons",
-      "circle-wavy",
-    ],
-    codepoint: 58886,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "seal-percent",
-    pascal_name: "SealPercent",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "*new*",
-      "badge",
-      "discount",
-      "sale",
-      "shapes",
-      "polygons",
-      "circle-wavy",
-    ],
-    codepoint: 58890,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "seal-question",
-    pascal_name: "SealQuestion",
-    alias: { name: "circle-wavy-question", pascal_name: "CircleWavyQuestion" },
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "unverified",
-      "verification",
-      "shapes",
-      "polygons",
-      "circle-wavy",
-    ],
-    codepoint: 58888,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "seal-warning",
-    pascal_name: "SealWarning",
-    alias: { name: "circle-wavy-warning", pascal_name: "CircleWavyWarning" },
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "unverified",
-      "verification",
-      "errors",
-      "shapes",
-      "polygons",
-      "circle-wavy",
-    ],
-    codepoint: 58892,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "seat",
-    pascal_name: "Seat",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "chair",
-      "car seat",
-      "airplane seat",
-      "transit",
-      "transportation",
-      "traveling",
-    ],
-    codepoint: 60302,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "seatbelt",
-    pascal_name: "Seatbelt",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "vehicles", "safety"],
-    codepoint: 60926,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "security-camera",
-    pascal_name: "SecurityCamera",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "*new*",
-      "cctv",
-      "surveillance",
-      "video",
-      "monitor",
-      "motion detector",
-      "safety",
-    ],
-    codepoint: 60580,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "selection",
-    pascal_name: "Selection",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["marquis", "select", "square dashed"],
-    codepoint: 59034,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "selection-all",
-    pascal_name: "SelectionAll",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["marquis", "select all"],
-    codepoint: 59206,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "selection-background",
-    pascal_name: "SelectionBackground",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["marquis"],
-    codepoint: 60152,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "selection-foreground",
-    pascal_name: "SelectionForeground",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["marquis"],
-    codepoint: 60150,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "selection-inverse",
-    pascal_name: "SelectionInverse",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["marquis", "invert"],
-    codepoint: 59204,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "selection-plus",
-    pascal_name: "SelectionPlus",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["marquis", "add"],
-    codepoint: 59036,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "selection-slash",
-    pascal_name: "SelectionSlash",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["marquis", "unselect"],
-    codepoint: 59038,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "shapes",
-    pascal_name: "Shapes",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["geometry", "square", "circle", "triangle"],
-    codepoint: 60510,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "share",
-    pascal_name: "Share",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["send to", "export", "arrows"],
-    codepoint: 58374,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "share-fat",
-    pascal_name: "ShareFat",
-    categories: [
-      IconCategory.ARROWS,
-      IconCategory.SYSTEM,
-      IconCategory.COMMUNICATION,
-    ],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["export", "send to"],
-    codepoint: 60754,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "share-network",
-    pascal_name: "ShareNetwork",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["send to", "export"],
-    codepoint: 58376,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shield",
-    pascal_name: "Shield",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "security",
-      "secured",
-      "defense",
-      "defended",
-      "authentication",
-      "authenticated",
-      "guarded",
-      "locked",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 58378,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shield-check",
-    pascal_name: "ShieldCheck",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "security",
-      "defense",
-      "authentication",
-      "authenticated",
-      "guarded",
-      "locked",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 58380,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shield-checkered",
-    pascal_name: "ShieldCheckered",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "security",
-      "defense",
-      "authentication",
-      "authenticated",
-      "guarded",
-      "locked",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 59144,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "shield-chevron",
-    pascal_name: "ShieldChevron",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "security",
-      "defense",
-      "authentication",
-      "authenticated",
-      "guarded",
-      "locked",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 58382,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shield-plus",
-    pascal_name: "ShieldPlus",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "security",
-      "defense",
-      "authentication",
-      "authenticated",
-      "guarded",
-      "locked",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 59142,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "shield-slash",
-    pascal_name: "ShieldSlash",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "security",
-      "unsecured",
-      "defense",
-      "undefended",
-      "authentication",
-      "unauthenticated",
-      "unguarded",
-      "unlocked",
-      "unencrypted",
-      "encryption",
-      "disabled",
-    ],
-    codepoint: 58384,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shield-star",
-    pascal_name: "ShieldStar",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "security",
-      "defense",
-      "authentication",
-      "authenticated",
-      "guarded",
-      "locked",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 60468,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "shield-warning",
-    pascal_name: "ShieldWarning",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "badge",
-      "security",
-      "unsecured",
-      "defense",
-      "undefended",
-      "authentication",
-      "unauthenticated",
-      "unguarded",
-      "unlocked",
-      "unencrypted",
-      "encryption",
-      "errors",
-    ],
-    codepoint: 58386,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shipping-container",
-    pascal_name: "ShippingContainer",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.MAP,
-    tags: ["*new*", "shipping", "transportation", "places", "locations"],
-    codepoint: 59276,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "shirt-folded",
-    pascal_name: "ShirtFolded",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["clothes", "clothing"],
-    codepoint: 60050,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "shooting-star",
-    pascal_name: "ShootingStar",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["wish", "comet", "meteor"],
-    codepoint: 60666,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "shopping-bag",
-    pascal_name: "ShoppingBag",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "ecommerce",
-      "market",
-      "basket",
-      "cart",
-      "buying",
-      "checkout",
-      "places",
-      "locations",
-    ],
-    codepoint: 58390,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shopping-bag-open",
-    pascal_name: "ShoppingBagOpen",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "ecommerce",
-      "market",
-      "basket",
-      "cart",
-      "buying",
-      "checkout",
-      "places",
-      "locations",
-    ],
-    codepoint: 58392,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shopping-cart",
-    pascal_name: "ShoppingCart",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "ecommerce",
-      "market",
-      "basket",
-      "buying",
-      "groceries",
-      "checkout",
-      "places",
-      "locations",
-    ],
-    codepoint: 58398,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shopping-cart-simple",
-    pascal_name: "ShoppingCartSimple",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "ecommerce",
-      "market",
-      "basket",
-      "buying",
-      "groceries",
-      "checkout",
-      "places",
-      "locations",
-    ],
-    codepoint: 58400,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shovel",
-    pascal_name: "Shovel",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "tools", "digging", "construction"],
-    codepoint: 59878,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "shower",
-    pascal_name: "Shower",
-    categories: [IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["bath", "bathtub", "bathroom", "faucet"],
-    codepoint: 59254,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "shrimp",
-    pascal_name: "Shrimp",
-    categories: [IconCategory.COMMERCE, IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["food", "seafood", "prawn"],
-    codepoint: 60084,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "shuffle",
-    pascal_name: "Shuffle",
-    categories: [IconCategory.MEDIA, IconCategory.ARROWS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "randomize", "crossed"],
-    codepoint: 58402,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shuffle-angular",
-    pascal_name: "ShuffleAngular",
-    categories: [IconCategory.MEDIA, IconCategory.ARROWS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "randomize", "crossed"],
-    codepoint: 58404,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "shuffle-simple",
-    pascal_name: "ShuffleSimple",
-    categories: [IconCategory.MEDIA, IconCategory.ARROWS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "randomize", "crossed"],
-    codepoint: 58406,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "sidebar",
-    pascal_name: "Sidebar",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["left rail", "wireframe", "ui", "interface"],
-    codepoint: 60086,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "sidebar-simple",
-    pascal_name: "SidebarSimple",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["left rail", "wireframe", "ui", "interface"],
-    codepoint: 60452,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "sigma",
-    pascal_name: "Sigma",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: ["σ", "symbol", "mathematics", "sum"],
-    codepoint: 60088,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "sign-in",
-    pascal_name: "SignIn",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*updated*", "signin", "login", "log in", "enter"],
-    codepoint: 58408,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "sign-out",
-    pascal_name: "SignOut",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*updated*", "signout", "logout", "log out", "exit"],
-    codepoint: 58410,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "signature",
-    pascal_name: "Signature",
-    categories: [IconCategory.COMMUNICATION, IconCategory.OFFICE],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["*updated*", "sign", "autograph", "verify"],
-    codepoint: 60332,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "signpost",
-    pascal_name: "Signpost",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["direction", "traffic", "road sign", "transit", "transportation"],
-    codepoint: 59548,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "sim-card",
-    pascal_name: "SimCard",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*updated*", "cellular", "cellphone", "mobile"],
-    codepoint: 58980,
-    published_in: 1.2,
-    updated_in: 2.1,
-  },
-  {
-    name: "siren",
-    pascal_name: "Siren",
-    categories: [IconCategory.OBJECTS, IconCategory.MAP],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["alarm", "police", "lights", "warning"],
-    codepoint: 59832,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "sketch-logo",
-    pascal_name: "SketchLogo",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.BRAND,
-    tags: [
-      "drawing",
-      "art",
-      "illustration",
-      "ui",
-      "interface",
-      "prototype",
-      "prototyping",
-      "gemstone",
-      "diamond",
-    ],
-    codepoint: 58412,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "skip-back",
-    pascal_name: "SkipBack",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "music",
-      "audio",
-      "seek",
-      "scrub",
-      "scan",
-      "back",
-      "backwards",
-      "reverse",
-      "previous",
-    ],
-    codepoint: 58788,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "skip-back-circle",
-    pascal_name: "SkipBackCircle",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "music",
-      "audio",
-      "seek",
-      "scrub",
-      "scan",
-      "back",
-      "backwards",
-      "reverse",
-      "previous",
-    ],
-    codepoint: 58414,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "skip-forward",
-    pascal_name: "SkipForward",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "seek", "scrub", "scan", "ahead", "next"],
-    codepoint: 58790,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "skip-forward-circle",
-    pascal_name: "SkipForwardCircle",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "seek", "scrub", "scan", "ahead", "next"],
-    codepoint: 58416,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "skull",
-    pascal_name: "Skull",
-    categories: [IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["death", "dead", "kill"],
-    codepoint: 59670,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "skype-logo",
-    pascal_name: "SkypeLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "chat", "video conference"],
-    codepoint: 59612,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "slack-logo",
-    pascal_name: "SlackLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "messaging"],
-    codepoint: 58792,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "sliders",
-    pascal_name: "Sliders",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "music",
-      "audio",
-      "faders",
-      "filters",
-      "equalizer",
-      "volume",
-      "settings",
-      "preferences",
-    ],
-    codepoint: 58418,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "sliders-horizontal",
-    pascal_name: "SlidersHorizontal",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "music",
-      "audio",
-      "faders",
-      "filters",
-      "equalizer",
-      "volume",
-      "settings",
-      "preferences",
-    ],
-    codepoint: 58420,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "slideshow",
-    pascal_name: "Slideshow",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["pictures", "images", "photography", "gallery", "carousel"],
-    codepoint: 60722,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "smiley",
-    pascal_name: "Smiley",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["face", "emoji", "happy", "grinning", "smiling"],
-    codepoint: 58422,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "smiley-angry",
-    pascal_name: "SmileyAngry",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["face", "emoji", "mad", "frown"],
-    codepoint: 60514,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "smiley-blank",
-    pascal_name: "SmileyBlank",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["face", "emoji", "unimpressed", "no face"],
-    codepoint: 58424,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "smiley-meh",
-    pascal_name: "SmileyMeh",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["face", "emoji", "unimpressed", "neutral"],
-    codepoint: 58426,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "smiley-melting",
-    pascal_name: "SmileyMelting",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "*new*",
-      "face",
-      "emoji",
-      "embarrassment",
-      "sarcasm",
-      "shame",
-      "hot",
-      "heat",
-    ],
-    codepoint: 61014,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "smiley-nervous",
-    pascal_name: "SmileyNervous",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "*updated*",
-      "face",
-      "emoji",
-      "anxious",
-      "uncomfortable",
-      "uneasy",
-      "queasy",
-      "sick",
-      "ill",
-    ],
-    codepoint: 58428,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "smiley-sad",
-    pascal_name: "SmileySad",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["face", "emoji", "unhappy", "frowning"],
-    codepoint: 58430,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "smiley-sticker",
-    pascal_name: "SmileySticker",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["face", "emoji", "happy", "grinning", "smiling"],
-    codepoint: 58432,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "smiley-wink",
-    pascal_name: "SmileyWink",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["face", "emoji", "winking", "flirting", "cute"],
-    codepoint: 58982,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "smiley-x-eyes",
-    pascal_name: "SmileyXEyes",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["face", "emoji", "dead", "killed", "unconscious"],
-    codepoint: 58434,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "snapchat-logo",
-    pascal_name: "SnapchatLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "messaging", "social media"],
-    codepoint: 58984,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "sneaker",
-    pascal_name: "Sneaker",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.OBJECTS,
-      IconCategory.HEALTH,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["clothes", "clothing", "shoes", "trainers", "sports"],
-    codepoint: 59404,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "sneaker-move",
-    pascal_name: "SneakerMove",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.OBJECTS,
-      IconCategory.HEALTH,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*updated*", "clothes", "clothing", "shoes", "trainers", "sports"],
-    codepoint: 60768,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "snowflake",
-    pascal_name: "Snowflake",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["meteorology", "snowy", "snowing", "snowstorm"],
-    codepoint: 58794,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "soccer-ball",
-    pascal_name: "SoccerBall",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*updated*", "sports", "football", "mls"],
-    codepoint: 59158,
-    published_in: 1.3,
-    updated_in: 2.1,
-  },
-  {
-    name: "sock",
-    pascal_name: "Sock",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "clothes", "clothing"],
-    codepoint: 60622,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "solar-panel",
-    pascal_name: "SolarPanel",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "renewable", "energy", "power", "electricity"],
-    codepoint: 60794,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "solar-roof",
-    pascal_name: "SolarRoof",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "renewable", "energy", "power", "electricity"],
-    codepoint: 60794,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "sort-ascending",
-    pascal_name: "SortAscending",
-    categories: [IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*updated*",
-      "sorted",
-      "sorting",
-      "increasing",
-      "a to z",
-      "arrows",
-      "list",
-    ],
-    codepoint: 58436,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "sort-descending",
-    pascal_name: "SortDescending",
-    categories: [IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*updated*",
-      "sorted",
-      "sorting",
-      "decreasing",
-      "z to a",
-      "arrows",
-      "list",
-    ],
-    codepoint: 58438,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "soundcloud-logo",
-    pascal_name: "SoundcloudLogo",
-    categories: [IconCategory.BRAND, IconCategory.MEDIA],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["music", "social media", "logos"],
-    codepoint: 59614,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "spade",
-    pascal_name: "Spade",
-    categories: [IconCategory.GAMES],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["spades", "suits", "cards", "gambling", "casino", "gaming"],
-    codepoint: 58440,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "sparkle",
-    pascal_name: "Sparkle",
-    categories: [IconCategory.COMMUNICATION, IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["star", "rate", "ratings", "favorites", "favorited"],
-    codepoint: 59042,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "speaker-hifi",
-    pascal_name: "SpeakerHifi",
-    categories: [IconCategory.MEDIA, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "sound", "stereo"],
-    codepoint: 59912,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "speaker-high",
-    pascal_name: "SpeakerHigh",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "music", "audio", "volume", "sound"],
-    codepoint: 58442,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "speaker-low",
-    pascal_name: "SpeakerLow",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "music", "audio", "volume", "sound"],
-    codepoint: 58444,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "speaker-none",
-    pascal_name: "SpeakerNone",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "music", "audio", "muted", "volume", "sound"],
-    codepoint: 58446,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "speaker-simple-high",
-    pascal_name: "SpeakerSimpleHigh",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "volume", "sound"],
-    codepoint: 58448,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "speaker-simple-low",
-    pascal_name: "SpeakerSimpleLow",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "volume", "sound"],
-    codepoint: 58450,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "speaker-simple-none",
-    pascal_name: "SpeakerSimpleNone",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "muted", "volume", "sound"],
-    codepoint: 58452,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "speaker-simple-slash",
-    pascal_name: "SpeakerSimpleSlash",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "muted", "volume", "sound", "disabled"],
-    codepoint: 58454,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "speaker-simple-x",
-    pascal_name: "SpeakerSimpleX",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "muted", "volume", "sound", "disabled", "errors"],
-    codepoint: 58456,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "speaker-slash",
-    pascal_name: "SpeakerSlash",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "*updated*",
-      "music",
-      "audio",
-      "muted",
-      "volume",
-      "sound",
-      "disabled",
-    ],
-    codepoint: 58458,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "speaker-x",
-    pascal_name: "SpeakerX",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "*updated*",
-      "music",
-      "audio",
-      "muted",
-      "volume",
-      "sound",
-      "disabled",
-      "errors",
-    ],
-    codepoint: 58460,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "speedometer",
-    pascal_name: "Speedometer",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.OBJECTS,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "*new*",
-      "gauge",
-      "dashboard",
-      "meter",
-      "speed",
-      "odometer",
-      "performance",
-    ],
-    codepoint: 61044,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "sphere",
-    pascal_name: "Sphere",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "circle", "ball", "3d", "mesh", "cad", "model"],
-    codepoint: 61030,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "spinner",
-    pascal_name: "Spinner",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["loading", "loader", "waiting", "progress"],
-    codepoint: 58986,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "spinner-ball",
-    pascal_name: "SpinnerBall",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "loading", "loader", "waiting", "progress"],
-    codepoint: 60968,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "spinner-gap",
-    pascal_name: "SpinnerGap",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["loading", "loader", "waiting", "progress"],
-    codepoint: 58988,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "spiral",
-    pascal_name: "Spiral",
-    categories: [IconCategory.COMMUNICATION, IconCategory.DESIGN],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["*updated*", "spin", "rotate", "dizzy"],
-    codepoint: 59898,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "split-horizontal",
-    pascal_name: "SplitHorizontal",
-    categories: [IconCategory.ARROWS, IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["resize", "columns"],
-    codepoint: 59506,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "split-vertical",
-    pascal_name: "SplitVertical",
-    categories: [IconCategory.ARROWS, IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["resize", "rows"],
-    codepoint: 59510,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "spotify-logo",
-    pascal_name: "SpotifyLogo",
-    categories: [IconCategory.BRAND, IconCategory.MEDIA],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["music", "player", "streaming"],
-    codepoint: 58990,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "spray-bottle",
-    pascal_name: "SprayBottle",
-    categories: [IconCategory.OBJECTS, IconCategory.HEALTH],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "cleaner", "cleaning"],
-    codepoint: 59364,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "square",
-    pascal_name: "Square",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["4", "shapes", "polygons", "box"],
-    codepoint: 58462,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "square-half",
-    pascal_name: "SquareHalf",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "4",
-      "shapes",
-      "polygons",
-      "box",
-      "columns",
-      "sidebar",
-      "split vertical",
-    ],
-    codepoint: 58466,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "square-half-bottom",
-    pascal_name: "SquareHalfBottom",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "4",
-      "shapes",
-      "polygons",
-      "box",
-      "columns",
-      "sidebar",
-      "split vertical",
-    ],
-    codepoint: 60182,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "square-logo",
-    pascal_name: "SquareLogo",
-    categories: [
-      IconCategory.BRAND,
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-    ],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["squareup", "payment"],
-    codepoint: 59024,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "square-split-horizontal",
-    pascal_name: "SquareSplitHorizontal",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["shapes", "polygons", "columns"],
-    codepoint: 59504,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "square-split-vertical",
-    pascal_name: "SquareSplitVertical",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["shapes", "polygons", "rows"],
-    codepoint: 59508,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "squares-four",
-    pascal_name: "SquaresFour",
-    categories: [IconCategory.DESIGN, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "4",
-      "shapes",
-      "polygons",
-      "apps",
-      "applications",
-      "grid",
-      "table",
-      "microsoft",
-      "logos",
-    ],
-    codepoint: 58468,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "stack",
-    pascal_name: "Stack",
-    categories: [IconCategory.DESIGN, IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["cards", "layers"],
-    codepoint: 58470,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "stack-minus",
-    pascal_name: "StackMinus",
-    categories: [IconCategory.DESIGN, IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "cards", "layers", "remove", "delete"],
-    codepoint: 60916,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "stack-overflow-logo",
-    pascal_name: "StackOverflowLogo",
-    categories: [IconCategory.BRAND, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "code"],
-    codepoint: 60280,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "stack-plus",
-    pascal_name: "StackPlus",
-    categories: [IconCategory.DESIGN, IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "cards", "layers", "add"],
-    codepoint: 60918,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "stack-simple",
-    pascal_name: "StackSimple",
-    categories: [IconCategory.DESIGN, IconCategory.OFFICE, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["cards", "layers"],
-    codepoint: 58472,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "stairs",
-    pascal_name: "Stairs",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["staircase", "steps", "escalator", "exit", "signs"],
-    codepoint: 59628,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "stamp",
-    pascal_name: "Stamp",
-    categories: [IconCategory.DESIGN, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["clone", "seal", "official"],
-    codepoint: 59976,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "standard-definition",
-    pascal_name: "StandardDefinition",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*new*", "sd", "resolution", "video"],
-    codepoint: 60048,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "star",
-    pascal_name: "Star",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.MAP,
-      IconCategory.NATURE,
-    ],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["rate", "ratings", "favorites", "favorited"],
-    codepoint: 58474,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "star-and-crescent",
-    pascal_name: "StarAndCrescent",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["islam", "muslim", "moon", "religion", "worship", "symbol"],
-    codepoint: 60660,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "star-four",
-    pascal_name: "StarFour",
-    categories: [IconCategory.COMMUNICATION, IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["rate", "ratings", "favorites", "favorited"],
-    codepoint: 59044,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "star-half",
-    pascal_name: "StarHalf",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["rate", "ratings"],
-    codepoint: 59146,
-    published_in: 1.3,
-    updated_in: 1.4,
-  },
-  {
-    name: "star-of-david",
-    pascal_name: "StarOfDavid",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["judaism", "jewish", "hexagram", "religion", "worship", "symbol"],
-    codepoint: 59550,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "steam-logo",
-    pascal_name: "SteamLogo",
-    categories: [IconCategory.BRAND, IconCategory.GAMES],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "gaming", "games"],
-    codepoint: 60116,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "steering-wheel",
-    pascal_name: "SteeringWheel",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["cars", "vehicles", "automobiles", "driving"],
-    codepoint: 59820,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "steps",
-    pascal_name: "Steps",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["stairs", "staircase", "exit", "signs"],
-    codepoint: 60606,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "stethoscope",
-    pascal_name: "Stethoscope",
-    categories: [IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "hospital",
-      "medical",
-      "medicine",
-      "injury",
-      "safety",
-      "emergency",
-      "doctor",
-      "heart",
-    ],
-    codepoint: 59370,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "sticker",
-    pascal_name: "Sticker",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["stickers", "sticker pack", "labels"],
-    codepoint: 58796,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "stool",
-    pascal_name: "Stool",
-    categories: [IconCategory.OBJECTS, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["chair", "seat", "furniture"],
-    codepoint: 59972,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "stop",
-    pascal_name: "Stop",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio"],
-    codepoint: 58476,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "stop-circle",
-    pascal_name: "StopCircle",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["music", "audio", "round"],
-    codepoint: 58478,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "storefront",
-    pascal_name: "Storefront",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "shops",
-      "shopping",
-      "markets",
-      "stores",
-      "buildings",
-      "places",
-      "locations",
-    ],
-    codepoint: 58480,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "strategy",
-    pascal_name: "Strategy",
-    categories: [IconCategory.GAMES, IconCategory.FINANCE],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["sports", "strategem", "plan", "tic-tac-toe"],
-    codepoint: 59962,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "stripe-logo",
-    pascal_name: "StripeLogo",
-    categories: [
-      IconCategory.BRAND,
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-    ],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["payment"],
-    codepoint: 59032,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "student",
-    pascal_name: "Student",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: [
-      "pupil",
-      "graduate",
-      "classroom",
-      "teacher",
-      "education",
-      "school",
-      "college",
-      "university",
-    ],
-    codepoint: 59198,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "subset-of",
-    pascal_name: "SubsetOf",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "⊆",
-      "subset of",
-      "set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60864,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "subset-proper-of",
-    pascal_name: "SubsetProperOf",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "⊂",
-      "proper subset of",
-      "set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60854,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "subtitles",
-    pascal_name: "Subtitles",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "subtitles",
-      "television",
-      "tv",
-      "transcribed",
-      "transcription",
-      "accessibility",
-      "a11y",
-    ],
-    codepoint: 57768,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "subtitles-slash",
-    pascal_name: "SubtitlesSlash",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "*new*",
-      "subtitles",
-      "television",
-      "tv",
-      "transcribed",
-      "transcription",
-      "accessibility",
-      "a11y",
-      "disabled",
-    ],
-    codepoint: 57766,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "subtract",
-    pascal_name: "Subtract",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["boolean", "intersection", "combine", "split", "merge", "union"],
-    codepoint: 60374,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "subtract-square",
-    pascal_name: "SubtractSquare",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["boolean", "intersection", "combine", "split", "merge", "union"],
-    codepoint: 60372,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "subway",
-    pascal_name: "Subway",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*new*",
-      "vehicles",
-      "underground",
-      "train",
-      "tunnel",
-      "metro",
-      "light rail",
-      "public transit",
-      "transportation",
-      "commuter",
-      "traveling",
-      "places",
-      "locations",
-    ],
-    codepoint: 58520,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "suitcase",
-    pascal_name: "Suitcase",
-    categories: [IconCategory.OFFICE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["briefcase", "valise", "baggage", "folders", "portfolio"],
-    codepoint: 58798,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "suitcase-rolling",
-    pascal_name: "SuitcaseRolling",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["suitcase", "luggage", "travel", "transportation"],
-    codepoint: 59824,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "suitcase-simple",
-    pascal_name: "SuitcaseSimple",
-    categories: [IconCategory.OFFICE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["briefcase", "valise", "baggage", "folders", "portfolio"],
-    codepoint: 58800,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "sun",
-    pascal_name: "Sun",
-    categories: [
-      IconCategory.NATURE,
-      IconCategory.SYSTEM,
-      IconCategory.WEATHER,
-    ],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "day",
-      "daytime",
-      "daylight",
-      "clear",
-      "sunny",
-      "sunshine",
-      "light mode",
-      "brightness",
-      "lighten",
-      "brighten",
-    ],
-    codepoint: 58482,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "sun-dim",
-    pascal_name: "SunDim",
-    categories: [
-      IconCategory.NATURE,
-      IconCategory.SYSTEM,
-      IconCategory.WEATHER,
-    ],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "day",
-      "daytime",
-      "daylight",
-      "clear",
-      "sunny",
-      "sunshine",
-      "light mode",
-      "brightness",
-      "darken",
-    ],
-    codepoint: 58484,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "sun-horizon",
-    pascal_name: "SunHorizon",
-    categories: [IconCategory.NATURE, IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "day",
-      "daytime",
-      "daylight",
-      "clear",
-      "sunny",
-      "sunshine",
-      "sunrise",
-      "sunset",
-    ],
-    codepoint: 58806,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "sunglasses",
-    pascal_name: "Sunglasses",
-    categories: [IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["vision", "sun", "spectacles"],
-    codepoint: 59414,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "superset-of",
-    pascal_name: "SupersetOf",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "⊇",
-      "superset of",
-      "set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60856,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "superset-proper-of",
-    pascal_name: "SupersetProperOf",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "⊃",
-      "proper superset of",
-      "set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60852,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "swap",
-    pascal_name: "Swap",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["layers", "replace", "exchange", "reverse"],
-    codepoint: 59452,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "swatches",
-    pascal_name: "Swatches",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["colors", "color picker", "samples", "pantone"],
-    codepoint: 58808,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "swimming-pool",
-    pascal_name: "SwimmingPool",
-    categories: [IconCategory.HEALTH, IconCategory.MAP, IconCategory.GAMES],
-    figma_category: FigmaCategory.MAP,
-    tags: ["swim", "sports", "exercise", "olympics", "aquatics"],
-    codepoint: 60598,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "sword",
-    pascal_name: "Sword",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "weapon",
-      "knife",
-      "dagger",
-      "gladius",
-      "video games",
-      "rpg",
-      "gaming",
-      "war",
-    ],
-    codepoint: 58810,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "synagogue",
-    pascal_name: "Synagogue",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["jewish", "judaism", "temple", "religion", "worship"],
-    codepoint: 60652,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "syringe",
-    pascal_name: "Syringe",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: [
-      "needle",
-      "hypodermic",
-      "vaccine",
-      "medicine",
-      "doctor",
-      "shot",
-      "hospital",
-    ],
-    codepoint: 59752,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "t-shirt",
-    pascal_name: "TShirt",
-    categories: [IconCategory.OBJECTS, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["clothes", "clothing"],
-    codepoint: 58992,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "table",
-    pascal_name: "Table",
-    categories: [
-      IconCategory.FINANCE,
-      IconCategory.OFFICE,
-      IconCategory.EDITOR,
-    ],
-    figma_category: FigmaCategory.FINANCE,
-    tags: ["tables", "tabular", "spreadsheets", "excel", "grid", "form"],
-    codepoint: 58486,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "tabs",
-    pascal_name: "Tabs",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*updated*", "browser", "window", "folders", "files"],
-    codepoint: 59256,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "tag",
-    pascal_name: "Tag",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.DEVELOPMENT,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["tags", "hashtag", "labels", "sale", "sell", "price", "discount"],
-    codepoint: 58488,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "tag-chevron",
-    pascal_name: "TagChevron",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.DEVELOPMENT,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["tags", "hashtag", "labels", "sale"],
-    codepoint: 58994,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "tag-simple",
-    pascal_name: "TagSimple",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.DEVELOPMENT,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["tags", "hashtag", "labels", "sale", "sell", "price", "discount"],
-    codepoint: 58490,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "target",
-    pascal_name: "Target",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["bullseye", "radar", "archery", "accuracy", "precision"],
-    codepoint: 58492,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "taxi",
-    pascal_name: "Taxi",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "*updated*",
-      "vehicles",
-      "cars",
-      "automobiles",
-      "livery",
-      "limousine",
-      "uber",
-    ],
-    codepoint: 59650,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "tea-bag",
-    pascal_name: "TeaBag",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "drinks",
-      "beverages",
-      "sachet",
-      "caffeine",
-      "places",
-      "locations",
-      "bars",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 59622,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "telegram-logo",
-    pascal_name: "TelegramLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "messages", "messaging"],
-    codepoint: 58812,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "television",
-    pascal_name: "Television",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["screen", "tv", "displays"],
-    codepoint: 59220,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "television-simple",
-    pascal_name: "TelevisionSimple",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "screen", "tv", "displays"],
-    codepoint: 60134,
-    published_in: 1.3,
-    updated_in: 2.1,
-  },
-  {
-    name: "tennis-ball",
-    pascal_name: "TennisBall",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["sports", "mlb"],
-    codepoint: 59168,
-    published_in: 1.3,
-    updated_in: 1.4,
-  },
-  {
-    name: "tent",
-    pascal_name: "Tent",
-    categories: [
-      IconCategory.HEALTH,
-      IconCategory.OBJECTS,
-      IconCategory.NATURE,
-      IconCategory.MAP,
-    ],
-    figma_category: FigmaCategory.MAP,
-    tags: ["camping", "outdoors", "tarp"],
-    codepoint: 59578,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "terminal",
-    pascal_name: "Terminal",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["command line", "cli", "bash", "shell", "caret", "console"],
-    codepoint: 58494,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "terminal-window",
-    pascal_name: "TerminalWindow",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["command line", "cli", "bash", "shell", "caret", "console"],
-    codepoint: 60136,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "test-tube",
-    pascal_name: "TestTube",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.NATURE,
-      IconCategory.HEALTH,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["science", "chemistry", "experiment", "vial"],
-    codepoint: 59296,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "text-a-underline",
-    pascal_name: "TextAUnderline",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["typography", "typeface", "print", "font", "underscore", "emphasis"],
-    codepoint: 60724,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "text-aa",
-    pascal_name: "TextAa",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["typography", "typeface", "print", "font"],
-    codepoint: 59118,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "text-align-center",
-    pascal_name: "TextAlignCenter",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*updated*", "typography", "print", "font", "alignment", "centered"],
-    codepoint: 58496,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-align-justify",
-    pascal_name: "TextAlignJustify",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*updated*",
-      "typography",
-      "print",
-      "font",
-      "alignment",
-      "justified",
-    ],
-    codepoint: 58498,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-align-left",
-    pascal_name: "TextAlignLeft",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*updated*",
-      "typography",
-      "print",
-      "font",
-      "alignment",
-      "flush left",
-    ],
-    codepoint: 58500,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-align-right",
-    pascal_name: "TextAlignRight",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*updated*",
-      "typography",
-      "print",
-      "font",
-      "alignment",
-      "flush right",
-    ],
-    codepoint: 58502,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-b",
-    pascal_name: "TextB",
-    alias: { name: "text-bolder", pascal_name: "TextBolder" },
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "typography",
-      "typeface",
-      "print",
-      "font",
-      "bold",
-      "boldface",
-      "emphasis",
-    ],
-    codepoint: 58814,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "text-columns",
-    pascal_name: "TextColumns",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*updated*", "typography", "print", "font", "alignment", "article"],
-    codepoint: 60566,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-h",
-    pascal_name: "TextH",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["heading", "typography", "print"],
-    codepoint: 59066,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "text-h-five",
-    pascal_name: "TextHFive",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["heading", "h5", "typography", "print"],
-    codepoint: 59076,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "text-h-four",
-    pascal_name: "TextHFour",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*updated*", "heading", "h4", "typography", "print"],
-    codepoint: 59074,
-    published_in: 1.3,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-h-one",
-    pascal_name: "TextHOne",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["heading", "h1", "typography", "print"],
-    codepoint: 59068,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "text-h-six",
-    pascal_name: "TextHSix",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["heading", "h6", "typography", "print"],
-    codepoint: 59078,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "text-h-three",
-    pascal_name: "TextHThree",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["heading", "h3", "typography", "print"],
-    codepoint: 59072,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "text-h-two",
-    pascal_name: "TextHTwo",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["heading", "h2", "typography", "print"],
-    codepoint: 59070,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "text-indent",
-    pascal_name: "TextIndent",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*updated*", "alignment", "tab", "menu"],
-    codepoint: 59934,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-italic",
-    pascal_name: "TextItalic",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "typography",
-      "typeface",
-      "print",
-      "font",
-      "slant",
-      "oblique",
-      "stress",
-      "emphasis",
-      "calligraphy",
-    ],
-    codepoint: 58816,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "text-outdent",
-    pascal_name: "TextOutdent",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*updated*", "alignment", "tab", "unindent", "dedent", "menu"],
-    codepoint: 59932,
-    published_in: 1.4,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-strikethrough",
-    pascal_name: "TextStrikethrough",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "typography",
-      "typeface",
-      "print",
-      "font",
-      "struck",
-      "remove",
-      "delete",
-      "change",
-    ],
-    codepoint: 58818,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "text-subscript",
-    pascal_name: "TextSubscript",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.FINANCE,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*new*",
-      "typography",
-      "font",
-      "formatting",
-      "mathematics",
-      "power",
-      "exponent",
-      "calculator",
-    ],
-    codepoint: 60568,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-superscript",
-    pascal_name: "TextSuperscript",
-    categories: [
-      IconCategory.DESIGN,
-      IconCategory.EDITOR,
-      IconCategory.FINANCE,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*new*",
-      "typography",
-      "font",
-      "formatting",
-      "mathematics",
-      "calculator",
-    ],
-    codepoint: 60570,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-t",
-    pascal_name: "TextT",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["typography", "typeface", "print", "font"],
-    codepoint: 58506,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "text-t-slash",
-    pascal_name: "TextTSlash",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "*new*",
-      "typography",
-      "typeface",
-      "print",
-      "font",
-      "formatting",
-      "clear",
-    ],
-    codepoint: 58504,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "text-underline",
-    pascal_name: "TextUnderline",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["typography", "typeface", "print", "font", "underscore", "emphasis"],
-    codepoint: 58820,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "textbox",
-    pascal_name: "Textbox",
-    categories: [IconCategory.EDITOR, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["input", "cursor", "field"],
-    codepoint: 60170,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "thermometer",
-    pascal_name: "Thermometer",
-    categories: [
-      IconCategory.WEATHER,
-      IconCategory.HEALTH,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "meteorology",
-      "temperature",
-      "degrees",
-      "°",
-      "celcius",
-      "centigrade",
-      "kelvin",
-      "fahrenheit",
-      "hot",
-      "warm",
-      "cold",
-    ],
-    codepoint: 58822,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "thermometer-cold",
-    pascal_name: "ThermometerCold",
-    categories: [
-      IconCategory.WEATHER,
-      IconCategory.HEALTH,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "meteorology",
-      "temperature",
-      "degrees",
-      "°",
-      "celcius",
-      "centigrade",
-      "kelvin",
-      "fahrenheit",
-    ],
-    codepoint: 58824,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "thermometer-hot",
-    pascal_name: "ThermometerHot",
-    categories: [
-      IconCategory.WEATHER,
-      IconCategory.HEALTH,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "meteorology",
-      "temperature",
-      "degrees",
-      "°",
-      "celcius",
-      "centigrade",
-      "kelvin",
-      "fahrenheit",
-      "warm",
-    ],
-    codepoint: 58826,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "thermometer-simple",
-    pascal_name: "ThermometerSimple",
-    categories: [
-      IconCategory.WEATHER,
-      IconCategory.HEALTH,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "meteorology",
-      "temperature",
-      "degrees",
-      "°",
-      "celcius",
-      "centigrade",
-      "kelvin",
-      "fahrenheit",
-      "hot",
-      "warm",
-      "cold",
-    ],
-    codepoint: 58828,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "threads-logo",
-    pascal_name: "ThreadsLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "meta", "instagram", "social media"],
-    codepoint: 60830,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "three-d",
-    pascal_name: "ThreeD",
-    categories: [IconCategory.MEDIA, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*new*", "3d", "cad", "model"],
-    codepoint: 59994,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "thumbs-down",
-    pascal_name: "ThumbsDown",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["dislike", "hate", "emoji", "no"],
-    codepoint: 58508,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "thumbs-up",
-    pascal_name: "ThumbsUp",
-    categories: [IconCategory.COMMUNICATION, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["like", "love", "favorited", "favorites", "emoji", "yes"],
-    codepoint: 58510,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "ticket",
-    pascal_name: "Ticket",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["ticketstub", "movie ticket", "entry", "admissions", "events"],
-    codepoint: 58512,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "tidal-logo",
-    pascal_name: "TidalLogo",
-    categories: [IconCategory.BRAND, IconCategory.MEDIA],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["music", "logos"],
-    codepoint: 60700,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "tiktok-logo",
-    pascal_name: "TiktokLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "social media"],
-    codepoint: 60146,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "tilde",
-    pascal_name: "Tilde",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "~",
-      "∼",
-      "proportional",
-      "comparison",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60840,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "timer",
-    pascal_name: "Timer",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: ["clock", "alarm", "schedule", "events", "stopwatch", "sports"],
-    codepoint: 58514,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "tip-jar",
-    pascal_name: "TipJar",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "give", "deposit", "donation", "savings", "money"],
-    codepoint: 59360,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "tipi",
-    pascal_name: "Tipi",
-    categories: [IconCategory.NATURE, IconCategory.OBJECTS, IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["teepee", "lodge", "tent", "outdoors", "camping", "tarp"],
-    codepoint: 60720,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "tire",
-    pascal_name: "Tire",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "wheel", "vehicles", "transportation"],
-    codepoint: 60882,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "toggle-left",
-    pascal_name: "ToggleLeft",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["switch", "controls", "settings", "preferences"],
-    codepoint: 58996,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "toggle-right",
-    pascal_name: "ToggleRight",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["switch", "controls", "settings", "preferences"],
-    codepoint: 58998,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "toilet",
-    pascal_name: "Toilet",
-    categories: [IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["bathroom", "restroom", "lavatory", "water closet"],
-    codepoint: 59290,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "toilet-paper",
-    pascal_name: "ToiletPaper",
-    categories: [IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["bathroom", "restroom", "lavatory", "water closet"],
-    codepoint: 59292,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "toolbox",
-    pascal_name: "Toolbox",
-    categories: [
-      IconCategory.OBJECTS,
-      IconCategory.SYSTEM,
-      IconCategory.COMMERCE,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["tools", "carpentry", "construction"],
-    codepoint: 60576,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "tooth",
-    pascal_name: "Tooth",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["teeth", "dentistry", "medical", "medicine", "doctor", "cavity"],
-    codepoint: 59852,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "tornado",
-    pascal_name: "Tornado",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["*new*", "meteorology", "twister", "storm", "wind", "disaster"],
-    codepoint: 59532,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "tote",
-    pascal_name: "Tote",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["suitcases", "valises", "baggage", "tote-bag", "portfolios"],
-    codepoint: 58516,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "tote-simple",
-    pascal_name: "ToteSimple",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["suitcases", "valises", "baggage", "tote-bag", "portfolios"],
-    codepoint: 59000,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "towel",
-    pascal_name: "Towel",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "clothing",
-      "linen",
-      "hotel",
-      "beach",
-      "pool",
-      "swimming",
-      "shower",
-      "bath",
-    ],
-    codepoint: 60902,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "tractor",
-    pascal_name: "Tractor",
-    categories: [IconCategory.COMMERCE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "vehicles", "farmer", "field", "farming", "agriculture"],
-    codepoint: 60526,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "trademark",
-    pascal_name: "Trademark",
-    categories: [IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["tm", "®", "™", "intellectual property"],
-    codepoint: 59888,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "trademark-registered",
-    pascal_name: "TrademarkRegistered",
-    categories: [IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["®", "™", "intellectual property"],
-    codepoint: 58356,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "traffic-cone",
-    pascal_name: "TrafficCone",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["pylon", "safety", "transit", "transportation"],
-    codepoint: 59816,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "traffic-sign",
-    pascal_name: "TrafficSign",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["road signs", "transit", "transportation"],
-    codepoint: 59002,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "traffic-signal",
-    pascal_name: "TrafficSignal",
-    categories: [IconCategory.MAP],
-    figma_category: FigmaCategory.MAP,
-    tags: ["stop light", "safety", "transit", "transportation"],
-    codepoint: 59818,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "train",
-    pascal_name: "Train",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "vehicles",
-      "subway",
-      "light rail",
-      "public transit",
-      "transportation",
-      "commuter",
-      "traveling",
-      "places",
-      "locations",
-    ],
-    codepoint: 58518,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "train-regional",
-    pascal_name: "TrainRegional",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "vehicles",
-      "subway",
-      "railroad",
-      "public transit",
-      "transportation",
-      "commuter",
-      "freight",
-      "shipping",
-      "traveling",
-      "places",
-      "locations",
-    ],
-    codepoint: 58526,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "train-simple",
-    pascal_name: "TrainSimple",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "vehicles",
-      "subway",
-      "light rail",
-      "public transit",
-      "transportation",
-      "commuter",
-      "traveling",
-      "places",
-      "locations",
-    ],
-    codepoint: 58528,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "tram",
-    pascal_name: "Tram",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "vehicles",
-      "subway",
-      "railroad",
-      "public transit",
-      "transportation",
-      "commuter",
-      "light rail",
-      "shipping",
-      "traveling",
-      "places",
-      "locations",
-    ],
-    codepoint: 59884,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "translate",
-    pascal_name: "Translate",
-    categories: [IconCategory.COMMUNICATION, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: [
-      "translation",
-      "languages",
-      "internationalization",
-      "i18n",
-      "speech",
-    ],
-    codepoint: 58530,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "trash",
-    pascal_name: "Trash",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["garbage", "remove", "delete", "destroy", "recycle", "recycling"],
-    codepoint: 58534,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "trash-simple",
-    pascal_name: "TrashSimple",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["garbage", "remove", "delete", "destroy", "recycle", "recycling"],
-    codepoint: 58536,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "tray",
-    pascal_name: "Tray",
-    categories: [
-      IconCategory.OFFICE,
-      IconCategory.COMMUNICATION,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["inbox", "mailbox", "bin"],
-    codepoint: 58538,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "tray-arrow-down",
-    pascal_name: "TrayArrowDown",
-    alias: { name: "archive-tray", pascal_name: "ArchiveTray" },
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: [
-      "inbox",
-      "saved",
-      "saving",
-      "archived",
-      "archiving",
-      "archival",
-      "downloaded",
-      "downloading",
-    ],
-    codepoint: 57360,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "tray-arrow-up",
-    pascal_name: "TrayArrowUp",
-    categories: [IconCategory.OFFICE, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.OFFICE,
-    tags: ["*new*", "outbox", "archival", "unarchive", "uploaded", "uploading"],
-    codepoint: 61010,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "treasure-chest",
-    pascal_name: "TreasureChest",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "*new*",
-      "loot",
-      "lootbox",
-      "inventory",
-      "rewards",
-      "gaming",
-      "pirate",
-    ],
-    codepoint: 60898,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "tree",
-    pascal_name: "Tree",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["plants", "branches", "leaves", "green", "environmental"],
-    codepoint: 59098,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "tree-evergreen",
-    pascal_name: "TreeEvergreen",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.WEATHER,
-    tags: [
-      "plants",
-      "branches",
-      "leaves",
-      "pine",
-      "conifer",
-      "green",
-      "environmental",
-    ],
-    codepoint: 59100,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "tree-palm",
-    pascal_name: "TreePalm",
-    categories: [IconCategory.NATURE],
-    figma_category: FigmaCategory.GAMES,
-    tags: [
-      "tropical",
-      "beach",
-      "plants",
-      "branches",
-      "leaves",
-      "green",
-      "environmental",
-    ],
-    codepoint: 59674,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "tree-structure",
-    pascal_name: "TreeStructure",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.OFFICE],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: [
-      "data structures",
-      "family tree",
-      "genealogy",
-      "hierarchy",
-      "taxonomy",
-      "charts",
-      "flowchart",
-    ],
-    codepoint: 59004,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "tree-view",
-    pascal_name: "TreeView",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["*new*", "hierarchy"],
-    codepoint: 61000,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "trend-down",
-    pascal_name: "TrendDown",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-      "decrease",
-      "arrows",
-    ],
-    codepoint: 58540,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "trend-up",
-    pascal_name: "TrendUp",
-    categories: [IconCategory.FINANCE, IconCategory.OFFICE],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "graphs",
-      "graphing",
-      "charts",
-      "statistics",
-      "analyze",
-      "analysis",
-      "increase",
-      "arrows",
-    ],
-    codepoint: 58542,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "triangle",
-    pascal_name: "Triangle",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["3", "shapes", "polygons"],
-    codepoint: 58544,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "triangle-dashed",
-    pascal_name: "TriangleDashed",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["*new*", "3", "shapes", "polygons", "missing"],
-    codepoint: 58546,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "trolley",
-    pascal_name: "Trolley",
-    categories: [IconCategory.OFFICE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["*new*", "airport", "briefcase", "valise", "baggage"],
-    codepoint: 58802,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "trolley-suitcase",
-    pascal_name: "TrolleySuitcase",
-    categories: [IconCategory.OFFICE, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["*new*", "airport", "briefcase", "valise", "baggage"],
-    codepoint: 58804,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "trophy",
-    pascal_name: "Trophy",
-    categories: [IconCategory.GAMES, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["ribbons", "medals", "winning", "victory", "awards", "prize"],
-    codepoint: 59006,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "truck",
-    pascal_name: "Truck",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: ["trucks", "cars", "vehicles", "automobile", "shipping", "delivery"],
-    codepoint: 58548,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "truck-trailer",
-    pascal_name: "TruckTrailer",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "vehicles", "automobile", "shipping", "tractor", "semi"],
-    codepoint: 58550,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "tumblr-logo",
-    pascal_name: "TumblrLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "social media", "logos"],
-    codepoint: 59604,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "twitch-logo",
-    pascal_name: "TwitchLogo",
-    categories: [
-      IconCategory.BRAND,
-      IconCategory.COMMUNICATION,
-      IconCategory.GAMES,
-    ],
-    figma_category: FigmaCategory.BRAND,
-    tags: [
-      "logos",
-      "streaming",
-      "livestream",
-      "gaming",
-      "video games",
-      "social media",
-    ],
-    codepoint: 58830,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "twitter-logo",
-    pascal_name: "TwitterLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "social media", "tweets", "birds"],
-    codepoint: 58554,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "umbrella",
-    pascal_name: "Umbrella",
-    categories: [IconCategory.OBJECTS, IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["raining", "rainy", "insurance"],
-    codepoint: 59012,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "umbrella-simple",
-    pascal_name: "UmbrellaSimple",
-    categories: [IconCategory.OBJECTS, IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["raining", "rainy", "insurance"],
-    codepoint: 59014,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "union",
-    pascal_name: "Union",
-    categories: [IconCategory.FINANCE, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "*new*",
-      "∪",
-      "union",
-      "set",
-      "member",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 60862,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "unite",
-    pascal_name: "Unite",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: [
-      "*updated*",
-      "round",
-      "join",
-      "union",
-      "merge",
-      "combine",
-      "intersecting",
-      "intersection",
-    ],
-    codepoint: 59518,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "unite-square",
-    pascal_name: "UniteSquare",
-    categories: [IconCategory.DESIGN, IconCategory.EDITOR],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["join", "union", "merge", "combine", "intersecting", "intersection"],
-    codepoint: 59512,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "upload",
-    pascal_name: "Upload",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "saved",
-      "saving",
-      "archived",
-      "archiving",
-      "archival",
-      "uploaded",
-      "uploading",
-      "hard drive",
-      "disk",
-    ],
-    codepoint: 58558,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "upload-simple",
-    pascal_name: "UploadSimple",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "*updated*",
-      "saved",
-      "saving",
-      "archived",
-      "archiving",
-      "archival",
-      "uploaded",
-      "uploading",
-      "hard drive",
-      "disk",
-    ],
-    codepoint: 58560,
-    published_in: 1.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "usb",
-    pascal_name: "Usb",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["serial", "port", "plug", "peripheral", "device"],
-    codepoint: 59734,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "user",
-    pascal_name: "User",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["person", "users", "profile", "account", "contact", "login"],
-    codepoint: 58562,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "user-check",
-    pascal_name: "UserCheck",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "*new*",
-      "person",
-      "users",
-      "profile",
-      "account",
-      "contact",
-      "login",
-      "verified",
-    ],
-    codepoint: 60154,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "user-circle",
-    pascal_name: "UserCircle",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["person", "users", "profile", "account", "contact", "login"],
-    codepoint: 58564,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "user-circle-check",
-    pascal_name: "UserCircleCheck",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "*new*",
-      "person",
-      "users",
-      "profile",
-      "account",
-      "contact",
-      "login",
-      "verified",
-    ],
-    codepoint: 60472,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "user-circle-dashed",
-    pascal_name: "UserCircleDashed",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "*new*",
-      "person",
-      "users",
-      "profile",
-      "account",
-      "contact",
-      "login",
-      "pending",
-      "missing",
-      "removed",
-    ],
-    codepoint: 60470,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "user-circle-gear",
-    pascal_name: "UserCircleGear",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "person",
-      "users",
-      "profile",
-      "account",
-      "contact",
-      "settings",
-      "preferences",
-    ],
-    codepoint: 58566,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "user-circle-minus",
-    pascal_name: "UserCircleMinus",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "person",
-      "users",
-      "profile",
-      "account",
-      "contact",
-      "delete",
-      "remove",
-      "-",
-    ],
-    codepoint: 58568,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "user-circle-plus",
-    pascal_name: "UserCirclePlus",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "person",
-      "users",
-      "profile",
-      "account",
-      "contact",
-      "add",
-      "create",
-      "+",
-    ],
-    codepoint: 58570,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "user-focus",
-    pascal_name: "UserFocus",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "identification",
-      "biometrics",
-      "facial recognition",
-      "profile",
-      "person",
-      "account",
-      "autofocus",
-    ],
-    codepoint: 59132,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "user-gear",
-    pascal_name: "UserGear",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "person",
-      "users",
-      "profile",
-      "account",
-      "contact",
-      "settings",
-      "preferences",
-    ],
-    codepoint: 58572,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "user-list",
-    pascal_name: "UserList",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "person",
-      "users",
-      "profiles",
-      "accounts",
-      "members",
-      "address book",
-    ],
-    codepoint: 59196,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "user-minus",
-    pascal_name: "UserMinus",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "person",
-      "users",
-      "profile",
-      "account",
-      "contact",
-      "delete",
-      "remove",
-      "-",
-    ],
-    codepoint: 58574,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "user-plus",
-    pascal_name: "UserPlus",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "person",
-      "users",
-      "profile",
-      "account",
-      "contact",
-      "add",
-      "create",
-      "+",
-    ],
-    codepoint: 58576,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "user-rectangle",
-    pascal_name: "UserRectangle",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["person", "users", "profile", "account", "contact", "login"],
-    codepoint: 58578,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "user-sound",
-    pascal_name: "UserSound",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "*new*",
-      "person",
-      "users",
-      "profile",
-      "speech",
-      "speaking",
-      "voice",
-    ],
-    codepoint: 60584,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "user-square",
-    pascal_name: "UserSquare",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: ["person", "users", "profile", "account", "contact", "login"],
-    codepoint: 58580,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "user-switch",
-    pascal_name: "UserSwitch",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "person",
-      "users",
-      "profile",
-      "account",
-      "login",
-      "logout",
-      "signin",
-      "signout",
-      "settings",
-      "preferences",
-    ],
-    codepoint: 59222,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "users",
-    pascal_name: "Users",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "user",
-      "group",
-      "team",
-      "people",
-      "profiles",
-      "accounts",
-      "contacts",
-    ],
-    codepoint: 58582,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "users-four",
-    pascal_name: "UsersFour",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "user",
-      "group",
-      "team",
-      "department",
-      "community",
-      "people",
-      "profiles",
-      "accounts",
-      "contacts",
-    ],
-    codepoint: 59020,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "users-three",
-    pascal_name: "UsersThree",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "user",
-      "group",
-      "team",
-      "community",
-      "people",
-      "profiles",
-      "accounts",
-      "contacts",
-    ],
-    codepoint: 59022,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "van",
-    pascal_name: "Van",
-    categories: [IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MAP,
-    tags: [
-      "westfalia",
-      "microbus",
-      "vanagon",
-      "cars",
-      "vehicles",
-      "automobile",
-      "transit",
-      "transportation",
-      "traveling",
-    ],
-    codepoint: 59430,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "vault",
-    pascal_name: "Vault",
-    categories: [
-      IconCategory.OBJECTS,
-      IconCategory.SYSTEM,
-      IconCategory.FINANCE,
-    ],
-    figma_category: FigmaCategory.SECURITY,
-    tags: [
-      "safe",
-      "bank",
-      "security",
-      "secured",
-      "authentication",
-      "authenticated",
-      "locked",
-      "encrypted",
-      "encryption",
-    ],
-    codepoint: 59246,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "vector-three",
-    pascal_name: "VectorThree",
-    categories: [
-      IconCategory.ARROWS,
-      IconCategory.DEVELOPMENT,
-      IconCategory.DESIGN,
-    ],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*new*",
-      "3d",
-      "xyz",
-      "cartesian",
-      "coordinates",
-      "plane",
-      "volume",
-      "dimensions",
-      "mathematics",
-    ],
-    codepoint: 61026,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "vector-two",
-    pascal_name: "VectorTwo",
-    categories: [
-      IconCategory.ARROWS,
-      IconCategory.DEVELOPMENT,
-      IconCategory.DESIGN,
-    ],
-    figma_category: FigmaCategory.ARROWS,
-    tags: [
-      "*new*",
-      "2d",
-      "xy",
-      "cartesian",
-      "coordinates",
-      "plane",
-      "dimensions",
-      "mathematics",
-    ],
-    codepoint: 61028,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "vibrate",
-    pascal_name: "Vibrate",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "audio",
-      "volume",
-      "viration",
-      "ringer",
-      "calls",
-      "silent",
-      "silenced",
-    ],
-    codepoint: 58584,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "video",
-    pascal_name: "Video",
-    categories: [IconCategory.PEOPLE],
-    figma_category: FigmaCategory.EDUCATION,
-    tags: ["training", "course", "education", "tutorial"],
-    codepoint: 59200,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "video-camera",
-    pascal_name: "VideoCamera",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["videography", "films", "movies", "recording"],
-    codepoint: 58586,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "video-camera-slash",
-    pascal_name: "VideoCameraSlash",
-    categories: [IconCategory.MEDIA, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["videography", "films", "movies", "recording", "disabled"],
-    codepoint: 58588,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "video-conference",
-    pascal_name: "VideoConference",
-    categories: [
-      IconCategory.MEDIA,
-      IconCategory.SYSTEM,
-      IconCategory.COMMUNICATION,
-    ],
-    figma_category: FigmaCategory.MEDIA,
-    tags: [
-      "*new*",
-      "video call",
-      "zoom",
-      "skype",
-      "discord",
-      "facetime",
-      "meeting",
-    ],
-    codepoint: 60878,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "vignette",
-    pascal_name: "Vignette",
-    categories: [IconCategory.DESIGN],
-    figma_category: FigmaCategory.DESIGN,
-    tags: ["photography", "darkroom", "movie", "analog"],
-    codepoint: 60322,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "vinyl-record",
-    pascal_name: "VinylRecord",
-    categories: [IconCategory.MEDIA, IconCategory.OFFICE],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["recording", "audio", "album", "music", "ep", "lp"],
-    codepoint: 60588,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "virtual-reality",
-    pascal_name: "VirtualReality",
-    categories: [IconCategory.GAMES, IconCategory.MEDIA],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["virtual reality", "vr", "headset", "metaverse"],
-    codepoint: 59320,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "virus",
-    pascal_name: "Virus",
-    categories: [IconCategory.HEALTH],
-    figma_category: FigmaCategory.HEALTH,
-    tags: ["germs", "disease", "illness"],
-    codepoint: 59350,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "visor",
-    pascal_name: "Visor",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.MEDIA,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*new*", "goggles", "vision"],
-    codepoint: 60970,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "voicemail",
-    pascal_name: "Voicemail",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["phonecalls", "missed", "recording", "telephone", "landline"],
-    codepoint: 58590,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "volleyball",
-    pascal_name: "Volleyball",
-    categories: [IconCategory.GAMES, IconCategory.HEALTH, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.GAMES,
-    tags: ["sports"],
-    codepoint: 59174,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "wall",
-    pascal_name: "Wall",
-    categories: [IconCategory.OBJECTS, IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["firewall", "security", "secured", "blocks", "bricks"],
-    codepoint: 59016,
-    published_in: 1.2,
-    updated_in: 1.4,
-  },
-  {
-    name: "wallet",
-    pascal_name: "Wallet",
-    categories: [
-      IconCategory.COMMERCE,
-      IconCategory.FINANCE,
-      IconCategory.OBJECTS,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["money", "payment", "paying", "purchase"],
-    codepoint: 59018,
-    published_in: 1.2,
-    updated_in: 1.2,
-  },
-  {
-    name: "warehouse",
-    pascal_name: "Warehouse",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "storage",
-      "industry",
-      "manufacture",
-      "buildings",
-      "places",
-      "locations",
-    ],
-    codepoint: 60628,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "warning",
-    pascal_name: "Warning",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["alert", "danger", "dangerous", "caution", "errors"],
-    codepoint: 58592,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "warning-circle",
-    pascal_name: "WarningCircle",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["alert", "danger", "dangerous", "caution", "errors", "round"],
-    codepoint: 58594,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "warning-diamond",
-    pascal_name: "WarningDiamond",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["alert", "danger", "dangerous", "caution", "errors"],
-    codepoint: 59388,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "warning-octagon",
-    pascal_name: "WarningOctagon",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SECURITY,
-    tags: ["alert", "danger", "dangerous", "caution", "errors", "8", "eight"],
-    codepoint: 58596,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "washing-machine",
-    pascal_name: "WashingMachine",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "clothing", "laundry", "cleaning"],
-    codepoint: 60904,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "watch",
-    pascal_name: "Watch",
-    categories: [IconCategory.SYSTEM, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.TIME,
-    tags: [
-      "times",
-      "timer",
-      "alarm",
-      "schedule",
-      "events",
-      "clock",
-      "wristwatch",
-      "wearable",
-    ],
-    codepoint: 58598,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "wave-sawtooth",
-    pascal_name: "WaveSawtooth",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["synth", "synthesizer", "sound", "audio", "music", "waveform"],
-    codepoint: 60060,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "wave-sine",
-    pascal_name: "WaveSine",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["synth", "synthesizer", "sound", "audio", "music", "waveform"],
-    codepoint: 60058,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "wave-square",
-    pascal_name: "WaveSquare",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["synth", "synthesizer", "sound", "audio", "music", "waveform"],
-    codepoint: 60062,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "wave-triangle",
-    pascal_name: "WaveTriangle",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["synth", "synthesizer", "sound", "audio", "music", "waveform"],
-    codepoint: 60064,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "waveform",
-    pascal_name: "Waveform",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*updated*", "audio", "sound", "spectrum", "spectrograph", "music"],
-    codepoint: 59394,
-    published_in: 2.0,
-    updated_in: 2.1,
-  },
-  {
-    name: "waveform-slash",
-    pascal_name: "WaveformSlash",
-    categories: [IconCategory.MEDIA],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["*new*", "audio", "sound", "spectrum", "spectrograph", "music"],
-    codepoint: 59392,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "waves",
-    pascal_name: "Waves",
-    categories: [IconCategory.NATURE, IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["ocean", "tides", "surf"],
-    codepoint: 59102,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "webcam",
-    pascal_name: "Webcam",
-    categories: [
-      IconCategory.OBJECTS,
-      IconCategory.SYSTEM,
-      IconCategory.COMMUNICATION,
-    ],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["camera", "video conference"],
-    codepoint: 59826,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "webcam-slash",
-    pascal_name: "WebcamSlash",
-    categories: [
-      IconCategory.COMMUNICATION,
-      IconCategory.OBJECTS,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.MEDIA,
-    tags: ["camera", "video conference"],
-    codepoint: 60636,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "webhooks-logo",
-    pascal_name: "WebhooksLogo",
-    categories: [IconCategory.DEVELOPMENT, IconCategory.BRAND],
-    figma_category: FigmaCategory.DEVELOPMENT,
-    tags: ["api"],
-    codepoint: 60590,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "wechat-logo",
-    pascal_name: "WechatLogo",
-    categories: [IconCategory.BRAND],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["weixin", "logos"],
-    codepoint: 59602,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "whatsapp-logo",
-    pascal_name: "WhatsappLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "messages", "messaging"],
-    codepoint: 58832,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "wheelchair",
-    pascal_name: "Wheelchair",
-    categories: [IconCategory.HEALTH, IconCategory.MAP, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "handicapped",
-      "medical",
-      "disabled",
-      "differently abled",
-      "accessible",
-      "accessibility",
-      "a11y",
-    ],
-    codepoint: 58600,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "wheelchair-motion",
-    pascal_name: "WheelchairMotion",
-    categories: [IconCategory.HEALTH, IconCategory.MAP, IconCategory.PEOPLE],
-    figma_category: FigmaCategory.PEOPLE,
-    tags: [
-      "handicapped",
-      "medical",
-      "disabled",
-      "differently abled",
-      "accessible",
-      "accessibility",
-      "a11y",
-    ],
-    codepoint: 59546,
-    published_in: 2.0,
-    updated_in: 2.0,
-  },
-  {
-    name: "wifi-high",
-    pascal_name: "WifiHigh",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["wireless", "internet", "network", "connection", "connectivity"],
-    codepoint: 58602,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "wifi-low",
-    pascal_name: "WifiLow",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["wireless", "internet", "network", "connection", "connectivity"],
-    codepoint: 58604,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "wifi-medium",
-    pascal_name: "WifiMedium",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["wireless", "internet", "network", "connection", "connectivity"],
-    codepoint: 58606,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "wifi-none",
-    pascal_name: "WifiNone",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: ["wireless", "internet", "network", "connection", "connectivity"],
-    codepoint: 58608,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "wifi-slash",
-    pascal_name: "WifiSlash",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "wireless",
-      "internet",
-      "network",
-      "connection",
-      "connectivity",
-      "disabled",
-      "disconnected",
-    ],
-    codepoint: 58610,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "wifi-x",
-    pascal_name: "WifiX",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.SYSTEM,
-    tags: [
-      "wireless",
-      "internet",
-      "network",
-      "connection",
-      "connectivity",
-      "disconnected",
-      "errors",
-    ],
-    codepoint: 58612,
-    published_in: 1.0,
-    updated_in: 1.4,
-  },
-  {
-    name: "wind",
-    pascal_name: "Wind",
-    categories: [IconCategory.WEATHER],
-    figma_category: FigmaCategory.WEATHER,
-    tags: ["meteorology", "windy", "stormy", "blustery", "gusty", "air"],
-    codepoint: 58834,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "windmill",
-    pascal_name: "Windmill",
-    categories: [IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "*new*",
-      "turbine",
-      "energy",
-      "renewable",
-      "sustainability",
-      "countryside",
-      "landscape",
-      "green",
-      "power",
-      "buildings",
-    ],
-    codepoint: 59896,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "windows-logo",
-    pascal_name: "WindowsLogo",
-    categories: [IconCategory.BRAND, IconCategory.DEVELOPMENT],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["microsoft", "computers"],
-    codepoint: 59026,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "wine",
-    pascal_name: "Wine",
-    categories: [IconCategory.COMMERCE, IconCategory.MAP, IconCategory.OBJECTS],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "drinks",
-      "beverages",
-      "vineyard",
-      "places",
-      "locations",
-      "bars",
-      "restaurants",
-      "food",
-      "dining",
-    ],
-    codepoint: 59058,
-    published_in: 1.3,
-    updated_in: 1.3,
-  },
-  {
-    name: "wrench",
-    pascal_name: "Wrench",
-    categories: [
-      IconCategory.SYSTEM,
-      IconCategory.OBJECTS,
-      IconCategory.COMMERCE,
-    ],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: [
-      "settings",
-      "setup",
-      "preferences",
-      "tools",
-      "machinery",
-      "mechanical",
-      "repairs",
-    ],
-    codepoint: 58836,
-    published_in: 1.1,
-    updated_in: 1.1,
-  },
-  {
-    name: "x",
-    pascal_name: "X",
-    categories: [
-      IconCategory.DEVELOPMENT,
-      IconCategory.FINANCE,
-      IconCategory.SYSTEM,
-    ],
-    figma_category: FigmaCategory.FINANCE,
-    tags: [
-      "×",
-      "closed",
-      "cancelled",
-      "dismissed",
-      "times",
-      "multiply",
-      "mulitplication",
-      "product",
-      "mathematics",
-      "arithmetic",
-      "calculator",
-    ],
-    codepoint: 58614,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "x-circle",
-    pascal_name: "XCircle",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.FINANCE,
-    tags: ["closed", "cancelled", "dismissed", "round"],
-    codepoint: 58616,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "x-logo",
-    pascal_name: "XLogo",
-    categories: [IconCategory.BRAND, IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["*new*", "twitter", "logos", "social media", "tweets"],
-    codepoint: 58556,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "x-square",
-    pascal_name: "XSquare",
-    categories: [IconCategory.SYSTEM],
-    figma_category: FigmaCategory.FINANCE,
-    tags: ["closed", "cancelled", "dismissed"],
-    codepoint: 58618,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-  {
-    name: "yarn",
-    pascal_name: "Yarn",
-    categories: [IconCategory.GAMES, IconCategory.COMMERCE],
-    figma_category: FigmaCategory.COMMERCE,
-    tags: ["*new*", "knitting", "sewing"],
-    codepoint: 60826,
-    published_in: 2.1,
-    updated_in: 2.1,
-  },
-  {
-    name: "yin-yang",
-    pascal_name: "YinYang",
-    categories: [IconCategory.COMMUNICATION],
-    figma_category: FigmaCategory.COMMUNICATION,
-    tags: ["symbol", "good", "evil", "black", "white"],
-    codepoint: 59690,
-    published_in: 1.4,
-    updated_in: 1.4,
-  },
-  {
-    name: "youtube-logo",
-    pascal_name: "YoutubeLogo",
-    categories: [
-      IconCategory.BRAND,
-      IconCategory.COMMUNICATION,
-      IconCategory.MEDIA,
-    ],
-    figma_category: FigmaCategory.BRAND,
-    tags: ["logos", "google", "videos", "movies", "social media"],
-    codepoint: 58620,
-    published_in: 1.0,
-    updated_in: 1.0,
-  },
-]) satisfies readonly IconEntry[];
+export * from './icons/youtube-logo-thin.js';
+export * from './icons/yin-yang-thin.js';
+export * from './icons/yarn-thin.js';
+export * from './icons/x-thin.js';
+export * from './icons/x-square-thin.js';
+export * from './icons/x-logo-thin.js';
+export * from './icons/x-circle-thin.js';
+export * from './icons/wrench-thin.js';
+export * from './icons/wine-thin.js';
+export * from './icons/windows-logo-thin.js';
+export * from './icons/windmill-thin.js';
+export * from './icons/wind-thin.js';
+export * from './icons/wifi-x-thin.js';
+export * from './icons/wifi-slash-thin.js';
+export * from './icons/wifi-none-thin.js';
+export * from './icons/wifi-medium-thin.js';
+export * from './icons/wifi-low-thin.js';
+export * from './icons/wifi-high-thin.js';
+export * from './icons/wheelchair-thin.js';
+export * from './icons/wheelchair-motion-thin.js';
+export * from './icons/whatsapp-logo-thin.js';
+export * from './icons/wechat-logo-thin.js';
+export * from './icons/webhooks-logo-thin.js';
+export * from './icons/webcam-thin.js';
+export * from './icons/webcam-slash-thin.js';
+export * from './icons/waves-thin.js';
+export * from './icons/waveform-thin.js';
+export * from './icons/waveform-slash-thin.js';
+export * from './icons/wave-triangle-thin.js';
+export * from './icons/wave-square-thin.js';
+export * from './icons/wave-sine-thin.js';
+export * from './icons/wave-sawtooth-thin.js';
+export * from './icons/watch-thin.js';
+export * from './icons/washing-machine-thin.js';
+export * from './icons/warning-thin.js';
+export * from './icons/warning-octagon-thin.js';
+export * from './icons/warning-diamond-thin.js';
+export * from './icons/warning-circle-thin.js';
+export * from './icons/warehouse-thin.js';
+export * from './icons/wallet-thin.js';
+export * from './icons/wall-thin.js';
+export * from './icons/volleyball-thin.js';
+export * from './icons/voicemail-thin.js';
+export * from './icons/visor-thin.js';
+export * from './icons/virus-thin.js';
+export * from './icons/virtual-reality-thin.js';
+export * from './icons/vinyl-record-thin.js';
+export * from './icons/vignette-thin.js';
+export * from './icons/video-thin.js';
+export * from './icons/video-conference-thin.js';
+export * from './icons/video-camera-thin.js';
+export * from './icons/video-camera-slash-thin.js';
+export * from './icons/vibrate-thin.js';
+export * from './icons/vector-two-thin.js';
+export * from './icons/vector-three-thin.js';
+export * from './icons/vault-thin.js';
+export * from './icons/van-thin.js';
+export * from './icons/users-three-thin.js';
+export * from './icons/users-thin.js';
+export * from './icons/users-four-thin.js';
+export * from './icons/user-thin.js';
+export * from './icons/user-switch-thin.js';
+export * from './icons/user-square-thin.js';
+export * from './icons/user-sound-thin.js';
+export * from './icons/user-rectangle-thin.js';
+export * from './icons/user-plus-thin.js';
+export * from './icons/user-minus-thin.js';
+export * from './icons/user-list-thin.js';
+export * from './icons/user-gear-thin.js';
+export * from './icons/user-focus-thin.js';
+export * from './icons/user-circle-thin.js';
+export * from './icons/user-circle-plus-thin.js';
+export * from './icons/user-circle-minus-thin.js';
+export * from './icons/user-circle-gear-thin.js';
+export * from './icons/user-circle-dashed-thin.js';
+export * from './icons/user-circle-check-thin.js';
+export * from './icons/user-check-thin.js';
+export * from './icons/usb-thin.js';
+export * from './icons/upload-thin.js';
+export * from './icons/upload-simple-thin.js';
+export * from './icons/unite-thin.js';
+export * from './icons/unite-square-thin.js';
+export * from './icons/union-thin.js';
+export * from './icons/umbrella-thin.js';
+export * from './icons/umbrella-simple-thin.js';
+export * from './icons/twitter-logo-thin.js';
+export * from './icons/twitch-logo-thin.js';
+export * from './icons/tumblr-logo-thin.js';
+export * from './icons/truck-trailer-thin.js';
+export * from './icons/truck-thin.js';
+export * from './icons/trophy-thin.js';
+export * from './icons/trolley-thin.js';
+export * from './icons/trolley-suitcase-thin.js';
+export * from './icons/triangle-thin.js';
+export * from './icons/triangle-dashed-thin.js';
+export * from './icons/trend-up-thin.js';
+export * from './icons/trend-down-thin.js';
+export * from './icons/tree-view-thin.js';
+export * from './icons/tree-thin.js';
+export * from './icons/tree-structure-thin.js';
+export * from './icons/tree-palm-thin.js';
+export * from './icons/tree-evergreen-thin.js';
+export * from './icons/treasure-chest-thin.js';
+export * from './icons/tray-thin.js';
+export * from './icons/tray-arrow-up-thin.js';
+export * from './icons/tray-arrow-down-thin.js';
+export * from './icons/trash-thin.js';
+export * from './icons/trash-simple-thin.js';
+export * from './icons/translate-thin.js';
+export * from './icons/tram-thin.js';
+export * from './icons/train-thin.js';
+export * from './icons/train-simple-thin.js';
+export * from './icons/train-regional-thin.js';
+export * from './icons/traffic-signal-thin.js';
+export * from './icons/traffic-sign-thin.js';
+export * from './icons/traffic-cone-thin.js';
+export * from './icons/trademark-thin.js';
+export * from './icons/trademark-registered-thin.js';
+export * from './icons/tractor-thin.js';
+export * from './icons/towel-thin.js';
+export * from './icons/tote-thin.js';
+export * from './icons/tote-simple-thin.js';
+export * from './icons/tornado-thin.js';
+export * from './icons/tooth-thin.js';
+export * from './icons/toolbox-thin.js';
+export * from './icons/toilet-thin.js';
+export * from './icons/toilet-paper-thin.js';
+export * from './icons/toggle-right-thin.js';
+export * from './icons/toggle-left-thin.js';
+export * from './icons/tire-thin.js';
+export * from './icons/tipi-thin.js';
+export * from './icons/tip-jar-thin.js';
+export * from './icons/timer-thin.js';
+export * from './icons/tilde-thin.js';
+export * from './icons/tiktok-logo-thin.js';
+export * from './icons/tidal-logo-thin.js';
+export * from './icons/ticket-thin.js';
+export * from './icons/thumbs-up-thin.js';
+export * from './icons/thumbs-down-thin.js';
+export * from './icons/three-d-thin.js';
+export * from './icons/threads-logo-thin.js';
+export * from './icons/thermometer-thin.js';
+export * from './icons/thermometer-simple-thin.js';
+export * from './icons/thermometer-hot-thin.js';
+export * from './icons/thermometer-cold-thin.js';
+export * from './icons/textbox-thin.js';
+export * from './icons/text-underline-thin.js';
+export * from './icons/text-t-thin.js';
+export * from './icons/text-t-slash-thin.js';
+export * from './icons/text-superscript-thin.js';
+export * from './icons/text-subscript-thin.js';
+export * from './icons/text-strikethrough-thin.js';
+export * from './icons/text-outdent-thin.js';
+export * from './icons/text-italic-thin.js';
+export * from './icons/text-indent-thin.js';
+export * from './icons/text-h-two-thin.js';
+export * from './icons/text-h-three-thin.js';
+export * from './icons/text-h-thin.js';
+export * from './icons/text-h-six-thin.js';
+export * from './icons/text-h-one-thin.js';
+export * from './icons/text-h-four-thin.js';
+export * from './icons/text-h-five-thin.js';
+export * from './icons/text-columns-thin.js';
+export * from './icons/text-b-thin.js';
+export * from './icons/text-align-right-thin.js';
+export * from './icons/text-align-left-thin.js';
+export * from './icons/text-align-justify-thin.js';
+export * from './icons/text-align-center-thin.js';
+export * from './icons/text-aa-thin.js';
+export * from './icons/text-a-underline-thin.js';
+export * from './icons/test-tube-thin.js';
+export * from './icons/terminal-window-thin.js';
+export * from './icons/terminal-thin.js';
+export * from './icons/tent-thin.js';
+export * from './icons/tennis-ball-thin.js';
+export * from './icons/television-thin.js';
+export * from './icons/television-simple-thin.js';
+export * from './icons/telegram-logo-thin.js';
+export * from './icons/tea-bag-thin.js';
+export * from './icons/taxi-thin.js';
+export * from './icons/target-thin.js';
+export * from './icons/tag-thin.js';
+export * from './icons/tag-simple-thin.js';
+export * from './icons/tag-chevron-thin.js';
+export * from './icons/tabs-thin.js';
+export * from './icons/table-thin.js';
+export * from './icons/t-shirt-thin.js';
+export * from './icons/syringe-thin.js';
+export * from './icons/synagogue-thin.js';
+export * from './icons/sword-thin.js';
+export * from './icons/swimming-pool-thin.js';
+export * from './icons/swatches-thin.js';
+export * from './icons/swap-thin.js';
+export * from './icons/superset-proper-of-thin.js';
+export * from './icons/superset-of-thin.js';
+export * from './icons/sunglasses-thin.js';
+export * from './icons/sun-thin.js';
+export * from './icons/sun-horizon-thin.js';
+export * from './icons/sun-dim-thin.js';
+export * from './icons/suitcase-thin.js';
+export * from './icons/suitcase-simple-thin.js';
+export * from './icons/suitcase-rolling-thin.js';
+export * from './icons/subway-thin.js';
+export * from './icons/subtract-thin.js';
+export * from './icons/subtract-square-thin.js';
+export * from './icons/subtitles-thin.js';
+export * from './icons/subtitles-slash-thin.js';
+export * from './icons/subset-proper-of-thin.js';
+export * from './icons/subset-of-thin.js';
+export * from './icons/student-thin.js';
+export * from './icons/stripe-logo-thin.js';
+export * from './icons/strategy-thin.js';
+export * from './icons/storefront-thin.js';
+export * from './icons/stop-thin.js';
+export * from './icons/stop-circle-thin.js';
+export * from './icons/stool-thin.js';
+export * from './icons/sticker-thin.js';
+export * from './icons/stethoscope-thin.js';
+export * from './icons/steps-thin.js';
+export * from './icons/steering-wheel-thin.js';
+export * from './icons/steam-logo-thin.js';
+export * from './icons/star-thin.js';
+export * from './icons/star-of-david-thin.js';
+export * from './icons/star-half-thin.js';
+export * from './icons/star-four-thin.js';
+export * from './icons/star-and-crescent-thin.js';
+export * from './icons/standard-definition-thin.js';
+export * from './icons/stamp-thin.js';
+export * from './icons/stairs-thin.js';
+export * from './icons/stack-thin.js';
+export * from './icons/stack-simple-thin.js';
+export * from './icons/stack-plus-thin.js';
+export * from './icons/stack-overflow-logo-thin.js';
+export * from './icons/stack-minus-thin.js';
+export * from './icons/squares-four-thin.js';
+export * from './icons/square-thin.js';
+export * from './icons/square-split-vertical-thin.js';
+export * from './icons/square-split-horizontal-thin.js';
+export * from './icons/square-logo-thin.js';
+export * from './icons/square-half-thin.js';
+export * from './icons/square-half-bottom-thin.js';
+export * from './icons/spray-bottle-thin.js';
+export * from './icons/spotify-logo-thin.js';
+export * from './icons/split-vertical-thin.js';
+export * from './icons/split-horizontal-thin.js';
+export * from './icons/spiral-thin.js';
+export * from './icons/spinner-thin.js';
+export * from './icons/spinner-gap-thin.js';
+export * from './icons/spinner-ball-thin.js';
+export * from './icons/sphere-thin.js';
+export * from './icons/speedometer-thin.js';
+export * from './icons/speaker-x-thin.js';
+export * from './icons/speaker-slash-thin.js';
+export * from './icons/speaker-simple-x-thin.js';
+export * from './icons/speaker-simple-slash-thin.js';
+export * from './icons/speaker-simple-none-thin.js';
+export * from './icons/speaker-simple-low-thin.js';
+export * from './icons/speaker-simple-high-thin.js';
+export * from './icons/speaker-none-thin.js';
+export * from './icons/speaker-low-thin.js';
+export * from './icons/speaker-high-thin.js';
+export * from './icons/speaker-hifi-thin.js';
+export * from './icons/sparkle-thin.js';
+export * from './icons/spade-thin.js';
+export * from './icons/soundcloud-logo-thin.js';
+export * from './icons/sort-descending-thin.js';
+export * from './icons/sort-ascending-thin.js';
+export * from './icons/solar-roof-thin.js';
+export * from './icons/solar-panel-thin.js';
+export * from './icons/sock-thin.js';
+export * from './icons/soccer-ball-thin.js';
+export * from './icons/snowflake-thin.js';
+export * from './icons/sneaker-thin.js';
+export * from './icons/sneaker-move-thin.js';
+export * from './icons/snapchat-logo-thin.js';
+export * from './icons/smiley-x-eyes-thin.js';
+export * from './icons/smiley-wink-thin.js';
+export * from './icons/smiley-thin.js';
+export * from './icons/smiley-sticker-thin.js';
+export * from './icons/smiley-sad-thin.js';
+export * from './icons/smiley-nervous-thin.js';
+export * from './icons/smiley-melting-thin.js';
+export * from './icons/smiley-meh-thin.js';
+export * from './icons/smiley-blank-thin.js';
+export * from './icons/smiley-angry-thin.js';
+export * from './icons/slideshow-thin.js';
+export * from './icons/sliders-thin.js';
+export * from './icons/sliders-horizontal-thin.js';
+export * from './icons/slack-logo-thin.js';
+export * from './icons/skype-logo-thin.js';
+export * from './icons/skull-thin.js';
+export * from './icons/skip-forward-thin.js';
+export * from './icons/skip-forward-circle-thin.js';
+export * from './icons/skip-back-thin.js';
+export * from './icons/skip-back-circle-thin.js';
+export * from './icons/sketch-logo-thin.js';
+export * from './icons/siren-thin.js';
+export * from './icons/sim-card-thin.js';
+export * from './icons/signpost-thin.js';
+export * from './icons/signature-thin.js';
+export * from './icons/sign-out-thin.js';
+export * from './icons/sign-in-thin.js';
+export * from './icons/sigma-thin.js';
+export * from './icons/sidebar-thin.js';
+export * from './icons/sidebar-simple-thin.js';
+export * from './icons/shuffle-thin.js';
+export * from './icons/shuffle-simple-thin.js';
+export * from './icons/shuffle-angular-thin.js';
+export * from './icons/shrimp-thin.js';
+export * from './icons/shower-thin.js';
+export * from './icons/shovel-thin.js';
+export * from './icons/shopping-cart-thin.js';
+export * from './icons/shopping-cart-simple-thin.js';
+export * from './icons/shopping-bag-thin.js';
+export * from './icons/shopping-bag-open-thin.js';
+export * from './icons/shooting-star-thin.js';
+export * from './icons/shirt-folded-thin.js';
+export * from './icons/shipping-container-thin.js';
+export * from './icons/shield-warning-thin.js';
+export * from './icons/shield-thin.js';
+export * from './icons/shield-star-thin.js';
+export * from './icons/shield-slash-thin.js';
+export * from './icons/shield-plus-thin.js';
+export * from './icons/shield-chevron-thin.js';
+export * from './icons/shield-checkered-thin.js';
+export * from './icons/shield-check-thin.js';
+export * from './icons/share-thin.js';
+export * from './icons/share-network-thin.js';
+export * from './icons/share-fat-thin.js';
+export * from './icons/shapes-thin.js';
+export * from './icons/selection-thin.js';
+export * from './icons/selection-slash-thin.js';
+export * from './icons/selection-plus-thin.js';
+export * from './icons/selection-inverse-thin.js';
+export * from './icons/selection-foreground-thin.js';
+export * from './icons/selection-background-thin.js';
+export * from './icons/selection-all-thin.js';
+export * from './icons/security-camera-thin.js';
+export * from './icons/seatbelt-thin.js';
+export * from './icons/seat-thin.js';
+export * from './icons/seal-warning-thin.js';
+export * from './icons/seal-thin.js';
+export * from './icons/seal-question-thin.js';
+export * from './icons/seal-percent-thin.js';
+export * from './icons/seal-check-thin.js';
+export * from './icons/scroll-thin.js';
+export * from './icons/scribble-thin.js';
+export * from './icons/scribble-loop-thin.js';
+export * from './icons/screwdriver-thin.js';
+export * from './icons/screencast-thin.js';
+export * from './icons/scooter-thin.js';
+export * from './icons/scissors-thin.js';
+export * from './icons/scan-thin.js';
+export * from './icons/scan-smiley-thin.js';
+export * from './icons/scales-thin.js';
+export * from './icons/sailboat-thin.js';
+export * from './icons/ruler-thin.js';
+export * from './icons/rug-thin.js';
+export * from './icons/rss-thin.js';
+export * from './icons/rss-simple-thin.js';
+export * from './icons/rows-thin.js';
+export * from './icons/rows-plus-top-thin.js';
+export * from './icons/rows-plus-bottom-thin.js';
+export * from './icons/rocket-thin.js';
+export * from './icons/rocket-launch-thin.js';
+export * from './icons/robot-thin.js';
+export * from './icons/road-horizon-thin.js';
+export * from './icons/rewind-thin.js';
+export * from './icons/rewind-circle-thin.js';
+export * from './icons/resize-thin.js';
+export * from './icons/replit-logo-thin.js';
+export * from './icons/repeat-thin.js';
+export * from './icons/repeat-once-thin.js';
+export * from './icons/reddit-logo-thin.js';
+export * from './icons/recycle-thin.js';
+export * from './icons/rectangle-thin.js';
+export * from './icons/rectangle-dashed-thin.js';
+export * from './icons/record-thin.js';
+export * from './icons/receipt-x-thin.js';
+export * from './icons/receipt-thin.js';
+export * from './icons/read-cv-logo-thin.js';
+export * from './icons/ranking-thin.js';
+export * from './icons/rainbow-thin.js';
+export * from './icons/rainbow-cloud-thin.js';
+export * from './icons/radioactive-thin.js';
+export * from './icons/radio-thin.js';
+export * from './icons/radio-button-thin.js';
+export * from './icons/radical-thin.js';
+export * from './icons/racquet-thin.js';
+export * from './icons/rabbit-thin.js';
+export * from './icons/quotes-thin.js';
+export * from './icons/queue-thin.js';
+export * from './icons/question-thin.js';
+export * from './icons/question-mark-thin.js';
+export * from './icons/qr-code-thin.js';
+export * from './icons/puzzle-piece-thin.js';
+export * from './icons/push-pin-thin.js';
+export * from './icons/push-pin-slash-thin.js';
+export * from './icons/push-pin-simple-thin.js';
+export * from './icons/push-pin-simple-slash-thin.js';
+export * from './icons/pulse-thin.js';
+export * from './icons/projector-screen-thin.js';
+export * from './icons/projector-screen-chart-thin.js';
+export * from './icons/prohibit-thin.js';
+export * from './icons/prohibit-inset-thin.js';
+export * from './icons/printer-thin.js';
+export * from './icons/presentation-thin.js';
+export * from './icons/presentation-chart-thin.js';
+export * from './icons/prescription-thin.js';
+export * from './icons/power-thin.js';
+export * from './icons/potted-plant-thin.js';
+export * from './icons/popsicle-thin.js';
+export * from './icons/popcorn-thin.js';
+export * from './icons/polygon-thin.js';
+export * from './icons/police-car-thin.js';
+export * from './icons/poker-chip-thin.js';
+export * from './icons/plus-thin.js';
+export * from './icons/plus-square-thin.js';
+export * from './icons/plus-minus-thin.js';
+export * from './icons/plus-circle-thin.js';
+export * from './icons/plugs-thin.js';
+export * from './icons/plugs-connected-thin.js';
+export * from './icons/plug-thin.js';
+export * from './icons/plug-charging-thin.js';
+export * from './icons/playlist-thin.js';
+export * from './icons/play-thin.js';
+export * from './icons/play-pause-thin.js';
+export * from './icons/play-circle-thin.js';
+export * from './icons/plant-thin.js';
+export * from './icons/planet-thin.js';
+export * from './icons/placeholder-thin.js';
+export * from './icons/pizza-thin.js';
+export * from './icons/pix-logo-thin.js';
+export * from './icons/pipe-wrench-thin.js';
+export * from './icons/pipe-thin.js';
+export * from './icons/pinwheel-thin.js';
+export * from './icons/pinterest-logo-thin.js';
+export * from './icons/pint-glass-thin.js';
+export * from './icons/ping-pong-thin.js';
+export * from './icons/pill-thin.js';
+export * from './icons/piggy-bank-thin.js';
+export * from './icons/picture-in-picture-thin.js';
+export * from './icons/picnic-table-thin.js';
+export * from './icons/piano-keys-thin.js';
+export * from './icons/pi-thin.js';
+export * from './icons/phosphor-logo-thin.js';
+export * from './icons/phone-x-thin.js';
+export * from './icons/phone-transfer-thin.js';
+export * from './icons/phone-thin.js';
+export * from './icons/phone-slash-thin.js';
+export * from './icons/phone-plus-thin.js';
+export * from './icons/phone-pause-thin.js';
+export * from './icons/phone-outgoing-thin.js';
+export * from './icons/phone-list-thin.js';
+export * from './icons/phone-incoming-thin.js';
+export * from './icons/phone-disconnect-thin.js';
+export * from './icons/phone-call-thin.js';
+export * from './icons/perspective-thin.js';
+export * from './icons/person-thin.js';
+export * from './icons/person-simple-walk-thin.js';
+export * from './icons/person-simple-throw-thin.js';
+export * from './icons/person-simple-thin.js';
+export * from './icons/person-simple-tai-chi-thin.js';
+export * from './icons/person-simple-swim-thin.js';
+export * from './icons/person-simple-snowboard-thin.js';
+export * from './icons/person-simple-ski-thin.js';
+export * from './icons/person-simple-run-thin.js';
+export * from './icons/person-simple-hike-thin.js';
+export * from './icons/person-simple-circle-thin.js';
+export * from './icons/person-simple-bike-thin.js';
+export * from './icons/person-arms-spread-thin.js';
+export * from './icons/percent-thin.js';
+export * from './icons/pepper-thin.js';
+export * from './icons/pentagram-thin.js';
+export * from './icons/pentagon-thin.js';
+export * from './icons/pencil-thin.js';
+export * from './icons/pencil-slash-thin.js';
+export * from './icons/pencil-simple-thin.js';
+export * from './icons/pencil-simple-slash-thin.js';
+export * from './icons/pencil-simple-line-thin.js';
+export * from './icons/pencil-ruler-thin.js';
+export * from './icons/pencil-line-thin.js';
+export * from './icons/pencil-circle-thin.js';
+export * from './icons/pen-thin.js';
+export * from './icons/pen-nib-thin.js';
+export * from './icons/pen-nib-straight-thin.js';
+export * from './icons/peace-thin.js';
+export * from './icons/paypal-logo-thin.js';
+export * from './icons/paw-print-thin.js';
+export * from './icons/pause-thin.js';
+export * from './icons/pause-circle-thin.js';
+export * from './icons/patreon-logo-thin.js';
+export * from './icons/path-thin.js';
+export * from './icons/password-thin.js';
+export * from './icons/park-thin.js';
+export * from './icons/parallelogram-thin.js';
+export * from './icons/paragraph-thin.js';
+export * from './icons/parachute-thin.js';
+export * from './icons/paperclip-thin.js';
+export * from './icons/paperclip-horizontal-thin.js';
+export * from './icons/paper-plane-tilt-thin.js';
+export * from './icons/paper-plane-thin.js';
+export * from './icons/paper-plane-right-thin.js';
+export * from './icons/pants-thin.js';
+export * from './icons/panorama-thin.js';
+export * from './icons/palette-thin.js';
+export * from './icons/paint-roller-thin.js';
+export * from './icons/paint-bucket-thin.js';
+export * from './icons/paint-brush-thin.js';
+export * from './icons/paint-brush-household-thin.js';
+export * from './icons/paint-brush-broad-thin.js';
+export * from './icons/package-thin.js';
+export * from './icons/oven-thin.js';
+export * from './icons/orange-thin.js';
+export * from './icons/orange-slice-thin.js';
+export * from './icons/option-thin.js';
+export * from './icons/open-ai-logo-thin.js';
+export * from './icons/onigiri-thin.js';
+export * from './icons/office-chair-thin.js';
+export * from './icons/octagon-thin.js';
+export * from './icons/ny-times-logo-thin.js';
+export * from './icons/nut-thin.js';
+export * from './icons/numpad-thin.js';
+export * from './icons/number-zero-thin.js';
+export * from './icons/number-two-thin.js';
+export * from './icons/number-three-thin.js';
+export * from './icons/number-square-zero-thin.js';
+export * from './icons/number-square-two-thin.js';
+export * from './icons/number-square-three-thin.js';
+export * from './icons/number-square-six-thin.js';
+export * from './icons/number-square-seven-thin.js';
+export * from './icons/number-square-one-thin.js';
+export * from './icons/number-square-nine-thin.js';
+export * from './icons/number-square-four-thin.js';
+export * from './icons/number-square-five-thin.js';
+export * from './icons/number-square-eight-thin.js';
+export * from './icons/number-six-thin.js';
+export * from './icons/number-seven-thin.js';
+export * from './icons/number-one-thin.js';
+export * from './icons/number-nine-thin.js';
+export * from './icons/number-four-thin.js';
+export * from './icons/number-five-thin.js';
+export * from './icons/number-eight-thin.js';
+export * from './icons/number-circle-zero-thin.js';
+export * from './icons/number-circle-two-thin.js';
+export * from './icons/number-circle-three-thin.js';
+export * from './icons/number-circle-six-thin.js';
+export * from './icons/number-circle-seven-thin.js';
+export * from './icons/number-circle-one-thin.js';
+export * from './icons/number-circle-nine-thin.js';
+export * from './icons/number-circle-four-thin.js';
+export * from './icons/number-circle-five-thin.js';
+export * from './icons/number-circle-eight-thin.js';
+export * from './icons/nuclear-plant-thin.js';
+export * from './icons/notion-logo-thin.js';
+export * from './icons/notification-thin.js';
+export * from './icons/notepad-thin.js';
+export * from './icons/notebook-thin.js';
+export * from './icons/note-thin.js';
+export * from './icons/note-pencil-thin.js';
+export * from './icons/note-blank-thin.js';
+export * from './icons/notches-thin.js';
+export * from './icons/not-superset-of-thin.js';
+export * from './icons/not-subset-of-thin.js';
+export * from './icons/not-member-of-thin.js';
+export * from './icons/not-equals-thin.js';
+export * from './icons/newspaper-thin.js';
+export * from './icons/newspaper-clipping-thin.js';
+export * from './icons/network-x-thin.js';
+export * from './icons/network-thin.js';
+export * from './icons/network-slash-thin.js';
+export * from './icons/needle-thin.js';
+export * from './icons/navigation-arrow-thin.js';
+export * from './icons/music-notes-thin.js';
+export * from './icons/music-notes-simple-thin.js';
+export * from './icons/music-notes-plus-thin.js';
+export * from './icons/music-notes-minus-thin.js';
+export * from './icons/music-note-thin.js';
+export * from './icons/music-note-simple-thin.js';
+export * from './icons/mouse-thin.js';
+export * from './icons/mouse-simple-thin.js';
+export * from './icons/mouse-scroll-thin.js';
+export * from './icons/mouse-right-click-thin.js';
+export * from './icons/mouse-middle-click-thin.js';
+export * from './icons/mouse-left-click-thin.js';
+export * from './icons/mountains-thin.js';
+export * from './icons/motorcycle-thin.js';
+export * from './icons/mosque-thin.js';
+export * from './icons/moped-thin.js';
+export * from './icons/moped-front-thin.js';
+export * from './icons/moon-thin.js';
+export * from './icons/moon-stars-thin.js';
+export * from './icons/monitor-thin.js';
+export * from './icons/monitor-play-thin.js';
+export * from './icons/monitor-arrow-up-thin.js';
+export * from './icons/money-wavy-thin.js';
+export * from './icons/money-thin.js';
+export * from './icons/minus-thin.js';
+export * from './icons/minus-square-thin.js';
+export * from './icons/minus-circle-thin.js';
+export * from './icons/microsoft-word-logo-thin.js';
+export * from './icons/microsoft-teams-logo-thin.js';
+export * from './icons/microsoft-powerpoint-logo-thin.js';
+export * from './icons/microsoft-outlook-logo-thin.js';
+export * from './icons/microsoft-excel-logo-thin.js';
+export * from './icons/microscope-thin.js';
+export * from './icons/microphone-thin.js';
+export * from './icons/microphone-stage-thin.js';
+export * from './icons/microphone-slash-thin.js';
+export * from './icons/metronome-thin.js';
+export * from './icons/meteor-thin.js';
+export * from './icons/meta-logo-thin.js';
+export * from './icons/messenger-logo-thin.js';
+export * from './icons/memory-thin.js';
+export * from './icons/member-of-thin.js';
+export * from './icons/megaphone-thin.js';
+export * from './icons/megaphone-simple-thin.js';
+export * from './icons/medium-logo-thin.js';
+export * from './icons/medal-thin.js';
+export * from './icons/medal-military-thin.js';
+export * from './icons/matrix-logo-thin.js';
+export * from './icons/math-operations-thin.js';
+export * from './icons/mastodon-logo-thin.js';
+export * from './icons/mask-sad-thin.js';
+export * from './icons/mask-happy-thin.js';
+export * from './icons/martini-thin.js';
+export * from './icons/marker-circle-thin.js';
+export * from './icons/markdown-logo-thin.js';
+export * from './icons/map-trifold-thin.js';
+export * from './icons/map-pin-thin.js';
+export * from './icons/map-pin-simple-thin.js';
+export * from './icons/map-pin-simple-line-thin.js';
+export * from './icons/map-pin-simple-area-thin.js';
+export * from './icons/map-pin-plus-thin.js';
+export * from './icons/map-pin-line-thin.js';
+export * from './icons/map-pin-area-thin.js';
+export * from './icons/mailbox-thin.js';
+export * from './icons/magnifying-glass-thin.js';
+export * from './icons/magnifying-glass-plus-thin.js';
+export * from './icons/magnifying-glass-minus-thin.js';
+export * from './icons/magnet-thin.js';
+export * from './icons/magnet-straight-thin.js';
+export * from './icons/magic-wand-thin.js';
+export * from './icons/log-thin.js';
+export * from './icons/lockers-thin.js';
+export * from './icons/lock-thin.js';
+export * from './icons/lock-simple-thin.js';
+export * from './icons/lock-simple-open-thin.js';
+export * from './icons/lock-open-thin.js';
+export * from './icons/lock-laminated-thin.js';
+export * from './icons/lock-laminated-open-thin.js';
+export * from './icons/lock-key-thin.js';
+export * from './icons/lock-key-open-thin.js';
+export * from './icons/list-thin.js';
+export * from './icons/list-star-thin.js';
+export * from './icons/list-plus-thin.js';
+export * from './icons/list-numbers-thin.js';
+export * from './icons/list-magnifying-glass-thin.js';
+export * from './icons/list-heart-thin.js';
+export * from './icons/list-dashes-thin.js';
+export * from './icons/list-checks-thin.js';
+export * from './icons/list-bullets-thin.js';
+export * from './icons/linux-logo-thin.js';
+export * from './icons/linktree-logo-thin.js';
+export * from './icons/linkedin-logo-thin.js';
+export * from './icons/link-thin.js';
+export * from './icons/link-simple-thin.js';
+export * from './icons/link-simple-horizontal-thin.js';
+export * from './icons/link-simple-horizontal-break-thin.js';
+export * from './icons/link-simple-break-thin.js';
+export * from './icons/link-break-thin.js';
+export * from './icons/line-vertical-thin.js';
+export * from './icons/line-segments-thin.js';
+export * from './icons/line-segment-thin.js';
+export * from './icons/lightning-thin.js';
+export * from './icons/lightning-slash-thin.js';
+export * from './icons/lightning-a-thin.js';
+export * from './icons/lighthouse-thin.js';
+export * from './icons/lightbulb-thin.js';
+export * from './icons/lightbulb-filament-thin.js';
+export * from './icons/lifebuoy-thin.js';
+export * from './icons/letter-circle-v-thin.js';
+export * from './icons/letter-circle-p-thin.js';
+export * from './icons/letter-circle-h-thin.js';
+export * from './icons/less-than-thin.js';
+export * from './icons/less-than-or-equal-thin.js';
+export * from './icons/lego-thin.js';
+export * from './icons/lego-smiley-thin.js';
+export * from './icons/lectern-thin.js';
+export * from './icons/leaf-thin.js';
+export * from './icons/layout-thin.js';
+export * from './icons/lastfm-logo-thin.js';
+export * from './icons/lasso-thin.js';
+export * from './icons/laptop-thin.js';
+export * from './icons/lamp-thin.js';
+export * from './icons/lamp-pendant-thin.js';
+export * from './icons/ladder-thin.js';
+export * from './icons/ladder-simple-thin.js';
+export * from './icons/knife-thin.js';
+export * from './icons/keyhole-thin.js';
+export * from './icons/keyboard-thin.js';
+export * from './icons/key-thin.js';
+export * from './icons/key-return-thin.js';
+export * from './icons/kanban-thin.js';
+export * from './icons/joystick-thin.js';
+export * from './icons/jeep-thin.js';
+export * from './icons/jar-thin.js';
+export * from './icons/jar-label-thin.js';
+export * from './icons/island-thin.js';
+export * from './icons/invoice-thin.js';
+export * from './icons/intersection-thin.js';
+export * from './icons/intersect-three-thin.js';
+export * from './icons/intersect-thin.js';
+export * from './icons/intersect-square-thin.js';
+export * from './icons/instagram-logo-thin.js';
+export * from './icons/info-thin.js';
+export * from './icons/infinity-thin.js';
+export * from './icons/images-thin.js';
+export * from './icons/images-square-thin.js';
+export * from './icons/image-thin.js';
+export * from './icons/image-square-thin.js';
+export * from './icons/image-broken-thin.js';
+export * from './icons/identification-card-thin.js';
+export * from './icons/identification-badge-thin.js';
+export * from './icons/ice-cream-thin.js';
+export * from './icons/hurricane-thin.js';
+export * from './icons/house-thin.js';
+export * from './icons/house-simple-thin.js';
+export * from './icons/house-line-thin.js';
+export * from './icons/hourglass-thin.js';
+export * from './icons/hourglass-simple-thin.js';
+export * from './icons/hourglass-simple-medium-thin.js';
+export * from './icons/hourglass-simple-low-thin.js';
+export * from './icons/hourglass-simple-high-thin.js';
+export * from './icons/hourglass-medium-thin.js';
+export * from './icons/hourglass-low-thin.js';
+export * from './icons/hourglass-high-thin.js';
+export * from './icons/hospital-thin.js';
+export * from './icons/horse-thin.js';
+export * from './icons/hoodie-thin.js';
+export * from './icons/hockey-thin.js';
+export * from './icons/highlighter-thin.js';
+export * from './icons/highlighter-circle-thin.js';
+export * from './icons/high-heel-thin.js';
+export * from './icons/high-definition-thin.js';
+export * from './icons/hexagon-thin.js';
+export * from './icons/heartbeat-thin.js';
+export * from './icons/heart-thin.js';
+export * from './icons/heart-straight-thin.js';
+export * from './icons/heart-straight-break-thin.js';
+export * from './icons/heart-half-thin.js';
+export * from './icons/heart-break-thin.js';
+export * from './icons/headset-thin.js';
+export * from './icons/headphones-thin.js';
+export * from './icons/headlights-thin.js';
+export * from './icons/head-circuit-thin.js';
+export * from './icons/hash-thin.js';
+export * from './icons/hash-straight-thin.js';
+export * from './icons/hard-hat-thin.js';
+export * from './icons/hard-drives-thin.js';
+export * from './icons/hard-drive-thin.js';
+export * from './icons/handshake-thin.js';
+export * from './icons/hands-praying-thin.js';
+export * from './icons/hands-clapping-thin.js';
+export * from './icons/handbag-thin.js';
+export * from './icons/handbag-simple-thin.js';
+export * from './icons/hand-withdraw-thin.js';
+export * from './icons/hand-waving-thin.js';
+export * from './icons/hand-thin.js';
+export * from './icons/hand-tap-thin.js';
+export * from './icons/hand-swipe-right-thin.js';
+export * from './icons/hand-swipe-left-thin.js';
+export * from './icons/hand-soap-thin.js';
+export * from './icons/hand-pointing-thin.js';
+export * from './icons/hand-peace-thin.js';
+export * from './icons/hand-palm-thin.js';
+export * from './icons/hand-heart-thin.js';
+export * from './icons/hand-grabbing-thin.js';
+export * from './icons/hand-fist-thin.js';
+export * from './icons/hand-eye-thin.js';
+export * from './icons/hand-deposit-thin.js';
+export * from './icons/hand-coins-thin.js';
+export * from './icons/hand-arrow-up-thin.js';
+export * from './icons/hand-arrow-down-thin.js';
+export * from './icons/hammer-thin.js';
+export * from './icons/hamburger-thin.js';
+export * from './icons/hair-dryer-thin.js';
+export * from './icons/guitar-thin.js';
+export * from './icons/grid-nine-thin.js';
+export * from './icons/grid-four-thin.js';
+export * from './icons/greater-than-thin.js';
+export * from './icons/greater-than-or-equal-thin.js';
+export * from './icons/graphics-card-thin.js';
+export * from './icons/graph-thin.js';
+export * from './icons/grains-thin.js';
+export * from './icons/grains-slash-thin.js';
+export * from './icons/graduation-cap-thin.js';
+export * from './icons/gradient-thin.js';
+export * from './icons/gps-thin.js';
+export * from './icons/gps-slash-thin.js';
+export * from './icons/gps-fix-thin.js';
+export * from './icons/google-podcasts-logo-thin.js';
+export * from './icons/google-play-logo-thin.js';
+export * from './icons/google-photos-logo-thin.js';
+export * from './icons/google-logo-thin.js';
+export * from './icons/google-drive-logo-thin.js';
+export * from './icons/google-chrome-logo-thin.js';
+export * from './icons/google-cardboard-logo-thin.js';
+export * from './icons/goodreads-logo-thin.js';
+export * from './icons/golf-thin.js';
+export * from './icons/goggles-thin.js';
+export * from './icons/globe-x-thin.js';
+export * from './icons/globe-thin.js';
+export * from './icons/globe-stand-thin.js';
+export * from './icons/globe-simple-x-thin.js';
+export * from './icons/globe-simple-thin.js';
+export * from './icons/globe-hemisphere-west-thin.js';
+export * from './icons/globe-hemisphere-east-thin.js';
+export * from './icons/gitlab-logo-thin.js';
+export * from './icons/gitlab-logo-simple-thin.js';
+export * from './icons/github-logo-thin.js';
+export * from './icons/git-pull-request-thin.js';
+export * from './icons/git-merge-thin.js';
+export * from './icons/git-fork-thin.js';
+export * from './icons/git-diff-thin.js';
+export * from './icons/git-commit-thin.js';
+export * from './icons/git-branch-thin.js';
+export * from './icons/gift-thin.js';
+export * from './icons/gif-thin.js';
+export * from './icons/ghost-thin.js';
+export * from './icons/gender-transgender-thin.js';
+export * from './icons/gender-nonbinary-thin.js';
+export * from './icons/gender-neuter-thin.js';
+export * from './icons/gender-male-thin.js';
+export * from './icons/gender-intersex-thin.js';
+export * from './icons/gender-female-thin.js';
+export * from './icons/gear-thin.js';
+export * from './icons/gear-six-thin.js';
+export * from './icons/gear-fine-thin.js';
+export * from './icons/gavel-thin.js';
+export * from './icons/gauge-thin.js';
+export * from './icons/gas-pump-thin.js';
+export * from './icons/gas-can-thin.js';
+export * from './icons/garage-thin.js';
+export * from './icons/game-controller-thin.js';
+export * from './icons/funnel-x-thin.js';
+export * from './icons/funnel-thin.js';
+export * from './icons/funnel-simple-x-thin.js';
+export * from './icons/funnel-simple-thin.js';
+export * from './icons/function-thin.js';
+export * from './icons/framer-logo-thin.js';
+export * from './icons/frame-corners-thin.js';
+export * from './icons/four-k-thin.js';
+export * from './icons/fork-knife-thin.js';
+export * from './icons/footprints-thin.js';
+export * from './icons/football-thin.js';
+export * from './icons/football-helmet-thin.js';
+export * from './icons/folders-thin.js';
+export * from './icons/folder-user-thin.js';
+export * from './icons/folder-thin.js';
+export * from './icons/folder-star-thin.js';
+export * from './icons/folder-simple-user-thin.js';
+export * from './icons/folder-simple-thin.js';
+export * from './icons/folder-simple-star-thin.js';
+export * from './icons/folder-simple-plus-thin.js';
+export * from './icons/folder-simple-minus-thin.js';
+export * from './icons/folder-simple-lock-thin.js';
+export * from './icons/folder-simple-dashed-thin.js';
+export * from './icons/folder-plus-thin.js';
+export * from './icons/folder-open-thin.js';
+export * from './icons/folder-minus-thin.js';
+export * from './icons/folder-lock-thin.js';
+export * from './icons/folder-dashed-thin.js';
+export * from './icons/flying-saucer-thin.js';
+export * from './icons/flower-tulip-thin.js';
+export * from './icons/flower-thin.js';
+export * from './icons/flower-lotus-thin.js';
+export * from './icons/flow-arrow-thin.js';
+export * from './icons/floppy-disk-thin.js';
+export * from './icons/floppy-disk-back-thin.js';
+export * from './icons/flip-vertical-thin.js';
+export * from './icons/flip-horizontal-thin.js';
+export * from './icons/flask-thin.js';
+export * from './icons/flashlight-thin.js';
+export * from './icons/flame-thin.js';
+export * from './icons/flag-thin.js';
+export * from './icons/flag-pennant-thin.js';
+export * from './icons/flag-checkered-thin.js';
+export * from './icons/flag-banner-thin.js';
+export * from './icons/flag-banner-fold-thin.js';
+export * from './icons/fish-thin.js';
+export * from './icons/fish-simple-thin.js';
+export * from './icons/first-aid-thin.js';
+export * from './icons/first-aid-kit-thin.js';
+export * from './icons/fire-truck-thin.js';
+export * from './icons/fire-thin.js';
+export * from './icons/fire-simple-thin.js';
+export * from './icons/fire-extinguisher-thin.js';
+export * from './icons/finn-the-human-thin.js';
+export * from './icons/fingerprint-thin.js';
+export * from './icons/fingerprint-simple-thin.js';
+export * from './icons/film-strip-thin.js';
+export * from './icons/film-slate-thin.js';
+export * from './icons/film-script-thin.js';
+export * from './icons/film-reel-thin.js';
+export * from './icons/files-thin.js';
+export * from './icons/file-zip-thin.js';
+export * from './icons/file-xls-thin.js';
+export * from './icons/file-x-thin.js';
+export * from './icons/file-vue-thin.js';
+export * from './icons/file-video-thin.js';
+export * from './icons/file-txt-thin.js';
+export * from './icons/file-tsx-thin.js';
+export * from './icons/file-ts-thin.js';
+export * from './icons/file-thin.js';
+export * from './icons/file-text-thin.js';
+export * from './icons/file-svg-thin.js';
+export * from './icons/file-sql-thin.js';
+export * from './icons/file-rs-thin.js';
+export * from './icons/file-py-thin.js';
+export * from './icons/file-ppt-thin.js';
+export * from './icons/file-png-thin.js';
+export * from './icons/file-plus-thin.js';
+export * from './icons/file-pdf-thin.js';
+export * from './icons/file-minus-thin.js';
+export * from './icons/file-md-thin.js';
+export * from './icons/file-magnifying-glass-thin.js';
+export * from './icons/file-lock-thin.js';
+export * from './icons/file-jsx-thin.js';
+export * from './icons/file-js-thin.js';
+export * from './icons/file-jpg-thin.js';
+export * from './icons/file-ini-thin.js';
+export * from './icons/file-image-thin.js';
+export * from './icons/file-html-thin.js';
+export * from './icons/file-doc-thin.js';
+export * from './icons/file-dashed-thin.js';
+export * from './icons/file-csv-thin.js';
+export * from './icons/file-css-thin.js';
+export * from './icons/file-cpp-thin.js';
+export * from './icons/file-code-thin.js';
+export * from './icons/file-cloud-thin.js';
+export * from './icons/file-c-thin.js';
+export * from './icons/file-c-sharp-thin.js';
+export * from './icons/file-audio-thin.js';
+export * from './icons/file-arrow-up-thin.js';
+export * from './icons/file-arrow-down-thin.js';
+export * from './icons/file-archive-thin.js';
+export * from './icons/figma-logo-thin.js';
+export * from './icons/fediverse-logo-thin.js';
+export * from './icons/feather-thin.js';
+export * from './icons/fast-forward-thin.js';
+export * from './icons/fast-forward-circle-thin.js';
+export * from './icons/farm-thin.js';
+export * from './icons/fan-thin.js';
+export * from './icons/fallout-shelter-thin.js';
+export * from './icons/faders-thin.js';
+export * from './icons/faders-horizontal-thin.js';
+export * from './icons/factory-thin.js';
+export * from './icons/facebook-logo-thin.js';
+export * from './icons/face-mask-thin.js';
+export * from './icons/eyes-thin.js';
+export * from './icons/eyeglasses-thin.js';
+export * from './icons/eyedropper-thin.js';
+export * from './icons/eyedropper-sample-thin.js';
+export * from './icons/eye-thin.js';
+export * from './icons/eye-slash-thin.js';
+export * from './icons/eye-closed-thin.js';
+export * from './icons/export-thin.js';
+export * from './icons/exclude-thin.js';
+export * from './icons/exclude-square-thin.js';
+export * from './icons/exclamation-mark-thin.js';
+export * from './icons/exam-thin.js';
+export * from './icons/escalator-up-thin.js';
+export * from './icons/escalator-down-thin.js';
+export * from './icons/eraser-thin.js';
+export * from './icons/equals-thin.js';
+export * from './icons/equalizer-thin.js';
+export * from './icons/envelope-thin.js';
+export * from './icons/envelope-simple-thin.js';
+export * from './icons/envelope-simple-open-thin.js';
+export * from './icons/envelope-open-thin.js';
+export * from './icons/engine-thin.js';
+export * from './icons/empty-thin.js';
+export * from './icons/elevator-thin.js';
+export * from './icons/eject-thin.js';
+export * from './icons/eject-simple-thin.js';
+export * from './icons/egg-thin.js';
+export * from './icons/egg-crack-thin.js';
+export * from './icons/ear-thin.js';
+export * from './icons/ear-slash-thin.js';
+export * from './icons/dropbox-logo-thin.js';
+export * from './icons/drop-thin.js';
+export * from './icons/drop-slash-thin.js';
+export * from './icons/drop-simple-thin.js';
+export * from './icons/drop-half-thin.js';
+export * from './icons/drop-half-bottom-thin.js';
+export * from './icons/drone-thin.js';
+export * from './icons/dribbble-logo-thin.js';
+export * from './icons/dresser-thin.js';
+export * from './icons/dress-thin.js';
+export * from './icons/download-thin.js';
+export * from './icons/download-simple-thin.js';
+export * from './icons/dots-three-vertical-thin.js';
+export * from './icons/dots-three-thin.js';
+export * from './icons/dots-three-outline-vertical-thin.js';
+export * from './icons/dots-three-outline-thin.js';
+export * from './icons/dots-three-circle-vertical-thin.js';
+export * from './icons/dots-three-circle-thin.js';
+export * from './icons/dots-six-vertical-thin.js';
+export * from './icons/dots-six-thin.js';
+export * from './icons/dots-nine-thin.js';
+export * from './icons/dot-thin.js';
+export * from './icons/dot-outline-thin.js';
+export * from './icons/door-thin.js';
+export * from './icons/door-open-thin.js';
+export * from './icons/dog-thin.js';
+export * from './icons/dna-thin.js';
+export * from './icons/divide-thin.js';
+export * from './icons/discord-logo-thin.js';
+export * from './icons/disco-ball-thin.js';
+export * from './icons/disc-thin.js';
+export * from './icons/dice-two-thin.js';
+export * from './icons/dice-three-thin.js';
+export * from './icons/dice-six-thin.js';
+export * from './icons/dice-one-thin.js';
+export * from './icons/dice-four-thin.js';
+export * from './icons/dice-five-thin.js';
+export * from './icons/diamonds-four-thin.js';
+export * from './icons/diamond-thin.js';
+export * from './icons/devices-thin.js';
+export * from './icons/device-tablet-thin.js';
+export * from './icons/device-tablet-speaker-thin.js';
+export * from './icons/device-tablet-camera-thin.js';
+export * from './icons/device-rotate-thin.js';
+export * from './icons/device-mobile-thin.js';
+export * from './icons/device-mobile-speaker-thin.js';
+export * from './icons/device-mobile-slash-thin.js';
+export * from './icons/device-mobile-camera-thin.js';
+export * from './icons/dev-to-logo-thin.js';
+export * from './icons/detective-thin.js';
+export * from './icons/desktop-tower-thin.js';
+export * from './icons/desktop-thin.js';
+export * from './icons/desk-thin.js';
+export * from './icons/database-thin.js';
+export * from './icons/cylinder-thin.js';
+export * from './icons/cursor-thin.js';
+export * from './icons/cursor-text-thin.js';
+export * from './icons/cursor-click-thin.js';
+export * from './icons/currency-rub-thin.js';
+export * from './icons/currency-ngn-thin.js';
+export * from './icons/currency-kzt-thin.js';
+export * from './icons/currency-krw-thin.js';
+export * from './icons/currency-jpy-thin.js';
+export * from './icons/currency-inr-thin.js';
+export * from './icons/currency-gbp-thin.js';
+export * from './icons/currency-eur-thin.js';
+export * from './icons/currency-eth-thin.js';
+export * from './icons/currency-dollar-thin.js';
+export * from './icons/currency-dollar-simple-thin.js';
+export * from './icons/currency-cny-thin.js';
+export * from './icons/currency-circle-dollar-thin.js';
+export * from './icons/currency-btc-thin.js';
+export * from './icons/cube-transparent-thin.js';
+export * from './icons/cube-thin.js';
+export * from './icons/cube-focus-thin.js';
+export * from './icons/crown-thin.js';
+export * from './icons/crown-simple-thin.js';
+export * from './icons/crown-cross-thin.js';
+export * from './icons/crosshair-thin.js';
+export * from './icons/crosshair-simple-thin.js';
+export * from './icons/cross-thin.js';
+export * from './icons/crop-thin.js';
+export * from './icons/cricket-thin.js';
+export * from './icons/credit-card-thin.js';
+export * from './icons/crane-tower-thin.js';
+export * from './icons/crane-thin.js';
+export * from './icons/cpu-thin.js';
+export * from './icons/cowboy-hat-thin.js';
+export * from './icons/cow-thin.js';
+export * from './icons/court-basketball-thin.js';
+export * from './icons/couch-thin.js';
+export * from './icons/corners-out-thin.js';
+export * from './icons/corners-in-thin.js';
+export * from './icons/copyright-thin.js';
+export * from './icons/copyleft-thin.js';
+export * from './icons/copy-thin.js';
+export * from './icons/copy-simple-thin.js';
+export * from './icons/cooking-pot-thin.js';
+export * from './icons/cookie-thin.js';
+export * from './icons/control-thin.js';
+export * from './icons/contactless-payment-thin.js';
+export * from './icons/confetti-thin.js';
+export * from './icons/computer-tower-thin.js';
+export * from './icons/compass-tool-thin.js';
+export * from './icons/compass-thin.js';
+export * from './icons/compass-rose-thin.js';
+export * from './icons/command-thin.js';
+export * from './icons/columns-thin.js';
+export * from './icons/columns-plus-right-thin.js';
+export * from './icons/columns-plus-left-thin.js';
+export * from './icons/coins-thin.js';
+export * from './icons/coin-vertical-thin.js';
+export * from './icons/coin-thin.js';
+export * from './icons/coffee-thin.js';
+export * from './icons/coffee-bean-thin.js';
+export * from './icons/codesandbox-logo-thin.js';
+export * from './icons/codepen-logo-thin.js';
+export * from './icons/code-thin.js';
+export * from './icons/code-simple-thin.js';
+export * from './icons/code-block-thin.js';
+export * from './icons/coda-logo-thin.js';
+export * from './icons/coat-hanger-thin.js';
+export * from './icons/club-thin.js';
+export * from './icons/clover-thin.js';
+export * from './icons/cloud-x-thin.js';
+export * from './icons/cloud-warning-thin.js';
+export * from './icons/cloud-thin.js';
+export * from './icons/cloud-sun-thin.js';
+export * from './icons/cloud-snow-thin.js';
+export * from './icons/cloud-slash-thin.js';
+export * from './icons/cloud-rain-thin.js';
+export * from './icons/cloud-moon-thin.js';
+export * from './icons/cloud-lightning-thin.js';
+export * from './icons/cloud-fog-thin.js';
+export * from './icons/cloud-check-thin.js';
+export * from './icons/cloud-arrow-up-thin.js';
+export * from './icons/cloud-arrow-down-thin.js';
+export * from './icons/closed-captioning-thin.js';
+export * from './icons/clock-user-thin.js';
+export * from './icons/clock-thin.js';
+export * from './icons/clock-counter-clockwise-thin.js';
+export * from './icons/clock-countdown-thin.js';
+export * from './icons/clock-clockwise-thin.js';
+export * from './icons/clock-afternoon-thin.js';
+export * from './icons/clipboard-thin.js';
+export * from './icons/clipboard-text-thin.js';
+export * from './icons/city-thin.js';
+export * from './icons/circuitry-thin.js';
+export * from './icons/circles-three-thin.js';
+export * from './icons/circles-three-plus-thin.js';
+export * from './icons/circles-four-thin.js';
+export * from './icons/circle-thin.js';
+export * from './icons/circle-notch-thin.js';
+export * from './icons/circle-half-tilt-thin.js';
+export * from './icons/circle-half-thin.js';
+export * from './icons/circle-dashed-thin.js';
+export * from './icons/cigarette-thin.js';
+export * from './icons/cigarette-slash-thin.js';
+export * from './icons/church-thin.js';
+export * from './icons/cherries-thin.js';
+export * from './icons/chef-hat-thin.js';
+export * from './icons/cheese-thin.js';
+export * from './icons/cheers-thin.js';
+export * from './icons/checks-thin.js';
+export * from './icons/checkerboard-thin.js';
+export * from './icons/check-thin.js';
+export * from './icons/check-square-thin.js';
+export * from './icons/check-square-offset-thin.js';
+export * from './icons/check-fat-thin.js';
+export * from './icons/check-circle-thin.js';
+export * from './icons/chats-thin.js';
+export * from './icons/chats-teardrop-thin.js';
+export * from './icons/chats-circle-thin.js';
+export * from './icons/chat-thin.js';
+export * from './icons/chat-text-thin.js';
+export * from './icons/chat-teardrop-thin.js';
+export * from './icons/chat-teardrop-text-thin.js';
+export * from './icons/chat-teardrop-slash-thin.js';
+export * from './icons/chat-teardrop-dots-thin.js';
+export * from './icons/chat-slash-thin.js';
+export * from './icons/chat-dots-thin.js';
+export * from './icons/chat-circle-thin.js';
+export * from './icons/chat-circle-text-thin.js';
+export * from './icons/chat-circle-slash-thin.js';
+export * from './icons/chat-circle-dots-thin.js';
+export * from './icons/chat-centered-thin.js';
+export * from './icons/chat-centered-text-thin.js';
+export * from './icons/chat-centered-slash-thin.js';
+export * from './icons/chat-centered-dots-thin.js';
+export * from './icons/chart-scatter-thin.js';
+export * from './icons/chart-polar-thin.js';
+export * from './icons/chart-pie-thin.js';
+export * from './icons/chart-pie-slice-thin.js';
+export * from './icons/chart-line-up-thin.js';
+export * from './icons/chart-line-thin.js';
+export * from './icons/chart-line-down-thin.js';
+export * from './icons/chart-donut-thin.js';
+export * from './icons/chart-bar-thin.js';
+export * from './icons/chart-bar-horizontal-thin.js';
+export * from './icons/charging-station-thin.js';
+export * from './icons/champagne-thin.js';
+export * from './icons/chalkboard-thin.js';
+export * from './icons/chalkboard-teacher-thin.js';
+export * from './icons/chalkboard-simple-thin.js';
+export * from './icons/chair-thin.js';
+export * from './icons/certificate-thin.js';
+export * from './icons/cell-tower-thin.js';
+export * from './icons/cell-signal-x-thin.js';
+export * from './icons/cell-signal-slash-thin.js';
+export * from './icons/cell-signal-none-thin.js';
+export * from './icons/cell-signal-medium-thin.js';
+export * from './icons/cell-signal-low-thin.js';
+export * from './icons/cell-signal-high-thin.js';
+export * from './icons/cell-signal-full-thin.js';
+export * from './icons/cat-thin.js';
+export * from './icons/castle-turret-thin.js';
+export * from './icons/cassette-tape-thin.js';
+export * from './icons/cash-register-thin.js';
+export * from './icons/carrot-thin.js';
+export * from './icons/caret-up-thin.js';
+export * from './icons/caret-up-down-thin.js';
+export * from './icons/caret-right-thin.js';
+export * from './icons/caret-line-up-thin.js';
+export * from './icons/caret-line-right-thin.js';
+export * from './icons/caret-line-left-thin.js';
+export * from './icons/caret-line-down-thin.js';
+export * from './icons/caret-left-thin.js';
+export * from './icons/caret-down-thin.js';
+export * from './icons/caret-double-up-thin.js';
+export * from './icons/caret-double-right-thin.js';
+export * from './icons/caret-double-left-thin.js';
+export * from './icons/caret-double-down-thin.js';
+export * from './icons/caret-circle-up-thin.js';
+export * from './icons/caret-circle-up-down-thin.js';
+export * from './icons/caret-circle-right-thin.js';
+export * from './icons/caret-circle-left-thin.js';
+export * from './icons/caret-circle-down-thin.js';
+export * from './icons/caret-circle-double-up-thin.js';
+export * from './icons/caret-circle-double-right-thin.js';
+export * from './icons/caret-circle-double-left-thin.js';
+export * from './icons/caret-circle-double-down-thin.js';
+export * from './icons/cards-three-thin.js';
+export * from './icons/cards-thin.js';
+export * from './icons/cardholder-thin.js';
+export * from './icons/car-thin.js';
+export * from './icons/car-simple-thin.js';
+export * from './icons/car-profile-thin.js';
+export * from './icons/car-battery-thin.js';
+export * from './icons/campfire-thin.js';
+export * from './icons/camera-thin.js';
+export * from './icons/camera-slash-thin.js';
+export * from './icons/camera-rotate-thin.js';
+export * from './icons/camera-plus-thin.js';
+export * from './icons/call-bell-thin.js';
+export * from './icons/calendar-x-thin.js';
+export * from './icons/calendar-thin.js';
+export * from './icons/calendar-star-thin.js';
+export * from './icons/calendar-slash-thin.js';
+export * from './icons/calendar-plus-thin.js';
+export * from './icons/calendar-minus-thin.js';
+export * from './icons/calendar-heart-thin.js';
+export * from './icons/calendar-dots-thin.js';
+export * from './icons/calendar-dot-thin.js';
+export * from './icons/calendar-check-thin.js';
+export * from './icons/calendar-blank-thin.js';
+export * from './icons/calculator-thin.js';
+export * from './icons/cake-thin.js';
+export * from './icons/cactus-thin.js';
+export * from './icons/cable-car-thin.js';
+export * from './icons/butterfly-thin.js';
+export * from './icons/bus-thin.js';
+export * from './icons/bulldozer-thin.js';
+export * from './icons/buildings-thin.js';
+export * from './icons/building-thin.js';
+export * from './icons/building-office-thin.js';
+export * from './icons/building-apartment-thin.js';
+export * from './icons/bug-thin.js';
+export * from './icons/bug-droid-thin.js';
+export * from './icons/bug-beetle-thin.js';
+export * from './icons/browsers-thin.js';
+export * from './icons/browser-thin.js';
+export * from './icons/broom-thin.js';
+export * from './icons/broadcast-thin.js';
+export * from './icons/briefcase-thin.js';
+export * from './icons/briefcase-metal-thin.js';
+export * from './icons/bridge-thin.js';
+export * from './icons/bread-thin.js';
+export * from './icons/brandy-thin.js';
+export * from './icons/brain-thin.js';
+export * from './icons/brackets-square-thin.js';
+export * from './icons/brackets-round-thin.js';
+export * from './icons/brackets-curly-thin.js';
+export * from './icons/brackets-angle-thin.js';
+export * from './icons/boxing-glove-thin.js';
+export * from './icons/box-arrow-up-thin.js';
+export * from './icons/box-arrow-down-thin.js';
+export * from './icons/bowling-ball-thin.js';
+export * from './icons/bowl-steam-thin.js';
+export * from './icons/bowl-food-thin.js';
+export * from './icons/bounding-box-thin.js';
+export * from './icons/boules-thin.js';
+export * from './icons/boot-thin.js';
+export * from './icons/books-thin.js';
+export * from './icons/bookmarks-thin.js';
+export * from './icons/bookmarks-simple-thin.js';
+export * from './icons/bookmark-thin.js';
+export * from './icons/bookmark-simple-thin.js';
+export * from './icons/book-thin.js';
+export * from './icons/book-open-user-thin.js';
+export * from './icons/book-open-thin.js';
+export * from './icons/book-open-text-thin.js';
+export * from './icons/book-bookmark-thin.js';
+export * from './icons/bone-thin.js';
+export * from './icons/bomb-thin.js';
+export * from './icons/boat-thin.js';
+export * from './icons/bluetooth-x-thin.js';
+export * from './icons/bluetooth-thin.js';
+export * from './icons/bluetooth-slash-thin.js';
+export * from './icons/bluetooth-connected-thin.js';
+export * from './icons/blueprint-thin.js';
+export * from './icons/bird-thin.js';
+export * from './icons/biohazard-thin.js';
+export * from './icons/binoculars-thin.js';
+export * from './icons/binary-thin.js';
+export * from './icons/bicycle-thin.js';
+export * from './icons/bezier-curve-thin.js';
+export * from './icons/belt-thin.js';
+export * from './icons/bell-z-thin.js';
+export * from './icons/bell-thin.js';
+export * from './icons/bell-slash-thin.js';
+export * from './icons/bell-simple-z-thin.js';
+export * from './icons/bell-simple-thin.js';
+export * from './icons/bell-simple-slash-thin.js';
+export * from './icons/bell-simple-ringing-thin.js';
+export * from './icons/bell-ringing-thin.js';
+export * from './icons/behance-logo-thin.js';
+export * from './icons/beer-stein-thin.js';
+export * from './icons/beer-bottle-thin.js';
+export * from './icons/bed-thin.js';
+export * from './icons/beanie-thin.js';
+export * from './icons/beach-ball-thin.js';
+export * from './icons/battery-warning-vertical-thin.js';
+export * from './icons/battery-warning-thin.js';
+export * from './icons/battery-vertical-medium-thin.js';
+export * from './icons/battery-vertical-low-thin.js';
+export * from './icons/battery-vertical-high-thin.js';
+export * from './icons/battery-vertical-full-thin.js';
+export * from './icons/battery-vertical-empty-thin.js';
+export * from './icons/battery-plus-vertical-thin.js';
+export * from './icons/battery-plus-thin.js';
+export * from './icons/battery-medium-thin.js';
+export * from './icons/battery-low-thin.js';
+export * from './icons/battery-high-thin.js';
+export * from './icons/battery-full-thin.js';
+export * from './icons/battery-empty-thin.js';
+export * from './icons/battery-charging-vertical-thin.js';
+export * from './icons/battery-charging-thin.js';
+export * from './icons/bathtub-thin.js';
+export * from './icons/basketball-thin.js';
+export * from './icons/basket-thin.js';
+export * from './icons/baseball-thin.js';
+export * from './icons/baseball-helmet-thin.js';
+export * from './icons/baseball-cap-thin.js';
+export * from './icons/barricade-thin.js';
+export * from './icons/barn-thin.js';
+export * from './icons/barcode-thin.js';
+export * from './icons/barbell-thin.js';
+export * from './icons/bank-thin.js';
+export * from './icons/bandaids-thin.js';
+export * from './icons/balloon-thin.js';
+export * from './icons/bag-thin.js';
+export * from './icons/bag-simple-thin.js';
+export * from './icons/backspace-thin.js';
+export * from './icons/backpack-thin.js';
+export * from './icons/baby-thin.js';
+export * from './icons/baby-carriage-thin.js';
+export * from './icons/axe-thin.js';
+export * from './icons/avocado-thin.js';
+export * from './icons/atom-thin.js';
+export * from './icons/at-thin.js';
+export * from './icons/asterisk-thin.js';
+export * from './icons/asterisk-simple-thin.js';
+export * from './icons/asclepius-thin.js';
+export * from './icons/article-thin.js';
+export * from './icons/article-ny-times-thin.js';
+export * from './icons/article-medium-thin.js';
+export * from './icons/arrows-vertical-thin.js';
+export * from './icons/arrows-split-thin.js';
+export * from './icons/arrows-out-thin.js';
+export * from './icons/arrows-out-simple-thin.js';
+export * from './icons/arrows-out-line-vertical-thin.js';
+export * from './icons/arrows-out-line-horizontal-thin.js';
+export * from './icons/arrows-out-cardinal-thin.js';
+export * from './icons/arrows-merge-thin.js';
+export * from './icons/arrows-left-right-thin.js';
+export * from './icons/arrows-in-thin.js';
+export * from './icons/arrows-in-simple-thin.js';
+export * from './icons/arrows-in-line-vertical-thin.js';
+export * from './icons/arrows-in-line-horizontal-thin.js';
+export * from './icons/arrows-in-cardinal-thin.js';
+export * from './icons/arrows-horizontal-thin.js';
+export * from './icons/arrows-down-up-thin.js';
+export * from './icons/arrows-counter-clockwise-thin.js';
+export * from './icons/arrows-clockwise-thin.js';
+export * from './icons/arrow-up-thin.js';
+export * from './icons/arrow-up-right-thin.js';
+export * from './icons/arrow-up-left-thin.js';
+export * from './icons/arrow-u-up-right-thin.js';
+export * from './icons/arrow-u-up-left-thin.js';
+export * from './icons/arrow-u-right-up-thin.js';
+export * from './icons/arrow-u-right-down-thin.js';
+export * from './icons/arrow-u-left-up-thin.js';
+export * from './icons/arrow-u-left-down-thin.js';
+export * from './icons/arrow-u-down-right-thin.js';
+export * from './icons/arrow-u-down-left-thin.js';
+export * from './icons/arrow-square-up-thin.js';
+export * from './icons/arrow-square-up-right-thin.js';
+export * from './icons/arrow-square-up-left-thin.js';
+export * from './icons/arrow-square-right-thin.js';
+export * from './icons/arrow-square-out-thin.js';
+export * from './icons/arrow-square-left-thin.js';
+export * from './icons/arrow-square-in-thin.js';
+export * from './icons/arrow-square-down-thin.js';
+export * from './icons/arrow-square-down-right-thin.js';
+export * from './icons/arrow-square-down-left-thin.js';
+export * from './icons/arrow-right-thin.js';
+export * from './icons/arrow-line-up-thin.js';
+export * from './icons/arrow-line-up-right-thin.js';
+export * from './icons/arrow-line-up-left-thin.js';
+export * from './icons/arrow-line-right-thin.js';
+export * from './icons/arrow-line-left-thin.js';
+export * from './icons/arrow-line-down-thin.js';
+export * from './icons/arrow-line-down-right-thin.js';
+export * from './icons/arrow-line-down-left-thin.js';
+export * from './icons/arrow-left-thin.js';
+export * from './icons/arrow-fat-up-thin.js';
+export * from './icons/arrow-fat-right-thin.js';
+export * from './icons/arrow-fat-lines-up-thin.js';
+export * from './icons/arrow-fat-lines-right-thin.js';
+export * from './icons/arrow-fat-lines-left-thin.js';
+export * from './icons/arrow-fat-lines-down-thin.js';
+export * from './icons/arrow-fat-line-up-thin.js';
+export * from './icons/arrow-fat-line-right-thin.js';
+export * from './icons/arrow-fat-line-left-thin.js';
+export * from './icons/arrow-fat-line-down-thin.js';
+export * from './icons/arrow-fat-left-thin.js';
+export * from './icons/arrow-fat-down-thin.js';
+export * from './icons/arrow-elbow-up-right-thin.js';
+export * from './icons/arrow-elbow-up-left-thin.js';
+export * from './icons/arrow-elbow-right-up-thin.js';
+export * from './icons/arrow-elbow-right-thin.js';
+export * from './icons/arrow-elbow-right-down-thin.js';
+export * from './icons/arrow-elbow-left-up-thin.js';
+export * from './icons/arrow-elbow-left-thin.js';
+export * from './icons/arrow-elbow-left-down-thin.js';
+export * from './icons/arrow-elbow-down-right-thin.js';
+export * from './icons/arrow-elbow-down-left-thin.js';
+export * from './icons/arrow-down-thin.js';
+export * from './icons/arrow-down-right-thin.js';
+export * from './icons/arrow-down-left-thin.js';
+export * from './icons/arrow-counter-clockwise-thin.js';
+export * from './icons/arrow-clockwise-thin.js';
+export * from './icons/arrow-circle-up-thin.js';
+export * from './icons/arrow-circle-up-right-thin.js';
+export * from './icons/arrow-circle-up-left-thin.js';
+export * from './icons/arrow-circle-right-thin.js';
+export * from './icons/arrow-circle-left-thin.js';
+export * from './icons/arrow-circle-down-thin.js';
+export * from './icons/arrow-circle-down-right-thin.js';
+export * from './icons/arrow-circle-down-left-thin.js';
+export * from './icons/arrow-bend-up-right-thin.js';
+export * from './icons/arrow-bend-up-left-thin.js';
+export * from './icons/arrow-bend-right-up-thin.js';
+export * from './icons/arrow-bend-right-down-thin.js';
+export * from './icons/arrow-bend-left-up-thin.js';
+export * from './icons/arrow-bend-left-down-thin.js';
+export * from './icons/arrow-bend-down-right-thin.js';
+export * from './icons/arrow-bend-down-left-thin.js';
+export * from './icons/arrow-bend-double-up-right-thin.js';
+export * from './icons/arrow-bend-double-up-left-thin.js';
+export * from './icons/arrow-arc-right-thin.js';
+export * from './icons/arrow-arc-left-thin.js';
+export * from './icons/armchair-thin.js';
+export * from './icons/archive-thin.js';
+export * from './icons/approximate-equals-thin.js';
+export * from './icons/apple-podcasts-logo-thin.js';
+export * from './icons/apple-logo-thin.js';
+export * from './icons/app-window-thin.js';
+export * from './icons/app-store-logo-thin.js';
+export * from './icons/aperture-thin.js';
+export * from './icons/angular-logo-thin.js';
+export * from './icons/angle-thin.js';
+export * from './icons/android-logo-thin.js';
+export * from './icons/anchor-thin.js';
+export * from './icons/anchor-simple-thin.js';
+export * from './icons/ambulance-thin.js';
+export * from './icons/amazon-logo-thin.js';
+export * from './icons/align-top-thin.js';
+export * from './icons/align-top-simple-thin.js';
+export * from './icons/align-right-thin.js';
+export * from './icons/align-right-simple-thin.js';
+export * from './icons/align-left-thin.js';
+export * from './icons/align-left-simple-thin.js';
+export * from './icons/align-center-vertical-thin.js';
+export * from './icons/align-center-vertical-simple-thin.js';
+export * from './icons/align-center-horizontal-thin.js';
+export * from './icons/align-center-horizontal-simple-thin.js';
+export * from './icons/align-bottom-thin.js';
+export * from './icons/align-bottom-simple-thin.js';
+export * from './icons/alien-thin.js';
+export * from './icons/alarm-thin.js';
+export * from './icons/airplay-thin.js';
+export * from './icons/airplane-tilt-thin.js';
+export * from './icons/airplane-thin.js';
+export * from './icons/airplane-taxiing-thin.js';
+export * from './icons/airplane-takeoff-thin.js';
+export * from './icons/airplane-landing-thin.js';
+export * from './icons/airplane-in-flight-thin.js';
+export * from './icons/air-traffic-control-thin.js';
+export * from './icons/address-book-thin.js';
+export * from './icons/address-book-tabs-thin.js';
+export * from './icons/acorn-thin.js';
+export * from './icons/youtube-logo.js';
+export * from './icons/yin-yang.js';
+export * from './icons/yarn.js';
+export * from './icons/x.js';
+export * from './icons/x-square.js';
+export * from './icons/x-logo.js';
+export * from './icons/x-circle.js';
+export * from './icons/wrench.js';
+export * from './icons/wine.js';
+export * from './icons/windows-logo.js';
+export * from './icons/windmill.js';
+export * from './icons/wind.js';
+export * from './icons/wifi-x.js';
+export * from './icons/wifi-slash.js';
+export * from './icons/wifi-none.js';
+export * from './icons/wifi-medium.js';
+export * from './icons/wifi-low.js';
+export * from './icons/wifi-high.js';
+export * from './icons/wheelchair.js';
+export * from './icons/wheelchair-motion.js';
+export * from './icons/whatsapp-logo.js';
+export * from './icons/wechat-logo.js';
+export * from './icons/webhooks-logo.js';
+export * from './icons/webcam.js';
+export * from './icons/webcam-slash.js';
+export * from './icons/waves.js';
+export * from './icons/waveform.js';
+export * from './icons/waveform-slash.js';
+export * from './icons/wave-triangle.js';
+export * from './icons/wave-square.js';
+export * from './icons/wave-sine.js';
+export * from './icons/wave-sawtooth.js';
+export * from './icons/watch.js';
+export * from './icons/washing-machine.js';
+export * from './icons/warning.js';
+export * from './icons/warning-octagon.js';
+export * from './icons/warning-diamond.js';
+export * from './icons/warning-circle.js';
+export * from './icons/warehouse.js';
+export * from './icons/wallet.js';
+export * from './icons/wall.js';
+export * from './icons/volleyball.js';
+export * from './icons/voicemail.js';
+export * from './icons/visor.js';
+export * from './icons/virus.js';
+export * from './icons/virtual-reality.js';
+export * from './icons/vinyl-record.js';
+export * from './icons/vignette.js';
+export * from './icons/video.js';
+export * from './icons/video-conference.js';
+export * from './icons/video-camera.js';
+export * from './icons/video-camera-slash.js';
+export * from './icons/vibrate.js';
+export * from './icons/vector-two.js';
+export * from './icons/vector-three.js';
+export * from './icons/vault.js';
+export * from './icons/van.js';
+export * from './icons/users.js';
+export * from './icons/users-three.js';
+export * from './icons/users-four.js';
+export * from './icons/user.js';
+export * from './icons/user-switch.js';
+export * from './icons/user-square.js';
+export * from './icons/user-sound.js';
+export * from './icons/user-rectangle.js';
+export * from './icons/user-plus.js';
+export * from './icons/user-minus.js';
+export * from './icons/user-list.js';
+export * from './icons/user-gear.js';
+export * from './icons/user-focus.js';
+export * from './icons/user-circle.js';
+export * from './icons/user-circle-plus.js';
+export * from './icons/user-circle-minus.js';
+export * from './icons/user-circle-gear.js';
+export * from './icons/user-circle-dashed.js';
+export * from './icons/user-circle-check.js';
+export * from './icons/user-check.js';
+export * from './icons/usb.js';
+export * from './icons/upload.js';
+export * from './icons/upload-simple.js';
+export * from './icons/unite.js';
+export * from './icons/unite-square.js';
+export * from './icons/union.js';
+export * from './icons/umbrella.js';
+export * from './icons/umbrella-simple.js';
+export * from './icons/twitter-logo.js';
+export * from './icons/twitch-logo.js';
+export * from './icons/tumblr-logo.js';
+export * from './icons/truck.js';
+export * from './icons/truck-trailer.js';
+export * from './icons/trophy.js';
+export * from './icons/trolley.js';
+export * from './icons/trolley-suitcase.js';
+export * from './icons/triangle.js';
+export * from './icons/triangle-dashed.js';
+export * from './icons/trend-up.js';
+export * from './icons/trend-down.js';
+export * from './icons/tree.js';
+export * from './icons/tree-view.js';
+export * from './icons/tree-structure.js';
+export * from './icons/tree-palm.js';
+export * from './icons/tree-evergreen.js';
+export * from './icons/treasure-chest.js';
+export * from './icons/tray.js';
+export * from './icons/tray-arrow-up.js';
+export * from './icons/tray-arrow-down.js';
+export * from './icons/trash.js';
+export * from './icons/trash-simple.js';
+export * from './icons/translate.js';
+export * from './icons/tram.js';
+export * from './icons/train.js';
+export * from './icons/train-simple.js';
+export * from './icons/train-regional.js';
+export * from './icons/traffic-signal.js';
+export * from './icons/traffic-sign.js';
+export * from './icons/traffic-cone.js';
+export * from './icons/trademark.js';
+export * from './icons/trademark-registered.js';
+export * from './icons/tractor.js';
+export * from './icons/towel.js';
+export * from './icons/tote.js';
+export * from './icons/tote-simple.js';
+export * from './icons/tornado.js';
+export * from './icons/tooth.js';
+export * from './icons/toolbox.js';
+export * from './icons/toilet.js';
+export * from './icons/toilet-paper.js';
+export * from './icons/toggle-right.js';
+export * from './icons/toggle-left.js';
+export * from './icons/tire.js';
+export * from './icons/tipi.js';
+export * from './icons/tip-jar.js';
+export * from './icons/timer.js';
+export * from './icons/tilde.js';
+export * from './icons/tiktok-logo.js';
+export * from './icons/tidal-logo.js';
+export * from './icons/ticket.js';
+export * from './icons/thumbs-up.js';
+export * from './icons/thumbs-down.js';
+export * from './icons/three-d.js';
+export * from './icons/threads-logo.js';
+export * from './icons/thermometer.js';
+export * from './icons/thermometer-simple.js';
+export * from './icons/thermometer-hot.js';
+export * from './icons/thermometer-cold.js';
+export * from './icons/textbox.js';
+export * from './icons/text-underline.js';
+export * from './icons/text-t.js';
+export * from './icons/text-t-slash.js';
+export * from './icons/text-superscript.js';
+export * from './icons/text-subscript.js';
+export * from './icons/text-strikethrough.js';
+export * from './icons/text-outdent.js';
+export * from './icons/text-italic.js';
+export * from './icons/text-indent.js';
+export * from './icons/text-h.js';
+export * from './icons/text-h-two.js';
+export * from './icons/text-h-three.js';
+export * from './icons/text-h-six.js';
+export * from './icons/text-h-one.js';
+export * from './icons/text-h-four.js';
+export * from './icons/text-h-five.js';
+export * from './icons/text-columns.js';
+export * from './icons/text-b.js';
+export * from './icons/text-align-right.js';
+export * from './icons/text-align-left.js';
+export * from './icons/text-align-justify.js';
+export * from './icons/text-align-center.js';
+export * from './icons/text-aa.js';
+export * from './icons/text-a-underline.js';
+export * from './icons/test-tube.js';
+export * from './icons/terminal.js';
+export * from './icons/terminal-window.js';
+export * from './icons/tent.js';
+export * from './icons/tennis-ball.js';
+export * from './icons/television.js';
+export * from './icons/television-simple.js';
+export * from './icons/telegram-logo.js';
+export * from './icons/tea-bag.js';
+export * from './icons/taxi.js';
+export * from './icons/target.js';
+export * from './icons/tag.js';
+export * from './icons/tag-simple.js';
+export * from './icons/tag-chevron.js';
+export * from './icons/tabs.js';
+export * from './icons/table.js';
+export * from './icons/t-shirt.js';
+export * from './icons/syringe.js';
+export * from './icons/synagogue.js';
+export * from './icons/sword.js';
+export * from './icons/swimming-pool.js';
+export * from './icons/swatches.js';
+export * from './icons/swap.js';
+export * from './icons/superset-proper-of.js';
+export * from './icons/superset-of.js';
+export * from './icons/sunglasses.js';
+export * from './icons/sun.js';
+export * from './icons/sun-horizon.js';
+export * from './icons/sun-dim.js';
+export * from './icons/suitcase.js';
+export * from './icons/suitcase-simple.js';
+export * from './icons/suitcase-rolling.js';
+export * from './icons/subway.js';
+export * from './icons/subtract.js';
+export * from './icons/subtract-square.js';
+export * from './icons/subtitles.js';
+export * from './icons/subtitles-slash.js';
+export * from './icons/subset-proper-of.js';
+export * from './icons/subset-of.js';
+export * from './icons/student.js';
+export * from './icons/stripe-logo.js';
+export * from './icons/strategy.js';
+export * from './icons/storefront.js';
+export * from './icons/stop.js';
+export * from './icons/stop-circle.js';
+export * from './icons/stool.js';
+export * from './icons/sticker.js';
+export * from './icons/stethoscope.js';
+export * from './icons/steps.js';
+export * from './icons/steering-wheel.js';
+export * from './icons/steam-logo.js';
+export * from './icons/star.js';
+export * from './icons/star-of-david.js';
+export * from './icons/star-half.js';
+export * from './icons/star-four.js';
+export * from './icons/star-and-crescent.js';
+export * from './icons/standard-definition.js';
+export * from './icons/stamp.js';
+export * from './icons/stairs.js';
+export * from './icons/stack.js';
+export * from './icons/stack-simple.js';
+export * from './icons/stack-plus.js';
+export * from './icons/stack-overflow-logo.js';
+export * from './icons/stack-minus.js';
+export * from './icons/squares-four.js';
+export * from './icons/square.js';
+export * from './icons/square-split-vertical.js';
+export * from './icons/square-split-horizontal.js';
+export * from './icons/square-logo.js';
+export * from './icons/square-half.js';
+export * from './icons/square-half-bottom.js';
+export * from './icons/spray-bottle.js';
+export * from './icons/spotify-logo.js';
+export * from './icons/split-vertical.js';
+export * from './icons/split-horizontal.js';
+export * from './icons/spiral.js';
+export * from './icons/spinner.js';
+export * from './icons/spinner-gap.js';
+export * from './icons/spinner-ball.js';
+export * from './icons/sphere.js';
+export * from './icons/speedometer.js';
+export * from './icons/speaker-x.js';
+export * from './icons/speaker-slash.js';
+export * from './icons/speaker-simple-x.js';
+export * from './icons/speaker-simple-slash.js';
+export * from './icons/speaker-simple-none.js';
+export * from './icons/speaker-simple-low.js';
+export * from './icons/speaker-simple-high.js';
+export * from './icons/speaker-none.js';
+export * from './icons/speaker-low.js';
+export * from './icons/speaker-high.js';
+export * from './icons/speaker-hifi.js';
+export * from './icons/sparkle.js';
+export * from './icons/spade.js';
+export * from './icons/soundcloud-logo.js';
+export * from './icons/sort-descending.js';
+export * from './icons/sort-ascending.js';
+export * from './icons/solar-roof.js';
+export * from './icons/solar-panel.js';
+export * from './icons/sock.js';
+export * from './icons/soccer-ball.js';
+export * from './icons/snowflake.js';
+export * from './icons/sneaker.js';
+export * from './icons/sneaker-move.js';
+export * from './icons/snapchat-logo.js';
+export * from './icons/smiley.js';
+export * from './icons/smiley-x-eyes.js';
+export * from './icons/smiley-wink.js';
+export * from './icons/smiley-sticker.js';
+export * from './icons/smiley-sad.js';
+export * from './icons/smiley-nervous.js';
+export * from './icons/smiley-melting.js';
+export * from './icons/smiley-meh.js';
+export * from './icons/smiley-blank.js';
+export * from './icons/smiley-angry.js';
+export * from './icons/slideshow.js';
+export * from './icons/sliders.js';
+export * from './icons/sliders-horizontal.js';
+export * from './icons/slack-logo.js';
+export * from './icons/skype-logo.js';
+export * from './icons/skull.js';
+export * from './icons/skip-forward.js';
+export * from './icons/skip-forward-circle.js';
+export * from './icons/skip-back.js';
+export * from './icons/skip-back-circle.js';
+export * from './icons/sketch-logo.js';
+export * from './icons/siren.js';
+export * from './icons/sim-card.js';
+export * from './icons/signpost.js';
+export * from './icons/signature.js';
+export * from './icons/sign-out.js';
+export * from './icons/sign-in.js';
+export * from './icons/sigma.js';
+export * from './icons/sidebar.js';
+export * from './icons/sidebar-simple.js';
+export * from './icons/shuffle.js';
+export * from './icons/shuffle-simple.js';
+export * from './icons/shuffle-angular.js';
+export * from './icons/shrimp.js';
+export * from './icons/shower.js';
+export * from './icons/shovel.js';
+export * from './icons/shopping-cart.js';
+export * from './icons/shopping-cart-simple.js';
+export * from './icons/shopping-bag.js';
+export * from './icons/shopping-bag-open.js';
+export * from './icons/shooting-star.js';
+export * from './icons/shirt-folded.js';
+export * from './icons/shipping-container.js';
+export * from './icons/shield.js';
+export * from './icons/shield-warning.js';
+export * from './icons/shield-star.js';
+export * from './icons/shield-slash.js';
+export * from './icons/shield-plus.js';
+export * from './icons/shield-chevron.js';
+export * from './icons/shield-checkered.js';
+export * from './icons/shield-check.js';
+export * from './icons/share.js';
+export * from './icons/share-network.js';
+export * from './icons/share-fat.js';
+export * from './icons/shapes.js';
+export * from './icons/selection.js';
+export * from './icons/selection-slash.js';
+export * from './icons/selection-plus.js';
+export * from './icons/selection-inverse.js';
+export * from './icons/selection-foreground.js';
+export * from './icons/selection-background.js';
+export * from './icons/selection-all.js';
+export * from './icons/security-camera.js';
+export * from './icons/seatbelt.js';
+export * from './icons/seat.js';
+export * from './icons/seal.js';
+export * from './icons/seal-warning.js';
+export * from './icons/seal-question.js';
+export * from './icons/seal-percent.js';
+export * from './icons/seal-check.js';
+export * from './icons/scroll.js';
+export * from './icons/scribble.js';
+export * from './icons/scribble-loop.js';
+export * from './icons/screwdriver.js';
+export * from './icons/screencast.js';
+export * from './icons/scooter.js';
+export * from './icons/scissors.js';
+export * from './icons/scan.js';
+export * from './icons/scan-smiley.js';
+export * from './icons/scales.js';
+export * from './icons/sailboat.js';
+export * from './icons/ruler.js';
+export * from './icons/rug.js';
+export * from './icons/rss.js';
+export * from './icons/rss-simple.js';
+export * from './icons/rows.js';
+export * from './icons/rows-plus-top.js';
+export * from './icons/rows-plus-bottom.js';
+export * from './icons/rocket.js';
+export * from './icons/rocket-launch.js';
+export * from './icons/robot.js';
+export * from './icons/road-horizon.js';
+export * from './icons/rewind.js';
+export * from './icons/rewind-circle.js';
+export * from './icons/resize.js';
+export * from './icons/replit-logo.js';
+export * from './icons/repeat.js';
+export * from './icons/repeat-once.js';
+export * from './icons/reddit-logo.js';
+export * from './icons/recycle.js';
+export * from './icons/rectangle.js';
+export * from './icons/rectangle-dashed.js';
+export * from './icons/record.js';
+export * from './icons/receipt.js';
+export * from './icons/receipt-x.js';
+export * from './icons/read-cv-logo.js';
+export * from './icons/ranking.js';
+export * from './icons/rainbow.js';
+export * from './icons/rainbow-cloud.js';
+export * from './icons/radioactive.js';
+export * from './icons/radio.js';
+export * from './icons/radio-button.js';
+export * from './icons/radical.js';
+export * from './icons/racquet.js';
+export * from './icons/rabbit.js';
+export * from './icons/quotes.js';
+export * from './icons/queue.js';
+export * from './icons/question.js';
+export * from './icons/question-mark.js';
+export * from './icons/qr-code.js';
+export * from './icons/puzzle-piece.js';
+export * from './icons/push-pin.js';
+export * from './icons/push-pin-slash.js';
+export * from './icons/push-pin-simple.js';
+export * from './icons/push-pin-simple-slash.js';
+export * from './icons/pulse.js';
+export * from './icons/projector-screen.js';
+export * from './icons/projector-screen-chart.js';
+export * from './icons/prohibit.js';
+export * from './icons/prohibit-inset.js';
+export * from './icons/printer.js';
+export * from './icons/presentation.js';
+export * from './icons/presentation-chart.js';
+export * from './icons/prescription.js';
+export * from './icons/power.js';
+export * from './icons/potted-plant.js';
+export * from './icons/popsicle.js';
+export * from './icons/popcorn.js';
+export * from './icons/polygon.js';
+export * from './icons/police-car.js';
+export * from './icons/poker-chip.js';
+export * from './icons/plus.js';
+export * from './icons/plus-square.js';
+export * from './icons/plus-minus.js';
+export * from './icons/plus-circle.js';
+export * from './icons/plugs.js';
+export * from './icons/plugs-connected.js';
+export * from './icons/plug.js';
+export * from './icons/plug-charging.js';
+export * from './icons/playlist.js';
+export * from './icons/play.js';
+export * from './icons/play-pause.js';
+export * from './icons/play-circle.js';
+export * from './icons/plant.js';
+export * from './icons/planet.js';
+export * from './icons/placeholder.js';
+export * from './icons/pizza.js';
+export * from './icons/pix-logo.js';
+export * from './icons/pipe.js';
+export * from './icons/pipe-wrench.js';
+export * from './icons/pinwheel.js';
+export * from './icons/pinterest-logo.js';
+export * from './icons/pint-glass.js';
+export * from './icons/ping-pong.js';
+export * from './icons/pill.js';
+export * from './icons/piggy-bank.js';
+export * from './icons/picture-in-picture.js';
+export * from './icons/picnic-table.js';
+export * from './icons/piano-keys.js';
+export * from './icons/pi.js';
+export * from './icons/phosphor-logo.js';
+export * from './icons/phone.js';
+export * from './icons/phone-x.js';
+export * from './icons/phone-transfer.js';
+export * from './icons/phone-slash.js';
+export * from './icons/phone-plus.js';
+export * from './icons/phone-pause.js';
+export * from './icons/phone-outgoing.js';
+export * from './icons/phone-list.js';
+export * from './icons/phone-incoming.js';
+export * from './icons/phone-disconnect.js';
+export * from './icons/phone-call.js';
+export * from './icons/perspective.js';
+export * from './icons/person.js';
+export * from './icons/person-simple.js';
+export * from './icons/person-simple-walk.js';
+export * from './icons/person-simple-throw.js';
+export * from './icons/person-simple-tai-chi.js';
+export * from './icons/person-simple-swim.js';
+export * from './icons/person-simple-snowboard.js';
+export * from './icons/person-simple-ski.js';
+export * from './icons/person-simple-run.js';
+export * from './icons/person-simple-hike.js';
+export * from './icons/person-simple-circle.js';
+export * from './icons/person-simple-bike.js';
+export * from './icons/person-arms-spread.js';
+export * from './icons/percent.js';
+export * from './icons/pepper.js';
+export * from './icons/pentagram.js';
+export * from './icons/pentagon.js';
+export * from './icons/pencil.js';
+export * from './icons/pencil-slash.js';
+export * from './icons/pencil-simple.js';
+export * from './icons/pencil-simple-slash.js';
+export * from './icons/pencil-simple-line.js';
+export * from './icons/pencil-ruler.js';
+export * from './icons/pencil-line.js';
+export * from './icons/pencil-circle.js';
+export * from './icons/pen.js';
+export * from './icons/pen-nib.js';
+export * from './icons/pen-nib-straight.js';
+export * from './icons/peace.js';
+export * from './icons/paypal-logo.js';
+export * from './icons/paw-print.js';
+export * from './icons/pause.js';
+export * from './icons/pause-circle.js';
+export * from './icons/patreon-logo.js';
+export * from './icons/path.js';
+export * from './icons/password.js';
+export * from './icons/park.js';
+export * from './icons/parallelogram.js';
+export * from './icons/paragraph.js';
+export * from './icons/parachute.js';
+export * from './icons/paperclip.js';
+export * from './icons/paperclip-horizontal.js';
+export * from './icons/paper-plane.js';
+export * from './icons/paper-plane-tilt.js';
+export * from './icons/paper-plane-right.js';
+export * from './icons/pants.js';
+export * from './icons/panorama.js';
+export * from './icons/palette.js';
+export * from './icons/paint-roller.js';
+export * from './icons/paint-bucket.js';
+export * from './icons/paint-brush.js';
+export * from './icons/paint-brush-household.js';
+export * from './icons/paint-brush-broad.js';
+export * from './icons/package.js';
+export * from './icons/oven.js';
+export * from './icons/orange.js';
+export * from './icons/orange-slice.js';
+export * from './icons/option.js';
+export * from './icons/open-ai-logo.js';
+export * from './icons/onigiri.js';
+export * from './icons/office-chair.js';
+export * from './icons/octagon.js';
+export * from './icons/ny-times-logo.js';
+export * from './icons/nut.js';
+export * from './icons/numpad.js';
+export * from './icons/number-zero.js';
+export * from './icons/number-two.js';
+export * from './icons/number-three.js';
+export * from './icons/number-square-zero.js';
+export * from './icons/number-square-two.js';
+export * from './icons/number-square-three.js';
+export * from './icons/number-square-six.js';
+export * from './icons/number-square-seven.js';
+export * from './icons/number-square-one.js';
+export * from './icons/number-square-nine.js';
+export * from './icons/number-square-four.js';
+export * from './icons/number-square-five.js';
+export * from './icons/number-square-eight.js';
+export * from './icons/number-six.js';
+export * from './icons/number-seven.js';
+export * from './icons/number-one.js';
+export * from './icons/number-nine.js';
+export * from './icons/number-four.js';
+export * from './icons/number-five.js';
+export * from './icons/number-eight.js';
+export * from './icons/number-circle-zero.js';
+export * from './icons/number-circle-two.js';
+export * from './icons/number-circle-three.js';
+export * from './icons/number-circle-six.js';
+export * from './icons/number-circle-seven.js';
+export * from './icons/number-circle-one.js';
+export * from './icons/number-circle-nine.js';
+export * from './icons/number-circle-four.js';
+export * from './icons/number-circle-five.js';
+export * from './icons/number-circle-eight.js';
+export * from './icons/nuclear-plant.js';
+export * from './icons/notion-logo.js';
+export * from './icons/notification.js';
+export * from './icons/notepad.js';
+export * from './icons/notebook.js';
+export * from './icons/note.js';
+export * from './icons/note-pencil.js';
+export * from './icons/note-blank.js';
+export * from './icons/notches.js';
+export * from './icons/not-superset-of.js';
+export * from './icons/not-subset-of.js';
+export * from './icons/not-member-of.js';
+export * from './icons/not-equals.js';
+export * from './icons/newspaper.js';
+export * from './icons/newspaper-clipping.js';
+export * from './icons/network.js';
+export * from './icons/network-x.js';
+export * from './icons/network-slash.js';
+export * from './icons/needle.js';
+export * from './icons/navigation-arrow.js';
+export * from './icons/music-notes.js';
+export * from './icons/music-notes-simple.js';
+export * from './icons/music-notes-plus.js';
+export * from './icons/music-notes-minus.js';
+export * from './icons/music-note.js';
+export * from './icons/music-note-simple.js';
+export * from './icons/mouse.js';
+export * from './icons/mouse-simple.js';
+export * from './icons/mouse-scroll.js';
+export * from './icons/mouse-right-click.js';
+export * from './icons/mouse-middle-click.js';
+export * from './icons/mouse-left-click.js';
+export * from './icons/mountains.js';
+export * from './icons/motorcycle.js';
+export * from './icons/mosque.js';
+export * from './icons/moped.js';
+export * from './icons/moped-front.js';
+export * from './icons/moon.js';
+export * from './icons/moon-stars.js';
+export * from './icons/monitor.js';
+export * from './icons/monitor-play.js';
+export * from './icons/monitor-arrow-up.js';
+export * from './icons/money.js';
+export * from './icons/money-wavy.js';
+export * from './icons/minus.js';
+export * from './icons/minus-square.js';
+export * from './icons/minus-circle.js';
+export * from './icons/microsoft-word-logo.js';
+export * from './icons/microsoft-teams-logo.js';
+export * from './icons/microsoft-powerpoint-logo.js';
+export * from './icons/microsoft-outlook-logo.js';
+export * from './icons/microsoft-excel-logo.js';
+export * from './icons/microscope.js';
+export * from './icons/microphone.js';
+export * from './icons/microphone-stage.js';
+export * from './icons/microphone-slash.js';
+export * from './icons/metronome.js';
+export * from './icons/meteor.js';
+export * from './icons/meta-logo.js';
+export * from './icons/messenger-logo.js';
+export * from './icons/memory.js';
+export * from './icons/member-of.js';
+export * from './icons/megaphone.js';
+export * from './icons/megaphone-simple.js';
+export * from './icons/medium-logo.js';
+export * from './icons/medal.js';
+export * from './icons/medal-military.js';
+export * from './icons/matrix-logo.js';
+export * from './icons/math-operations.js';
+export * from './icons/mastodon-logo.js';
+export * from './icons/mask-sad.js';
+export * from './icons/mask-happy.js';
+export * from './icons/martini.js';
+export * from './icons/marker-circle.js';
+export * from './icons/markdown-logo.js';
+export * from './icons/map-trifold.js';
+export * from './icons/map-pin.js';
+export * from './icons/map-pin-simple.js';
+export * from './icons/map-pin-simple-line.js';
+export * from './icons/map-pin-simple-area.js';
+export * from './icons/map-pin-plus.js';
+export * from './icons/map-pin-line.js';
+export * from './icons/map-pin-area.js';
+export * from './icons/mailbox.js';
+export * from './icons/magnifying-glass.js';
+export * from './icons/magnifying-glass-plus.js';
+export * from './icons/magnifying-glass-minus.js';
+export * from './icons/magnet.js';
+export * from './icons/magnet-straight.js';
+export * from './icons/magic-wand.js';
+export * from './icons/log.js';
+export * from './icons/lockers.js';
+export * from './icons/lock.js';
+export * from './icons/lock-simple.js';
+export * from './icons/lock-simple-open.js';
+export * from './icons/lock-open.js';
+export * from './icons/lock-laminated.js';
+export * from './icons/lock-laminated-open.js';
+export * from './icons/lock-key.js';
+export * from './icons/lock-key-open.js';
+export * from './icons/list.js';
+export * from './icons/list-star.js';
+export * from './icons/list-plus.js';
+export * from './icons/list-numbers.js';
+export * from './icons/list-magnifying-glass.js';
+export * from './icons/list-heart.js';
+export * from './icons/list-dashes.js';
+export * from './icons/list-checks.js';
+export * from './icons/list-bullets.js';
+export * from './icons/linux-logo.js';
+export * from './icons/linktree-logo.js';
+export * from './icons/linkedin-logo.js';
+export * from './icons/link.js';
+export * from './icons/link-simple.js';
+export * from './icons/link-simple-horizontal.js';
+export * from './icons/link-simple-horizontal-break.js';
+export * from './icons/link-simple-break.js';
+export * from './icons/link-break.js';
+export * from './icons/line-vertical.js';
+export * from './icons/line-segments.js';
+export * from './icons/line-segment.js';
+export * from './icons/lightning.js';
+export * from './icons/lightning-slash.js';
+export * from './icons/lightning-a.js';
+export * from './icons/lighthouse.js';
+export * from './icons/lightbulb.js';
+export * from './icons/lightbulb-filament.js';
+export * from './icons/lifebuoy.js';
+export * from './icons/letter-circle-v.js';
+export * from './icons/letter-circle-p.js';
+export * from './icons/letter-circle-h.js';
+export * from './icons/less-than.js';
+export * from './icons/less-than-or-equal.js';
+export * from './icons/lego.js';
+export * from './icons/lego-smiley.js';
+export * from './icons/lectern.js';
+export * from './icons/leaf.js';
+export * from './icons/layout.js';
+export * from './icons/lastfm-logo.js';
+export * from './icons/lasso.js';
+export * from './icons/laptop.js';
+export * from './icons/lamp.js';
+export * from './icons/lamp-pendant.js';
+export * from './icons/ladder.js';
+export * from './icons/ladder-simple.js';
+export * from './icons/knife.js';
+export * from './icons/keyhole.js';
+export * from './icons/keyboard.js';
+export * from './icons/key.js';
+export * from './icons/key-return.js';
+export * from './icons/kanban.js';
+export * from './icons/joystick.js';
+export * from './icons/jeep.js';
+export * from './icons/jar.js';
+export * from './icons/jar-label.js';
+export * from './icons/island.js';
+export * from './icons/invoice.js';
+export * from './icons/intersection.js';
+export * from './icons/intersect.js';
+export * from './icons/intersect-three.js';
+export * from './icons/intersect-square.js';
+export * from './icons/instagram-logo.js';
+export * from './icons/info.js';
+export * from './icons/infinity.js';
+export * from './icons/images.js';
+export * from './icons/images-square.js';
+export * from './icons/image.js';
+export * from './icons/image-square.js';
+export * from './icons/image-broken.js';
+export * from './icons/identification-card.js';
+export * from './icons/identification-badge.js';
+export * from './icons/ice-cream.js';
+export * from './icons/hurricane.js';
+export * from './icons/house.js';
+export * from './icons/house-simple.js';
+export * from './icons/house-line.js';
+export * from './icons/hourglass.js';
+export * from './icons/hourglass-simple.js';
+export * from './icons/hourglass-simple-medium.js';
+export * from './icons/hourglass-simple-low.js';
+export * from './icons/hourglass-simple-high.js';
+export * from './icons/hourglass-medium.js';
+export * from './icons/hourglass-low.js';
+export * from './icons/hourglass-high.js';
+export * from './icons/hospital.js';
+export * from './icons/horse.js';
+export * from './icons/hoodie.js';
+export * from './icons/hockey.js';
+export * from './icons/highlighter.js';
+export * from './icons/highlighter-circle.js';
+export * from './icons/high-heel.js';
+export * from './icons/high-definition.js';
+export * from './icons/hexagon.js';
+export * from './icons/heartbeat.js';
+export * from './icons/heart.js';
+export * from './icons/heart-straight.js';
+export * from './icons/heart-straight-break.js';
+export * from './icons/heart-half.js';
+export * from './icons/heart-break.js';
+export * from './icons/headset.js';
+export * from './icons/headphones.js';
+export * from './icons/headlights.js';
+export * from './icons/head-circuit.js';
+export * from './icons/hash.js';
+export * from './icons/hash-straight.js';
+export * from './icons/hard-hat.js';
+export * from './icons/hard-drives.js';
+export * from './icons/hard-drive.js';
+export * from './icons/handshake.js';
+export * from './icons/hands-praying.js';
+export * from './icons/hands-clapping.js';
+export * from './icons/handbag.js';
+export * from './icons/handbag-simple.js';
+export * from './icons/hand.js';
+export * from './icons/hand-withdraw.js';
+export * from './icons/hand-waving.js';
+export * from './icons/hand-tap.js';
+export * from './icons/hand-swipe-right.js';
+export * from './icons/hand-swipe-left.js';
+export * from './icons/hand-soap.js';
+export * from './icons/hand-pointing.js';
+export * from './icons/hand-peace.js';
+export * from './icons/hand-palm.js';
+export * from './icons/hand-heart.js';
+export * from './icons/hand-grabbing.js';
+export * from './icons/hand-fist.js';
+export * from './icons/hand-eye.js';
+export * from './icons/hand-deposit.js';
+export * from './icons/hand-coins.js';
+export * from './icons/hand-arrow-up.js';
+export * from './icons/hand-arrow-down.js';
+export * from './icons/hammer.js';
+export * from './icons/hamburger.js';
+export * from './icons/hair-dryer.js';
+export * from './icons/guitar.js';
+export * from './icons/grid-nine.js';
+export * from './icons/grid-four.js';
+export * from './icons/greater-than.js';
+export * from './icons/greater-than-or-equal.js';
+export * from './icons/graphics-card.js';
+export * from './icons/graph.js';
+export * from './icons/grains.js';
+export * from './icons/grains-slash.js';
+export * from './icons/graduation-cap.js';
+export * from './icons/gradient.js';
+export * from './icons/gps.js';
+export * from './icons/gps-slash.js';
+export * from './icons/gps-fix.js';
+export * from './icons/google-podcasts-logo.js';
+export * from './icons/google-play-logo.js';
+export * from './icons/google-photos-logo.js';
+export * from './icons/google-logo.js';
+export * from './icons/google-drive-logo.js';
+export * from './icons/google-chrome-logo.js';
+export * from './icons/google-cardboard-logo.js';
+export * from './icons/goodreads-logo.js';
+export * from './icons/golf.js';
+export * from './icons/goggles.js';
+export * from './icons/globe.js';
+export * from './icons/globe-x.js';
+export * from './icons/globe-stand.js';
+export * from './icons/globe-simple.js';
+export * from './icons/globe-simple-x.js';
+export * from './icons/globe-hemisphere-west.js';
+export * from './icons/globe-hemisphere-east.js';
+export * from './icons/gitlab-logo.js';
+export * from './icons/gitlab-logo-simple.js';
+export * from './icons/github-logo.js';
+export * from './icons/git-pull-request.js';
+export * from './icons/git-merge.js';
+export * from './icons/git-fork.js';
+export * from './icons/git-diff.js';
+export * from './icons/git-commit.js';
+export * from './icons/git-branch.js';
+export * from './icons/gift.js';
+export * from './icons/gif.js';
+export * from './icons/ghost.js';
+export * from './icons/gender-transgender.js';
+export * from './icons/gender-nonbinary.js';
+export * from './icons/gender-neuter.js';
+export * from './icons/gender-male.js';
+export * from './icons/gender-intersex.js';
+export * from './icons/gender-female.js';
+export * from './icons/gear.js';
+export * from './icons/gear-six.js';
+export * from './icons/gear-fine.js';
+export * from './icons/gavel.js';
+export * from './icons/gauge.js';
+export * from './icons/gas-pump.js';
+export * from './icons/gas-can.js';
+export * from './icons/garage.js';
+export * from './icons/game-controller.js';
+export * from './icons/funnel.js';
+export * from './icons/funnel-x.js';
+export * from './icons/funnel-simple.js';
+export * from './icons/funnel-simple-x.js';
+export * from './icons/function.js';
+export * from './icons/framer-logo.js';
+export * from './icons/frame-corners.js';
+export * from './icons/four-k.js';
+export * from './icons/fork-knife.js';
+export * from './icons/footprints.js';
+export * from './icons/football.js';
+export * from './icons/football-helmet.js';
+export * from './icons/folders.js';
+export * from './icons/folder.js';
+export * from './icons/folder-user.js';
+export * from './icons/folder-star.js';
+export * from './icons/folder-simple.js';
+export * from './icons/folder-simple-user.js';
+export * from './icons/folder-simple-star.js';
+export * from './icons/folder-simple-plus.js';
+export * from './icons/folder-simple-minus.js';
+export * from './icons/folder-simple-lock.js';
+export * from './icons/folder-simple-dashed.js';
+export * from './icons/folder-plus.js';
+export * from './icons/folder-open.js';
+export * from './icons/folder-minus.js';
+export * from './icons/folder-lock.js';
+export * from './icons/folder-dashed.js';
+export * from './icons/flying-saucer.js';
+export * from './icons/flower.js';
+export * from './icons/flower-tulip.js';
+export * from './icons/flower-lotus.js';
+export * from './icons/flow-arrow.js';
+export * from './icons/floppy-disk.js';
+export * from './icons/floppy-disk-back.js';
+export * from './icons/flip-vertical.js';
+export * from './icons/flip-horizontal.js';
+export * from './icons/flask.js';
+export * from './icons/flashlight.js';
+export * from './icons/flame.js';
+export * from './icons/flag.js';
+export * from './icons/flag-pennant.js';
+export * from './icons/flag-checkered.js';
+export * from './icons/flag-banner.js';
+export * from './icons/flag-banner-fold.js';
+export * from './icons/fish.js';
+export * from './icons/fish-simple.js';
+export * from './icons/first-aid.js';
+export * from './icons/first-aid-kit.js';
+export * from './icons/fire.js';
+export * from './icons/fire-truck.js';
+export * from './icons/fire-simple.js';
+export * from './icons/fire-extinguisher.js';
+export * from './icons/finn-the-human.js';
+export * from './icons/fingerprint.js';
+export * from './icons/fingerprint-simple.js';
+export * from './icons/film-strip.js';
+export * from './icons/film-slate.js';
+export * from './icons/film-script.js';
+export * from './icons/film-reel.js';
+export * from './icons/files.js';
+export * from './icons/file.js';
+export * from './icons/file-zip.js';
+export * from './icons/file-xls.js';
+export * from './icons/file-x.js';
+export * from './icons/file-vue.js';
+export * from './icons/file-video.js';
+export * from './icons/file-txt.js';
+export * from './icons/file-tsx.js';
+export * from './icons/file-ts.js';
+export * from './icons/file-text.js';
+export * from './icons/file-svg.js';
+export * from './icons/file-sql.js';
+export * from './icons/file-rs.js';
+export * from './icons/file-py.js';
+export * from './icons/file-ppt.js';
+export * from './icons/file-png.js';
+export * from './icons/file-plus.js';
+export * from './icons/file-pdf.js';
+export * from './icons/file-minus.js';
+export * from './icons/file-md.js';
+export * from './icons/file-magnifying-glass.js';
+export * from './icons/file-lock.js';
+export * from './icons/file-jsx.js';
+export * from './icons/file-js.js';
+export * from './icons/file-jpg.js';
+export * from './icons/file-ini.js';
+export * from './icons/file-image.js';
+export * from './icons/file-html.js';
+export * from './icons/file-doc.js';
+export * from './icons/file-dashed.js';
+export * from './icons/file-csv.js';
+export * from './icons/file-css.js';
+export * from './icons/file-cpp.js';
+export * from './icons/file-code.js';
+export * from './icons/file-cloud.js';
+export * from './icons/file-c.js';
+export * from './icons/file-c-sharp.js';
+export * from './icons/file-audio.js';
+export * from './icons/file-arrow-up.js';
+export * from './icons/file-arrow-down.js';
+export * from './icons/file-archive.js';
+export * from './icons/figma-logo.js';
+export * from './icons/fediverse-logo.js';
+export * from './icons/feather.js';
+export * from './icons/fast-forward.js';
+export * from './icons/fast-forward-circle.js';
+export * from './icons/farm.js';
+export * from './icons/fan.js';
+export * from './icons/fallout-shelter.js';
+export * from './icons/faders.js';
+export * from './icons/faders-horizontal.js';
+export * from './icons/factory.js';
+export * from './icons/facebook-logo.js';
+export * from './icons/face-mask.js';
+export * from './icons/eyes.js';
+export * from './icons/eyeglasses.js';
+export * from './icons/eyedropper.js';
+export * from './icons/eyedropper-sample.js';
+export * from './icons/eye.js';
+export * from './icons/eye-slash.js';
+export * from './icons/eye-closed.js';
+export * from './icons/export.js';
+export * from './icons/exclude.js';
+export * from './icons/exclude-square.js';
+export * from './icons/exclamation-mark.js';
+export * from './icons/exam.js';
+export * from './icons/escalator-up.js';
+export * from './icons/escalator-down.js';
+export * from './icons/eraser.js';
+export * from './icons/equals.js';
+export * from './icons/equalizer.js';
+export * from './icons/envelope.js';
+export * from './icons/envelope-simple.js';
+export * from './icons/envelope-simple-open.js';
+export * from './icons/envelope-open.js';
+export * from './icons/engine.js';
+export * from './icons/empty.js';
+export * from './icons/elevator.js';
+export * from './icons/eject.js';
+export * from './icons/eject-simple.js';
+export * from './icons/egg.js';
+export * from './icons/egg-crack.js';
+export * from './icons/ear.js';
+export * from './icons/ear-slash.js';
+export * from './icons/dropbox-logo.js';
+export * from './icons/drop.js';
+export * from './icons/drop-slash.js';
+export * from './icons/drop-simple.js';
+export * from './icons/drop-half.js';
+export * from './icons/drop-half-bottom.js';
+export * from './icons/drone.js';
+export * from './icons/dribbble-logo.js';
+export * from './icons/dresser.js';
+export * from './icons/dress.js';
+export * from './icons/download.js';
+export * from './icons/download-simple.js';
+export * from './icons/dots-three.js';
+export * from './icons/dots-three-vertical.js';
+export * from './icons/dots-three-outline.js';
+export * from './icons/dots-three-outline-vertical.js';
+export * from './icons/dots-three-circle.js';
+export * from './icons/dots-three-circle-vertical.js';
+export * from './icons/dots-six.js';
+export * from './icons/dots-six-vertical.js';
+export * from './icons/dots-nine.js';
+export * from './icons/dot.js';
+export * from './icons/dot-outline.js';
+export * from './icons/door.js';
+export * from './icons/door-open.js';
+export * from './icons/dog.js';
+export * from './icons/dna.js';
+export * from './icons/divide.js';
+export * from './icons/discord-logo.js';
+export * from './icons/disco-ball.js';
+export * from './icons/disc.js';
+export * from './icons/dice-two.js';
+export * from './icons/dice-three.js';
+export * from './icons/dice-six.js';
+export * from './icons/dice-one.js';
+export * from './icons/dice-four.js';
+export * from './icons/dice-five.js';
+export * from './icons/diamonds-four.js';
+export * from './icons/diamond.js';
+export * from './icons/devices.js';
+export * from './icons/device-tablet.js';
+export * from './icons/device-tablet-speaker.js';
+export * from './icons/device-tablet-camera.js';
+export * from './icons/device-rotate.js';
+export * from './icons/device-mobile.js';
+export * from './icons/device-mobile-speaker.js';
+export * from './icons/device-mobile-slash.js';
+export * from './icons/device-mobile-camera.js';
+export * from './icons/dev-to-logo.js';
+export * from './icons/detective.js';
+export * from './icons/desktop.js';
+export * from './icons/desktop-tower.js';
+export * from './icons/desk.js';
+export * from './icons/database.js';
+export * from './icons/cylinder.js';
+export * from './icons/cursor.js';
+export * from './icons/cursor-text.js';
+export * from './icons/cursor-click.js';
+export * from './icons/currency-rub.js';
+export * from './icons/currency-ngn.js';
+export * from './icons/currency-kzt.js';
+export * from './icons/currency-krw.js';
+export * from './icons/currency-jpy.js';
+export * from './icons/currency-inr.js';
+export * from './icons/currency-gbp.js';
+export * from './icons/currency-eur.js';
+export * from './icons/currency-eth.js';
+export * from './icons/currency-dollar.js';
+export * from './icons/currency-dollar-simple.js';
+export * from './icons/currency-cny.js';
+export * from './icons/currency-circle-dollar.js';
+export * from './icons/currency-btc.js';
+export * from './icons/cube.js';
+export * from './icons/cube-transparent.js';
+export * from './icons/cube-focus.js';
+export * from './icons/crown.js';
+export * from './icons/crown-simple.js';
+export * from './icons/crown-cross.js';
+export * from './icons/crosshair.js';
+export * from './icons/crosshair-simple.js';
+export * from './icons/cross.js';
+export * from './icons/crop.js';
+export * from './icons/cricket.js';
+export * from './icons/credit-card.js';
+export * from './icons/crane.js';
+export * from './icons/crane-tower.js';
+export * from './icons/cpu.js';
+export * from './icons/cowboy-hat.js';
+export * from './icons/cow.js';
+export * from './icons/court-basketball.js';
+export * from './icons/couch.js';
+export * from './icons/corners-out.js';
+export * from './icons/corners-in.js';
+export * from './icons/copyright.js';
+export * from './icons/copyleft.js';
+export * from './icons/copy.js';
+export * from './icons/copy-simple.js';
+export * from './icons/cooking-pot.js';
+export * from './icons/cookie.js';
+export * from './icons/control.js';
+export * from './icons/contactless-payment.js';
+export * from './icons/confetti.js';
+export * from './icons/computer-tower.js';
+export * from './icons/compass.js';
+export * from './icons/compass-tool.js';
+export * from './icons/compass-rose.js';
+export * from './icons/command.js';
+export * from './icons/columns.js';
+export * from './icons/columns-plus-right.js';
+export * from './icons/columns-plus-left.js';
+export * from './icons/coins.js';
+export * from './icons/coin.js';
+export * from './icons/coin-vertical.js';
+export * from './icons/coffee.js';
+export * from './icons/coffee-bean.js';
+export * from './icons/codesandbox-logo.js';
+export * from './icons/codepen-logo.js';
+export * from './icons/code.js';
+export * from './icons/code-simple.js';
+export * from './icons/code-block.js';
+export * from './icons/coda-logo.js';
+export * from './icons/coat-hanger.js';
+export * from './icons/club.js';
+export * from './icons/clover.js';
+export * from './icons/cloud.js';
+export * from './icons/cloud-x.js';
+export * from './icons/cloud-warning.js';
+export * from './icons/cloud-sun.js';
+export * from './icons/cloud-snow.js';
+export * from './icons/cloud-slash.js';
+export * from './icons/cloud-rain.js';
+export * from './icons/cloud-moon.js';
+export * from './icons/cloud-lightning.js';
+export * from './icons/cloud-fog.js';
+export * from './icons/cloud-check.js';
+export * from './icons/cloud-arrow-up.js';
+export * from './icons/cloud-arrow-down.js';
+export * from './icons/closed-captioning.js';
+export * from './icons/clock.js';
+export * from './icons/clock-user.js';
+export * from './icons/clock-counter-clockwise.js';
+export * from './icons/clock-countdown.js';
+export * from './icons/clock-clockwise.js';
+export * from './icons/clock-afternoon.js';
+export * from './icons/clipboard.js';
+export * from './icons/clipboard-text.js';
+export * from './icons/city.js';
+export * from './icons/circuitry.js';
+export * from './icons/circles-three.js';
+export * from './icons/circles-three-plus.js';
+export * from './icons/circles-four.js';
+export * from './icons/circle.js';
+export * from './icons/circle-notch.js';
+export * from './icons/circle-half.js';
+export * from './icons/circle-half-tilt.js';
+export * from './icons/circle-dashed.js';
+export * from './icons/cigarette.js';
+export * from './icons/cigarette-slash.js';
+export * from './icons/church.js';
+export * from './icons/cherries.js';
+export * from './icons/chef-hat.js';
+export * from './icons/cheese.js';
+export * from './icons/cheers.js';
+export * from './icons/checks.js';
+export * from './icons/checkerboard.js';
+export * from './icons/check.js';
+export * from './icons/check-square.js';
+export * from './icons/check-square-offset.js';
+export * from './icons/check-fat.js';
+export * from './icons/check-circle.js';
+export * from './icons/chats.js';
+export * from './icons/chats-teardrop.js';
+export * from './icons/chats-circle.js';
+export * from './icons/chat.js';
+export * from './icons/chat-text.js';
+export * from './icons/chat-teardrop.js';
+export * from './icons/chat-teardrop-text.js';
+export * from './icons/chat-teardrop-slash.js';
+export * from './icons/chat-teardrop-dots.js';
+export * from './icons/chat-slash.js';
+export * from './icons/chat-dots.js';
+export * from './icons/chat-circle.js';
+export * from './icons/chat-circle-text.js';
+export * from './icons/chat-circle-slash.js';
+export * from './icons/chat-circle-dots.js';
+export * from './icons/chat-centered.js';
+export * from './icons/chat-centered-text.js';
+export * from './icons/chat-centered-slash.js';
+export * from './icons/chat-centered-dots.js';
+export * from './icons/chart-scatter.js';
+export * from './icons/chart-polar.js';
+export * from './icons/chart-pie.js';
+export * from './icons/chart-pie-slice.js';
+export * from './icons/chart-line.js';
+export * from './icons/chart-line-up.js';
+export * from './icons/chart-line-down.js';
+export * from './icons/chart-donut.js';
+export * from './icons/chart-bar.js';
+export * from './icons/chart-bar-horizontal.js';
+export * from './icons/charging-station.js';
+export * from './icons/champagne.js';
+export * from './icons/chalkboard.js';
+export * from './icons/chalkboard-teacher.js';
+export * from './icons/chalkboard-simple.js';
+export * from './icons/chair.js';
+export * from './icons/certificate.js';
+export * from './icons/cell-tower.js';
+export * from './icons/cell-signal-x.js';
+export * from './icons/cell-signal-slash.js';
+export * from './icons/cell-signal-none.js';
+export * from './icons/cell-signal-medium.js';
+export * from './icons/cell-signal-low.js';
+export * from './icons/cell-signal-high.js';
+export * from './icons/cell-signal-full.js';
+export * from './icons/cat.js';
+export * from './icons/castle-turret.js';
+export * from './icons/cassette-tape.js';
+export * from './icons/cash-register.js';
+export * from './icons/carrot.js';
+export * from './icons/caret-up.js';
+export * from './icons/caret-up-down.js';
+export * from './icons/caret-right.js';
+export * from './icons/caret-line-up.js';
+export * from './icons/caret-line-right.js';
+export * from './icons/caret-line-left.js';
+export * from './icons/caret-line-down.js';
+export * from './icons/caret-left.js';
+export * from './icons/caret-down.js';
+export * from './icons/caret-double-up.js';
+export * from './icons/caret-double-right.js';
+export * from './icons/caret-double-left.js';
+export * from './icons/caret-double-down.js';
+export * from './icons/caret-circle-up.js';
+export * from './icons/caret-circle-up-down.js';
+export * from './icons/caret-circle-right.js';
+export * from './icons/caret-circle-left.js';
+export * from './icons/caret-circle-down.js';
+export * from './icons/caret-circle-double-up.js';
+export * from './icons/caret-circle-double-right.js';
+export * from './icons/caret-circle-double-left.js';
+export * from './icons/caret-circle-double-down.js';
+export * from './icons/cards.js';
+export * from './icons/cards-three.js';
+export * from './icons/cardholder.js';
+export * from './icons/car.js';
+export * from './icons/car-simple.js';
+export * from './icons/car-profile.js';
+export * from './icons/car-battery.js';
+export * from './icons/campfire.js';
+export * from './icons/camera.js';
+export * from './icons/camera-slash.js';
+export * from './icons/camera-rotate.js';
+export * from './icons/camera-plus.js';
+export * from './icons/call-bell.js';
+export * from './icons/calendar.js';
+export * from './icons/calendar-x.js';
+export * from './icons/calendar-star.js';
+export * from './icons/calendar-slash.js';
+export * from './icons/calendar-plus.js';
+export * from './icons/calendar-minus.js';
+export * from './icons/calendar-heart.js';
+export * from './icons/calendar-dots.js';
+export * from './icons/calendar-dot.js';
+export * from './icons/calendar-check.js';
+export * from './icons/calendar-blank.js';
+export * from './icons/calculator.js';
+export * from './icons/cake.js';
+export * from './icons/cactus.js';
+export * from './icons/cable-car.js';
+export * from './icons/butterfly.js';
+export * from './icons/bus.js';
+export * from './icons/bulldozer.js';
+export * from './icons/buildings.js';
+export * from './icons/building.js';
+export * from './icons/building-office.js';
+export * from './icons/building-apartment.js';
+export * from './icons/bug.js';
+export * from './icons/bug-droid.js';
+export * from './icons/bug-beetle.js';
+export * from './icons/browsers.js';
+export * from './icons/browser.js';
+export * from './icons/broom.js';
+export * from './icons/broadcast.js';
+export * from './icons/briefcase.js';
+export * from './icons/briefcase-metal.js';
+export * from './icons/bridge.js';
+export * from './icons/bread.js';
+export * from './icons/brandy.js';
+export * from './icons/brain.js';
+export * from './icons/brackets-square.js';
+export * from './icons/brackets-round.js';
+export * from './icons/brackets-curly.js';
+export * from './icons/brackets-angle.js';
+export * from './icons/boxing-glove.js';
+export * from './icons/box-arrow-up.js';
+export * from './icons/box-arrow-down.js';
+export * from './icons/bowling-ball.js';
+export * from './icons/bowl-steam.js';
+export * from './icons/bowl-food.js';
+export * from './icons/bounding-box.js';
+export * from './icons/boules.js';
+export * from './icons/boot.js';
+export * from './icons/books.js';
+export * from './icons/bookmarks.js';
+export * from './icons/bookmarks-simple.js';
+export * from './icons/bookmark.js';
+export * from './icons/bookmark-simple.js';
+export * from './icons/book.js';
+export * from './icons/book-open.js';
+export * from './icons/book-open-user.js';
+export * from './icons/book-open-text.js';
+export * from './icons/book-bookmark.js';
+export * from './icons/bone.js';
+export * from './icons/bomb.js';
+export * from './icons/boat.js';
+export * from './icons/bluetooth.js';
+export * from './icons/bluetooth-x.js';
+export * from './icons/bluetooth-slash.js';
+export * from './icons/bluetooth-connected.js';
+export * from './icons/blueprint.js';
+export * from './icons/bird.js';
+export * from './icons/biohazard.js';
+export * from './icons/binoculars.js';
+export * from './icons/binary.js';
+export * from './icons/bicycle.js';
+export * from './icons/bezier-curve.js';
+export * from './icons/belt.js';
+export * from './icons/bell.js';
+export * from './icons/bell-z.js';
+export * from './icons/bell-slash.js';
+export * from './icons/bell-simple.js';
+export * from './icons/bell-simple-z.js';
+export * from './icons/bell-simple-slash.js';
+export * from './icons/bell-simple-ringing.js';
+export * from './icons/bell-ringing.js';
+export * from './icons/behance-logo.js';
+export * from './icons/beer-stein.js';
+export * from './icons/beer-bottle.js';
+export * from './icons/bed.js';
+export * from './icons/beanie.js';
+export * from './icons/beach-ball.js';
+export * from './icons/battery-warning.js';
+export * from './icons/battery-warning-vertical.js';
+export * from './icons/battery-vertical-medium.js';
+export * from './icons/battery-vertical-low.js';
+export * from './icons/battery-vertical-high.js';
+export * from './icons/battery-vertical-full.js';
+export * from './icons/battery-vertical-empty.js';
+export * from './icons/battery-plus.js';
+export * from './icons/battery-plus-vertical.js';
+export * from './icons/battery-medium.js';
+export * from './icons/battery-low.js';
+export * from './icons/battery-high.js';
+export * from './icons/battery-full.js';
+export * from './icons/battery-empty.js';
+export * from './icons/battery-charging.js';
+export * from './icons/battery-charging-vertical.js';
+export * from './icons/bathtub.js';
+export * from './icons/basketball.js';
+export * from './icons/basket.js';
+export * from './icons/baseball.js';
+export * from './icons/baseball-helmet.js';
+export * from './icons/baseball-cap.js';
+export * from './icons/barricade.js';
+export * from './icons/barn.js';
+export * from './icons/barcode.js';
+export * from './icons/barbell.js';
+export * from './icons/bank.js';
+export * from './icons/bandaids.js';
+export * from './icons/balloon.js';
+export * from './icons/bag.js';
+export * from './icons/bag-simple.js';
+export * from './icons/backspace.js';
+export * from './icons/backpack.js';
+export * from './icons/baby.js';
+export * from './icons/baby-carriage.js';
+export * from './icons/axe.js';
+export * from './icons/avocado.js';
+export * from './icons/atom.js';
+export * from './icons/at.js';
+export * from './icons/asterisk.js';
+export * from './icons/asterisk-simple.js';
+export * from './icons/asclepius.js';
+export * from './icons/article.js';
+export * from './icons/article-ny-times.js';
+export * from './icons/article-medium.js';
+export * from './icons/arrows-vertical.js';
+export * from './icons/arrows-split.js';
+export * from './icons/arrows-out.js';
+export * from './icons/arrows-out-simple.js';
+export * from './icons/arrows-out-line-vertical.js';
+export * from './icons/arrows-out-line-horizontal.js';
+export * from './icons/arrows-out-cardinal.js';
+export * from './icons/arrows-merge.js';
+export * from './icons/arrows-left-right.js';
+export * from './icons/arrows-in.js';
+export * from './icons/arrows-in-simple.js';
+export * from './icons/arrows-in-line-vertical.js';
+export * from './icons/arrows-in-line-horizontal.js';
+export * from './icons/arrows-in-cardinal.js';
+export * from './icons/arrows-horizontal.js';
+export * from './icons/arrows-down-up.js';
+export * from './icons/arrows-counter-clockwise.js';
+export * from './icons/arrows-clockwise.js';
+export * from './icons/arrow-up.js';
+export * from './icons/arrow-up-right.js';
+export * from './icons/arrow-up-left.js';
+export * from './icons/arrow-u-up-right.js';
+export * from './icons/arrow-u-up-left.js';
+export * from './icons/arrow-u-right-up.js';
+export * from './icons/arrow-u-right-down.js';
+export * from './icons/arrow-u-left-up.js';
+export * from './icons/arrow-u-left-down.js';
+export * from './icons/arrow-u-down-right.js';
+export * from './icons/arrow-u-down-left.js';
+export * from './icons/arrow-square-up.js';
+export * from './icons/arrow-square-up-right.js';
+export * from './icons/arrow-square-up-left.js';
+export * from './icons/arrow-square-right.js';
+export * from './icons/arrow-square-out.js';
+export * from './icons/arrow-square-left.js';
+export * from './icons/arrow-square-in.js';
+export * from './icons/arrow-square-down.js';
+export * from './icons/arrow-square-down-right.js';
+export * from './icons/arrow-square-down-left.js';
+export * from './icons/arrow-right.js';
+export * from './icons/arrow-line-up.js';
+export * from './icons/arrow-line-up-right.js';
+export * from './icons/arrow-line-up-left.js';
+export * from './icons/arrow-line-right.js';
+export * from './icons/arrow-line-left.js';
+export * from './icons/arrow-line-down.js';
+export * from './icons/arrow-line-down-right.js';
+export * from './icons/arrow-line-down-left.js';
+export * from './icons/arrow-left.js';
+export * from './icons/arrow-fat-up.js';
+export * from './icons/arrow-fat-right.js';
+export * from './icons/arrow-fat-lines-up.js';
+export * from './icons/arrow-fat-lines-right.js';
+export * from './icons/arrow-fat-lines-left.js';
+export * from './icons/arrow-fat-lines-down.js';
+export * from './icons/arrow-fat-line-up.js';
+export * from './icons/arrow-fat-line-right.js';
+export * from './icons/arrow-fat-line-left.js';
+export * from './icons/arrow-fat-line-down.js';
+export * from './icons/arrow-fat-left.js';
+export * from './icons/arrow-fat-down.js';
+export * from './icons/arrow-elbow-up-right.js';
+export * from './icons/arrow-elbow-up-left.js';
+export * from './icons/arrow-elbow-right.js';
+export * from './icons/arrow-elbow-right-up.js';
+export * from './icons/arrow-elbow-right-down.js';
+export * from './icons/arrow-elbow-left.js';
+export * from './icons/arrow-elbow-left-up.js';
+export * from './icons/arrow-elbow-left-down.js';
+export * from './icons/arrow-elbow-down-right.js';
+export * from './icons/arrow-elbow-down-left.js';
+export * from './icons/arrow-down.js';
+export * from './icons/arrow-down-right.js';
+export * from './icons/arrow-down-left.js';
+export * from './icons/arrow-counter-clockwise.js';
+export * from './icons/arrow-clockwise.js';
+export * from './icons/arrow-circle-up.js';
+export * from './icons/arrow-circle-up-right.js';
+export * from './icons/arrow-circle-up-left.js';
+export * from './icons/arrow-circle-right.js';
+export * from './icons/arrow-circle-left.js';
+export * from './icons/arrow-circle-down.js';
+export * from './icons/arrow-circle-down-right.js';
+export * from './icons/arrow-circle-down-left.js';
+export * from './icons/arrow-bend-up-right.js';
+export * from './icons/arrow-bend-up-left.js';
+export * from './icons/arrow-bend-right-up.js';
+export * from './icons/arrow-bend-right-down.js';
+export * from './icons/arrow-bend-left-up.js';
+export * from './icons/arrow-bend-left-down.js';
+export * from './icons/arrow-bend-down-right.js';
+export * from './icons/arrow-bend-down-left.js';
+export * from './icons/arrow-bend-double-up-right.js';
+export * from './icons/arrow-bend-double-up-left.js';
+export * from './icons/arrow-arc-right.js';
+export * from './icons/arrow-arc-left.js';
+export * from './icons/armchair.js';
+export * from './icons/archive.js';
+export * from './icons/approximate-equals.js';
+export * from './icons/apple-podcasts-logo.js';
+export * from './icons/apple-logo.js';
+export * from './icons/app-window.js';
+export * from './icons/app-store-logo.js';
+export * from './icons/aperture.js';
+export * from './icons/angular-logo.js';
+export * from './icons/angle.js';
+export * from './icons/android-logo.js';
+export * from './icons/anchor.js';
+export * from './icons/anchor-simple.js';
+export * from './icons/ambulance.js';
+export * from './icons/amazon-logo.js';
+export * from './icons/align-top.js';
+export * from './icons/align-top-simple.js';
+export * from './icons/align-right.js';
+export * from './icons/align-right-simple.js';
+export * from './icons/align-left.js';
+export * from './icons/align-left-simple.js';
+export * from './icons/align-center-vertical.js';
+export * from './icons/align-center-vertical-simple.js';
+export * from './icons/align-center-horizontal.js';
+export * from './icons/align-center-horizontal-simple.js';
+export * from './icons/align-bottom.js';
+export * from './icons/align-bottom-simple.js';
+export * from './icons/alien.js';
+export * from './icons/alarm.js';
+export * from './icons/airplay.js';
+export * from './icons/airplane.js';
+export * from './icons/airplane-tilt.js';
+export * from './icons/airplane-taxiing.js';
+export * from './icons/airplane-takeoff.js';
+export * from './icons/airplane-landing.js';
+export * from './icons/airplane-in-flight.js';
+export * from './icons/air-traffic-control.js';
+export * from './icons/address-book.js';
+export * from './icons/address-book-tabs.js';
+export * from './icons/acorn.js';
+export * from './icons/youtube-logo-light.js';
+export * from './icons/yin-yang-light.js';
+export * from './icons/yarn-light.js';
+export * from './icons/x-square-light.js';
+export * from './icons/x-logo-light.js';
+export * from './icons/x-light.js';
+export * from './icons/x-circle-light.js';
+export * from './icons/wrench-light.js';
+export * from './icons/wine-light.js';
+export * from './icons/windows-logo-light.js';
+export * from './icons/windmill-light.js';
+export * from './icons/wind-light.js';
+export * from './icons/wifi-x-light.js';
+export * from './icons/wifi-slash-light.js';
+export * from './icons/wifi-none-light.js';
+export * from './icons/wifi-medium-light.js';
+export * from './icons/wifi-low-light.js';
+export * from './icons/wifi-high-light.js';
+export * from './icons/wheelchair-motion-light.js';
+export * from './icons/wheelchair-light.js';
+export * from './icons/whatsapp-logo-light.js';
+export * from './icons/wechat-logo-light.js';
+export * from './icons/webhooks-logo-light.js';
+export * from './icons/webcam-slash-light.js';
+export * from './icons/webcam-light.js';
+export * from './icons/waves-light.js';
+export * from './icons/waveform-slash-light.js';
+export * from './icons/waveform-light.js';
+export * from './icons/wave-triangle-light.js';
+export * from './icons/wave-square-light.js';
+export * from './icons/wave-sine-light.js';
+export * from './icons/wave-sawtooth-light.js';
+export * from './icons/watch-light.js';
+export * from './icons/washing-machine-light.js';
+export * from './icons/warning-octagon-light.js';
+export * from './icons/warning-light.js';
+export * from './icons/warning-diamond-light.js';
+export * from './icons/warning-circle-light.js';
+export * from './icons/warehouse-light.js';
+export * from './icons/wallet-light.js';
+export * from './icons/wall-light.js';
+export * from './icons/volleyball-light.js';
+export * from './icons/voicemail-light.js';
+export * from './icons/visor-light.js';
+export * from './icons/virus-light.js';
+export * from './icons/virtual-reality-light.js';
+export * from './icons/vinyl-record-light.js';
+export * from './icons/vignette-light.js';
+export * from './icons/video-light.js';
+export * from './icons/video-conference-light.js';
+export * from './icons/video-camera-slash-light.js';
+export * from './icons/video-camera-light.js';
+export * from './icons/vibrate-light.js';
+export * from './icons/vector-two-light.js';
+export * from './icons/vector-three-light.js';
+export * from './icons/vault-light.js';
+export * from './icons/van-light.js';
+export * from './icons/users-three-light.js';
+export * from './icons/users-light.js';
+export * from './icons/users-four-light.js';
+export * from './icons/user-switch-light.js';
+export * from './icons/user-square-light.js';
+export * from './icons/user-sound-light.js';
+export * from './icons/user-rectangle-light.js';
+export * from './icons/user-plus-light.js';
+export * from './icons/user-minus-light.js';
+export * from './icons/user-list-light.js';
+export * from './icons/user-light.js';
+export * from './icons/user-gear-light.js';
+export * from './icons/user-focus-light.js';
+export * from './icons/user-circle-plus-light.js';
+export * from './icons/user-circle-minus-light.js';
+export * from './icons/user-circle-light.js';
+export * from './icons/user-circle-gear-light.js';
+export * from './icons/user-circle-dashed-light.js';
+export * from './icons/user-circle-check-light.js';
+export * from './icons/user-check-light.js';
+export * from './icons/usb-light.js';
+export * from './icons/upload-simple-light.js';
+export * from './icons/upload-light.js';
+export * from './icons/unite-square-light.js';
+export * from './icons/unite-light.js';
+export * from './icons/union-light.js';
+export * from './icons/umbrella-simple-light.js';
+export * from './icons/umbrella-light.js';
+export * from './icons/twitter-logo-light.js';
+export * from './icons/twitch-logo-light.js';
+export * from './icons/tumblr-logo-light.js';
+export * from './icons/truck-trailer-light.js';
+export * from './icons/truck-light.js';
+export * from './icons/trophy-light.js';
+export * from './icons/trolley-suitcase-light.js';
+export * from './icons/trolley-light.js';
+export * from './icons/triangle-light.js';
+export * from './icons/triangle-dashed-light.js';
+export * from './icons/trend-up-light.js';
+export * from './icons/trend-down-light.js';
+export * from './icons/tree-view-light.js';
+export * from './icons/tree-structure-light.js';
+export * from './icons/tree-palm-light.js';
+export * from './icons/tree-light.js';
+export * from './icons/tree-evergreen-light.js';
+export * from './icons/treasure-chest-light.js';
+export * from './icons/tray-light.js';
+export * from './icons/tray-arrow-up-light.js';
+export * from './icons/tray-arrow-down-light.js';
+export * from './icons/trash-simple-light.js';
+export * from './icons/trash-light.js';
+export * from './icons/translate-light.js';
+export * from './icons/tram-light.js';
+export * from './icons/train-simple-light.js';
+export * from './icons/train-regional-light.js';
+export * from './icons/train-light.js';
+export * from './icons/traffic-signal-light.js';
+export * from './icons/traffic-sign-light.js';
+export * from './icons/traffic-cone-light.js';
+export * from './icons/trademark-registered-light.js';
+export * from './icons/trademark-light.js';
+export * from './icons/tractor-light.js';
+export * from './icons/towel-light.js';
+export * from './icons/tote-simple-light.js';
+export * from './icons/tote-light.js';
+export * from './icons/tornado-light.js';
+export * from './icons/tooth-light.js';
+export * from './icons/toolbox-light.js';
+export * from './icons/toilet-paper-light.js';
+export * from './icons/toilet-light.js';
+export * from './icons/toggle-right-light.js';
+export * from './icons/toggle-left-light.js';
+export * from './icons/tire-light.js';
+export * from './icons/tipi-light.js';
+export * from './icons/tip-jar-light.js';
+export * from './icons/timer-light.js';
+export * from './icons/tilde-light.js';
+export * from './icons/tiktok-logo-light.js';
+export * from './icons/tidal-logo-light.js';
+export * from './icons/ticket-light.js';
+export * from './icons/thumbs-up-light.js';
+export * from './icons/thumbs-down-light.js';
+export * from './icons/three-d-light.js';
+export * from './icons/threads-logo-light.js';
+export * from './icons/thermometer-simple-light.js';
+export * from './icons/thermometer-light.js';
+export * from './icons/thermometer-hot-light.js';
+export * from './icons/thermometer-cold-light.js';
+export * from './icons/textbox-light.js';
+export * from './icons/text-underline-light.js';
+export * from './icons/text-t-slash-light.js';
+export * from './icons/text-t-light.js';
+export * from './icons/text-superscript-light.js';
+export * from './icons/text-subscript-light.js';
+export * from './icons/text-strikethrough-light.js';
+export * from './icons/text-outdent-light.js';
+export * from './icons/text-italic-light.js';
+export * from './icons/text-indent-light.js';
+export * from './icons/text-h-two-light.js';
+export * from './icons/text-h-three-light.js';
+export * from './icons/text-h-six-light.js';
+export * from './icons/text-h-one-light.js';
+export * from './icons/text-h-light.js';
+export * from './icons/text-h-four-light.js';
+export * from './icons/text-h-five-light.js';
+export * from './icons/text-columns-light.js';
+export * from './icons/text-b-light.js';
+export * from './icons/text-align-right-light.js';
+export * from './icons/text-align-left-light.js';
+export * from './icons/text-align-justify-light.js';
+export * from './icons/text-align-center-light.js';
+export * from './icons/text-aa-light.js';
+export * from './icons/text-a-underline-light.js';
+export * from './icons/test-tube-light.js';
+export * from './icons/terminal-window-light.js';
+export * from './icons/terminal-light.js';
+export * from './icons/tent-light.js';
+export * from './icons/tennis-ball-light.js';
+export * from './icons/television-simple-light.js';
+export * from './icons/television-light.js';
+export * from './icons/telegram-logo-light.js';
+export * from './icons/tea-bag-light.js';
+export * from './icons/taxi-light.js';
+export * from './icons/target-light.js';
+export * from './icons/tag-simple-light.js';
+export * from './icons/tag-light.js';
+export * from './icons/tag-chevron-light.js';
+export * from './icons/tabs-light.js';
+export * from './icons/table-light.js';
+export * from './icons/t-shirt-light.js';
+export * from './icons/syringe-light.js';
+export * from './icons/synagogue-light.js';
+export * from './icons/sword-light.js';
+export * from './icons/swimming-pool-light.js';
+export * from './icons/swatches-light.js';
+export * from './icons/swap-light.js';
+export * from './icons/superset-proper-of-light.js';
+export * from './icons/superset-of-light.js';
+export * from './icons/sunglasses-light.js';
+export * from './icons/sun-light.js';
+export * from './icons/sun-horizon-light.js';
+export * from './icons/sun-dim-light.js';
+export * from './icons/suitcase-simple-light.js';
+export * from './icons/suitcase-rolling-light.js';
+export * from './icons/suitcase-light.js';
+export * from './icons/subway-light.js';
+export * from './icons/subtract-square-light.js';
+export * from './icons/subtract-light.js';
+export * from './icons/subtitles-slash-light.js';
+export * from './icons/subtitles-light.js';
+export * from './icons/subset-proper-of-light.js';
+export * from './icons/subset-of-light.js';
+export * from './icons/student-light.js';
+export * from './icons/stripe-logo-light.js';
+export * from './icons/strategy-light.js';
+export * from './icons/storefront-light.js';
+export * from './icons/stop-light.js';
+export * from './icons/stop-circle-light.js';
+export * from './icons/stool-light.js';
+export * from './icons/sticker-light.js';
+export * from './icons/stethoscope-light.js';
+export * from './icons/steps-light.js';
+export * from './icons/steering-wheel-light.js';
+export * from './icons/steam-logo-light.js';
+export * from './icons/star-of-david-light.js';
+export * from './icons/star-light.js';
+export * from './icons/star-half-light.js';
+export * from './icons/star-four-light.js';
+export * from './icons/star-and-crescent-light.js';
+export * from './icons/standard-definition-light.js';
+export * from './icons/stamp-light.js';
+export * from './icons/stairs-light.js';
+export * from './icons/stack-simple-light.js';
+export * from './icons/stack-plus-light.js';
+export * from './icons/stack-overflow-logo-light.js';
+export * from './icons/stack-minus-light.js';
+export * from './icons/stack-light.js';
+export * from './icons/squares-four-light.js';
+export * from './icons/square-split-vertical-light.js';
+export * from './icons/square-split-horizontal-light.js';
+export * from './icons/square-logo-light.js';
+export * from './icons/square-light.js';
+export * from './icons/square-half-light.js';
+export * from './icons/square-half-bottom-light.js';
+export * from './icons/spray-bottle-light.js';
+export * from './icons/spotify-logo-light.js';
+export * from './icons/split-vertical-light.js';
+export * from './icons/split-horizontal-light.js';
+export * from './icons/spiral-light.js';
+export * from './icons/spinner-light.js';
+export * from './icons/spinner-gap-light.js';
+export * from './icons/spinner-ball-light.js';
+export * from './icons/sphere-light.js';
+export * from './icons/speedometer-light.js';
+export * from './icons/speaker-x-light.js';
+export * from './icons/speaker-slash-light.js';
+export * from './icons/speaker-simple-x-light.js';
+export * from './icons/speaker-simple-slash-light.js';
+export * from './icons/speaker-simple-none-light.js';
+export * from './icons/speaker-simple-low-light.js';
+export * from './icons/speaker-simple-high-light.js';
+export * from './icons/speaker-none-light.js';
+export * from './icons/speaker-low-light.js';
+export * from './icons/speaker-high-light.js';
+export * from './icons/speaker-hifi-light.js';
+export * from './icons/sparkle-light.js';
+export * from './icons/spade-light.js';
+export * from './icons/soundcloud-logo-light.js';
+export * from './icons/sort-descending-light.js';
+export * from './icons/sort-ascending-light.js';
+export * from './icons/solar-roof-light.js';
+export * from './icons/solar-panel-light.js';
+export * from './icons/sock-light.js';
+export * from './icons/soccer-ball-light.js';
+export * from './icons/snowflake-light.js';
+export * from './icons/sneaker-move-light.js';
+export * from './icons/sneaker-light.js';
+export * from './icons/snapchat-logo-light.js';
+export * from './icons/smiley-x-eyes-light.js';
+export * from './icons/smiley-wink-light.js';
+export * from './icons/smiley-sticker-light.js';
+export * from './icons/smiley-sad-light.js';
+export * from './icons/smiley-nervous-light.js';
+export * from './icons/smiley-melting-light.js';
+export * from './icons/smiley-meh-light.js';
+export * from './icons/smiley-light.js';
+export * from './icons/smiley-blank-light.js';
+export * from './icons/smiley-angry-light.js';
+export * from './icons/slideshow-light.js';
+export * from './icons/sliders-light.js';
+export * from './icons/sliders-horizontal-light.js';
+export * from './icons/slack-logo-light.js';
+export * from './icons/skype-logo-light.js';
+export * from './icons/skull-light.js';
+export * from './icons/skip-forward-light.js';
+export * from './icons/skip-forward-circle-light.js';
+export * from './icons/skip-back-light.js';
+export * from './icons/skip-back-circle-light.js';
+export * from './icons/sketch-logo-light.js';
+export * from './icons/siren-light.js';
+export * from './icons/sim-card-light.js';
+export * from './icons/signpost-light.js';
+export * from './icons/signature-light.js';
+export * from './icons/sign-out-light.js';
+export * from './icons/sign-in-light.js';
+export * from './icons/sigma-light.js';
+export * from './icons/sidebar-simple-light.js';
+export * from './icons/sidebar-light.js';
+export * from './icons/shuffle-simple-light.js';
+export * from './icons/shuffle-light.js';
+export * from './icons/shuffle-angular-light.js';
+export * from './icons/shrimp-light.js';
+export * from './icons/shower-light.js';
+export * from './icons/shovel-light.js';
+export * from './icons/shopping-cart-simple-light.js';
+export * from './icons/shopping-cart-light.js';
+export * from './icons/shopping-bag-open-light.js';
+export * from './icons/shopping-bag-light.js';
+export * from './icons/shooting-star-light.js';
+export * from './icons/shirt-folded-light.js';
+export * from './icons/shipping-container-light.js';
+export * from './icons/shield-warning-light.js';
+export * from './icons/shield-star-light.js';
+export * from './icons/shield-slash-light.js';
+export * from './icons/shield-plus-light.js';
+export * from './icons/shield-light.js';
+export * from './icons/shield-chevron-light.js';
+export * from './icons/shield-checkered-light.js';
+export * from './icons/shield-check-light.js';
+export * from './icons/share-network-light.js';
+export * from './icons/share-light.js';
+export * from './icons/share-fat-light.js';
+export * from './icons/shapes-light.js';
+export * from './icons/selection-slash-light.js';
+export * from './icons/selection-plus-light.js';
+export * from './icons/selection-light.js';
+export * from './icons/selection-inverse-light.js';
+export * from './icons/selection-foreground-light.js';
+export * from './icons/selection-background-light.js';
+export * from './icons/selection-all-light.js';
+export * from './icons/security-camera-light.js';
+export * from './icons/seatbelt-light.js';
+export * from './icons/seat-light.js';
+export * from './icons/seal-warning-light.js';
+export * from './icons/seal-question-light.js';
+export * from './icons/seal-percent-light.js';
+export * from './icons/seal-light.js';
+export * from './icons/seal-check-light.js';
+export * from './icons/scroll-light.js';
+export * from './icons/scribble-loop-light.js';
+export * from './icons/scribble-light.js';
+export * from './icons/screwdriver-light.js';
+export * from './icons/screencast-light.js';
+export * from './icons/scooter-light.js';
+export * from './icons/scissors-light.js';
+export * from './icons/scan-smiley-light.js';
+export * from './icons/scan-light.js';
+export * from './icons/scales-light.js';
+export * from './icons/sailboat-light.js';
+export * from './icons/ruler-light.js';
+export * from './icons/rug-light.js';
+export * from './icons/rss-simple-light.js';
+export * from './icons/rss-light.js';
+export * from './icons/rows-plus-top-light.js';
+export * from './icons/rows-plus-bottom-light.js';
+export * from './icons/rows-light.js';
+export * from './icons/rocket-light.js';
+export * from './icons/rocket-launch-light.js';
+export * from './icons/robot-light.js';
+export * from './icons/road-horizon-light.js';
+export * from './icons/rewind-light.js';
+export * from './icons/rewind-circle-light.js';
+export * from './icons/resize-light.js';
+export * from './icons/replit-logo-light.js';
+export * from './icons/repeat-once-light.js';
+export * from './icons/repeat-light.js';
+export * from './icons/reddit-logo-light.js';
+export * from './icons/recycle-light.js';
+export * from './icons/rectangle-light.js';
+export * from './icons/rectangle-dashed-light.js';
+export * from './icons/record-light.js';
+export * from './icons/receipt-x-light.js';
+export * from './icons/receipt-light.js';
+export * from './icons/read-cv-logo-light.js';
+export * from './icons/ranking-light.js';
+export * from './icons/rainbow-light.js';
+export * from './icons/rainbow-cloud-light.js';
+export * from './icons/radioactive-light.js';
+export * from './icons/radio-light.js';
+export * from './icons/radio-button-light.js';
+export * from './icons/radical-light.js';
+export * from './icons/racquet-light.js';
+export * from './icons/rabbit-light.js';
+export * from './icons/quotes-light.js';
+export * from './icons/queue-light.js';
+export * from './icons/question-mark-light.js';
+export * from './icons/question-light.js';
+export * from './icons/qr-code-light.js';
+export * from './icons/puzzle-piece-light.js';
+export * from './icons/push-pin-slash-light.js';
+export * from './icons/push-pin-simple-slash-light.js';
+export * from './icons/push-pin-simple-light.js';
+export * from './icons/push-pin-light.js';
+export * from './icons/pulse-light.js';
+export * from './icons/projector-screen-light.js';
+export * from './icons/projector-screen-chart-light.js';
+export * from './icons/prohibit-light.js';
+export * from './icons/prohibit-inset-light.js';
+export * from './icons/printer-light.js';
+export * from './icons/presentation-light.js';
+export * from './icons/presentation-chart-light.js';
+export * from './icons/prescription-light.js';
+export * from './icons/power-light.js';
+export * from './icons/potted-plant-light.js';
+export * from './icons/popsicle-light.js';
+export * from './icons/popcorn-light.js';
+export * from './icons/polygon-light.js';
+export * from './icons/police-car-light.js';
+export * from './icons/poker-chip-light.js';
+export * from './icons/plus-square-light.js';
+export * from './icons/plus-minus-light.js';
+export * from './icons/plus-light.js';
+export * from './icons/plus-circle-light.js';
+export * from './icons/plugs-light.js';
+export * from './icons/plugs-connected-light.js';
+export * from './icons/plug-light.js';
+export * from './icons/plug-charging-light.js';
+export * from './icons/playlist-light.js';
+export * from './icons/play-pause-light.js';
+export * from './icons/play-light.js';
+export * from './icons/play-circle-light.js';
+export * from './icons/plant-light.js';
+export * from './icons/planet-light.js';
+export * from './icons/placeholder-light.js';
+export * from './icons/pizza-light.js';
+export * from './icons/pix-logo-light.js';
+export * from './icons/pipe-wrench-light.js';
+export * from './icons/pipe-light.js';
+export * from './icons/pinwheel-light.js';
+export * from './icons/pinterest-logo-light.js';
+export * from './icons/pint-glass-light.js';
+export * from './icons/ping-pong-light.js';
+export * from './icons/pill-light.js';
+export * from './icons/piggy-bank-light.js';
+export * from './icons/picture-in-picture-light.js';
+export * from './icons/picnic-table-light.js';
+export * from './icons/piano-keys-light.js';
+export * from './icons/pi-light.js';
+export * from './icons/phosphor-logo-light.js';
+export * from './icons/phone-x-light.js';
+export * from './icons/phone-transfer-light.js';
+export * from './icons/phone-slash-light.js';
+export * from './icons/phone-plus-light.js';
+export * from './icons/phone-pause-light.js';
+export * from './icons/phone-outgoing-light.js';
+export * from './icons/phone-list-light.js';
+export * from './icons/phone-light.js';
+export * from './icons/phone-incoming-light.js';
+export * from './icons/phone-disconnect-light.js';
+export * from './icons/phone-call-light.js';
+export * from './icons/perspective-light.js';
+export * from './icons/person-simple-walk-light.js';
+export * from './icons/person-simple-throw-light.js';
+export * from './icons/person-simple-tai-chi-light.js';
+export * from './icons/person-simple-swim-light.js';
+export * from './icons/person-simple-snowboard-light.js';
+export * from './icons/person-simple-ski-light.js';
+export * from './icons/person-simple-run-light.js';
+export * from './icons/person-simple-light.js';
+export * from './icons/person-simple-hike-light.js';
+export * from './icons/person-simple-circle-light.js';
+export * from './icons/person-simple-bike-light.js';
+export * from './icons/person-light.js';
+export * from './icons/person-arms-spread-light.js';
+export * from './icons/percent-light.js';
+export * from './icons/pepper-light.js';
+export * from './icons/pentagram-light.js';
+export * from './icons/pentagon-light.js';
+export * from './icons/pencil-slash-light.js';
+export * from './icons/pencil-simple-slash-light.js';
+export * from './icons/pencil-simple-line-light.js';
+export * from './icons/pencil-simple-light.js';
+export * from './icons/pencil-ruler-light.js';
+export * from './icons/pencil-line-light.js';
+export * from './icons/pencil-light.js';
+export * from './icons/pencil-circle-light.js';
+export * from './icons/pen-nib-straight-light.js';
+export * from './icons/pen-nib-light.js';
+export * from './icons/pen-light.js';
+export * from './icons/peace-light.js';
+export * from './icons/paypal-logo-light.js';
+export * from './icons/paw-print-light.js';
+export * from './icons/pause-light.js';
+export * from './icons/pause-circle-light.js';
+export * from './icons/patreon-logo-light.js';
+export * from './icons/path-light.js';
+export * from './icons/password-light.js';
+export * from './icons/park-light.js';
+export * from './icons/parallelogram-light.js';
+export * from './icons/paragraph-light.js';
+export * from './icons/parachute-light.js';
+export * from './icons/paperclip-light.js';
+export * from './icons/paperclip-horizontal-light.js';
+export * from './icons/paper-plane-tilt-light.js';
+export * from './icons/paper-plane-right-light.js';
+export * from './icons/paper-plane-light.js';
+export * from './icons/pants-light.js';
+export * from './icons/panorama-light.js';
+export * from './icons/palette-light.js';
+export * from './icons/paint-roller-light.js';
+export * from './icons/paint-bucket-light.js';
+export * from './icons/paint-brush-light.js';
+export * from './icons/paint-brush-household-light.js';
+export * from './icons/paint-brush-broad-light.js';
+export * from './icons/package-light.js';
+export * from './icons/oven-light.js';
+export * from './icons/orange-slice-light.js';
+export * from './icons/orange-light.js';
+export * from './icons/option-light.js';
+export * from './icons/open-ai-logo-light.js';
+export * from './icons/onigiri-light.js';
+export * from './icons/office-chair-light.js';
+export * from './icons/octagon-light.js';
+export * from './icons/ny-times-logo-light.js';
+export * from './icons/nut-light.js';
+export * from './icons/numpad-light.js';
+export * from './icons/number-zero-light.js';
+export * from './icons/number-two-light.js';
+export * from './icons/number-three-light.js';
+export * from './icons/number-square-zero-light.js';
+export * from './icons/number-square-two-light.js';
+export * from './icons/number-square-three-light.js';
+export * from './icons/number-square-six-light.js';
+export * from './icons/number-square-seven-light.js';
+export * from './icons/number-square-one-light.js';
+export * from './icons/number-square-nine-light.js';
+export * from './icons/number-square-four-light.js';
+export * from './icons/number-square-five-light.js';
+export * from './icons/number-square-eight-light.js';
+export * from './icons/number-six-light.js';
+export * from './icons/number-seven-light.js';
+export * from './icons/number-one-light.js';
+export * from './icons/number-nine-light.js';
+export * from './icons/number-four-light.js';
+export * from './icons/number-five-light.js';
+export * from './icons/number-eight-light.js';
+export * from './icons/number-circle-zero-light.js';
+export * from './icons/number-circle-two-light.js';
+export * from './icons/number-circle-three-light.js';
+export * from './icons/number-circle-six-light.js';
+export * from './icons/number-circle-seven-light.js';
+export * from './icons/number-circle-one-light.js';
+export * from './icons/number-circle-nine-light.js';
+export * from './icons/number-circle-four-light.js';
+export * from './icons/number-circle-five-light.js';
+export * from './icons/number-circle-eight-light.js';
+export * from './icons/nuclear-plant-light.js';
+export * from './icons/notion-logo-light.js';
+export * from './icons/notification-light.js';
+export * from './icons/notepad-light.js';
+export * from './icons/notebook-light.js';
+export * from './icons/note-pencil-light.js';
+export * from './icons/note-light.js';
+export * from './icons/note-blank-light.js';
+export * from './icons/notches-light.js';
+export * from './icons/not-superset-of-light.js';
+export * from './icons/not-subset-of-light.js';
+export * from './icons/not-member-of-light.js';
+export * from './icons/not-equals-light.js';
+export * from './icons/newspaper-light.js';
+export * from './icons/newspaper-clipping-light.js';
+export * from './icons/network-x-light.js';
+export * from './icons/network-slash-light.js';
+export * from './icons/network-light.js';
+export * from './icons/needle-light.js';
+export * from './icons/navigation-arrow-light.js';
+export * from './icons/music-notes-simple-light.js';
+export * from './icons/music-notes-plus-light.js';
+export * from './icons/music-notes-minus-light.js';
+export * from './icons/music-notes-light.js';
+export * from './icons/music-note-simple-light.js';
+export * from './icons/music-note-light.js';
+export * from './icons/mouse-simple-light.js';
+export * from './icons/mouse-scroll-light.js';
+export * from './icons/mouse-right-click-light.js';
+export * from './icons/mouse-middle-click-light.js';
+export * from './icons/mouse-light.js';
+export * from './icons/mouse-left-click-light.js';
+export * from './icons/mountains-light.js';
+export * from './icons/motorcycle-light.js';
+export * from './icons/mosque-light.js';
+export * from './icons/moped-light.js';
+export * from './icons/moped-front-light.js';
+export * from './icons/moon-stars-light.js';
+export * from './icons/moon-light.js';
+export * from './icons/monitor-play-light.js';
+export * from './icons/monitor-light.js';
+export * from './icons/monitor-arrow-up-light.js';
+export * from './icons/money-wavy-light.js';
+export * from './icons/money-light.js';
+export * from './icons/minus-square-light.js';
+export * from './icons/minus-light.js';
+export * from './icons/minus-circle-light.js';
+export * from './icons/microsoft-word-logo-light.js';
+export * from './icons/microsoft-teams-logo-light.js';
+export * from './icons/microsoft-powerpoint-logo-light.js';
+export * from './icons/microsoft-outlook-logo-light.js';
+export * from './icons/microsoft-excel-logo-light.js';
+export * from './icons/microscope-light.js';
+export * from './icons/microphone-stage-light.js';
+export * from './icons/microphone-slash-light.js';
+export * from './icons/microphone-light.js';
+export * from './icons/metronome-light.js';
+export * from './icons/meteor-light.js';
+export * from './icons/meta-logo-light.js';
+export * from './icons/messenger-logo-light.js';
+export * from './icons/memory-light.js';
+export * from './icons/member-of-light.js';
+export * from './icons/megaphone-simple-light.js';
+export * from './icons/megaphone-light.js';
+export * from './icons/medium-logo-light.js';
+export * from './icons/medal-military-light.js';
+export * from './icons/medal-light.js';
+export * from './icons/matrix-logo-light.js';
+export * from './icons/math-operations-light.js';
+export * from './icons/mastodon-logo-light.js';
+export * from './icons/mask-sad-light.js';
+export * from './icons/mask-happy-light.js';
+export * from './icons/martini-light.js';
+export * from './icons/marker-circle-light.js';
+export * from './icons/markdown-logo-light.js';
+export * from './icons/map-trifold-light.js';
+export * from './icons/map-pin-simple-line-light.js';
+export * from './icons/map-pin-simple-light.js';
+export * from './icons/map-pin-simple-area-light.js';
+export * from './icons/map-pin-plus-light.js';
+export * from './icons/map-pin-line-light.js';
+export * from './icons/map-pin-light.js';
+export * from './icons/map-pin-area-light.js';
+export * from './icons/mailbox-light.js';
+export * from './icons/magnifying-glass-plus-light.js';
+export * from './icons/magnifying-glass-minus-light.js';
+export * from './icons/magnifying-glass-light.js';
+export * from './icons/magnet-straight-light.js';
+export * from './icons/magnet-light.js';
+export * from './icons/magic-wand-light.js';
+export * from './icons/log-light.js';
+export * from './icons/lockers-light.js';
+export * from './icons/lock-simple-open-light.js';
+export * from './icons/lock-simple-light.js';
+export * from './icons/lock-open-light.js';
+export * from './icons/lock-light.js';
+export * from './icons/lock-laminated-open-light.js';
+export * from './icons/lock-laminated-light.js';
+export * from './icons/lock-key-open-light.js';
+export * from './icons/lock-key-light.js';
+export * from './icons/list-star-light.js';
+export * from './icons/list-plus-light.js';
+export * from './icons/list-numbers-light.js';
+export * from './icons/list-magnifying-glass-light.js';
+export * from './icons/list-light.js';
+export * from './icons/list-heart-light.js';
+export * from './icons/list-dashes-light.js';
+export * from './icons/list-checks-light.js';
+export * from './icons/list-bullets-light.js';
+export * from './icons/linux-logo-light.js';
+export * from './icons/linktree-logo-light.js';
+export * from './icons/linkedin-logo-light.js';
+export * from './icons/link-simple-light.js';
+export * from './icons/link-simple-horizontal-light.js';
+export * from './icons/link-simple-horizontal-break-light.js';
+export * from './icons/link-simple-break-light.js';
+export * from './icons/link-light.js';
+export * from './icons/link-break-light.js';
+export * from './icons/line-vertical-light.js';
+export * from './icons/line-segments-light.js';
+export * from './icons/line-segment-light.js';
+export * from './icons/lightning-slash-light.js';
+export * from './icons/lightning-light.js';
+export * from './icons/lightning-a-light.js';
+export * from './icons/lighthouse-light.js';
+export * from './icons/lightbulb-light.js';
+export * from './icons/lightbulb-filament-light.js';
+export * from './icons/lifebuoy-light.js';
+export * from './icons/letter-circle-v-light.js';
+export * from './icons/letter-circle-p-light.js';
+export * from './icons/letter-circle-h-light.js';
+export * from './icons/less-than-or-equal-light.js';
+export * from './icons/less-than-light.js';
+export * from './icons/lego-smiley-light.js';
+export * from './icons/lego-light.js';
+export * from './icons/lectern-light.js';
+export * from './icons/leaf-light.js';
+export * from './icons/layout-light.js';
+export * from './icons/lastfm-logo-light.js';
+export * from './icons/lasso-light.js';
+export * from './icons/laptop-light.js';
+export * from './icons/lamp-pendant-light.js';
+export * from './icons/lamp-light.js';
+export * from './icons/ladder-simple-light.js';
+export * from './icons/ladder-light.js';
+export * from './icons/knife-light.js';
+export * from './icons/keyhole-light.js';
+export * from './icons/keyboard-light.js';
+export * from './icons/key-return-light.js';
+export * from './icons/key-light.js';
+export * from './icons/kanban-light.js';
+export * from './icons/joystick-light.js';
+export * from './icons/jeep-light.js';
+export * from './icons/jar-light.js';
+export * from './icons/jar-label-light.js';
+export * from './icons/island-light.js';
+export * from './icons/invoice-light.js';
+export * from './icons/intersection-light.js';
+export * from './icons/intersect-three-light.js';
+export * from './icons/intersect-square-light.js';
+export * from './icons/intersect-light.js';
+export * from './icons/instagram-logo-light.js';
+export * from './icons/info-light.js';
+export * from './icons/infinity-light.js';
+export * from './icons/images-square-light.js';
+export * from './icons/images-light.js';
+export * from './icons/image-square-light.js';
+export * from './icons/image-light.js';
+export * from './icons/image-broken-light.js';
+export * from './icons/identification-card-light.js';
+export * from './icons/identification-badge-light.js';
+export * from './icons/ice-cream-light.js';
+export * from './icons/hurricane-light.js';
+export * from './icons/house-simple-light.js';
+export * from './icons/house-line-light.js';
+export * from './icons/house-light.js';
+export * from './icons/hourglass-simple-medium-light.js';
+export * from './icons/hourglass-simple-low-light.js';
+export * from './icons/hourglass-simple-light.js';
+export * from './icons/hourglass-simple-high-light.js';
+export * from './icons/hourglass-medium-light.js';
+export * from './icons/hourglass-low-light.js';
+export * from './icons/hourglass-light.js';
+export * from './icons/hourglass-high-light.js';
+export * from './icons/hospital-light.js';
+export * from './icons/horse-light.js';
+export * from './icons/hoodie-light.js';
+export * from './icons/hockey-light.js';
+export * from './icons/highlighter-light.js';
+export * from './icons/highlighter-circle-light.js';
+export * from './icons/high-heel-light.js';
+export * from './icons/high-definition-light.js';
+export * from './icons/hexagon-light.js';
+export * from './icons/heartbeat-light.js';
+export * from './icons/heart-straight-light.js';
+export * from './icons/heart-straight-break-light.js';
+export * from './icons/heart-light.js';
+export * from './icons/heart-half-light.js';
+export * from './icons/heart-break-light.js';
+export * from './icons/headset-light.js';
+export * from './icons/headphones-light.js';
+export * from './icons/headlights-light.js';
+export * from './icons/head-circuit-light.js';
+export * from './icons/hash-straight-light.js';
+export * from './icons/hash-light.js';
+export * from './icons/hard-hat-light.js';
+export * from './icons/hard-drives-light.js';
+export * from './icons/hard-drive-light.js';
+export * from './icons/handshake-light.js';
+export * from './icons/hands-praying-light.js';
+export * from './icons/hands-clapping-light.js';
+export * from './icons/handbag-simple-light.js';
+export * from './icons/handbag-light.js';
+export * from './icons/hand-withdraw-light.js';
+export * from './icons/hand-waving-light.js';
+export * from './icons/hand-tap-light.js';
+export * from './icons/hand-swipe-right-light.js';
+export * from './icons/hand-swipe-left-light.js';
+export * from './icons/hand-soap-light.js';
+export * from './icons/hand-pointing-light.js';
+export * from './icons/hand-peace-light.js';
+export * from './icons/hand-palm-light.js';
+export * from './icons/hand-light.js';
+export * from './icons/hand-heart-light.js';
+export * from './icons/hand-grabbing-light.js';
+export * from './icons/hand-fist-light.js';
+export * from './icons/hand-eye-light.js';
+export * from './icons/hand-deposit-light.js';
+export * from './icons/hand-coins-light.js';
+export * from './icons/hand-arrow-up-light.js';
+export * from './icons/hand-arrow-down-light.js';
+export * from './icons/hammer-light.js';
+export * from './icons/hamburger-light.js';
+export * from './icons/hair-dryer-light.js';
+export * from './icons/guitar-light.js';
+export * from './icons/grid-nine-light.js';
+export * from './icons/grid-four-light.js';
+export * from './icons/greater-than-or-equal-light.js';
+export * from './icons/greater-than-light.js';
+export * from './icons/graphics-card-light.js';
+export * from './icons/graph-light.js';
+export * from './icons/grains-slash-light.js';
+export * from './icons/grains-light.js';
+export * from './icons/graduation-cap-light.js';
+export * from './icons/gradient-light.js';
+export * from './icons/gps-slash-light.js';
+export * from './icons/gps-light.js';
+export * from './icons/gps-fix-light.js';
+export * from './icons/google-podcasts-logo-light.js';
+export * from './icons/google-play-logo-light.js';
+export * from './icons/google-photos-logo-light.js';
+export * from './icons/google-logo-light.js';
+export * from './icons/google-drive-logo-light.js';
+export * from './icons/google-chrome-logo-light.js';
+export * from './icons/google-cardboard-logo-light.js';
+export * from './icons/goodreads-logo-light.js';
+export * from './icons/golf-light.js';
+export * from './icons/goggles-light.js';
+export * from './icons/globe-x-light.js';
+export * from './icons/globe-stand-light.js';
+export * from './icons/globe-simple-x-light.js';
+export * from './icons/globe-simple-light.js';
+export * from './icons/globe-light.js';
+export * from './icons/globe-hemisphere-west-light.js';
+export * from './icons/globe-hemisphere-east-light.js';
+export * from './icons/gitlab-logo-simple-light.js';
+export * from './icons/gitlab-logo-light.js';
+export * from './icons/github-logo-light.js';
+export * from './icons/git-pull-request-light.js';
+export * from './icons/git-merge-light.js';
+export * from './icons/git-fork-light.js';
+export * from './icons/git-diff-light.js';
+export * from './icons/git-commit-light.js';
+export * from './icons/git-branch-light.js';
+export * from './icons/gift-light.js';
+export * from './icons/gif-light.js';
+export * from './icons/ghost-light.js';
+export * from './icons/gender-transgender-light.js';
+export * from './icons/gender-nonbinary-light.js';
+export * from './icons/gender-neuter-light.js';
+export * from './icons/gender-male-light.js';
+export * from './icons/gender-intersex-light.js';
+export * from './icons/gender-female-light.js';
+export * from './icons/gear-six-light.js';
+export * from './icons/gear-light.js';
+export * from './icons/gear-fine-light.js';
+export * from './icons/gavel-light.js';
+export * from './icons/gauge-light.js';
+export * from './icons/gas-pump-light.js';
+export * from './icons/gas-can-light.js';
+export * from './icons/garage-light.js';
+export * from './icons/game-controller-light.js';
+export * from './icons/funnel-x-light.js';
+export * from './icons/funnel-simple-x-light.js';
+export * from './icons/funnel-simple-light.js';
+export * from './icons/funnel-light.js';
+export * from './icons/function-light.js';
+export * from './icons/framer-logo-light.js';
+export * from './icons/frame-corners-light.js';
+export * from './icons/four-k-light.js';
+export * from './icons/fork-knife-light.js';
+export * from './icons/footprints-light.js';
+export * from './icons/football-light.js';
+export * from './icons/football-helmet-light.js';
+export * from './icons/folders-light.js';
+export * from './icons/folder-user-light.js';
+export * from './icons/folder-star-light.js';
+export * from './icons/folder-simple-user-light.js';
+export * from './icons/folder-simple-star-light.js';
+export * from './icons/folder-simple-plus-light.js';
+export * from './icons/folder-simple-minus-light.js';
+export * from './icons/folder-simple-lock-light.js';
+export * from './icons/folder-simple-light.js';
+export * from './icons/folder-simple-dashed-light.js';
+export * from './icons/folder-plus-light.js';
+export * from './icons/folder-open-light.js';
+export * from './icons/folder-minus-light.js';
+export * from './icons/folder-lock-light.js';
+export * from './icons/folder-light.js';
+export * from './icons/folder-dashed-light.js';
+export * from './icons/flying-saucer-light.js';
+export * from './icons/flower-tulip-light.js';
+export * from './icons/flower-lotus-light.js';
+export * from './icons/flower-light.js';
+export * from './icons/flow-arrow-light.js';
+export * from './icons/floppy-disk-light.js';
+export * from './icons/floppy-disk-back-light.js';
+export * from './icons/flip-vertical-light.js';
+export * from './icons/flip-horizontal-light.js';
+export * from './icons/flask-light.js';
+export * from './icons/flashlight-light.js';
+export * from './icons/flame-light.js';
+export * from './icons/flag-pennant-light.js';
+export * from './icons/flag-light.js';
+export * from './icons/flag-checkered-light.js';
+export * from './icons/flag-banner-light.js';
+export * from './icons/flag-banner-fold-light.js';
+export * from './icons/fish-simple-light.js';
+export * from './icons/fish-light.js';
+export * from './icons/first-aid-light.js';
+export * from './icons/first-aid-kit-light.js';
+export * from './icons/fire-truck-light.js';
+export * from './icons/fire-simple-light.js';
+export * from './icons/fire-light.js';
+export * from './icons/fire-extinguisher-light.js';
+export * from './icons/finn-the-human-light.js';
+export * from './icons/fingerprint-simple-light.js';
+export * from './icons/fingerprint-light.js';
+export * from './icons/film-strip-light.js';
+export * from './icons/film-slate-light.js';
+export * from './icons/film-script-light.js';
+export * from './icons/film-reel-light.js';
+export * from './icons/files-light.js';
+export * from './icons/file-zip-light.js';
+export * from './icons/file-xls-light.js';
+export * from './icons/file-x-light.js';
+export * from './icons/file-vue-light.js';
+export * from './icons/file-video-light.js';
+export * from './icons/file-txt-light.js';
+export * from './icons/file-tsx-light.js';
+export * from './icons/file-ts-light.js';
+export * from './icons/file-text-light.js';
+export * from './icons/file-svg-light.js';
+export * from './icons/file-sql-light.js';
+export * from './icons/file-rs-light.js';
+export * from './icons/file-py-light.js';
+export * from './icons/file-ppt-light.js';
+export * from './icons/file-png-light.js';
+export * from './icons/file-plus-light.js';
+export * from './icons/file-pdf-light.js';
+export * from './icons/file-minus-light.js';
+export * from './icons/file-md-light.js';
+export * from './icons/file-magnifying-glass-light.js';
+export * from './icons/file-lock-light.js';
+export * from './icons/file-light.js';
+export * from './icons/file-jsx-light.js';
+export * from './icons/file-js-light.js';
+export * from './icons/file-jpg-light.js';
+export * from './icons/file-ini-light.js';
+export * from './icons/file-image-light.js';
+export * from './icons/file-html-light.js';
+export * from './icons/file-doc-light.js';
+export * from './icons/file-dashed-light.js';
+export * from './icons/file-csv-light.js';
+export * from './icons/file-css-light.js';
+export * from './icons/file-cpp-light.js';
+export * from './icons/file-code-light.js';
+export * from './icons/file-cloud-light.js';
+export * from './icons/file-c-sharp-light.js';
+export * from './icons/file-c-light.js';
+export * from './icons/file-audio-light.js';
+export * from './icons/file-arrow-up-light.js';
+export * from './icons/file-arrow-down-light.js';
+export * from './icons/file-archive-light.js';
+export * from './icons/figma-logo-light.js';
+export * from './icons/fediverse-logo-light.js';
+export * from './icons/feather-light.js';
+export * from './icons/fast-forward-light.js';
+export * from './icons/fast-forward-circle-light.js';
+export * from './icons/farm-light.js';
+export * from './icons/fan-light.js';
+export * from './icons/fallout-shelter-light.js';
+export * from './icons/faders-light.js';
+export * from './icons/faders-horizontal-light.js';
+export * from './icons/factory-light.js';
+export * from './icons/facebook-logo-light.js';
+export * from './icons/face-mask-light.js';
+export * from './icons/eyes-light.js';
+export * from './icons/eyeglasses-light.js';
+export * from './icons/eyedropper-sample-light.js';
+export * from './icons/eyedropper-light.js';
+export * from './icons/eye-slash-light.js';
+export * from './icons/eye-light.js';
+export * from './icons/eye-closed-light.js';
+export * from './icons/export-light.js';
+export * from './icons/exclude-square-light.js';
+export * from './icons/exclude-light.js';
+export * from './icons/exclamation-mark-light.js';
+export * from './icons/exam-light.js';
+export * from './icons/escalator-up-light.js';
+export * from './icons/escalator-down-light.js';
+export * from './icons/eraser-light.js';
+export * from './icons/equals-light.js';
+export * from './icons/equalizer-light.js';
+export * from './icons/envelope-simple-open-light.js';
+export * from './icons/envelope-simple-light.js';
+export * from './icons/envelope-open-light.js';
+export * from './icons/envelope-light.js';
+export * from './icons/engine-light.js';
+export * from './icons/empty-light.js';
+export * from './icons/elevator-light.js';
+export * from './icons/eject-simple-light.js';
+export * from './icons/eject-light.js';
+export * from './icons/egg-light.js';
+export * from './icons/egg-crack-light.js';
+export * from './icons/ear-slash-light.js';
+export * from './icons/ear-light.js';
+export * from './icons/dropbox-logo-light.js';
+export * from './icons/drop-slash-light.js';
+export * from './icons/drop-simple-light.js';
+export * from './icons/drop-light.js';
+export * from './icons/drop-half-light.js';
+export * from './icons/drop-half-bottom-light.js';
+export * from './icons/drone-light.js';
+export * from './icons/dribbble-logo-light.js';
+export * from './icons/dresser-light.js';
+export * from './icons/dress-light.js';
+export * from './icons/download-simple-light.js';
+export * from './icons/download-light.js';
+export * from './icons/dots-three-vertical-light.js';
+export * from './icons/dots-three-outline-vertical-light.js';
+export * from './icons/dots-three-outline-light.js';
+export * from './icons/dots-three-light.js';
+export * from './icons/dots-three-circle-vertical-light.js';
+export * from './icons/dots-three-circle-light.js';
+export * from './icons/dots-six-vertical-light.js';
+export * from './icons/dots-six-light.js';
+export * from './icons/dots-nine-light.js';
+export * from './icons/dot-outline-light.js';
+export * from './icons/dot-light.js';
+export * from './icons/door-open-light.js';
+export * from './icons/door-light.js';
+export * from './icons/dog-light.js';
+export * from './icons/dna-light.js';
+export * from './icons/divide-light.js';
+export * from './icons/discord-logo-light.js';
+export * from './icons/disco-ball-light.js';
+export * from './icons/disc-light.js';
+export * from './icons/dice-two-light.js';
+export * from './icons/dice-three-light.js';
+export * from './icons/dice-six-light.js';
+export * from './icons/dice-one-light.js';
+export * from './icons/dice-four-light.js';
+export * from './icons/dice-five-light.js';
+export * from './icons/diamonds-four-light.js';
+export * from './icons/diamond-light.js';
+export * from './icons/devices-light.js';
+export * from './icons/device-tablet-speaker-light.js';
+export * from './icons/device-tablet-light.js';
+export * from './icons/device-tablet-camera-light.js';
+export * from './icons/device-rotate-light.js';
+export * from './icons/device-mobile-speaker-light.js';
+export * from './icons/device-mobile-slash-light.js';
+export * from './icons/device-mobile-light.js';
+export * from './icons/device-mobile-camera-light.js';
+export * from './icons/dev-to-logo-light.js';
+export * from './icons/detective-light.js';
+export * from './icons/desktop-tower-light.js';
+export * from './icons/desktop-light.js';
+export * from './icons/desk-light.js';
+export * from './icons/database-light.js';
+export * from './icons/cylinder-light.js';
+export * from './icons/cursor-text-light.js';
+export * from './icons/cursor-light.js';
+export * from './icons/cursor-click-light.js';
+export * from './icons/currency-rub-light.js';
+export * from './icons/currency-ngn-light.js';
+export * from './icons/currency-kzt-light.js';
+export * from './icons/currency-krw-light.js';
+export * from './icons/currency-jpy-light.js';
+export * from './icons/currency-inr-light.js';
+export * from './icons/currency-gbp-light.js';
+export * from './icons/currency-eur-light.js';
+export * from './icons/currency-eth-light.js';
+export * from './icons/currency-dollar-simple-light.js';
+export * from './icons/currency-dollar-light.js';
+export * from './icons/currency-cny-light.js';
+export * from './icons/currency-circle-dollar-light.js';
+export * from './icons/currency-btc-light.js';
+export * from './icons/cube-transparent-light.js';
+export * from './icons/cube-light.js';
+export * from './icons/cube-focus-light.js';
+export * from './icons/crown-simple-light.js';
+export * from './icons/crown-light.js';
+export * from './icons/crown-cross-light.js';
+export * from './icons/crosshair-simple-light.js';
+export * from './icons/crosshair-light.js';
+export * from './icons/cross-light.js';
+export * from './icons/crop-light.js';
+export * from './icons/cricket-light.js';
+export * from './icons/credit-card-light.js';
+export * from './icons/crane-tower-light.js';
+export * from './icons/crane-light.js';
+export * from './icons/cpu-light.js';
+export * from './icons/cowboy-hat-light.js';
+export * from './icons/cow-light.js';
+export * from './icons/court-basketball-light.js';
+export * from './icons/couch-light.js';
+export * from './icons/corners-out-light.js';
+export * from './icons/corners-in-light.js';
+export * from './icons/copyright-light.js';
+export * from './icons/copyleft-light.js';
+export * from './icons/copy-simple-light.js';
+export * from './icons/copy-light.js';
+export * from './icons/cooking-pot-light.js';
+export * from './icons/cookie-light.js';
+export * from './icons/control-light.js';
+export * from './icons/contactless-payment-light.js';
+export * from './icons/confetti-light.js';
+export * from './icons/computer-tower-light.js';
+export * from './icons/compass-tool-light.js';
+export * from './icons/compass-rose-light.js';
+export * from './icons/compass-light.js';
+export * from './icons/command-light.js';
+export * from './icons/columns-plus-right-light.js';
+export * from './icons/columns-plus-left-light.js';
+export * from './icons/columns-light.js';
+export * from './icons/coins-light.js';
+export * from './icons/coin-vertical-light.js';
+export * from './icons/coin-light.js';
+export * from './icons/coffee-light.js';
+export * from './icons/coffee-bean-light.js';
+export * from './icons/codesandbox-logo-light.js';
+export * from './icons/codepen-logo-light.js';
+export * from './icons/code-simple-light.js';
+export * from './icons/code-light.js';
+export * from './icons/code-block-light.js';
+export * from './icons/coda-logo-light.js';
+export * from './icons/coat-hanger-light.js';
+export * from './icons/club-light.js';
+export * from './icons/clover-light.js';
+export * from './icons/cloud-x-light.js';
+export * from './icons/cloud-warning-light.js';
+export * from './icons/cloud-sun-light.js';
+export * from './icons/cloud-snow-light.js';
+export * from './icons/cloud-slash-light.js';
+export * from './icons/cloud-rain-light.js';
+export * from './icons/cloud-moon-light.js';
+export * from './icons/cloud-lightning-light.js';
+export * from './icons/cloud-light.js';
+export * from './icons/cloud-fog-light.js';
+export * from './icons/cloud-check-light.js';
+export * from './icons/cloud-arrow-up-light.js';
+export * from './icons/cloud-arrow-down-light.js';
+export * from './icons/closed-captioning-light.js';
+export * from './icons/clock-user-light.js';
+export * from './icons/clock-light.js';
+export * from './icons/clock-counter-clockwise-light.js';
+export * from './icons/clock-countdown-light.js';
+export * from './icons/clock-clockwise-light.js';
+export * from './icons/clock-afternoon-light.js';
+export * from './icons/clipboard-text-light.js';
+export * from './icons/clipboard-light.js';
+export * from './icons/city-light.js';
+export * from './icons/circuitry-light.js';
+export * from './icons/circles-three-plus-light.js';
+export * from './icons/circles-three-light.js';
+export * from './icons/circles-four-light.js';
+export * from './icons/circle-notch-light.js';
+export * from './icons/circle-light.js';
+export * from './icons/circle-half-tilt-light.js';
+export * from './icons/circle-half-light.js';
+export * from './icons/circle-dashed-light.js';
+export * from './icons/cigarette-slash-light.js';
+export * from './icons/cigarette-light.js';
+export * from './icons/church-light.js';
+export * from './icons/cherries-light.js';
+export * from './icons/chef-hat-light.js';
+export * from './icons/cheese-light.js';
+export * from './icons/cheers-light.js';
+export * from './icons/checks-light.js';
+export * from './icons/checkerboard-light.js';
+export * from './icons/check-square-offset-light.js';
+export * from './icons/check-square-light.js';
+export * from './icons/check-light.js';
+export * from './icons/check-fat-light.js';
+export * from './icons/check-circle-light.js';
+export * from './icons/chats-teardrop-light.js';
+export * from './icons/chats-light.js';
+export * from './icons/chats-circle-light.js';
+export * from './icons/chat-text-light.js';
+export * from './icons/chat-teardrop-text-light.js';
+export * from './icons/chat-teardrop-slash-light.js';
+export * from './icons/chat-teardrop-light.js';
+export * from './icons/chat-teardrop-dots-light.js';
+export * from './icons/chat-slash-light.js';
+export * from './icons/chat-light.js';
+export * from './icons/chat-dots-light.js';
+export * from './icons/chat-circle-text-light.js';
+export * from './icons/chat-circle-slash-light.js';
+export * from './icons/chat-circle-light.js';
+export * from './icons/chat-circle-dots-light.js';
+export * from './icons/chat-centered-text-light.js';
+export * from './icons/chat-centered-slash-light.js';
+export * from './icons/chat-centered-light.js';
+export * from './icons/chat-centered-dots-light.js';
+export * from './icons/chart-scatter-light.js';
+export * from './icons/chart-polar-light.js';
+export * from './icons/chart-pie-slice-light.js';
+export * from './icons/chart-pie-light.js';
+export * from './icons/chart-line-up-light.js';
+export * from './icons/chart-line-light.js';
+export * from './icons/chart-line-down-light.js';
+export * from './icons/chart-donut-light.js';
+export * from './icons/chart-bar-light.js';
+export * from './icons/chart-bar-horizontal-light.js';
+export * from './icons/charging-station-light.js';
+export * from './icons/champagne-light.js';
+export * from './icons/chalkboard-teacher-light.js';
+export * from './icons/chalkboard-simple-light.js';
+export * from './icons/chalkboard-light.js';
+export * from './icons/chair-light.js';
+export * from './icons/certificate-light.js';
+export * from './icons/cell-tower-light.js';
+export * from './icons/cell-signal-x-light.js';
+export * from './icons/cell-signal-slash-light.js';
+export * from './icons/cell-signal-none-light.js';
+export * from './icons/cell-signal-medium-light.js';
+export * from './icons/cell-signal-low-light.js';
+export * from './icons/cell-signal-high-light.js';
+export * from './icons/cell-signal-full-light.js';
+export * from './icons/cat-light.js';
+export * from './icons/castle-turret-light.js';
+export * from './icons/cassette-tape-light.js';
+export * from './icons/cash-register-light.js';
+export * from './icons/carrot-light.js';
+export * from './icons/caret-up-light.js';
+export * from './icons/caret-up-down-light.js';
+export * from './icons/caret-right-light.js';
+export * from './icons/caret-line-up-light.js';
+export * from './icons/caret-line-right-light.js';
+export * from './icons/caret-line-left-light.js';
+export * from './icons/caret-line-down-light.js';
+export * from './icons/caret-left-light.js';
+export * from './icons/caret-down-light.js';
+export * from './icons/caret-double-up-light.js';
+export * from './icons/caret-double-right-light.js';
+export * from './icons/caret-double-left-light.js';
+export * from './icons/caret-double-down-light.js';
+export * from './icons/caret-circle-up-light.js';
+export * from './icons/caret-circle-up-down-light.js';
+export * from './icons/caret-circle-right-light.js';
+export * from './icons/caret-circle-left-light.js';
+export * from './icons/caret-circle-down-light.js';
+export * from './icons/caret-circle-double-up-light.js';
+export * from './icons/caret-circle-double-right-light.js';
+export * from './icons/caret-circle-double-left-light.js';
+export * from './icons/caret-circle-double-down-light.js';
+export * from './icons/cards-three-light.js';
+export * from './icons/cards-light.js';
+export * from './icons/cardholder-light.js';
+export * from './icons/car-simple-light.js';
+export * from './icons/car-profile-light.js';
+export * from './icons/car-light.js';
+export * from './icons/car-battery-light.js';
+export * from './icons/campfire-light.js';
+export * from './icons/camera-slash-light.js';
+export * from './icons/camera-rotate-light.js';
+export * from './icons/camera-plus-light.js';
+export * from './icons/camera-light.js';
+export * from './icons/call-bell-light.js';
+export * from './icons/calendar-x-light.js';
+export * from './icons/calendar-star-light.js';
+export * from './icons/calendar-slash-light.js';
+export * from './icons/calendar-plus-light.js';
+export * from './icons/calendar-minus-light.js';
+export * from './icons/calendar-light.js';
+export * from './icons/calendar-heart-light.js';
+export * from './icons/calendar-dots-light.js';
+export * from './icons/calendar-dot-light.js';
+export * from './icons/calendar-check-light.js';
+export * from './icons/calendar-blank-light.js';
+export * from './icons/calculator-light.js';
+export * from './icons/cake-light.js';
+export * from './icons/cactus-light.js';
+export * from './icons/cable-car-light.js';
+export * from './icons/butterfly-light.js';
+export * from './icons/bus-light.js';
+export * from './icons/bulldozer-light.js';
+export * from './icons/buildings-light.js';
+export * from './icons/building-office-light.js';
+export * from './icons/building-light.js';
+export * from './icons/building-apartment-light.js';
+export * from './icons/bug-light.js';
+export * from './icons/bug-droid-light.js';
+export * from './icons/bug-beetle-light.js';
+export * from './icons/browsers-light.js';
+export * from './icons/browser-light.js';
+export * from './icons/broom-light.js';
+export * from './icons/broadcast-light.js';
+export * from './icons/briefcase-metal-light.js';
+export * from './icons/briefcase-light.js';
+export * from './icons/bridge-light.js';
+export * from './icons/bread-light.js';
+export * from './icons/brandy-light.js';
+export * from './icons/brain-light.js';
+export * from './icons/brackets-square-light.js';
+export * from './icons/brackets-round-light.js';
+export * from './icons/brackets-curly-light.js';
+export * from './icons/brackets-angle-light.js';
+export * from './icons/boxing-glove-light.js';
+export * from './icons/box-arrow-up-light.js';
+export * from './icons/box-arrow-down-light.js';
+export * from './icons/bowling-ball-light.js';
+export * from './icons/bowl-steam-light.js';
+export * from './icons/bowl-food-light.js';
+export * from './icons/bounding-box-light.js';
+export * from './icons/boules-light.js';
+export * from './icons/boot-light.js';
+export * from './icons/books-light.js';
+export * from './icons/bookmarks-simple-light.js';
+export * from './icons/bookmarks-light.js';
+export * from './icons/bookmark-simple-light.js';
+export * from './icons/bookmark-light.js';
+export * from './icons/book-open-user-light.js';
+export * from './icons/book-open-text-light.js';
+export * from './icons/book-open-light.js';
+export * from './icons/book-light.js';
+export * from './icons/book-bookmark-light.js';
+export * from './icons/bone-light.js';
+export * from './icons/bomb-light.js';
+export * from './icons/boat-light.js';
+export * from './icons/bluetooth-x-light.js';
+export * from './icons/bluetooth-slash-light.js';
+export * from './icons/bluetooth-light.js';
+export * from './icons/bluetooth-connected-light.js';
+export * from './icons/blueprint-light.js';
+export * from './icons/bird-light.js';
+export * from './icons/biohazard-light.js';
+export * from './icons/binoculars-light.js';
+export * from './icons/binary-light.js';
+export * from './icons/bicycle-light.js';
+export * from './icons/bezier-curve-light.js';
+export * from './icons/belt-light.js';
+export * from './icons/bell-z-light.js';
+export * from './icons/bell-slash-light.js';
+export * from './icons/bell-simple-z-light.js';
+export * from './icons/bell-simple-slash-light.js';
+export * from './icons/bell-simple-ringing-light.js';
+export * from './icons/bell-simple-light.js';
+export * from './icons/bell-ringing-light.js';
+export * from './icons/bell-light.js';
+export * from './icons/behance-logo-light.js';
+export * from './icons/beer-stein-light.js';
+export * from './icons/beer-bottle-light.js';
+export * from './icons/bed-light.js';
+export * from './icons/beanie-light.js';
+export * from './icons/beach-ball-light.js';
+export * from './icons/battery-warning-vertical-light.js';
+export * from './icons/battery-warning-light.js';
+export * from './icons/battery-vertical-medium-light.js';
+export * from './icons/battery-vertical-low-light.js';
+export * from './icons/battery-vertical-high-light.js';
+export * from './icons/battery-vertical-full-light.js';
+export * from './icons/battery-vertical-empty-light.js';
+export * from './icons/battery-plus-vertical-light.js';
+export * from './icons/battery-plus-light.js';
+export * from './icons/battery-medium-light.js';
+export * from './icons/battery-low-light.js';
+export * from './icons/battery-high-light.js';
+export * from './icons/battery-full-light.js';
+export * from './icons/battery-empty-light.js';
+export * from './icons/battery-charging-vertical-light.js';
+export * from './icons/battery-charging-light.js';
+export * from './icons/bathtub-light.js';
+export * from './icons/basketball-light.js';
+export * from './icons/basket-light.js';
+export * from './icons/baseball-light.js';
+export * from './icons/baseball-helmet-light.js';
+export * from './icons/baseball-cap-light.js';
+export * from './icons/barricade-light.js';
+export * from './icons/barn-light.js';
+export * from './icons/barcode-light.js';
+export * from './icons/barbell-light.js';
+export * from './icons/bank-light.js';
+export * from './icons/bandaids-light.js';
+export * from './icons/balloon-light.js';
+export * from './icons/bag-simple-light.js';
+export * from './icons/bag-light.js';
+export * from './icons/backspace-light.js';
+export * from './icons/backpack-light.js';
+export * from './icons/baby-light.js';
+export * from './icons/baby-carriage-light.js';
+export * from './icons/axe-light.js';
+export * from './icons/avocado-light.js';
+export * from './icons/atom-light.js';
+export * from './icons/at-light.js';
+export * from './icons/asterisk-simple-light.js';
+export * from './icons/asterisk-light.js';
+export * from './icons/asclepius-light.js';
+export * from './icons/article-ny-times-light.js';
+export * from './icons/article-medium-light.js';
+export * from './icons/article-light.js';
+export * from './icons/arrows-vertical-light.js';
+export * from './icons/arrows-split-light.js';
+export * from './icons/arrows-out-simple-light.js';
+export * from './icons/arrows-out-line-vertical-light.js';
+export * from './icons/arrows-out-line-horizontal-light.js';
+export * from './icons/arrows-out-light.js';
+export * from './icons/arrows-out-cardinal-light.js';
+export * from './icons/arrows-merge-light.js';
+export * from './icons/arrows-left-right-light.js';
+export * from './icons/arrows-in-simple-light.js';
+export * from './icons/arrows-in-line-vertical-light.js';
+export * from './icons/arrows-in-line-horizontal-light.js';
+export * from './icons/arrows-in-light.js';
+export * from './icons/arrows-in-cardinal-light.js';
+export * from './icons/arrows-horizontal-light.js';
+export * from './icons/arrows-down-up-light.js';
+export * from './icons/arrows-counter-clockwise-light.js';
+export * from './icons/arrows-clockwise-light.js';
+export * from './icons/arrow-up-right-light.js';
+export * from './icons/arrow-up-light.js';
+export * from './icons/arrow-up-left-light.js';
+export * from './icons/arrow-u-up-right-light.js';
+export * from './icons/arrow-u-up-left-light.js';
+export * from './icons/arrow-u-right-up-light.js';
+export * from './icons/arrow-u-right-down-light.js';
+export * from './icons/arrow-u-left-up-light.js';
+export * from './icons/arrow-u-left-down-light.js';
+export * from './icons/arrow-u-down-right-light.js';
+export * from './icons/arrow-u-down-left-light.js';
+export * from './icons/arrow-square-up-right-light.js';
+export * from './icons/arrow-square-up-light.js';
+export * from './icons/arrow-square-up-left-light.js';
+export * from './icons/arrow-square-right-light.js';
+export * from './icons/arrow-square-out-light.js';
+export * from './icons/arrow-square-left-light.js';
+export * from './icons/arrow-square-in-light.js';
+export * from './icons/arrow-square-down-right-light.js';
+export * from './icons/arrow-square-down-light.js';
+export * from './icons/arrow-square-down-left-light.js';
+export * from './icons/arrow-right-light.js';
+export * from './icons/arrow-line-up-right-light.js';
+export * from './icons/arrow-line-up-light.js';
+export * from './icons/arrow-line-up-left-light.js';
+export * from './icons/arrow-line-right-light.js';
+export * from './icons/arrow-line-left-light.js';
+export * from './icons/arrow-line-down-right-light.js';
+export * from './icons/arrow-line-down-light.js';
+export * from './icons/arrow-line-down-left-light.js';
+export * from './icons/arrow-left-light.js';
+export * from './icons/arrow-fat-up-light.js';
+export * from './icons/arrow-fat-right-light.js';
+export * from './icons/arrow-fat-lines-up-light.js';
+export * from './icons/arrow-fat-lines-right-light.js';
+export * from './icons/arrow-fat-lines-left-light.js';
+export * from './icons/arrow-fat-lines-down-light.js';
+export * from './icons/arrow-fat-line-up-light.js';
+export * from './icons/arrow-fat-line-right-light.js';
+export * from './icons/arrow-fat-line-left-light.js';
+export * from './icons/arrow-fat-line-down-light.js';
+export * from './icons/arrow-fat-left-light.js';
+export * from './icons/arrow-fat-down-light.js';
+export * from './icons/arrow-elbow-up-right-light.js';
+export * from './icons/arrow-elbow-up-left-light.js';
+export * from './icons/arrow-elbow-right-up-light.js';
+export * from './icons/arrow-elbow-right-light.js';
+export * from './icons/arrow-elbow-right-down-light.js';
+export * from './icons/arrow-elbow-left-up-light.js';
+export * from './icons/arrow-elbow-left-light.js';
+export * from './icons/arrow-elbow-left-down-light.js';
+export * from './icons/arrow-elbow-down-right-light.js';
+export * from './icons/arrow-elbow-down-left-light.js';
+export * from './icons/arrow-down-right-light.js';
+export * from './icons/arrow-down-light.js';
+export * from './icons/arrow-down-left-light.js';
+export * from './icons/arrow-counter-clockwise-light.js';
+export * from './icons/arrow-clockwise-light.js';
+export * from './icons/arrow-circle-up-right-light.js';
+export * from './icons/arrow-circle-up-light.js';
+export * from './icons/arrow-circle-up-left-light.js';
+export * from './icons/arrow-circle-right-light.js';
+export * from './icons/arrow-circle-left-light.js';
+export * from './icons/arrow-circle-down-right-light.js';
+export * from './icons/arrow-circle-down-light.js';
+export * from './icons/arrow-circle-down-left-light.js';
+export * from './icons/arrow-bend-up-right-light.js';
+export * from './icons/arrow-bend-up-left-light.js';
+export * from './icons/arrow-bend-right-up-light.js';
+export * from './icons/arrow-bend-right-down-light.js';
+export * from './icons/arrow-bend-left-up-light.js';
+export * from './icons/arrow-bend-left-down-light.js';
+export * from './icons/arrow-bend-down-right-light.js';
+export * from './icons/arrow-bend-down-left-light.js';
+export * from './icons/arrow-bend-double-up-right-light.js';
+export * from './icons/arrow-bend-double-up-left-light.js';
+export * from './icons/arrow-arc-right-light.js';
+export * from './icons/arrow-arc-left-light.js';
+export * from './icons/armchair-light.js';
+export * from './icons/archive-light.js';
+export * from './icons/approximate-equals-light.js';
+export * from './icons/apple-podcasts-logo-light.js';
+export * from './icons/apple-logo-light.js';
+export * from './icons/app-window-light.js';
+export * from './icons/app-store-logo-light.js';
+export * from './icons/aperture-light.js';
+export * from './icons/angular-logo-light.js';
+export * from './icons/angle-light.js';
+export * from './icons/android-logo-light.js';
+export * from './icons/anchor-simple-light.js';
+export * from './icons/anchor-light.js';
+export * from './icons/ambulance-light.js';
+export * from './icons/amazon-logo-light.js';
+export * from './icons/align-top-simple-light.js';
+export * from './icons/align-top-light.js';
+export * from './icons/align-right-simple-light.js';
+export * from './icons/align-right-light.js';
+export * from './icons/align-left-simple-light.js';
+export * from './icons/align-left-light.js';
+export * from './icons/align-center-vertical-simple-light.js';
+export * from './icons/align-center-vertical-light.js';
+export * from './icons/align-center-horizontal-simple-light.js';
+export * from './icons/align-center-horizontal-light.js';
+export * from './icons/align-bottom-simple-light.js';
+export * from './icons/align-bottom-light.js';
+export * from './icons/alien-light.js';
+export * from './icons/alarm-light.js';
+export * from './icons/airplay-light.js';
+export * from './icons/airplane-tilt-light.js';
+export * from './icons/airplane-taxiing-light.js';
+export * from './icons/airplane-takeoff-light.js';
+export * from './icons/airplane-light.js';
+export * from './icons/airplane-landing-light.js';
+export * from './icons/airplane-in-flight-light.js';
+export * from './icons/air-traffic-control-light.js';
+export * from './icons/address-book-tabs-light.js';
+export * from './icons/address-book-light.js';
+export * from './icons/acorn-light.js';
+export * from './icons/youtube-logo-fill.js';
+export * from './icons/yin-yang-fill.js';
+export * from './icons/yarn-fill.js';
+export * from './icons/x-square-fill.js';
+export * from './icons/x-logo-fill.js';
+export * from './icons/x-fill.js';
+export * from './icons/x-circle-fill.js';
+export * from './icons/wrench-fill.js';
+export * from './icons/wine-fill.js';
+export * from './icons/windows-logo-fill.js';
+export * from './icons/windmill-fill.js';
+export * from './icons/wind-fill.js';
+export * from './icons/wifi-x-fill.js';
+export * from './icons/wifi-slash-fill.js';
+export * from './icons/wifi-none-fill.js';
+export * from './icons/wifi-medium-fill.js';
+export * from './icons/wifi-low-fill.js';
+export * from './icons/wifi-high-fill.js';
+export * from './icons/wheelchair-motion-fill.js';
+export * from './icons/wheelchair-fill.js';
+export * from './icons/whatsapp-logo-fill.js';
+export * from './icons/wechat-logo-fill.js';
+export * from './icons/webhooks-logo-fill.js';
+export * from './icons/webcam-slash-fill.js';
+export * from './icons/webcam-fill.js';
+export * from './icons/waves-fill.js';
+export * from './icons/waveform-slash-fill.js';
+export * from './icons/waveform-fill.js';
+export * from './icons/wave-triangle-fill.js';
+export * from './icons/wave-square-fill.js';
+export * from './icons/wave-sine-fill.js';
+export * from './icons/wave-sawtooth-fill.js';
+export * from './icons/watch-fill.js';
+export * from './icons/washing-machine-fill.js';
+export * from './icons/warning-octagon-fill.js';
+export * from './icons/warning-fill.js';
+export * from './icons/warning-diamond-fill.js';
+export * from './icons/warning-circle-fill.js';
+export * from './icons/warehouse-fill.js';
+export * from './icons/wallet-fill.js';
+export * from './icons/wall-fill.js';
+export * from './icons/volleyball-fill.js';
+export * from './icons/voicemail-fill.js';
+export * from './icons/visor-fill.js';
+export * from './icons/virus-fill.js';
+export * from './icons/virtual-reality-fill.js';
+export * from './icons/vinyl-record-fill.js';
+export * from './icons/vignette-fill.js';
+export * from './icons/video-fill.js';
+export * from './icons/video-conference-fill.js';
+export * from './icons/video-camera-slash-fill.js';
+export * from './icons/video-camera-fill.js';
+export * from './icons/vibrate-fill.js';
+export * from './icons/vector-two-fill.js';
+export * from './icons/vector-three-fill.js';
+export * from './icons/vault-fill.js';
+export * from './icons/van-fill.js';
+export * from './icons/users-three-fill.js';
+export * from './icons/users-four-fill.js';
+export * from './icons/users-fill.js';
+export * from './icons/user-switch-fill.js';
+export * from './icons/user-square-fill.js';
+export * from './icons/user-sound-fill.js';
+export * from './icons/user-rectangle-fill.js';
+export * from './icons/user-plus-fill.js';
+export * from './icons/user-minus-fill.js';
+export * from './icons/user-list-fill.js';
+export * from './icons/user-gear-fill.js';
+export * from './icons/user-focus-fill.js';
+export * from './icons/user-fill.js';
+export * from './icons/user-circle-plus-fill.js';
+export * from './icons/user-circle-minus-fill.js';
+export * from './icons/user-circle-gear-fill.js';
+export * from './icons/user-circle-fill.js';
+export * from './icons/user-circle-dashed-fill.js';
+export * from './icons/user-circle-check-fill.js';
+export * from './icons/user-check-fill.js';
+export * from './icons/usb-fill.js';
+export * from './icons/upload-simple-fill.js';
+export * from './icons/upload-fill.js';
+export * from './icons/unite-square-fill.js';
+export * from './icons/unite-fill.js';
+export * from './icons/union-fill.js';
+export * from './icons/umbrella-simple-fill.js';
+export * from './icons/umbrella-fill.js';
+export * from './icons/twitter-logo-fill.js';
+export * from './icons/twitch-logo-fill.js';
+export * from './icons/tumblr-logo-fill.js';
+export * from './icons/truck-trailer-fill.js';
+export * from './icons/truck-fill.js';
+export * from './icons/trophy-fill.js';
+export * from './icons/trolley-suitcase-fill.js';
+export * from './icons/trolley-fill.js';
+export * from './icons/triangle-fill.js';
+export * from './icons/triangle-dashed-fill.js';
+export * from './icons/trend-up-fill.js';
+export * from './icons/trend-down-fill.js';
+export * from './icons/tree-view-fill.js';
+export * from './icons/tree-structure-fill.js';
+export * from './icons/tree-palm-fill.js';
+export * from './icons/tree-fill.js';
+export * from './icons/tree-evergreen-fill.js';
+export * from './icons/treasure-chest-fill.js';
+export * from './icons/tray-fill.js';
+export * from './icons/tray-arrow-up-fill.js';
+export * from './icons/tray-arrow-down-fill.js';
+export * from './icons/trash-simple-fill.js';
+export * from './icons/trash-fill.js';
+export * from './icons/translate-fill.js';
+export * from './icons/tram-fill.js';
+export * from './icons/train-simple-fill.js';
+export * from './icons/train-regional-fill.js';
+export * from './icons/train-fill.js';
+export * from './icons/traffic-signal-fill.js';
+export * from './icons/traffic-sign-fill.js';
+export * from './icons/traffic-cone-fill.js';
+export * from './icons/trademark-registered-fill.js';
+export * from './icons/trademark-fill.js';
+export * from './icons/tractor-fill.js';
+export * from './icons/towel-fill.js';
+export * from './icons/tote-simple-fill.js';
+export * from './icons/tote-fill.js';
+export * from './icons/tornado-fill.js';
+export * from './icons/tooth-fill.js';
+export * from './icons/toolbox-fill.js';
+export * from './icons/toilet-paper-fill.js';
+export * from './icons/toilet-fill.js';
+export * from './icons/toggle-right-fill.js';
+export * from './icons/toggle-left-fill.js';
+export * from './icons/tire-fill.js';
+export * from './icons/tipi-fill.js';
+export * from './icons/tip-jar-fill.js';
+export * from './icons/timer-fill.js';
+export * from './icons/tilde-fill.js';
+export * from './icons/tiktok-logo-fill.js';
+export * from './icons/tidal-logo-fill.js';
+export * from './icons/ticket-fill.js';
+export * from './icons/thumbs-up-fill.js';
+export * from './icons/thumbs-down-fill.js';
+export * from './icons/three-d-fill.js';
+export * from './icons/threads-logo-fill.js';
+export * from './icons/thermometer-simple-fill.js';
+export * from './icons/thermometer-hot-fill.js';
+export * from './icons/thermometer-fill.js';
+export * from './icons/thermometer-cold-fill.js';
+export * from './icons/textbox-fill.js';
+export * from './icons/text-underline-fill.js';
+export * from './icons/text-t-slash-fill.js';
+export * from './icons/text-t-fill.js';
+export * from './icons/text-superscript-fill.js';
+export * from './icons/text-subscript-fill.js';
+export * from './icons/text-strikethrough-fill.js';
+export * from './icons/text-outdent-fill.js';
+export * from './icons/text-italic-fill.js';
+export * from './icons/text-indent-fill.js';
+export * from './icons/text-h-two-fill.js';
+export * from './icons/text-h-three-fill.js';
+export * from './icons/text-h-six-fill.js';
+export * from './icons/text-h-one-fill.js';
+export * from './icons/text-h-four-fill.js';
+export * from './icons/text-h-five-fill.js';
+export * from './icons/text-h-fill.js';
+export * from './icons/text-columns-fill.js';
+export * from './icons/text-b-fill.js';
+export * from './icons/text-align-right-fill.js';
+export * from './icons/text-align-left-fill.js';
+export * from './icons/text-align-justify-fill.js';
+export * from './icons/text-align-center-fill.js';
+export * from './icons/text-aa-fill.js';
+export * from './icons/text-a-underline-fill.js';
+export * from './icons/test-tube-fill.js';
+export * from './icons/terminal-window-fill.js';
+export * from './icons/terminal-fill.js';
+export * from './icons/tent-fill.js';
+export * from './icons/tennis-ball-fill.js';
+export * from './icons/television-simple-fill.js';
+export * from './icons/television-fill.js';
+export * from './icons/telegram-logo-fill.js';
+export * from './icons/tea-bag-fill.js';
+export * from './icons/taxi-fill.js';
+export * from './icons/target-fill.js';
+export * from './icons/tag-simple-fill.js';
+export * from './icons/tag-fill.js';
+export * from './icons/tag-chevron-fill.js';
+export * from './icons/tabs-fill.js';
+export * from './icons/table-fill.js';
+export * from './icons/t-shirt-fill.js';
+export * from './icons/syringe-fill.js';
+export * from './icons/synagogue-fill.js';
+export * from './icons/sword-fill.js';
+export * from './icons/swimming-pool-fill.js';
+export * from './icons/swatches-fill.js';
+export * from './icons/swap-fill.js';
+export * from './icons/superset-proper-of-fill.js';
+export * from './icons/superset-of-fill.js';
+export * from './icons/sunglasses-fill.js';
+export * from './icons/sun-horizon-fill.js';
+export * from './icons/sun-fill.js';
+export * from './icons/sun-dim-fill.js';
+export * from './icons/suitcase-simple-fill.js';
+export * from './icons/suitcase-rolling-fill.js';
+export * from './icons/suitcase-fill.js';
+export * from './icons/subway-fill.js';
+export * from './icons/subtract-square-fill.js';
+export * from './icons/subtract-fill.js';
+export * from './icons/subtitles-slash-fill.js';
+export * from './icons/subtitles-fill.js';
+export * from './icons/subset-proper-of-fill.js';
+export * from './icons/subset-of-fill.js';
+export * from './icons/student-fill.js';
+export * from './icons/stripe-logo-fill.js';
+export * from './icons/strategy-fill.js';
+export * from './icons/storefront-fill.js';
+export * from './icons/stop-fill.js';
+export * from './icons/stop-circle-fill.js';
+export * from './icons/stool-fill.js';
+export * from './icons/sticker-fill.js';
+export * from './icons/stethoscope-fill.js';
+export * from './icons/steps-fill.js';
+export * from './icons/steering-wheel-fill.js';
+export * from './icons/steam-logo-fill.js';
+export * from './icons/star-of-david-fill.js';
+export * from './icons/star-half-fill.js';
+export * from './icons/star-four-fill.js';
+export * from './icons/star-fill.js';
+export * from './icons/star-and-crescent-fill.js';
+export * from './icons/standard-definition-fill.js';
+export * from './icons/stamp-fill.js';
+export * from './icons/stairs-fill.js';
+export * from './icons/stack-simple-fill.js';
+export * from './icons/stack-plus-fill.js';
+export * from './icons/stack-overflow-logo-fill.js';
+export * from './icons/stack-minus-fill.js';
+export * from './icons/stack-fill.js';
+export * from './icons/squares-four-fill.js';
+export * from './icons/square-split-vertical-fill.js';
+export * from './icons/square-split-horizontal-fill.js';
+export * from './icons/square-logo-fill.js';
+export * from './icons/square-half-fill.js';
+export * from './icons/square-half-bottom-fill.js';
+export * from './icons/square-fill.js';
+export * from './icons/spray-bottle-fill.js';
+export * from './icons/spotify-logo-fill.js';
+export * from './icons/split-vertical-fill.js';
+export * from './icons/split-horizontal-fill.js';
+export * from './icons/spiral-fill.js';
+export * from './icons/spinner-gap-fill.js';
+export * from './icons/spinner-fill.js';
+export * from './icons/spinner-ball-fill.js';
+export * from './icons/sphere-fill.js';
+export * from './icons/speedometer-fill.js';
+export * from './icons/speaker-x-fill.js';
+export * from './icons/speaker-slash-fill.js';
+export * from './icons/speaker-simple-x-fill.js';
+export * from './icons/speaker-simple-slash-fill.js';
+export * from './icons/speaker-simple-none-fill.js';
+export * from './icons/speaker-simple-low-fill.js';
+export * from './icons/speaker-simple-high-fill.js';
+export * from './icons/speaker-none-fill.js';
+export * from './icons/speaker-low-fill.js';
+export * from './icons/speaker-high-fill.js';
+export * from './icons/speaker-hifi-fill.js';
+export * from './icons/sparkle-fill.js';
+export * from './icons/spade-fill.js';
+export * from './icons/soundcloud-logo-fill.js';
+export * from './icons/sort-descending-fill.js';
+export * from './icons/sort-ascending-fill.js';
+export * from './icons/solar-roof-fill.js';
+export * from './icons/solar-panel-fill.js';
+export * from './icons/sock-fill.js';
+export * from './icons/soccer-ball-fill.js';
+export * from './icons/snowflake-fill.js';
+export * from './icons/sneaker-move-fill.js';
+export * from './icons/sneaker-fill.js';
+export * from './icons/snapchat-logo-fill.js';
+export * from './icons/smiley-x-eyes-fill.js';
+export * from './icons/smiley-wink-fill.js';
+export * from './icons/smiley-sticker-fill.js';
+export * from './icons/smiley-sad-fill.js';
+export * from './icons/smiley-nervous-fill.js';
+export * from './icons/smiley-melting-fill.js';
+export * from './icons/smiley-meh-fill.js';
+export * from './icons/smiley-fill.js';
+export * from './icons/smiley-blank-fill.js';
+export * from './icons/smiley-angry-fill.js';
+export * from './icons/slideshow-fill.js';
+export * from './icons/sliders-horizontal-fill.js';
+export * from './icons/sliders-fill.js';
+export * from './icons/slack-logo-fill.js';
+export * from './icons/skype-logo-fill.js';
+export * from './icons/skull-fill.js';
+export * from './icons/skip-forward-fill.js';
+export * from './icons/skip-forward-circle-fill.js';
+export * from './icons/skip-back-fill.js';
+export * from './icons/skip-back-circle-fill.js';
+export * from './icons/sketch-logo-fill.js';
+export * from './icons/siren-fill.js';
+export * from './icons/sim-card-fill.js';
+export * from './icons/signpost-fill.js';
+export * from './icons/signature-fill.js';
+export * from './icons/sign-out-fill.js';
+export * from './icons/sign-in-fill.js';
+export * from './icons/sigma-fill.js';
+export * from './icons/sidebar-simple-fill.js';
+export * from './icons/sidebar-fill.js';
+export * from './icons/shuffle-simple-fill.js';
+export * from './icons/shuffle-fill.js';
+export * from './icons/shuffle-angular-fill.js';
+export * from './icons/shrimp-fill.js';
+export * from './icons/shower-fill.js';
+export * from './icons/shovel-fill.js';
+export * from './icons/shopping-cart-simple-fill.js';
+export * from './icons/shopping-cart-fill.js';
+export * from './icons/shopping-bag-open-fill.js';
+export * from './icons/shopping-bag-fill.js';
+export * from './icons/shooting-star-fill.js';
+export * from './icons/shirt-folded-fill.js';
+export * from './icons/shipping-container-fill.js';
+export * from './icons/shield-warning-fill.js';
+export * from './icons/shield-star-fill.js';
+export * from './icons/shield-slash-fill.js';
+export * from './icons/shield-plus-fill.js';
+export * from './icons/shield-fill.js';
+export * from './icons/shield-chevron-fill.js';
+export * from './icons/shield-checkered-fill.js';
+export * from './icons/shield-check-fill.js';
+export * from './icons/share-network-fill.js';
+export * from './icons/share-fill.js';
+export * from './icons/share-fat-fill.js';
+export * from './icons/shapes-fill.js';
+export * from './icons/selection-slash-fill.js';
+export * from './icons/selection-plus-fill.js';
+export * from './icons/selection-inverse-fill.js';
+export * from './icons/selection-foreground-fill.js';
+export * from './icons/selection-fill.js';
+export * from './icons/selection-background-fill.js';
+export * from './icons/selection-all-fill.js';
+export * from './icons/security-camera-fill.js';
+export * from './icons/seatbelt-fill.js';
+export * from './icons/seat-fill.js';
+export * from './icons/seal-warning-fill.js';
+export * from './icons/seal-question-fill.js';
+export * from './icons/seal-percent-fill.js';
+export * from './icons/seal-fill.js';
+export * from './icons/seal-check-fill.js';
+export * from './icons/scroll-fill.js';
+export * from './icons/scribble-loop-fill.js';
+export * from './icons/scribble-fill.js';
+export * from './icons/screwdriver-fill.js';
+export * from './icons/screencast-fill.js';
+export * from './icons/scooter-fill.js';
+export * from './icons/scissors-fill.js';
+export * from './icons/scan-smiley-fill.js';
+export * from './icons/scan-fill.js';
+export * from './icons/scales-fill.js';
+export * from './icons/sailboat-fill.js';
+export * from './icons/ruler-fill.js';
+export * from './icons/rug-fill.js';
+export * from './icons/rss-simple-fill.js';
+export * from './icons/rss-fill.js';
+export * from './icons/rows-plus-top-fill.js';
+export * from './icons/rows-plus-bottom-fill.js';
+export * from './icons/rows-fill.js';
+export * from './icons/rocket-launch-fill.js';
+export * from './icons/rocket-fill.js';
+export * from './icons/robot-fill.js';
+export * from './icons/road-horizon-fill.js';
+export * from './icons/rewind-fill.js';
+export * from './icons/rewind-circle-fill.js';
+export * from './icons/resize-fill.js';
+export * from './icons/replit-logo-fill.js';
+export * from './icons/repeat-once-fill.js';
+export * from './icons/repeat-fill.js';
+export * from './icons/reddit-logo-fill.js';
+export * from './icons/recycle-fill.js';
+export * from './icons/rectangle-fill.js';
+export * from './icons/rectangle-dashed-fill.js';
+export * from './icons/record-fill.js';
+export * from './icons/receipt-x-fill.js';
+export * from './icons/receipt-fill.js';
+export * from './icons/read-cv-logo-fill.js';
+export * from './icons/ranking-fill.js';
+export * from './icons/rainbow-fill.js';
+export * from './icons/rainbow-cloud-fill.js';
+export * from './icons/radioactive-fill.js';
+export * from './icons/radio-fill.js';
+export * from './icons/radio-button-fill.js';
+export * from './icons/radical-fill.js';
+export * from './icons/racquet-fill.js';
+export * from './icons/rabbit-fill.js';
+export * from './icons/quotes-fill.js';
+export * from './icons/queue-fill.js';
+export * from './icons/question-mark-fill.js';
+export * from './icons/question-fill.js';
+export * from './icons/qr-code-fill.js';
+export * from './icons/puzzle-piece-fill.js';
+export * from './icons/push-pin-slash-fill.js';
+export * from './icons/push-pin-simple-slash-fill.js';
+export * from './icons/push-pin-simple-fill.js';
+export * from './icons/push-pin-fill.js';
+export * from './icons/pulse-fill.js';
+export * from './icons/projector-screen-fill.js';
+export * from './icons/projector-screen-chart-fill.js';
+export * from './icons/prohibit-inset-fill.js';
+export * from './icons/prohibit-fill.js';
+export * from './icons/printer-fill.js';
+export * from './icons/presentation-fill.js';
+export * from './icons/presentation-chart-fill.js';
+export * from './icons/prescription-fill.js';
+export * from './icons/power-fill.js';
+export * from './icons/potted-plant-fill.js';
+export * from './icons/popsicle-fill.js';
+export * from './icons/popcorn-fill.js';
+export * from './icons/polygon-fill.js';
+export * from './icons/police-car-fill.js';
+export * from './icons/poker-chip-fill.js';
+export * from './icons/plus-square-fill.js';
+export * from './icons/plus-minus-fill.js';
+export * from './icons/plus-fill.js';
+export * from './icons/plus-circle-fill.js';
+export * from './icons/plugs-fill.js';
+export * from './icons/plugs-connected-fill.js';
+export * from './icons/plug-fill.js';
+export * from './icons/plug-charging-fill.js';
+export * from './icons/playlist-fill.js';
+export * from './icons/play-pause-fill.js';
+export * from './icons/play-fill.js';
+export * from './icons/play-circle-fill.js';
+export * from './icons/plant-fill.js';
+export * from './icons/planet-fill.js';
+export * from './icons/placeholder-fill.js';
+export * from './icons/pizza-fill.js';
+export * from './icons/pix-logo-fill.js';
+export * from './icons/pipe-wrench-fill.js';
+export * from './icons/pipe-fill.js';
+export * from './icons/pinwheel-fill.js';
+export * from './icons/pinterest-logo-fill.js';
+export * from './icons/pint-glass-fill.js';
+export * from './icons/ping-pong-fill.js';
+export * from './icons/pill-fill.js';
+export * from './icons/piggy-bank-fill.js';
+export * from './icons/picture-in-picture-fill.js';
+export * from './icons/picnic-table-fill.js';
+export * from './icons/piano-keys-fill.js';
+export * from './icons/pi-fill.js';
+export * from './icons/phosphor-logo-fill.js';
+export * from './icons/phone-x-fill.js';
+export * from './icons/phone-transfer-fill.js';
+export * from './icons/phone-slash-fill.js';
+export * from './icons/phone-plus-fill.js';
+export * from './icons/phone-pause-fill.js';
+export * from './icons/phone-outgoing-fill.js';
+export * from './icons/phone-list-fill.js';
+export * from './icons/phone-incoming-fill.js';
+export * from './icons/phone-fill.js';
+export * from './icons/phone-disconnect-fill.js';
+export * from './icons/phone-call-fill.js';
+export * from './icons/perspective-fill.js';
+export * from './icons/person-simple-walk-fill.js';
+export * from './icons/person-simple-throw-fill.js';
+export * from './icons/person-simple-tai-chi-fill.js';
+export * from './icons/person-simple-swim-fill.js';
+export * from './icons/person-simple-snowboard-fill.js';
+export * from './icons/person-simple-ski-fill.js';
+export * from './icons/person-simple-run-fill.js';
+export * from './icons/person-simple-hike-fill.js';
+export * from './icons/person-simple-fill.js';
+export * from './icons/person-simple-circle-fill.js';
+export * from './icons/person-simple-bike-fill.js';
+export * from './icons/person-fill.js';
+export * from './icons/person-arms-spread-fill.js';
+export * from './icons/percent-fill.js';
+export * from './icons/pepper-fill.js';
+export * from './icons/pentagram-fill.js';
+export * from './icons/pentagon-fill.js';
+export * from './icons/pencil-slash-fill.js';
+export * from './icons/pencil-simple-slash-fill.js';
+export * from './icons/pencil-simple-line-fill.js';
+export * from './icons/pencil-simple-fill.js';
+export * from './icons/pencil-ruler-fill.js';
+export * from './icons/pencil-line-fill.js';
+export * from './icons/pencil-fill.js';
+export * from './icons/pencil-circle-fill.js';
+export * from './icons/pen-nib-straight-fill.js';
+export * from './icons/pen-nib-fill.js';
+export * from './icons/pen-fill.js';
+export * from './icons/peace-fill.js';
+export * from './icons/paypal-logo-fill.js';
+export * from './icons/paw-print-fill.js';
+export * from './icons/pause-fill.js';
+export * from './icons/pause-circle-fill.js';
+export * from './icons/patreon-logo-fill.js';
+export * from './icons/path-fill.js';
+export * from './icons/password-fill.js';
+export * from './icons/park-fill.js';
+export * from './icons/parallelogram-fill.js';
+export * from './icons/paragraph-fill.js';
+export * from './icons/parachute-fill.js';
+export * from './icons/paperclip-horizontal-fill.js';
+export * from './icons/paperclip-fill.js';
+export * from './icons/paper-plane-tilt-fill.js';
+export * from './icons/paper-plane-right-fill.js';
+export * from './icons/paper-plane-fill.js';
+export * from './icons/pants-fill.js';
+export * from './icons/panorama-fill.js';
+export * from './icons/palette-fill.js';
+export * from './icons/paint-roller-fill.js';
+export * from './icons/paint-bucket-fill.js';
+export * from './icons/paint-brush-household-fill.js';
+export * from './icons/paint-brush-fill.js';
+export * from './icons/paint-brush-broad-fill.js';
+export * from './icons/package-fill.js';
+export * from './icons/oven-fill.js';
+export * from './icons/orange-slice-fill.js';
+export * from './icons/orange-fill.js';
+export * from './icons/option-fill.js';
+export * from './icons/open-ai-logo-fill.js';
+export * from './icons/onigiri-fill.js';
+export * from './icons/office-chair-fill.js';
+export * from './icons/octagon-fill.js';
+export * from './icons/ny-times-logo-fill.js';
+export * from './icons/nut-fill.js';
+export * from './icons/numpad-fill.js';
+export * from './icons/number-zero-fill.js';
+export * from './icons/number-two-fill.js';
+export * from './icons/number-three-fill.js';
+export * from './icons/number-square-zero-fill.js';
+export * from './icons/number-square-two-fill.js';
+export * from './icons/number-square-three-fill.js';
+export * from './icons/number-square-six-fill.js';
+export * from './icons/number-square-seven-fill.js';
+export * from './icons/number-square-one-fill.js';
+export * from './icons/number-square-nine-fill.js';
+export * from './icons/number-square-four-fill.js';
+export * from './icons/number-square-five-fill.js';
+export * from './icons/number-square-eight-fill.js';
+export * from './icons/number-six-fill.js';
+export * from './icons/number-seven-fill.js';
+export * from './icons/number-one-fill.js';
+export * from './icons/number-nine-fill.js';
+export * from './icons/number-four-fill.js';
+export * from './icons/number-five-fill.js';
+export * from './icons/number-eight-fill.js';
+export * from './icons/number-circle-zero-fill.js';
+export * from './icons/number-circle-two-fill.js';
+export * from './icons/number-circle-three-fill.js';
+export * from './icons/number-circle-six-fill.js';
+export * from './icons/number-circle-seven-fill.js';
+export * from './icons/number-circle-one-fill.js';
+export * from './icons/number-circle-nine-fill.js';
+export * from './icons/number-circle-four-fill.js';
+export * from './icons/number-circle-five-fill.js';
+export * from './icons/number-circle-eight-fill.js';
+export * from './icons/nuclear-plant-fill.js';
+export * from './icons/notion-logo-fill.js';
+export * from './icons/notification-fill.js';
+export * from './icons/notepad-fill.js';
+export * from './icons/notebook-fill.js';
+export * from './icons/note-pencil-fill.js';
+export * from './icons/note-fill.js';
+export * from './icons/note-blank-fill.js';
+export * from './icons/notches-fill.js';
+export * from './icons/not-superset-of-fill.js';
+export * from './icons/not-subset-of-fill.js';
+export * from './icons/not-member-of-fill.js';
+export * from './icons/not-equals-fill.js';
+export * from './icons/newspaper-fill.js';
+export * from './icons/newspaper-clipping-fill.js';
+export * from './icons/network-x-fill.js';
+export * from './icons/network-slash-fill.js';
+export * from './icons/network-fill.js';
+export * from './icons/needle-fill.js';
+export * from './icons/navigation-arrow-fill.js';
+export * from './icons/music-notes-simple-fill.js';
+export * from './icons/music-notes-plus-fill.js';
+export * from './icons/music-notes-minus-fill.js';
+export * from './icons/music-notes-fill.js';
+export * from './icons/music-note-simple-fill.js';
+export * from './icons/music-note-fill.js';
+export * from './icons/mouse-simple-fill.js';
+export * from './icons/mouse-scroll-fill.js';
+export * from './icons/mouse-right-click-fill.js';
+export * from './icons/mouse-middle-click-fill.js';
+export * from './icons/mouse-left-click-fill.js';
+export * from './icons/mouse-fill.js';
+export * from './icons/mountains-fill.js';
+export * from './icons/motorcycle-fill.js';
+export * from './icons/mosque-fill.js';
+export * from './icons/moped-front-fill.js';
+export * from './icons/moped-fill.js';
+export * from './icons/moon-stars-fill.js';
+export * from './icons/moon-fill.js';
+export * from './icons/monitor-play-fill.js';
+export * from './icons/monitor-fill.js';
+export * from './icons/monitor-arrow-up-fill.js';
+export * from './icons/money-wavy-fill.js';
+export * from './icons/money-fill.js';
+export * from './icons/minus-square-fill.js';
+export * from './icons/minus-fill.js';
+export * from './icons/minus-circle-fill.js';
+export * from './icons/microsoft-word-logo-fill.js';
+export * from './icons/microsoft-teams-logo-fill.js';
+export * from './icons/microsoft-powerpoint-logo-fill.js';
+export * from './icons/microsoft-outlook-logo-fill.js';
+export * from './icons/microsoft-excel-logo-fill.js';
+export * from './icons/microscope-fill.js';
+export * from './icons/microphone-stage-fill.js';
+export * from './icons/microphone-slash-fill.js';
+export * from './icons/microphone-fill.js';
+export * from './icons/metronome-fill.js';
+export * from './icons/meteor-fill.js';
+export * from './icons/meta-logo-fill.js';
+export * from './icons/messenger-logo-fill.js';
+export * from './icons/memory-fill.js';
+export * from './icons/member-of-fill.js';
+export * from './icons/megaphone-simple-fill.js';
+export * from './icons/megaphone-fill.js';
+export * from './icons/medium-logo-fill.js';
+export * from './icons/medal-military-fill.js';
+export * from './icons/medal-fill.js';
+export * from './icons/matrix-logo-fill.js';
+export * from './icons/math-operations-fill.js';
+export * from './icons/mastodon-logo-fill.js';
+export * from './icons/mask-sad-fill.js';
+export * from './icons/mask-happy-fill.js';
+export * from './icons/martini-fill.js';
+export * from './icons/marker-circle-fill.js';
+export * from './icons/markdown-logo-fill.js';
+export * from './icons/map-trifold-fill.js';
+export * from './icons/map-pin-simple-line-fill.js';
+export * from './icons/map-pin-simple-fill.js';
+export * from './icons/map-pin-simple-area-fill.js';
+export * from './icons/map-pin-plus-fill.js';
+export * from './icons/map-pin-line-fill.js';
+export * from './icons/map-pin-fill.js';
+export * from './icons/map-pin-area-fill.js';
+export * from './icons/mailbox-fill.js';
+export * from './icons/magnifying-glass-plus-fill.js';
+export * from './icons/magnifying-glass-minus-fill.js';
+export * from './icons/magnifying-glass-fill.js';
+export * from './icons/magnet-straight-fill.js';
+export * from './icons/magnet-fill.js';
+export * from './icons/magic-wand-fill.js';
+export * from './icons/log-fill.js';
+export * from './icons/lockers-fill.js';
+export * from './icons/lock-simple-open-fill.js';
+export * from './icons/lock-simple-fill.js';
+export * from './icons/lock-open-fill.js';
+export * from './icons/lock-laminated-open-fill.js';
+export * from './icons/lock-laminated-fill.js';
+export * from './icons/lock-key-open-fill.js';
+export * from './icons/lock-key-fill.js';
+export * from './icons/lock-fill.js';
+export * from './icons/list-star-fill.js';
+export * from './icons/list-plus-fill.js';
+export * from './icons/list-numbers-fill.js';
+export * from './icons/list-magnifying-glass-fill.js';
+export * from './icons/list-heart-fill.js';
+export * from './icons/list-fill.js';
+export * from './icons/list-dashes-fill.js';
+export * from './icons/list-checks-fill.js';
+export * from './icons/list-bullets-fill.js';
+export * from './icons/linux-logo-fill.js';
+export * from './icons/linktree-logo-fill.js';
+export * from './icons/linkedin-logo-fill.js';
+export * from './icons/link-simple-horizontal-fill.js';
+export * from './icons/link-simple-horizontal-break-fill.js';
+export * from './icons/link-simple-fill.js';
+export * from './icons/link-simple-break-fill.js';
+export * from './icons/link-fill.js';
+export * from './icons/link-break-fill.js';
+export * from './icons/line-vertical-fill.js';
+export * from './icons/line-segments-fill.js';
+export * from './icons/line-segment-fill.js';
+export * from './icons/lightning-slash-fill.js';
+export * from './icons/lightning-fill.js';
+export * from './icons/lightning-a-fill.js';
+export * from './icons/lighthouse-fill.js';
+export * from './icons/lightbulb-fill.js';
+export * from './icons/lightbulb-filament-fill.js';
+export * from './icons/lifebuoy-fill.js';
+export * from './icons/letter-circle-v-fill.js';
+export * from './icons/letter-circle-p-fill.js';
+export * from './icons/letter-circle-h-fill.js';
+export * from './icons/less-than-or-equal-fill.js';
+export * from './icons/less-than-fill.js';
+export * from './icons/lego-smiley-fill.js';
+export * from './icons/lego-fill.js';
+export * from './icons/lectern-fill.js';
+export * from './icons/leaf-fill.js';
+export * from './icons/layout-fill.js';
+export * from './icons/lastfm-logo-fill.js';
+export * from './icons/lasso-fill.js';
+export * from './icons/laptop-fill.js';
+export * from './icons/lamp-pendant-fill.js';
+export * from './icons/lamp-fill.js';
+export * from './icons/ladder-simple-fill.js';
+export * from './icons/ladder-fill.js';
+export * from './icons/knife-fill.js';
+export * from './icons/keyhole-fill.js';
+export * from './icons/keyboard-fill.js';
+export * from './icons/key-return-fill.js';
+export * from './icons/key-fill.js';
+export * from './icons/kanban-fill.js';
+export * from './icons/joystick-fill.js';
+export * from './icons/jeep-fill.js';
+export * from './icons/jar-label-fill.js';
+export * from './icons/jar-fill.js';
+export * from './icons/island-fill.js';
+export * from './icons/invoice-fill.js';
+export * from './icons/intersection-fill.js';
+export * from './icons/intersect-three-fill.js';
+export * from './icons/intersect-square-fill.js';
+export * from './icons/intersect-fill.js';
+export * from './icons/instagram-logo-fill.js';
+export * from './icons/info-fill.js';
+export * from './icons/infinity-fill.js';
+export * from './icons/images-square-fill.js';
+export * from './icons/images-fill.js';
+export * from './icons/image-square-fill.js';
+export * from './icons/image-fill.js';
+export * from './icons/image-broken-fill.js';
+export * from './icons/identification-card-fill.js';
+export * from './icons/identification-badge-fill.js';
+export * from './icons/ice-cream-fill.js';
+export * from './icons/hurricane-fill.js';
+export * from './icons/house-simple-fill.js';
+export * from './icons/house-line-fill.js';
+export * from './icons/house-fill.js';
+export * from './icons/hourglass-simple-medium-fill.js';
+export * from './icons/hourglass-simple-low-fill.js';
+export * from './icons/hourglass-simple-high-fill.js';
+export * from './icons/hourglass-simple-fill.js';
+export * from './icons/hourglass-medium-fill.js';
+export * from './icons/hourglass-low-fill.js';
+export * from './icons/hourglass-high-fill.js';
+export * from './icons/hourglass-fill.js';
+export * from './icons/hospital-fill.js';
+export * from './icons/horse-fill.js';
+export * from './icons/hoodie-fill.js';
+export * from './icons/hockey-fill.js';
+export * from './icons/highlighter-fill.js';
+export * from './icons/highlighter-circle-fill.js';
+export * from './icons/high-heel-fill.js';
+export * from './icons/high-definition-fill.js';
+export * from './icons/hexagon-fill.js';
+export * from './icons/heartbeat-fill.js';
+export * from './icons/heart-straight-fill.js';
+export * from './icons/heart-straight-break-fill.js';
+export * from './icons/heart-half-fill.js';
+export * from './icons/heart-fill.js';
+export * from './icons/heart-break-fill.js';
+export * from './icons/headset-fill.js';
+export * from './icons/headphones-fill.js';
+export * from './icons/headlights-fill.js';
+export * from './icons/head-circuit-fill.js';
+export * from './icons/hash-straight-fill.js';
+export * from './icons/hash-fill.js';
+export * from './icons/hard-hat-fill.js';
+export * from './icons/hard-drives-fill.js';
+export * from './icons/hard-drive-fill.js';
+export * from './icons/handshake-fill.js';
+export * from './icons/hands-praying-fill.js';
+export * from './icons/hands-clapping-fill.js';
+export * from './icons/handbag-simple-fill.js';
+export * from './icons/handbag-fill.js';
+export * from './icons/hand-withdraw-fill.js';
+export * from './icons/hand-waving-fill.js';
+export * from './icons/hand-tap-fill.js';
+export * from './icons/hand-swipe-right-fill.js';
+export * from './icons/hand-swipe-left-fill.js';
+export * from './icons/hand-soap-fill.js';
+export * from './icons/hand-pointing-fill.js';
+export * from './icons/hand-peace-fill.js';
+export * from './icons/hand-palm-fill.js';
+export * from './icons/hand-heart-fill.js';
+export * from './icons/hand-grabbing-fill.js';
+export * from './icons/hand-fist-fill.js';
+export * from './icons/hand-fill.js';
+export * from './icons/hand-eye-fill.js';
+export * from './icons/hand-deposit-fill.js';
+export * from './icons/hand-coins-fill.js';
+export * from './icons/hand-arrow-up-fill.js';
+export * from './icons/hand-arrow-down-fill.js';
+export * from './icons/hammer-fill.js';
+export * from './icons/hamburger-fill.js';
+export * from './icons/hair-dryer-fill.js';
+export * from './icons/guitar-fill.js';
+export * from './icons/grid-nine-fill.js';
+export * from './icons/grid-four-fill.js';
+export * from './icons/greater-than-or-equal-fill.js';
+export * from './icons/greater-than-fill.js';
+export * from './icons/graphics-card-fill.js';
+export * from './icons/graph-fill.js';
+export * from './icons/grains-slash-fill.js';
+export * from './icons/grains-fill.js';
+export * from './icons/graduation-cap-fill.js';
+export * from './icons/gradient-fill.js';
+export * from './icons/gps-slash-fill.js';
+export * from './icons/gps-fix-fill.js';
+export * from './icons/gps-fill.js';
+export * from './icons/google-podcasts-logo-fill.js';
+export * from './icons/google-play-logo-fill.js';
+export * from './icons/google-photos-logo-fill.js';
+export * from './icons/google-logo-fill.js';
+export * from './icons/google-drive-logo-fill.js';
+export * from './icons/google-chrome-logo-fill.js';
+export * from './icons/google-cardboard-logo-fill.js';
+export * from './icons/goodreads-logo-fill.js';
+export * from './icons/golf-fill.js';
+export * from './icons/goggles-fill.js';
+export * from './icons/globe-x-fill.js';
+export * from './icons/globe-stand-fill.js';
+export * from './icons/globe-simple-x-fill.js';
+export * from './icons/globe-simple-fill.js';
+export * from './icons/globe-hemisphere-west-fill.js';
+export * from './icons/globe-hemisphere-east-fill.js';
+export * from './icons/globe-fill.js';
+export * from './icons/gitlab-logo-simple-fill.js';
+export * from './icons/gitlab-logo-fill.js';
+export * from './icons/github-logo-fill.js';
+export * from './icons/git-pull-request-fill.js';
+export * from './icons/git-merge-fill.js';
+export * from './icons/git-fork-fill.js';
+export * from './icons/git-diff-fill.js';
+export * from './icons/git-commit-fill.js';
+export * from './icons/git-branch-fill.js';
+export * from './icons/gift-fill.js';
+export * from './icons/gif-fill.js';
+export * from './icons/ghost-fill.js';
+export * from './icons/gender-transgender-fill.js';
+export * from './icons/gender-nonbinary-fill.js';
+export * from './icons/gender-neuter-fill.js';
+export * from './icons/gender-male-fill.js';
+export * from './icons/gender-intersex-fill.js';
+export * from './icons/gender-female-fill.js';
+export * from './icons/gear-six-fill.js';
+export * from './icons/gear-fine-fill.js';
+export * from './icons/gear-fill.js';
+export * from './icons/gavel-fill.js';
+export * from './icons/gauge-fill.js';
+export * from './icons/gas-pump-fill.js';
+export * from './icons/gas-can-fill.js';
+export * from './icons/garage-fill.js';
+export * from './icons/game-controller-fill.js';
+export * from './icons/funnel-x-fill.js';
+export * from './icons/funnel-simple-x-fill.js';
+export * from './icons/funnel-simple-fill.js';
+export * from './icons/funnel-fill.js';
+export * from './icons/function-fill.js';
+export * from './icons/framer-logo-fill.js';
+export * from './icons/frame-corners-fill.js';
+export * from './icons/four-k-fill.js';
+export * from './icons/fork-knife-fill.js';
+export * from './icons/footprints-fill.js';
+export * from './icons/football-helmet-fill.js';
+export * from './icons/football-fill.js';
+export * from './icons/folders-fill.js';
+export * from './icons/folder-user-fill.js';
+export * from './icons/folder-star-fill.js';
+export * from './icons/folder-simple-user-fill.js';
+export * from './icons/folder-simple-star-fill.js';
+export * from './icons/folder-simple-plus-fill.js';
+export * from './icons/folder-simple-minus-fill.js';
+export * from './icons/folder-simple-lock-fill.js';
+export * from './icons/folder-simple-fill.js';
+export * from './icons/folder-simple-dashed-fill.js';
+export * from './icons/folder-plus-fill.js';
+export * from './icons/folder-open-fill.js';
+export * from './icons/folder-minus-fill.js';
+export * from './icons/folder-lock-fill.js';
+export * from './icons/folder-fill.js';
+export * from './icons/folder-dashed-fill.js';
+export * from './icons/flying-saucer-fill.js';
+export * from './icons/flower-tulip-fill.js';
+export * from './icons/flower-lotus-fill.js';
+export * from './icons/flower-fill.js';
+export * from './icons/flow-arrow-fill.js';
+export * from './icons/floppy-disk-fill.js';
+export * from './icons/floppy-disk-back-fill.js';
+export * from './icons/flip-vertical-fill.js';
+export * from './icons/flip-horizontal-fill.js';
+export * from './icons/flask-fill.js';
+export * from './icons/flashlight-fill.js';
+export * from './icons/flame-fill.js';
+export * from './icons/flag-pennant-fill.js';
+export * from './icons/flag-fill.js';
+export * from './icons/flag-checkered-fill.js';
+export * from './icons/flag-banner-fold-fill.js';
+export * from './icons/flag-banner-fill.js';
+export * from './icons/fish-simple-fill.js';
+export * from './icons/fish-fill.js';
+export * from './icons/first-aid-kit-fill.js';
+export * from './icons/first-aid-fill.js';
+export * from './icons/fire-truck-fill.js';
+export * from './icons/fire-simple-fill.js';
+export * from './icons/fire-fill.js';
+export * from './icons/fire-extinguisher-fill.js';
+export * from './icons/finn-the-human-fill.js';
+export * from './icons/fingerprint-simple-fill.js';
+export * from './icons/fingerprint-fill.js';
+export * from './icons/film-strip-fill.js';
+export * from './icons/film-slate-fill.js';
+export * from './icons/film-script-fill.js';
+export * from './icons/film-reel-fill.js';
+export * from './icons/files-fill.js';
+export * from './icons/file-zip-fill.js';
+export * from './icons/file-xls-fill.js';
+export * from './icons/file-x-fill.js';
+export * from './icons/file-vue-fill.js';
+export * from './icons/file-video-fill.js';
+export * from './icons/file-txt-fill.js';
+export * from './icons/file-tsx-fill.js';
+export * from './icons/file-ts-fill.js';
+export * from './icons/file-text-fill.js';
+export * from './icons/file-svg-fill.js';
+export * from './icons/file-sql-fill.js';
+export * from './icons/file-rs-fill.js';
+export * from './icons/file-py-fill.js';
+export * from './icons/file-ppt-fill.js';
+export * from './icons/file-png-fill.js';
+export * from './icons/file-plus-fill.js';
+export * from './icons/file-pdf-fill.js';
+export * from './icons/file-minus-fill.js';
+export * from './icons/file-md-fill.js';
+export * from './icons/file-magnifying-glass-fill.js';
+export * from './icons/file-lock-fill.js';
+export * from './icons/file-jsx-fill.js';
+export * from './icons/file-js-fill.js';
+export * from './icons/file-jpg-fill.js';
+export * from './icons/file-ini-fill.js';
+export * from './icons/file-image-fill.js';
+export * from './icons/file-html-fill.js';
+export * from './icons/file-fill.js';
+export * from './icons/file-doc-fill.js';
+export * from './icons/file-dashed-fill.js';
+export * from './icons/file-csv-fill.js';
+export * from './icons/file-css-fill.js';
+export * from './icons/file-cpp-fill.js';
+export * from './icons/file-code-fill.js';
+export * from './icons/file-cloud-fill.js';
+export * from './icons/file-c-sharp-fill.js';
+export * from './icons/file-c-fill.js';
+export * from './icons/file-audio-fill.js';
+export * from './icons/file-arrow-up-fill.js';
+export * from './icons/file-arrow-down-fill.js';
+export * from './icons/file-archive-fill.js';
+export * from './icons/figma-logo-fill.js';
+export * from './icons/fediverse-logo-fill.js';
+export * from './icons/feather-fill.js';
+export * from './icons/fast-forward-fill.js';
+export * from './icons/fast-forward-circle-fill.js';
+export * from './icons/farm-fill.js';
+export * from './icons/fan-fill.js';
+export * from './icons/fallout-shelter-fill.js';
+export * from './icons/faders-horizontal-fill.js';
+export * from './icons/faders-fill.js';
+export * from './icons/factory-fill.js';
+export * from './icons/facebook-logo-fill.js';
+export * from './icons/face-mask-fill.js';
+export * from './icons/eyes-fill.js';
+export * from './icons/eyeglasses-fill.js';
+export * from './icons/eyedropper-sample-fill.js';
+export * from './icons/eyedropper-fill.js';
+export * from './icons/eye-slash-fill.js';
+export * from './icons/eye-fill.js';
+export * from './icons/eye-closed-fill.js';
+export * from './icons/export-fill.js';
+export * from './icons/exclude-square-fill.js';
+export * from './icons/exclude-fill.js';
+export * from './icons/exclamation-mark-fill.js';
+export * from './icons/exam-fill.js';
+export * from './icons/escalator-up-fill.js';
+export * from './icons/escalator-down-fill.js';
+export * from './icons/eraser-fill.js';
+export * from './icons/equals-fill.js';
+export * from './icons/equalizer-fill.js';
+export * from './icons/envelope-simple-open-fill.js';
+export * from './icons/envelope-simple-fill.js';
+export * from './icons/envelope-open-fill.js';
+export * from './icons/envelope-fill.js';
+export * from './icons/engine-fill.js';
+export * from './icons/empty-fill.js';
+export * from './icons/elevator-fill.js';
+export * from './icons/eject-simple-fill.js';
+export * from './icons/eject-fill.js';
+export * from './icons/egg-fill.js';
+export * from './icons/egg-crack-fill.js';
+export * from './icons/ear-slash-fill.js';
+export * from './icons/ear-fill.js';
+export * from './icons/dropbox-logo-fill.js';
+export * from './icons/drop-slash-fill.js';
+export * from './icons/drop-simple-fill.js';
+export * from './icons/drop-half-fill.js';
+export * from './icons/drop-half-bottom-fill.js';
+export * from './icons/drop-fill.js';
+export * from './icons/drone-fill.js';
+export * from './icons/dribbble-logo-fill.js';
+export * from './icons/dresser-fill.js';
+export * from './icons/dress-fill.js';
+export * from './icons/download-simple-fill.js';
+export * from './icons/download-fill.js';
+export * from './icons/dots-three-vertical-fill.js';
+export * from './icons/dots-three-outline-vertical-fill.js';
+export * from './icons/dots-three-outline-fill.js';
+export * from './icons/dots-three-fill.js';
+export * from './icons/dots-three-circle-vertical-fill.js';
+export * from './icons/dots-three-circle-fill.js';
+export * from './icons/dots-six-vertical-fill.js';
+export * from './icons/dots-six-fill.js';
+export * from './icons/dots-nine-fill.js';
+export * from './icons/dot-outline-fill.js';
+export * from './icons/dot-fill.js';
+export * from './icons/door-open-fill.js';
+export * from './icons/door-fill.js';
+export * from './icons/dog-fill.js';
+export * from './icons/dna-fill.js';
+export * from './icons/divide-fill.js';
+export * from './icons/discord-logo-fill.js';
+export * from './icons/disco-ball-fill.js';
+export * from './icons/disc-fill.js';
+export * from './icons/dice-two-fill.js';
+export * from './icons/dice-three-fill.js';
+export * from './icons/dice-six-fill.js';
+export * from './icons/dice-one-fill.js';
+export * from './icons/dice-four-fill.js';
+export * from './icons/dice-five-fill.js';
+export * from './icons/diamonds-four-fill.js';
+export * from './icons/diamond-fill.js';
+export * from './icons/devices-fill.js';
+export * from './icons/device-tablet-speaker-fill.js';
+export * from './icons/device-tablet-fill.js';
+export * from './icons/device-tablet-camera-fill.js';
+export * from './icons/device-rotate-fill.js';
+export * from './icons/device-mobile-speaker-fill.js';
+export * from './icons/device-mobile-slash-fill.js';
+export * from './icons/device-mobile-fill.js';
+export * from './icons/device-mobile-camera-fill.js';
+export * from './icons/dev-to-logo-fill.js';
+export * from './icons/detective-fill.js';
+export * from './icons/desktop-tower-fill.js';
+export * from './icons/desktop-fill.js';
+export * from './icons/desk-fill.js';
+export * from './icons/database-fill.js';
+export * from './icons/cylinder-fill.js';
+export * from './icons/cursor-text-fill.js';
+export * from './icons/cursor-fill.js';
+export * from './icons/cursor-click-fill.js';
+export * from './icons/currency-rub-fill.js';
+export * from './icons/currency-ngn-fill.js';
+export * from './icons/currency-kzt-fill.js';
+export * from './icons/currency-krw-fill.js';
+export * from './icons/currency-jpy-fill.js';
+export * from './icons/currency-inr-fill.js';
+export * from './icons/currency-gbp-fill.js';
+export * from './icons/currency-eur-fill.js';
+export * from './icons/currency-eth-fill.js';
+export * from './icons/currency-dollar-simple-fill.js';
+export * from './icons/currency-dollar-fill.js';
+export * from './icons/currency-cny-fill.js';
+export * from './icons/currency-circle-dollar-fill.js';
+export * from './icons/currency-btc-fill.js';
+export * from './icons/cube-transparent-fill.js';
+export * from './icons/cube-focus-fill.js';
+export * from './icons/cube-fill.js';
+export * from './icons/crown-simple-fill.js';
+export * from './icons/crown-fill.js';
+export * from './icons/crown-cross-fill.js';
+export * from './icons/crosshair-simple-fill.js';
+export * from './icons/crosshair-fill.js';
+export * from './icons/cross-fill.js';
+export * from './icons/crop-fill.js';
+export * from './icons/cricket-fill.js';
+export * from './icons/credit-card-fill.js';
+export * from './icons/crane-tower-fill.js';
+export * from './icons/crane-fill.js';
+export * from './icons/cpu-fill.js';
+export * from './icons/cowboy-hat-fill.js';
+export * from './icons/cow-fill.js';
+export * from './icons/court-basketball-fill.js';
+export * from './icons/couch-fill.js';
+export * from './icons/corners-out-fill.js';
+export * from './icons/corners-in-fill.js';
+export * from './icons/copyright-fill.js';
+export * from './icons/copyleft-fill.js';
+export * from './icons/copy-simple-fill.js';
+export * from './icons/copy-fill.js';
+export * from './icons/cooking-pot-fill.js';
+export * from './icons/cookie-fill.js';
+export * from './icons/control-fill.js';
+export * from './icons/contactless-payment-fill.js';
+export * from './icons/confetti-fill.js';
+export * from './icons/computer-tower-fill.js';
+export * from './icons/compass-tool-fill.js';
+export * from './icons/compass-rose-fill.js';
+export * from './icons/compass-fill.js';
+export * from './icons/command-fill.js';
+export * from './icons/columns-plus-right-fill.js';
+export * from './icons/columns-plus-left-fill.js';
+export * from './icons/columns-fill.js';
+export * from './icons/coins-fill.js';
+export * from './icons/coin-vertical-fill.js';
+export * from './icons/coin-fill.js';
+export * from './icons/coffee-fill.js';
+export * from './icons/coffee-bean-fill.js';
+export * from './icons/codesandbox-logo-fill.js';
+export * from './icons/codepen-logo-fill.js';
+export * from './icons/code-simple-fill.js';
+export * from './icons/code-fill.js';
+export * from './icons/code-block-fill.js';
+export * from './icons/coda-logo-fill.js';
+export * from './icons/coat-hanger-fill.js';
+export * from './icons/club-fill.js';
+export * from './icons/clover-fill.js';
+export * from './icons/cloud-x-fill.js';
+export * from './icons/cloud-warning-fill.js';
+export * from './icons/cloud-sun-fill.js';
+export * from './icons/cloud-snow-fill.js';
+export * from './icons/cloud-slash-fill.js';
+export * from './icons/cloud-rain-fill.js';
+export * from './icons/cloud-moon-fill.js';
+export * from './icons/cloud-lightning-fill.js';
+export * from './icons/cloud-fog-fill.js';
+export * from './icons/cloud-fill.js';
+export * from './icons/cloud-check-fill.js';
+export * from './icons/cloud-arrow-up-fill.js';
+export * from './icons/cloud-arrow-down-fill.js';
+export * from './icons/closed-captioning-fill.js';
+export * from './icons/clock-user-fill.js';
+export * from './icons/clock-fill.js';
+export * from './icons/clock-counter-clockwise-fill.js';
+export * from './icons/clock-countdown-fill.js';
+export * from './icons/clock-clockwise-fill.js';
+export * from './icons/clock-afternoon-fill.js';
+export * from './icons/clipboard-text-fill.js';
+export * from './icons/clipboard-fill.js';
+export * from './icons/city-fill.js';
+export * from './icons/circuitry-fill.js';
+export * from './icons/circles-three-plus-fill.js';
+export * from './icons/circles-three-fill.js';
+export * from './icons/circles-four-fill.js';
+export * from './icons/circle-notch-fill.js';
+export * from './icons/circle-half-tilt-fill.js';
+export * from './icons/circle-half-fill.js';
+export * from './icons/circle-fill.js';
+export * from './icons/circle-dashed-fill.js';
+export * from './icons/cigarette-slash-fill.js';
+export * from './icons/cigarette-fill.js';
+export * from './icons/church-fill.js';
+export * from './icons/cherries-fill.js';
+export * from './icons/chef-hat-fill.js';
+export * from './icons/cheese-fill.js';
+export * from './icons/cheers-fill.js';
+export * from './icons/checks-fill.js';
+export * from './icons/checkerboard-fill.js';
+export * from './icons/check-square-offset-fill.js';
+export * from './icons/check-square-fill.js';
+export * from './icons/check-fill.js';
+export * from './icons/check-fat-fill.js';
+export * from './icons/check-circle-fill.js';
+export * from './icons/chats-teardrop-fill.js';
+export * from './icons/chats-fill.js';
+export * from './icons/chats-circle-fill.js';
+export * from './icons/chat-text-fill.js';
+export * from './icons/chat-teardrop-text-fill.js';
+export * from './icons/chat-teardrop-slash-fill.js';
+export * from './icons/chat-teardrop-fill.js';
+export * from './icons/chat-teardrop-dots-fill.js';
+export * from './icons/chat-slash-fill.js';
+export * from './icons/chat-fill.js';
+export * from './icons/chat-dots-fill.js';
+export * from './icons/chat-circle-text-fill.js';
+export * from './icons/chat-circle-slash-fill.js';
+export * from './icons/chat-circle-fill.js';
+export * from './icons/chat-circle-dots-fill.js';
+export * from './icons/chat-centered-text-fill.js';
+export * from './icons/chat-centered-slash-fill.js';
+export * from './icons/chat-centered-fill.js';
+export * from './icons/chat-centered-dots-fill.js';
+export * from './icons/chart-scatter-fill.js';
+export * from './icons/chart-polar-fill.js';
+export * from './icons/chart-pie-slice-fill.js';
+export * from './icons/chart-pie-fill.js';
+export * from './icons/chart-line-up-fill.js';
+export * from './icons/chart-line-fill.js';
+export * from './icons/chart-line-down-fill.js';
+export * from './icons/chart-donut-fill.js';
+export * from './icons/chart-bar-horizontal-fill.js';
+export * from './icons/chart-bar-fill.js';
+export * from './icons/charging-station-fill.js';
+export * from './icons/champagne-fill.js';
+export * from './icons/chalkboard-teacher-fill.js';
+export * from './icons/chalkboard-simple-fill.js';
+export * from './icons/chalkboard-fill.js';
+export * from './icons/chair-fill.js';
+export * from './icons/certificate-fill.js';
+export * from './icons/cell-tower-fill.js';
+export * from './icons/cell-signal-x-fill.js';
+export * from './icons/cell-signal-slash-fill.js';
+export * from './icons/cell-signal-none-fill.js';
+export * from './icons/cell-signal-medium-fill.js';
+export * from './icons/cell-signal-low-fill.js';
+export * from './icons/cell-signal-high-fill.js';
+export * from './icons/cell-signal-full-fill.js';
+export * from './icons/cat-fill.js';
+export * from './icons/castle-turret-fill.js';
+export * from './icons/cassette-tape-fill.js';
+export * from './icons/cash-register-fill.js';
+export * from './icons/carrot-fill.js';
+export * from './icons/caret-up-fill.js';
+export * from './icons/caret-up-down-fill.js';
+export * from './icons/caret-right-fill.js';
+export * from './icons/caret-line-up-fill.js';
+export * from './icons/caret-line-right-fill.js';
+export * from './icons/caret-line-left-fill.js';
+export * from './icons/caret-line-down-fill.js';
+export * from './icons/caret-left-fill.js';
+export * from './icons/caret-down-fill.js';
+export * from './icons/caret-double-up-fill.js';
+export * from './icons/caret-double-right-fill.js';
+export * from './icons/caret-double-left-fill.js';
+export * from './icons/caret-double-down-fill.js';
+export * from './icons/caret-circle-up-fill.js';
+export * from './icons/caret-circle-up-down-fill.js';
+export * from './icons/caret-circle-right-fill.js';
+export * from './icons/caret-circle-left-fill.js';
+export * from './icons/caret-circle-down-fill.js';
+export * from './icons/caret-circle-double-up-fill.js';
+export * from './icons/caret-circle-double-right-fill.js';
+export * from './icons/caret-circle-double-left-fill.js';
+export * from './icons/caret-circle-double-down-fill.js';
+export * from './icons/cards-three-fill.js';
+export * from './icons/cards-fill.js';
+export * from './icons/cardholder-fill.js';
+export * from './icons/car-simple-fill.js';
+export * from './icons/car-profile-fill.js';
+export * from './icons/car-fill.js';
+export * from './icons/car-battery-fill.js';
+export * from './icons/campfire-fill.js';
+export * from './icons/camera-slash-fill.js';
+export * from './icons/camera-rotate-fill.js';
+export * from './icons/camera-plus-fill.js';
+export * from './icons/camera-fill.js';
+export * from './icons/call-bell-fill.js';
+export * from './icons/calendar-x-fill.js';
+export * from './icons/calendar-star-fill.js';
+export * from './icons/calendar-slash-fill.js';
+export * from './icons/calendar-plus-fill.js';
+export * from './icons/calendar-minus-fill.js';
+export * from './icons/calendar-heart-fill.js';
+export * from './icons/calendar-fill.js';
+export * from './icons/calendar-dots-fill.js';
+export * from './icons/calendar-dot-fill.js';
+export * from './icons/calendar-check-fill.js';
+export * from './icons/calendar-blank-fill.js';
+export * from './icons/calculator-fill.js';
+export * from './icons/cake-fill.js';
+export * from './icons/cactus-fill.js';
+export * from './icons/cable-car-fill.js';
+export * from './icons/butterfly-fill.js';
+export * from './icons/bus-fill.js';
+export * from './icons/bulldozer-fill.js';
+export * from './icons/buildings-fill.js';
+export * from './icons/building-office-fill.js';
+export * from './icons/building-fill.js';
+export * from './icons/building-apartment-fill.js';
+export * from './icons/bug-fill.js';
+export * from './icons/bug-droid-fill.js';
+export * from './icons/bug-beetle-fill.js';
+export * from './icons/browsers-fill.js';
+export * from './icons/browser-fill.js';
+export * from './icons/broom-fill.js';
+export * from './icons/broadcast-fill.js';
+export * from './icons/briefcase-metal-fill.js';
+export * from './icons/briefcase-fill.js';
+export * from './icons/bridge-fill.js';
+export * from './icons/bread-fill.js';
+export * from './icons/brandy-fill.js';
+export * from './icons/brain-fill.js';
+export * from './icons/brackets-square-fill.js';
+export * from './icons/brackets-round-fill.js';
+export * from './icons/brackets-curly-fill.js';
+export * from './icons/brackets-angle-fill.js';
+export * from './icons/boxing-glove-fill.js';
+export * from './icons/box-arrow-up-fill.js';
+export * from './icons/box-arrow-down-fill.js';
+export * from './icons/bowling-ball-fill.js';
+export * from './icons/bowl-steam-fill.js';
+export * from './icons/bowl-food-fill.js';
+export * from './icons/bounding-box-fill.js';
+export * from './icons/boules-fill.js';
+export * from './icons/boot-fill.js';
+export * from './icons/books-fill.js';
+export * from './icons/bookmarks-simple-fill.js';
+export * from './icons/bookmarks-fill.js';
+export * from './icons/bookmark-simple-fill.js';
+export * from './icons/bookmark-fill.js';
+export * from './icons/book-open-user-fill.js';
+export * from './icons/book-open-text-fill.js';
+export * from './icons/book-open-fill.js';
+export * from './icons/book-fill.js';
+export * from './icons/book-bookmark-fill.js';
+export * from './icons/bone-fill.js';
+export * from './icons/bomb-fill.js';
+export * from './icons/boat-fill.js';
+export * from './icons/bluetooth-x-fill.js';
+export * from './icons/bluetooth-slash-fill.js';
+export * from './icons/bluetooth-fill.js';
+export * from './icons/bluetooth-connected-fill.js';
+export * from './icons/blueprint-fill.js';
+export * from './icons/bird-fill.js';
+export * from './icons/biohazard-fill.js';
+export * from './icons/binoculars-fill.js';
+export * from './icons/binary-fill.js';
+export * from './icons/bicycle-fill.js';
+export * from './icons/bezier-curve-fill.js';
+export * from './icons/belt-fill.js';
+export * from './icons/bell-z-fill.js';
+export * from './icons/bell-slash-fill.js';
+export * from './icons/bell-simple-z-fill.js';
+export * from './icons/bell-simple-slash-fill.js';
+export * from './icons/bell-simple-ringing-fill.js';
+export * from './icons/bell-simple-fill.js';
+export * from './icons/bell-ringing-fill.js';
+export * from './icons/bell-fill.js';
+export * from './icons/behance-logo-fill.js';
+export * from './icons/beer-stein-fill.js';
+export * from './icons/beer-bottle-fill.js';
+export * from './icons/bed-fill.js';
+export * from './icons/beanie-fill.js';
+export * from './icons/beach-ball-fill.js';
+export * from './icons/battery-warning-vertical-fill.js';
+export * from './icons/battery-warning-fill.js';
+export * from './icons/battery-vertical-medium-fill.js';
+export * from './icons/battery-vertical-low-fill.js';
+export * from './icons/battery-vertical-high-fill.js';
+export * from './icons/battery-vertical-full-fill.js';
+export * from './icons/battery-vertical-empty-fill.js';
+export * from './icons/battery-plus-vertical-fill.js';
+export * from './icons/battery-plus-fill.js';
+export * from './icons/battery-medium-fill.js';
+export * from './icons/battery-low-fill.js';
+export * from './icons/battery-high-fill.js';
+export * from './icons/battery-full-fill.js';
+export * from './icons/battery-empty-fill.js';
+export * from './icons/battery-charging-vertical-fill.js';
+export * from './icons/battery-charging-fill.js';
+export * from './icons/bathtub-fill.js';
+export * from './icons/basketball-fill.js';
+export * from './icons/basket-fill.js';
+export * from './icons/baseball-helmet-fill.js';
+export * from './icons/baseball-fill.js';
+export * from './icons/baseball-cap-fill.js';
+export * from './icons/barricade-fill.js';
+export * from './icons/barn-fill.js';
+export * from './icons/barcode-fill.js';
+export * from './icons/barbell-fill.js';
+export * from './icons/bank-fill.js';
+export * from './icons/bandaids-fill.js';
+export * from './icons/balloon-fill.js';
+export * from './icons/bag-simple-fill.js';
+export * from './icons/bag-fill.js';
+export * from './icons/backspace-fill.js';
+export * from './icons/backpack-fill.js';
+export * from './icons/baby-fill.js';
+export * from './icons/baby-carriage-fill.js';
+export * from './icons/axe-fill.js';
+export * from './icons/avocado-fill.js';
+export * from './icons/atom-fill.js';
+export * from './icons/at-fill.js';
+export * from './icons/asterisk-simple-fill.js';
+export * from './icons/asterisk-fill.js';
+export * from './icons/asclepius-fill.js';
+export * from './icons/article-ny-times-fill.js';
+export * from './icons/article-medium-fill.js';
+export * from './icons/article-fill.js';
+export * from './icons/arrows-vertical-fill.js';
+export * from './icons/arrows-split-fill.js';
+export * from './icons/arrows-out-simple-fill.js';
+export * from './icons/arrows-out-line-vertical-fill.js';
+export * from './icons/arrows-out-line-horizontal-fill.js';
+export * from './icons/arrows-out-fill.js';
+export * from './icons/arrows-out-cardinal-fill.js';
+export * from './icons/arrows-merge-fill.js';
+export * from './icons/arrows-left-right-fill.js';
+export * from './icons/arrows-in-simple-fill.js';
+export * from './icons/arrows-in-line-vertical-fill.js';
+export * from './icons/arrows-in-line-horizontal-fill.js';
+export * from './icons/arrows-in-fill.js';
+export * from './icons/arrows-in-cardinal-fill.js';
+export * from './icons/arrows-horizontal-fill.js';
+export * from './icons/arrows-down-up-fill.js';
+export * from './icons/arrows-counter-clockwise-fill.js';
+export * from './icons/arrows-clockwise-fill.js';
+export * from './icons/arrow-up-right-fill.js';
+export * from './icons/arrow-up-left-fill.js';
+export * from './icons/arrow-up-fill.js';
+export * from './icons/arrow-u-up-right-fill.js';
+export * from './icons/arrow-u-up-left-fill.js';
+export * from './icons/arrow-u-right-up-fill.js';
+export * from './icons/arrow-u-right-down-fill.js';
+export * from './icons/arrow-u-left-up-fill.js';
+export * from './icons/arrow-u-left-down-fill.js';
+export * from './icons/arrow-u-down-right-fill.js';
+export * from './icons/arrow-u-down-left-fill.js';
+export * from './icons/arrow-square-up-right-fill.js';
+export * from './icons/arrow-square-up-left-fill.js';
+export * from './icons/arrow-square-up-fill.js';
+export * from './icons/arrow-square-right-fill.js';
+export * from './icons/arrow-square-out-fill.js';
+export * from './icons/arrow-square-left-fill.js';
+export * from './icons/arrow-square-in-fill.js';
+export * from './icons/arrow-square-down-right-fill.js';
+export * from './icons/arrow-square-down-left-fill.js';
+export * from './icons/arrow-square-down-fill.js';
+export * from './icons/arrow-right-fill.js';
+export * from './icons/arrow-line-up-right-fill.js';
+export * from './icons/arrow-line-up-left-fill.js';
+export * from './icons/arrow-line-up-fill.js';
+export * from './icons/arrow-line-right-fill.js';
+export * from './icons/arrow-line-left-fill.js';
+export * from './icons/arrow-line-down-right-fill.js';
+export * from './icons/arrow-line-down-left-fill.js';
+export * from './icons/arrow-line-down-fill.js';
+export * from './icons/arrow-left-fill.js';
+export * from './icons/arrow-fat-up-fill.js';
+export * from './icons/arrow-fat-right-fill.js';
+export * from './icons/arrow-fat-lines-up-fill.js';
+export * from './icons/arrow-fat-lines-right-fill.js';
+export * from './icons/arrow-fat-lines-left-fill.js';
+export * from './icons/arrow-fat-lines-down-fill.js';
+export * from './icons/arrow-fat-line-up-fill.js';
+export * from './icons/arrow-fat-line-right-fill.js';
+export * from './icons/arrow-fat-line-left-fill.js';
+export * from './icons/arrow-fat-line-down-fill.js';
+export * from './icons/arrow-fat-left-fill.js';
+export * from './icons/arrow-fat-down-fill.js';
+export * from './icons/arrow-elbow-up-right-fill.js';
+export * from './icons/arrow-elbow-up-left-fill.js';
+export * from './icons/arrow-elbow-right-up-fill.js';
+export * from './icons/arrow-elbow-right-fill.js';
+export * from './icons/arrow-elbow-right-down-fill.js';
+export * from './icons/arrow-elbow-left-up-fill.js';
+export * from './icons/arrow-elbow-left-fill.js';
+export * from './icons/arrow-elbow-left-down-fill.js';
+export * from './icons/arrow-elbow-down-right-fill.js';
+export * from './icons/arrow-elbow-down-left-fill.js';
+export * from './icons/arrow-down-right-fill.js';
+export * from './icons/arrow-down-left-fill.js';
+export * from './icons/arrow-down-fill.js';
+export * from './icons/arrow-counter-clockwise-fill.js';
+export * from './icons/arrow-clockwise-fill.js';
+export * from './icons/arrow-circle-up-right-fill.js';
+export * from './icons/arrow-circle-up-left-fill.js';
+export * from './icons/arrow-circle-up-fill.js';
+export * from './icons/arrow-circle-right-fill.js';
+export * from './icons/arrow-circle-left-fill.js';
+export * from './icons/arrow-circle-down-right-fill.js';
+export * from './icons/arrow-circle-down-left-fill.js';
+export * from './icons/arrow-circle-down-fill.js';
+export * from './icons/arrow-bend-up-right-fill.js';
+export * from './icons/arrow-bend-up-left-fill.js';
+export * from './icons/arrow-bend-right-up-fill.js';
+export * from './icons/arrow-bend-right-down-fill.js';
+export * from './icons/arrow-bend-left-up-fill.js';
+export * from './icons/arrow-bend-left-down-fill.js';
+export * from './icons/arrow-bend-down-right-fill.js';
+export * from './icons/arrow-bend-down-left-fill.js';
+export * from './icons/arrow-bend-double-up-right-fill.js';
+export * from './icons/arrow-bend-double-up-left-fill.js';
+export * from './icons/arrow-arc-right-fill.js';
+export * from './icons/arrow-arc-left-fill.js';
+export * from './icons/armchair-fill.js';
+export * from './icons/archive-fill.js';
+export * from './icons/approximate-equals-fill.js';
+export * from './icons/apple-podcasts-logo-fill.js';
+export * from './icons/apple-logo-fill.js';
+export * from './icons/app-window-fill.js';
+export * from './icons/app-store-logo-fill.js';
+export * from './icons/aperture-fill.js';
+export * from './icons/angular-logo-fill.js';
+export * from './icons/angle-fill.js';
+export * from './icons/android-logo-fill.js';
+export * from './icons/anchor-simple-fill.js';
+export * from './icons/anchor-fill.js';
+export * from './icons/ambulance-fill.js';
+export * from './icons/amazon-logo-fill.js';
+export * from './icons/align-top-simple-fill.js';
+export * from './icons/align-top-fill.js';
+export * from './icons/align-right-simple-fill.js';
+export * from './icons/align-right-fill.js';
+export * from './icons/align-left-simple-fill.js';
+export * from './icons/align-left-fill.js';
+export * from './icons/align-center-vertical-simple-fill.js';
+export * from './icons/align-center-vertical-fill.js';
+export * from './icons/align-center-horizontal-simple-fill.js';
+export * from './icons/align-center-horizontal-fill.js';
+export * from './icons/align-bottom-simple-fill.js';
+export * from './icons/align-bottom-fill.js';
+export * from './icons/alien-fill.js';
+export * from './icons/alarm-fill.js';
+export * from './icons/airplay-fill.js';
+export * from './icons/airplane-tilt-fill.js';
+export * from './icons/airplane-taxiing-fill.js';
+export * from './icons/airplane-takeoff-fill.js';
+export * from './icons/airplane-landing-fill.js';
+export * from './icons/airplane-in-flight-fill.js';
+export * from './icons/airplane-fill.js';
+export * from './icons/air-traffic-control-fill.js';
+export * from './icons/address-book-tabs-fill.js';
+export * from './icons/address-book-fill.js';
+export * from './icons/acorn-fill.js';
+export * from './icons/youtube-logo-duotone.js';
+export * from './icons/yin-yang-duotone.js';
+export * from './icons/yarn-duotone.js';
+export * from './icons/x-square-duotone.js';
+export * from './icons/x-logo-duotone.js';
+export * from './icons/x-duotone.js';
+export * from './icons/x-circle-duotone.js';
+export * from './icons/wrench-duotone.js';
+export * from './icons/wine-duotone.js';
+export * from './icons/windows-logo-duotone.js';
+export * from './icons/windmill-duotone.js';
+export * from './icons/wind-duotone.js';
+export * from './icons/wifi-x-duotone.js';
+export * from './icons/wifi-slash-duotone.js';
+export * from './icons/wifi-none-duotone.js';
+export * from './icons/wifi-medium-duotone.js';
+export * from './icons/wifi-low-duotone.js';
+export * from './icons/wifi-high-duotone.js';
+export * from './icons/wheelchair-motion-duotone.js';
+export * from './icons/wheelchair-duotone.js';
+export * from './icons/whatsapp-logo-duotone.js';
+export * from './icons/wechat-logo-duotone.js';
+export * from './icons/webhooks-logo-duotone.js';
+export * from './icons/webcam-slash-duotone.js';
+export * from './icons/webcam-duotone.js';
+export * from './icons/waves-duotone.js';
+export * from './icons/waveform-slash-duotone.js';
+export * from './icons/waveform-duotone.js';
+export * from './icons/wave-triangle-duotone.js';
+export * from './icons/wave-square-duotone.js';
+export * from './icons/wave-sine-duotone.js';
+export * from './icons/wave-sawtooth-duotone.js';
+export * from './icons/watch-duotone.js';
+export * from './icons/washing-machine-duotone.js';
+export * from './icons/warning-octagon-duotone.js';
+export * from './icons/warning-duotone.js';
+export * from './icons/warning-diamond-duotone.js';
+export * from './icons/warning-circle-duotone.js';
+export * from './icons/warehouse-duotone.js';
+export * from './icons/wallet-duotone.js';
+export * from './icons/wall-duotone.js';
+export * from './icons/volleyball-duotone.js';
+export * from './icons/voicemail-duotone.js';
+export * from './icons/visor-duotone.js';
+export * from './icons/virus-duotone.js';
+export * from './icons/virtual-reality-duotone.js';
+export * from './icons/vinyl-record-duotone.js';
+export * from './icons/vignette-duotone.js';
+export * from './icons/video-duotone.js';
+export * from './icons/video-conference-duotone.js';
+export * from './icons/video-camera-slash-duotone.js';
+export * from './icons/video-camera-duotone.js';
+export * from './icons/vibrate-duotone.js';
+export * from './icons/vector-two-duotone.js';
+export * from './icons/vector-three-duotone.js';
+export * from './icons/vault-duotone.js';
+export * from './icons/van-duotone.js';
+export * from './icons/users-three-duotone.js';
+export * from './icons/users-four-duotone.js';
+export * from './icons/users-duotone.js';
+export * from './icons/user-switch-duotone.js';
+export * from './icons/user-square-duotone.js';
+export * from './icons/user-sound-duotone.js';
+export * from './icons/user-rectangle-duotone.js';
+export * from './icons/user-plus-duotone.js';
+export * from './icons/user-minus-duotone.js';
+export * from './icons/user-list-duotone.js';
+export * from './icons/user-gear-duotone.js';
+export * from './icons/user-focus-duotone.js';
+export * from './icons/user-duotone.js';
+export * from './icons/user-circle-plus-duotone.js';
+export * from './icons/user-circle-minus-duotone.js';
+export * from './icons/user-circle-gear-duotone.js';
+export * from './icons/user-circle-duotone.js';
+export * from './icons/user-circle-dashed-duotone.js';
+export * from './icons/user-circle-check-duotone.js';
+export * from './icons/user-check-duotone.js';
+export * from './icons/usb-duotone.js';
+export * from './icons/upload-simple-duotone.js';
+export * from './icons/upload-duotone.js';
+export * from './icons/unite-square-duotone.js';
+export * from './icons/unite-duotone.js';
+export * from './icons/union-duotone.js';
+export * from './icons/umbrella-simple-duotone.js';
+export * from './icons/umbrella-duotone.js';
+export * from './icons/twitter-logo-duotone.js';
+export * from './icons/twitch-logo-duotone.js';
+export * from './icons/tumblr-logo-duotone.js';
+export * from './icons/truck-trailer-duotone.js';
+export * from './icons/truck-duotone.js';
+export * from './icons/trophy-duotone.js';
+export * from './icons/trolley-suitcase-duotone.js';
+export * from './icons/trolley-duotone.js';
+export * from './icons/triangle-duotone.js';
+export * from './icons/triangle-dashed-duotone.js';
+export * from './icons/trend-up-duotone.js';
+export * from './icons/trend-down-duotone.js';
+export * from './icons/tree-view-duotone.js';
+export * from './icons/tree-structure-duotone.js';
+export * from './icons/tree-palm-duotone.js';
+export * from './icons/tree-evergreen-duotone.js';
+export * from './icons/tree-duotone.js';
+export * from './icons/treasure-chest-duotone.js';
+export * from './icons/tray-duotone.js';
+export * from './icons/tray-arrow-up-duotone.js';
+export * from './icons/tray-arrow-down-duotone.js';
+export * from './icons/trash-simple-duotone.js';
+export * from './icons/trash-duotone.js';
+export * from './icons/translate-duotone.js';
+export * from './icons/tram-duotone.js';
+export * from './icons/train-simple-duotone.js';
+export * from './icons/train-regional-duotone.js';
+export * from './icons/train-duotone.js';
+export * from './icons/traffic-signal-duotone.js';
+export * from './icons/traffic-sign-duotone.js';
+export * from './icons/traffic-cone-duotone.js';
+export * from './icons/trademark-registered-duotone.js';
+export * from './icons/trademark-duotone.js';
+export * from './icons/tractor-duotone.js';
+export * from './icons/towel-duotone.js';
+export * from './icons/tote-simple-duotone.js';
+export * from './icons/tote-duotone.js';
+export * from './icons/tornado-duotone.js';
+export * from './icons/tooth-duotone.js';
+export * from './icons/toolbox-duotone.js';
+export * from './icons/toilet-paper-duotone.js';
+export * from './icons/toilet-duotone.js';
+export * from './icons/toggle-right-duotone.js';
+export * from './icons/toggle-left-duotone.js';
+export * from './icons/tire-duotone.js';
+export * from './icons/tipi-duotone.js';
+export * from './icons/tip-jar-duotone.js';
+export * from './icons/timer-duotone.js';
+export * from './icons/tilde-duotone.js';
+export * from './icons/tiktok-logo-duotone.js';
+export * from './icons/tidal-logo-duotone.js';
+export * from './icons/ticket-duotone.js';
+export * from './icons/thumbs-up-duotone.js';
+export * from './icons/thumbs-down-duotone.js';
+export * from './icons/three-d-duotone.js';
+export * from './icons/threads-logo-duotone.js';
+export * from './icons/thermometer-simple-duotone.js';
+export * from './icons/thermometer-hot-duotone.js';
+export * from './icons/thermometer-duotone.js';
+export * from './icons/thermometer-cold-duotone.js';
+export * from './icons/textbox-duotone.js';
+export * from './icons/text-underline-duotone.js';
+export * from './icons/text-t-slash-duotone.js';
+export * from './icons/text-t-duotone.js';
+export * from './icons/text-superscript-duotone.js';
+export * from './icons/text-subscript-duotone.js';
+export * from './icons/text-strikethrough-duotone.js';
+export * from './icons/text-outdent-duotone.js';
+export * from './icons/text-italic-duotone.js';
+export * from './icons/text-indent-duotone.js';
+export * from './icons/text-h-two-duotone.js';
+export * from './icons/text-h-three-duotone.js';
+export * from './icons/text-h-six-duotone.js';
+export * from './icons/text-h-one-duotone.js';
+export * from './icons/text-h-four-duotone.js';
+export * from './icons/text-h-five-duotone.js';
+export * from './icons/text-h-duotone.js';
+export * from './icons/text-columns-duotone.js';
+export * from './icons/text-b-duotone.js';
+export * from './icons/text-align-right-duotone.js';
+export * from './icons/text-align-left-duotone.js';
+export * from './icons/text-align-justify-duotone.js';
+export * from './icons/text-align-center-duotone.js';
+export * from './icons/text-aa-duotone.js';
+export * from './icons/text-a-underline-duotone.js';
+export * from './icons/test-tube-duotone.js';
+export * from './icons/terminal-window-duotone.js';
+export * from './icons/terminal-duotone.js';
+export * from './icons/tent-duotone.js';
+export * from './icons/tennis-ball-duotone.js';
+export * from './icons/television-simple-duotone.js';
+export * from './icons/television-duotone.js';
+export * from './icons/telegram-logo-duotone.js';
+export * from './icons/tea-bag-duotone.js';
+export * from './icons/taxi-duotone.js';
+export * from './icons/target-duotone.js';
+export * from './icons/tag-simple-duotone.js';
+export * from './icons/tag-duotone.js';
+export * from './icons/tag-chevron-duotone.js';
+export * from './icons/tabs-duotone.js';
+export * from './icons/table-duotone.js';
+export * from './icons/t-shirt-duotone.js';
+export * from './icons/syringe-duotone.js';
+export * from './icons/synagogue-duotone.js';
+export * from './icons/sword-duotone.js';
+export * from './icons/swimming-pool-duotone.js';
+export * from './icons/swatches-duotone.js';
+export * from './icons/swap-duotone.js';
+export * from './icons/superset-proper-of-duotone.js';
+export * from './icons/superset-of-duotone.js';
+export * from './icons/sunglasses-duotone.js';
+export * from './icons/sun-horizon-duotone.js';
+export * from './icons/sun-duotone.js';
+export * from './icons/sun-dim-duotone.js';
+export * from './icons/suitcase-simple-duotone.js';
+export * from './icons/suitcase-rolling-duotone.js';
+export * from './icons/suitcase-duotone.js';
+export * from './icons/subway-duotone.js';
+export * from './icons/subtract-square-duotone.js';
+export * from './icons/subtract-duotone.js';
+export * from './icons/subtitles-slash-duotone.js';
+export * from './icons/subtitles-duotone.js';
+export * from './icons/subset-proper-of-duotone.js';
+export * from './icons/subset-of-duotone.js';
+export * from './icons/student-duotone.js';
+export * from './icons/stripe-logo-duotone.js';
+export * from './icons/strategy-duotone.js';
+export * from './icons/storefront-duotone.js';
+export * from './icons/stop-duotone.js';
+export * from './icons/stop-circle-duotone.js';
+export * from './icons/stool-duotone.js';
+export * from './icons/sticker-duotone.js';
+export * from './icons/stethoscope-duotone.js';
+export * from './icons/steps-duotone.js';
+export * from './icons/steering-wheel-duotone.js';
+export * from './icons/steam-logo-duotone.js';
+export * from './icons/star-of-david-duotone.js';
+export * from './icons/star-half-duotone.js';
+export * from './icons/star-four-duotone.js';
+export * from './icons/star-duotone.js';
+export * from './icons/star-and-crescent-duotone.js';
+export * from './icons/standard-definition-duotone.js';
+export * from './icons/stamp-duotone.js';
+export * from './icons/stairs-duotone.js';
+export * from './icons/stack-simple-duotone.js';
+export * from './icons/stack-plus-duotone.js';
+export * from './icons/stack-overflow-logo-duotone.js';
+export * from './icons/stack-minus-duotone.js';
+export * from './icons/stack-duotone.js';
+export * from './icons/squares-four-duotone.js';
+export * from './icons/square-split-vertical-duotone.js';
+export * from './icons/square-split-horizontal-duotone.js';
+export * from './icons/square-logo-duotone.js';
+export * from './icons/square-half-duotone.js';
+export * from './icons/square-half-bottom-duotone.js';
+export * from './icons/square-duotone.js';
+export * from './icons/spray-bottle-duotone.js';
+export * from './icons/spotify-logo-duotone.js';
+export * from './icons/split-vertical-duotone.js';
+export * from './icons/split-horizontal-duotone.js';
+export * from './icons/spiral-duotone.js';
+export * from './icons/spinner-gap-duotone.js';
+export * from './icons/spinner-duotone.js';
+export * from './icons/spinner-ball-duotone.js';
+export * from './icons/sphere-duotone.js';
+export * from './icons/speedometer-duotone.js';
+export * from './icons/speaker-x-duotone.js';
+export * from './icons/speaker-slash-duotone.js';
+export * from './icons/speaker-simple-x-duotone.js';
+export * from './icons/speaker-simple-slash-duotone.js';
+export * from './icons/speaker-simple-none-duotone.js';
+export * from './icons/speaker-simple-low-duotone.js';
+export * from './icons/speaker-simple-high-duotone.js';
+export * from './icons/speaker-none-duotone.js';
+export * from './icons/speaker-low-duotone.js';
+export * from './icons/speaker-high-duotone.js';
+export * from './icons/speaker-hifi-duotone.js';
+export * from './icons/sparkle-duotone.js';
+export * from './icons/spade-duotone.js';
+export * from './icons/soundcloud-logo-duotone.js';
+export * from './icons/sort-descending-duotone.js';
+export * from './icons/sort-ascending-duotone.js';
+export * from './icons/solar-roof-duotone.js';
+export * from './icons/solar-panel-duotone.js';
+export * from './icons/sock-duotone.js';
+export * from './icons/soccer-ball-duotone.js';
+export * from './icons/snowflake-duotone.js';
+export * from './icons/sneaker-move-duotone.js';
+export * from './icons/sneaker-duotone.js';
+export * from './icons/snapchat-logo-duotone.js';
+export * from './icons/smiley-x-eyes-duotone.js';
+export * from './icons/smiley-wink-duotone.js';
+export * from './icons/smiley-sticker-duotone.js';
+export * from './icons/smiley-sad-duotone.js';
+export * from './icons/smiley-nervous-duotone.js';
+export * from './icons/smiley-melting-duotone.js';
+export * from './icons/smiley-meh-duotone.js';
+export * from './icons/smiley-duotone.js';
+export * from './icons/smiley-blank-duotone.js';
+export * from './icons/smiley-angry-duotone.js';
+export * from './icons/slideshow-duotone.js';
+export * from './icons/sliders-horizontal-duotone.js';
+export * from './icons/sliders-duotone.js';
+export * from './icons/slack-logo-duotone.js';
+export * from './icons/skype-logo-duotone.js';
+export * from './icons/skull-duotone.js';
+export * from './icons/skip-forward-duotone.js';
+export * from './icons/skip-forward-circle-duotone.js';
+export * from './icons/skip-back-duotone.js';
+export * from './icons/skip-back-circle-duotone.js';
+export * from './icons/sketch-logo-duotone.js';
+export * from './icons/siren-duotone.js';
+export * from './icons/sim-card-duotone.js';
+export * from './icons/signpost-duotone.js';
+export * from './icons/signature-duotone.js';
+export * from './icons/sign-out-duotone.js';
+export * from './icons/sign-in-duotone.js';
+export * from './icons/sigma-duotone.js';
+export * from './icons/sidebar-simple-duotone.js';
+export * from './icons/sidebar-duotone.js';
+export * from './icons/shuffle-simple-duotone.js';
+export * from './icons/shuffle-duotone.js';
+export * from './icons/shuffle-angular-duotone.js';
+export * from './icons/shrimp-duotone.js';
+export * from './icons/shower-duotone.js';
+export * from './icons/shovel-duotone.js';
+export * from './icons/shopping-cart-simple-duotone.js';
+export * from './icons/shopping-cart-duotone.js';
+export * from './icons/shopping-bag-open-duotone.js';
+export * from './icons/shopping-bag-duotone.js';
+export * from './icons/shooting-star-duotone.js';
+export * from './icons/shirt-folded-duotone.js';
+export * from './icons/shipping-container-duotone.js';
+export * from './icons/shield-warning-duotone.js';
+export * from './icons/shield-star-duotone.js';
+export * from './icons/shield-slash-duotone.js';
+export * from './icons/shield-plus-duotone.js';
+export * from './icons/shield-duotone.js';
+export * from './icons/shield-chevron-duotone.js';
+export * from './icons/shield-checkered-duotone.js';
+export * from './icons/shield-check-duotone.js';
+export * from './icons/share-network-duotone.js';
+export * from './icons/share-fat-duotone.js';
+export * from './icons/share-duotone.js';
+export * from './icons/shapes-duotone.js';
+export * from './icons/selection-slash-duotone.js';
+export * from './icons/selection-plus-duotone.js';
+export * from './icons/selection-inverse-duotone.js';
+export * from './icons/selection-foreground-duotone.js';
+export * from './icons/selection-duotone.js';
+export * from './icons/selection-background-duotone.js';
+export * from './icons/selection-all-duotone.js';
+export * from './icons/security-camera-duotone.js';
+export * from './icons/seatbelt-duotone.js';
+export * from './icons/seat-duotone.js';
+export * from './icons/seal-warning-duotone.js';
+export * from './icons/seal-question-duotone.js';
+export * from './icons/seal-percent-duotone.js';
+export * from './icons/seal-duotone.js';
+export * from './icons/seal-check-duotone.js';
+export * from './icons/scroll-duotone.js';
+export * from './icons/scribble-loop-duotone.js';
+export * from './icons/scribble-duotone.js';
+export * from './icons/screwdriver-duotone.js';
+export * from './icons/screencast-duotone.js';
+export * from './icons/scooter-duotone.js';
+export * from './icons/scissors-duotone.js';
+export * from './icons/scan-smiley-duotone.js';
+export * from './icons/scan-duotone.js';
+export * from './icons/scales-duotone.js';
+export * from './icons/sailboat-duotone.js';
+export * from './icons/ruler-duotone.js';
+export * from './icons/rug-duotone.js';
+export * from './icons/rss-simple-duotone.js';
+export * from './icons/rss-duotone.js';
+export * from './icons/rows-plus-top-duotone.js';
+export * from './icons/rows-plus-bottom-duotone.js';
+export * from './icons/rows-duotone.js';
+export * from './icons/rocket-launch-duotone.js';
+export * from './icons/rocket-duotone.js';
+export * from './icons/robot-duotone.js';
+export * from './icons/road-horizon-duotone.js';
+export * from './icons/rewind-duotone.js';
+export * from './icons/rewind-circle-duotone.js';
+export * from './icons/resize-duotone.js';
+export * from './icons/replit-logo-duotone.js';
+export * from './icons/repeat-once-duotone.js';
+export * from './icons/repeat-duotone.js';
+export * from './icons/reddit-logo-duotone.js';
+export * from './icons/recycle-duotone.js';
+export * from './icons/rectangle-duotone.js';
+export * from './icons/rectangle-dashed-duotone.js';
+export * from './icons/record-duotone.js';
+export * from './icons/receipt-x-duotone.js';
+export * from './icons/receipt-duotone.js';
+export * from './icons/read-cv-logo-duotone.js';
+export * from './icons/ranking-duotone.js';
+export * from './icons/rainbow-duotone.js';
+export * from './icons/rainbow-cloud-duotone.js';
+export * from './icons/radioactive-duotone.js';
+export * from './icons/radio-duotone.js';
+export * from './icons/radio-button-duotone.js';
+export * from './icons/radical-duotone.js';
+export * from './icons/racquet-duotone.js';
+export * from './icons/rabbit-duotone.js';
+export * from './icons/quotes-duotone.js';
+export * from './icons/queue-duotone.js';
+export * from './icons/question-mark-duotone.js';
+export * from './icons/question-duotone.js';
+export * from './icons/qr-code-duotone.js';
+export * from './icons/puzzle-piece-duotone.js';
+export * from './icons/push-pin-slash-duotone.js';
+export * from './icons/push-pin-simple-slash-duotone.js';
+export * from './icons/push-pin-simple-duotone.js';
+export * from './icons/push-pin-duotone.js';
+export * from './icons/pulse-duotone.js';
+export * from './icons/projector-screen-duotone.js';
+export * from './icons/projector-screen-chart-duotone.js';
+export * from './icons/prohibit-inset-duotone.js';
+export * from './icons/prohibit-duotone.js';
+export * from './icons/printer-duotone.js';
+export * from './icons/presentation-duotone.js';
+export * from './icons/presentation-chart-duotone.js';
+export * from './icons/prescription-duotone.js';
+export * from './icons/power-duotone.js';
+export * from './icons/potted-plant-duotone.js';
+export * from './icons/popsicle-duotone.js';
+export * from './icons/popcorn-duotone.js';
+export * from './icons/polygon-duotone.js';
+export * from './icons/police-car-duotone.js';
+export * from './icons/poker-chip-duotone.js';
+export * from './icons/plus-square-duotone.js';
+export * from './icons/plus-minus-duotone.js';
+export * from './icons/plus-duotone.js';
+export * from './icons/plus-circle-duotone.js';
+export * from './icons/plugs-duotone.js';
+export * from './icons/plugs-connected-duotone.js';
+export * from './icons/plug-duotone.js';
+export * from './icons/plug-charging-duotone.js';
+export * from './icons/playlist-duotone.js';
+export * from './icons/play-pause-duotone.js';
+export * from './icons/play-duotone.js';
+export * from './icons/play-circle-duotone.js';
+export * from './icons/plant-duotone.js';
+export * from './icons/planet-duotone.js';
+export * from './icons/placeholder-duotone.js';
+export * from './icons/pizza-duotone.js';
+export * from './icons/pix-logo-duotone.js';
+export * from './icons/pipe-wrench-duotone.js';
+export * from './icons/pipe-duotone.js';
+export * from './icons/pinwheel-duotone.js';
+export * from './icons/pinterest-logo-duotone.js';
+export * from './icons/pint-glass-duotone.js';
+export * from './icons/ping-pong-duotone.js';
+export * from './icons/pill-duotone.js';
+export * from './icons/piggy-bank-duotone.js';
+export * from './icons/picture-in-picture-duotone.js';
+export * from './icons/picnic-table-duotone.js';
+export * from './icons/piano-keys-duotone.js';
+export * from './icons/pi-duotone.js';
+export * from './icons/phosphor-logo-duotone.js';
+export * from './icons/phone-x-duotone.js';
+export * from './icons/phone-transfer-duotone.js';
+export * from './icons/phone-slash-duotone.js';
+export * from './icons/phone-plus-duotone.js';
+export * from './icons/phone-pause-duotone.js';
+export * from './icons/phone-outgoing-duotone.js';
+export * from './icons/phone-list-duotone.js';
+export * from './icons/phone-incoming-duotone.js';
+export * from './icons/phone-duotone.js';
+export * from './icons/phone-disconnect-duotone.js';
+export * from './icons/phone-call-duotone.js';
+export * from './icons/perspective-duotone.js';
+export * from './icons/person-simple-walk-duotone.js';
+export * from './icons/person-simple-throw-duotone.js';
+export * from './icons/person-simple-tai-chi-duotone.js';
+export * from './icons/person-simple-swim-duotone.js';
+export * from './icons/person-simple-snowboard-duotone.js';
+export * from './icons/person-simple-ski-duotone.js';
+export * from './icons/person-simple-run-duotone.js';
+export * from './icons/person-simple-hike-duotone.js';
+export * from './icons/person-simple-duotone.js';
+export * from './icons/person-simple-circle-duotone.js';
+export * from './icons/person-simple-bike-duotone.js';
+export * from './icons/person-duotone.js';
+export * from './icons/person-arms-spread-duotone.js';
+export * from './icons/percent-duotone.js';
+export * from './icons/pepper-duotone.js';
+export * from './icons/pentagram-duotone.js';
+export * from './icons/pentagon-duotone.js';
+export * from './icons/pencil-slash-duotone.js';
+export * from './icons/pencil-simple-slash-duotone.js';
+export * from './icons/pencil-simple-line-duotone.js';
+export * from './icons/pencil-simple-duotone.js';
+export * from './icons/pencil-ruler-duotone.js';
+export * from './icons/pencil-line-duotone.js';
+export * from './icons/pencil-duotone.js';
+export * from './icons/pencil-circle-duotone.js';
+export * from './icons/pen-nib-straight-duotone.js';
+export * from './icons/pen-nib-duotone.js';
+export * from './icons/pen-duotone.js';
+export * from './icons/peace-duotone.js';
+export * from './icons/paypal-logo-duotone.js';
+export * from './icons/paw-print-duotone.js';
+export * from './icons/pause-duotone.js';
+export * from './icons/pause-circle-duotone.js';
+export * from './icons/patreon-logo-duotone.js';
+export * from './icons/path-duotone.js';
+export * from './icons/password-duotone.js';
+export * from './icons/park-duotone.js';
+export * from './icons/parallelogram-duotone.js';
+export * from './icons/paragraph-duotone.js';
+export * from './icons/parachute-duotone.js';
+export * from './icons/paperclip-horizontal-duotone.js';
+export * from './icons/paperclip-duotone.js';
+export * from './icons/paper-plane-tilt-duotone.js';
+export * from './icons/paper-plane-right-duotone.js';
+export * from './icons/paper-plane-duotone.js';
+export * from './icons/pants-duotone.js';
+export * from './icons/panorama-duotone.js';
+export * from './icons/palette-duotone.js';
+export * from './icons/paint-roller-duotone.js';
+export * from './icons/paint-bucket-duotone.js';
+export * from './icons/paint-brush-household-duotone.js';
+export * from './icons/paint-brush-duotone.js';
+export * from './icons/paint-brush-broad-duotone.js';
+export * from './icons/package-duotone.js';
+export * from './icons/oven-duotone.js';
+export * from './icons/orange-slice-duotone.js';
+export * from './icons/orange-duotone.js';
+export * from './icons/option-duotone.js';
+export * from './icons/open-ai-logo-duotone.js';
+export * from './icons/onigiri-duotone.js';
+export * from './icons/office-chair-duotone.js';
+export * from './icons/octagon-duotone.js';
+export * from './icons/ny-times-logo-duotone.js';
+export * from './icons/nut-duotone.js';
+export * from './icons/numpad-duotone.js';
+export * from './icons/number-zero-duotone.js';
+export * from './icons/number-two-duotone.js';
+export * from './icons/number-three-duotone.js';
+export * from './icons/number-square-zero-duotone.js';
+export * from './icons/number-square-two-duotone.js';
+export * from './icons/number-square-three-duotone.js';
+export * from './icons/number-square-six-duotone.js';
+export * from './icons/number-square-seven-duotone.js';
+export * from './icons/number-square-one-duotone.js';
+export * from './icons/number-square-nine-duotone.js';
+export * from './icons/number-square-four-duotone.js';
+export * from './icons/number-square-five-duotone.js';
+export * from './icons/number-square-eight-duotone.js';
+export * from './icons/number-six-duotone.js';
+export * from './icons/number-seven-duotone.js';
+export * from './icons/number-one-duotone.js';
+export * from './icons/number-nine-duotone.js';
+export * from './icons/number-four-duotone.js';
+export * from './icons/number-five-duotone.js';
+export * from './icons/number-eight-duotone.js';
+export * from './icons/number-circle-zero-duotone.js';
+export * from './icons/number-circle-two-duotone.js';
+export * from './icons/number-circle-three-duotone.js';
+export * from './icons/number-circle-six-duotone.js';
+export * from './icons/number-circle-seven-duotone.js';
+export * from './icons/number-circle-one-duotone.js';
+export * from './icons/number-circle-nine-duotone.js';
+export * from './icons/number-circle-four-duotone.js';
+export * from './icons/number-circle-five-duotone.js';
+export * from './icons/number-circle-eight-duotone.js';
+export * from './icons/nuclear-plant-duotone.js';
+export * from './icons/notion-logo-duotone.js';
+export * from './icons/notification-duotone.js';
+export * from './icons/notepad-duotone.js';
+export * from './icons/notebook-duotone.js';
+export * from './icons/note-pencil-duotone.js';
+export * from './icons/note-duotone.js';
+export * from './icons/note-blank-duotone.js';
+export * from './icons/notches-duotone.js';
+export * from './icons/not-superset-of-duotone.js';
+export * from './icons/not-subset-of-duotone.js';
+export * from './icons/not-member-of-duotone.js';
+export * from './icons/not-equals-duotone.js';
+export * from './icons/newspaper-duotone.js';
+export * from './icons/newspaper-clipping-duotone.js';
+export * from './icons/network-x-duotone.js';
+export * from './icons/network-slash-duotone.js';
+export * from './icons/network-duotone.js';
+export * from './icons/needle-duotone.js';
+export * from './icons/navigation-arrow-duotone.js';
+export * from './icons/music-notes-simple-duotone.js';
+export * from './icons/music-notes-plus-duotone.js';
+export * from './icons/music-notes-minus-duotone.js';
+export * from './icons/music-notes-duotone.js';
+export * from './icons/music-note-simple-duotone.js';
+export * from './icons/music-note-duotone.js';
+export * from './icons/mouse-simple-duotone.js';
+export * from './icons/mouse-scroll-duotone.js';
+export * from './icons/mouse-right-click-duotone.js';
+export * from './icons/mouse-middle-click-duotone.js';
+export * from './icons/mouse-left-click-duotone.js';
+export * from './icons/mouse-duotone.js';
+export * from './icons/mountains-duotone.js';
+export * from './icons/motorcycle-duotone.js';
+export * from './icons/mosque-duotone.js';
+export * from './icons/moped-front-duotone.js';
+export * from './icons/moped-duotone.js';
+export * from './icons/moon-stars-duotone.js';
+export * from './icons/moon-duotone.js';
+export * from './icons/monitor-play-duotone.js';
+export * from './icons/monitor-duotone.js';
+export * from './icons/monitor-arrow-up-duotone.js';
+export * from './icons/money-wavy-duotone.js';
+export * from './icons/money-duotone.js';
+export * from './icons/minus-square-duotone.js';
+export * from './icons/minus-duotone.js';
+export * from './icons/minus-circle-duotone.js';
+export * from './icons/microsoft-word-logo-duotone.js';
+export * from './icons/microsoft-teams-logo-duotone.js';
+export * from './icons/microsoft-powerpoint-logo-duotone.js';
+export * from './icons/microsoft-outlook-logo-duotone.js';
+export * from './icons/microsoft-excel-logo-duotone.js';
+export * from './icons/microscope-duotone.js';
+export * from './icons/microphone-stage-duotone.js';
+export * from './icons/microphone-slash-duotone.js';
+export * from './icons/microphone-duotone.js';
+export * from './icons/metronome-duotone.js';
+export * from './icons/meteor-duotone.js';
+export * from './icons/meta-logo-duotone.js';
+export * from './icons/messenger-logo-duotone.js';
+export * from './icons/memory-duotone.js';
+export * from './icons/member-of-duotone.js';
+export * from './icons/megaphone-simple-duotone.js';
+export * from './icons/megaphone-duotone.js';
+export * from './icons/medium-logo-duotone.js';
+export * from './icons/medal-military-duotone.js';
+export * from './icons/medal-duotone.js';
+export * from './icons/matrix-logo-duotone.js';
+export * from './icons/math-operations-duotone.js';
+export * from './icons/mastodon-logo-duotone.js';
+export * from './icons/mask-sad-duotone.js';
+export * from './icons/mask-happy-duotone.js';
+export * from './icons/martini-duotone.js';
+export * from './icons/marker-circle-duotone.js';
+export * from './icons/markdown-logo-duotone.js';
+export * from './icons/map-trifold-duotone.js';
+export * from './icons/map-pin-simple-line-duotone.js';
+export * from './icons/map-pin-simple-duotone.js';
+export * from './icons/map-pin-simple-area-duotone.js';
+export * from './icons/map-pin-plus-duotone.js';
+export * from './icons/map-pin-line-duotone.js';
+export * from './icons/map-pin-duotone.js';
+export * from './icons/map-pin-area-duotone.js';
+export * from './icons/mailbox-duotone.js';
+export * from './icons/magnifying-glass-plus-duotone.js';
+export * from './icons/magnifying-glass-minus-duotone.js';
+export * from './icons/magnifying-glass-duotone.js';
+export * from './icons/magnet-straight-duotone.js';
+export * from './icons/magnet-duotone.js';
+export * from './icons/magic-wand-duotone.js';
+export * from './icons/log-duotone.js';
+export * from './icons/lockers-duotone.js';
+export * from './icons/lock-simple-open-duotone.js';
+export * from './icons/lock-simple-duotone.js';
+export * from './icons/lock-open-duotone.js';
+export * from './icons/lock-laminated-open-duotone.js';
+export * from './icons/lock-laminated-duotone.js';
+export * from './icons/lock-key-open-duotone.js';
+export * from './icons/lock-key-duotone.js';
+export * from './icons/lock-duotone.js';
+export * from './icons/list-star-duotone.js';
+export * from './icons/list-plus-duotone.js';
+export * from './icons/list-numbers-duotone.js';
+export * from './icons/list-magnifying-glass-duotone.js';
+export * from './icons/list-heart-duotone.js';
+export * from './icons/list-duotone.js';
+export * from './icons/list-dashes-duotone.js';
+export * from './icons/list-checks-duotone.js';
+export * from './icons/list-bullets-duotone.js';
+export * from './icons/linux-logo-duotone.js';
+export * from './icons/linktree-logo-duotone.js';
+export * from './icons/linkedin-logo-duotone.js';
+export * from './icons/link-simple-horizontal-duotone.js';
+export * from './icons/link-simple-horizontal-break-duotone.js';
+export * from './icons/link-simple-duotone.js';
+export * from './icons/link-simple-break-duotone.js';
+export * from './icons/link-duotone.js';
+export * from './icons/link-break-duotone.js';
+export * from './icons/line-vertical-duotone.js';
+export * from './icons/line-segments-duotone.js';
+export * from './icons/line-segment-duotone.js';
+export * from './icons/lightning-slash-duotone.js';
+export * from './icons/lightning-duotone.js';
+export * from './icons/lightning-a-duotone.js';
+export * from './icons/lighthouse-duotone.js';
+export * from './icons/lightbulb-filament-duotone.js';
+export * from './icons/lightbulb-duotone.js';
+export * from './icons/lifebuoy-duotone.js';
+export * from './icons/letter-circle-v-duotone.js';
+export * from './icons/letter-circle-p-duotone.js';
+export * from './icons/letter-circle-h-duotone.js';
+export * from './icons/less-than-or-equal-duotone.js';
+export * from './icons/less-than-duotone.js';
+export * from './icons/lego-smiley-duotone.js';
+export * from './icons/lego-duotone.js';
+export * from './icons/lectern-duotone.js';
+export * from './icons/leaf-duotone.js';
+export * from './icons/layout-duotone.js';
+export * from './icons/lastfm-logo-duotone.js';
+export * from './icons/lasso-duotone.js';
+export * from './icons/laptop-duotone.js';
+export * from './icons/lamp-pendant-duotone.js';
+export * from './icons/lamp-duotone.js';
+export * from './icons/ladder-simple-duotone.js';
+export * from './icons/ladder-duotone.js';
+export * from './icons/knife-duotone.js';
+export * from './icons/keyhole-duotone.js';
+export * from './icons/keyboard-duotone.js';
+export * from './icons/key-return-duotone.js';
+export * from './icons/key-duotone.js';
+export * from './icons/kanban-duotone.js';
+export * from './icons/joystick-duotone.js';
+export * from './icons/jeep-duotone.js';
+export * from './icons/jar-label-duotone.js';
+export * from './icons/jar-duotone.js';
+export * from './icons/island-duotone.js';
+export * from './icons/invoice-duotone.js';
+export * from './icons/intersection-duotone.js';
+export * from './icons/intersect-three-duotone.js';
+export * from './icons/intersect-square-duotone.js';
+export * from './icons/intersect-duotone.js';
+export * from './icons/instagram-logo-duotone.js';
+export * from './icons/info-duotone.js';
+export * from './icons/infinity-duotone.js';
+export * from './icons/images-square-duotone.js';
+export * from './icons/images-duotone.js';
+export * from './icons/image-square-duotone.js';
+export * from './icons/image-duotone.js';
+export * from './icons/image-broken-duotone.js';
+export * from './icons/identification-card-duotone.js';
+export * from './icons/identification-badge-duotone.js';
+export * from './icons/ice-cream-duotone.js';
+export * from './icons/hurricane-duotone.js';
+export * from './icons/house-simple-duotone.js';
+export * from './icons/house-line-duotone.js';
+export * from './icons/house-duotone.js';
+export * from './icons/hourglass-simple-medium-duotone.js';
+export * from './icons/hourglass-simple-low-duotone.js';
+export * from './icons/hourglass-simple-high-duotone.js';
+export * from './icons/hourglass-simple-duotone.js';
+export * from './icons/hourglass-medium-duotone.js';
+export * from './icons/hourglass-low-duotone.js';
+export * from './icons/hourglass-high-duotone.js';
+export * from './icons/hourglass-duotone.js';
+export * from './icons/hospital-duotone.js';
+export * from './icons/horse-duotone.js';
+export * from './icons/hoodie-duotone.js';
+export * from './icons/hockey-duotone.js';
+export * from './icons/highlighter-duotone.js';
+export * from './icons/highlighter-circle-duotone.js';
+export * from './icons/high-heel-duotone.js';
+export * from './icons/high-definition-duotone.js';
+export * from './icons/hexagon-duotone.js';
+export * from './icons/heartbeat-duotone.js';
+export * from './icons/heart-straight-duotone.js';
+export * from './icons/heart-straight-break-duotone.js';
+export * from './icons/heart-half-duotone.js';
+export * from './icons/heart-duotone.js';
+export * from './icons/heart-break-duotone.js';
+export * from './icons/headset-duotone.js';
+export * from './icons/headphones-duotone.js';
+export * from './icons/headlights-duotone.js';
+export * from './icons/head-circuit-duotone.js';
+export * from './icons/hash-straight-duotone.js';
+export * from './icons/hash-duotone.js';
+export * from './icons/hard-hat-duotone.js';
+export * from './icons/hard-drives-duotone.js';
+export * from './icons/hard-drive-duotone.js';
+export * from './icons/handshake-duotone.js';
+export * from './icons/hands-praying-duotone.js';
+export * from './icons/hands-clapping-duotone.js';
+export * from './icons/handbag-simple-duotone.js';
+export * from './icons/handbag-duotone.js';
+export * from './icons/hand-withdraw-duotone.js';
+export * from './icons/hand-waving-duotone.js';
+export * from './icons/hand-tap-duotone.js';
+export * from './icons/hand-swipe-right-duotone.js';
+export * from './icons/hand-swipe-left-duotone.js';
+export * from './icons/hand-soap-duotone.js';
+export * from './icons/hand-pointing-duotone.js';
+export * from './icons/hand-peace-duotone.js';
+export * from './icons/hand-palm-duotone.js';
+export * from './icons/hand-heart-duotone.js';
+export * from './icons/hand-grabbing-duotone.js';
+export * from './icons/hand-fist-duotone.js';
+export * from './icons/hand-eye-duotone.js';
+export * from './icons/hand-duotone.js';
+export * from './icons/hand-deposit-duotone.js';
+export * from './icons/hand-coins-duotone.js';
+export * from './icons/hand-arrow-up-duotone.js';
+export * from './icons/hand-arrow-down-duotone.js';
+export * from './icons/hammer-duotone.js';
+export * from './icons/hamburger-duotone.js';
+export * from './icons/hair-dryer-duotone.js';
+export * from './icons/guitar-duotone.js';
+export * from './icons/grid-nine-duotone.js';
+export * from './icons/grid-four-duotone.js';
+export * from './icons/greater-than-or-equal-duotone.js';
+export * from './icons/greater-than-duotone.js';
+export * from './icons/graphics-card-duotone.js';
+export * from './icons/graph-duotone.js';
+export * from './icons/grains-slash-duotone.js';
+export * from './icons/grains-duotone.js';
+export * from './icons/graduation-cap-duotone.js';
+export * from './icons/gradient-duotone.js';
+export * from './icons/gps-slash-duotone.js';
+export * from './icons/gps-fix-duotone.js';
+export * from './icons/gps-duotone.js';
+export * from './icons/google-podcasts-logo-duotone.js';
+export * from './icons/google-play-logo-duotone.js';
+export * from './icons/google-photos-logo-duotone.js';
+export * from './icons/google-logo-duotone.js';
+export * from './icons/google-drive-logo-duotone.js';
+export * from './icons/google-chrome-logo-duotone.js';
+export * from './icons/google-cardboard-logo-duotone.js';
+export * from './icons/goodreads-logo-duotone.js';
+export * from './icons/golf-duotone.js';
+export * from './icons/goggles-duotone.js';
+export * from './icons/globe-x-duotone.js';
+export * from './icons/globe-stand-duotone.js';
+export * from './icons/globe-simple-x-duotone.js';
+export * from './icons/globe-simple-duotone.js';
+export * from './icons/globe-hemisphere-west-duotone.js';
+export * from './icons/globe-hemisphere-east-duotone.js';
+export * from './icons/globe-duotone.js';
+export * from './icons/gitlab-logo-simple-duotone.js';
+export * from './icons/gitlab-logo-duotone.js';
+export * from './icons/github-logo-duotone.js';
+export * from './icons/git-pull-request-duotone.js';
+export * from './icons/git-merge-duotone.js';
+export * from './icons/git-fork-duotone.js';
+export * from './icons/git-diff-duotone.js';
+export * from './icons/git-commit-duotone.js';
+export * from './icons/git-branch-duotone.js';
+export * from './icons/gift-duotone.js';
+export * from './icons/gif-duotone.js';
+export * from './icons/ghost-duotone.js';
+export * from './icons/gender-transgender-duotone.js';
+export * from './icons/gender-nonbinary-duotone.js';
+export * from './icons/gender-neuter-duotone.js';
+export * from './icons/gender-male-duotone.js';
+export * from './icons/gender-intersex-duotone.js';
+export * from './icons/gender-female-duotone.js';
+export * from './icons/gear-six-duotone.js';
+export * from './icons/gear-fine-duotone.js';
+export * from './icons/gear-duotone.js';
+export * from './icons/gavel-duotone.js';
+export * from './icons/gauge-duotone.js';
+export * from './icons/gas-pump-duotone.js';
+export * from './icons/gas-can-duotone.js';
+export * from './icons/garage-duotone.js';
+export * from './icons/game-controller-duotone.js';
+export * from './icons/funnel-x-duotone.js';
+export * from './icons/funnel-simple-x-duotone.js';
+export * from './icons/funnel-simple-duotone.js';
+export * from './icons/funnel-duotone.js';
+export * from './icons/function-duotone.js';
+export * from './icons/framer-logo-duotone.js';
+export * from './icons/frame-corners-duotone.js';
+export * from './icons/four-k-duotone.js';
+export * from './icons/fork-knife-duotone.js';
+export * from './icons/footprints-duotone.js';
+export * from './icons/football-helmet-duotone.js';
+export * from './icons/football-duotone.js';
+export * from './icons/folders-duotone.js';
+export * from './icons/folder-user-duotone.js';
+export * from './icons/folder-star-duotone.js';
+export * from './icons/folder-simple-user-duotone.js';
+export * from './icons/folder-simple-star-duotone.js';
+export * from './icons/folder-simple-plus-duotone.js';
+export * from './icons/folder-simple-minus-duotone.js';
+export * from './icons/folder-simple-lock-duotone.js';
+export * from './icons/folder-simple-duotone.js';
+export * from './icons/folder-simple-dashed-duotone.js';
+export * from './icons/folder-plus-duotone.js';
+export * from './icons/folder-open-duotone.js';
+export * from './icons/folder-minus-duotone.js';
+export * from './icons/folder-lock-duotone.js';
+export * from './icons/folder-duotone.js';
+export * from './icons/folder-dashed-duotone.js';
+export * from './icons/flying-saucer-duotone.js';
+export * from './icons/flower-tulip-duotone.js';
+export * from './icons/flower-lotus-duotone.js';
+export * from './icons/flower-duotone.js';
+export * from './icons/flow-arrow-duotone.js';
+export * from './icons/floppy-disk-duotone.js';
+export * from './icons/floppy-disk-back-duotone.js';
+export * from './icons/flip-vertical-duotone.js';
+export * from './icons/flip-horizontal-duotone.js';
+export * from './icons/flask-duotone.js';
+export * from './icons/flashlight-duotone.js';
+export * from './icons/flame-duotone.js';
+export * from './icons/flag-pennant-duotone.js';
+export * from './icons/flag-duotone.js';
+export * from './icons/flag-checkered-duotone.js';
+export * from './icons/flag-banner-fold-duotone.js';
+export * from './icons/flag-banner-duotone.js';
+export * from './icons/fish-simple-duotone.js';
+export * from './icons/fish-duotone.js';
+export * from './icons/first-aid-kit-duotone.js';
+export * from './icons/first-aid-duotone.js';
+export * from './icons/fire-truck-duotone.js';
+export * from './icons/fire-simple-duotone.js';
+export * from './icons/fire-extinguisher-duotone.js';
+export * from './icons/fire-duotone.js';
+export * from './icons/finn-the-human-duotone.js';
+export * from './icons/fingerprint-simple-duotone.js';
+export * from './icons/fingerprint-duotone.js';
+export * from './icons/film-strip-duotone.js';
+export * from './icons/film-slate-duotone.js';
+export * from './icons/film-script-duotone.js';
+export * from './icons/film-reel-duotone.js';
+export * from './icons/files-duotone.js';
+export * from './icons/file-zip-duotone.js';
+export * from './icons/file-xls-duotone.js';
+export * from './icons/file-x-duotone.js';
+export * from './icons/file-vue-duotone.js';
+export * from './icons/file-video-duotone.js';
+export * from './icons/file-txt-duotone.js';
+export * from './icons/file-tsx-duotone.js';
+export * from './icons/file-ts-duotone.js';
+export * from './icons/file-text-duotone.js';
+export * from './icons/file-svg-duotone.js';
+export * from './icons/file-sql-duotone.js';
+export * from './icons/file-rs-duotone.js';
+export * from './icons/file-py-duotone.js';
+export * from './icons/file-ppt-duotone.js';
+export * from './icons/file-png-duotone.js';
+export * from './icons/file-plus-duotone.js';
+export * from './icons/file-pdf-duotone.js';
+export * from './icons/file-minus-duotone.js';
+export * from './icons/file-md-duotone.js';
+export * from './icons/file-magnifying-glass-duotone.js';
+export * from './icons/file-lock-duotone.js';
+export * from './icons/file-jsx-duotone.js';
+export * from './icons/file-js-duotone.js';
+export * from './icons/file-jpg-duotone.js';
+export * from './icons/file-ini-duotone.js';
+export * from './icons/file-image-duotone.js';
+export * from './icons/file-html-duotone.js';
+export * from './icons/file-duotone.js';
+export * from './icons/file-doc-duotone.js';
+export * from './icons/file-dashed-duotone.js';
+export * from './icons/file-csv-duotone.js';
+export * from './icons/file-css-duotone.js';
+export * from './icons/file-cpp-duotone.js';
+export * from './icons/file-code-duotone.js';
+export * from './icons/file-cloud-duotone.js';
+export * from './icons/file-c-sharp-duotone.js';
+export * from './icons/file-c-duotone.js';
+export * from './icons/file-audio-duotone.js';
+export * from './icons/file-arrow-up-duotone.js';
+export * from './icons/file-arrow-down-duotone.js';
+export * from './icons/file-archive-duotone.js';
+export * from './icons/figma-logo-duotone.js';
+export * from './icons/fediverse-logo-duotone.js';
+export * from './icons/feather-duotone.js';
+export * from './icons/fast-forward-duotone.js';
+export * from './icons/fast-forward-circle-duotone.js';
+export * from './icons/farm-duotone.js';
+export * from './icons/fan-duotone.js';
+export * from './icons/fallout-shelter-duotone.js';
+export * from './icons/faders-horizontal-duotone.js';
+export * from './icons/faders-duotone.js';
+export * from './icons/factory-duotone.js';
+export * from './icons/facebook-logo-duotone.js';
+export * from './icons/face-mask-duotone.js';
+export * from './icons/eyes-duotone.js';
+export * from './icons/eyeglasses-duotone.js';
+export * from './icons/eyedropper-sample-duotone.js';
+export * from './icons/eyedropper-duotone.js';
+export * from './icons/eye-slash-duotone.js';
+export * from './icons/eye-duotone.js';
+export * from './icons/eye-closed-duotone.js';
+export * from './icons/export-duotone.js';
+export * from './icons/exclude-square-duotone.js';
+export * from './icons/exclude-duotone.js';
+export * from './icons/exclamation-mark-duotone.js';
+export * from './icons/exam-duotone.js';
+export * from './icons/escalator-up-duotone.js';
+export * from './icons/escalator-down-duotone.js';
+export * from './icons/eraser-duotone.js';
+export * from './icons/equals-duotone.js';
+export * from './icons/equalizer-duotone.js';
+export * from './icons/envelope-simple-open-duotone.js';
+export * from './icons/envelope-simple-duotone.js';
+export * from './icons/envelope-open-duotone.js';
+export * from './icons/envelope-duotone.js';
+export * from './icons/engine-duotone.js';
+export * from './icons/empty-duotone.js';
+export * from './icons/elevator-duotone.js';
+export * from './icons/eject-simple-duotone.js';
+export * from './icons/eject-duotone.js';
+export * from './icons/egg-duotone.js';
+export * from './icons/egg-crack-duotone.js';
+export * from './icons/ear-slash-duotone.js';
+export * from './icons/ear-duotone.js';
+export * from './icons/dropbox-logo-duotone.js';
+export * from './icons/drop-slash-duotone.js';
+export * from './icons/drop-simple-duotone.js';
+export * from './icons/drop-half-duotone.js';
+export * from './icons/drop-half-bottom-duotone.js';
+export * from './icons/drop-duotone.js';
+export * from './icons/drone-duotone.js';
+export * from './icons/dribbble-logo-duotone.js';
+export * from './icons/dresser-duotone.js';
+export * from './icons/dress-duotone.js';
+export * from './icons/download-simple-duotone.js';
+export * from './icons/download-duotone.js';
+export * from './icons/dots-three-vertical-duotone.js';
+export * from './icons/dots-three-outline-vertical-duotone.js';
+export * from './icons/dots-three-outline-duotone.js';
+export * from './icons/dots-three-duotone.js';
+export * from './icons/dots-three-circle-vertical-duotone.js';
+export * from './icons/dots-three-circle-duotone.js';
+export * from './icons/dots-six-vertical-duotone.js';
+export * from './icons/dots-six-duotone.js';
+export * from './icons/dots-nine-duotone.js';
+export * from './icons/dot-outline-duotone.js';
+export * from './icons/dot-duotone.js';
+export * from './icons/door-open-duotone.js';
+export * from './icons/door-duotone.js';
+export * from './icons/dog-duotone.js';
+export * from './icons/dna-duotone.js';
+export * from './icons/divide-duotone.js';
+export * from './icons/discord-logo-duotone.js';
+export * from './icons/disco-ball-duotone.js';
+export * from './icons/disc-duotone.js';
+export * from './icons/dice-two-duotone.js';
+export * from './icons/dice-three-duotone.js';
+export * from './icons/dice-six-duotone.js';
+export * from './icons/dice-one-duotone.js';
+export * from './icons/dice-four-duotone.js';
+export * from './icons/dice-five-duotone.js';
+export * from './icons/diamonds-four-duotone.js';
+export * from './icons/diamond-duotone.js';
+export * from './icons/devices-duotone.js';
+export * from './icons/device-tablet-speaker-duotone.js';
+export * from './icons/device-tablet-duotone.js';
+export * from './icons/device-tablet-camera-duotone.js';
+export * from './icons/device-rotate-duotone.js';
+export * from './icons/device-mobile-speaker-duotone.js';
+export * from './icons/device-mobile-slash-duotone.js';
+export * from './icons/device-mobile-duotone.js';
+export * from './icons/device-mobile-camera-duotone.js';
+export * from './icons/dev-to-logo-duotone.js';
+export * from './icons/detective-duotone.js';
+export * from './icons/desktop-tower-duotone.js';
+export * from './icons/desktop-duotone.js';
+export * from './icons/desk-duotone.js';
+export * from './icons/database-duotone.js';
+export * from './icons/cylinder-duotone.js';
+export * from './icons/cursor-text-duotone.js';
+export * from './icons/cursor-duotone.js';
+export * from './icons/cursor-click-duotone.js';
+export * from './icons/currency-rub-duotone.js';
+export * from './icons/currency-ngn-duotone.js';
+export * from './icons/currency-kzt-duotone.js';
+export * from './icons/currency-krw-duotone.js';
+export * from './icons/currency-jpy-duotone.js';
+export * from './icons/currency-inr-duotone.js';
+export * from './icons/currency-gbp-duotone.js';
+export * from './icons/currency-eur-duotone.js';
+export * from './icons/currency-eth-duotone.js';
+export * from './icons/currency-dollar-simple-duotone.js';
+export * from './icons/currency-dollar-duotone.js';
+export * from './icons/currency-cny-duotone.js';
+export * from './icons/currency-circle-dollar-duotone.js';
+export * from './icons/currency-btc-duotone.js';
+export * from './icons/cube-transparent-duotone.js';
+export * from './icons/cube-focus-duotone.js';
+export * from './icons/cube-duotone.js';
+export * from './icons/crown-simple-duotone.js';
+export * from './icons/crown-duotone.js';
+export * from './icons/crown-cross-duotone.js';
+export * from './icons/crosshair-simple-duotone.js';
+export * from './icons/crosshair-duotone.js';
+export * from './icons/cross-duotone.js';
+export * from './icons/crop-duotone.js';
+export * from './icons/cricket-duotone.js';
+export * from './icons/credit-card-duotone.js';
+export * from './icons/crane-tower-duotone.js';
+export * from './icons/crane-duotone.js';
+export * from './icons/cpu-duotone.js';
+export * from './icons/cowboy-hat-duotone.js';
+export * from './icons/cow-duotone.js';
+export * from './icons/court-basketball-duotone.js';
+export * from './icons/couch-duotone.js';
+export * from './icons/corners-out-duotone.js';
+export * from './icons/corners-in-duotone.js';
+export * from './icons/copyright-duotone.js';
+export * from './icons/copyleft-duotone.js';
+export * from './icons/copy-simple-duotone.js';
+export * from './icons/copy-duotone.js';
+export * from './icons/cooking-pot-duotone.js';
+export * from './icons/cookie-duotone.js';
+export * from './icons/control-duotone.js';
+export * from './icons/contactless-payment-duotone.js';
+export * from './icons/confetti-duotone.js';
+export * from './icons/computer-tower-duotone.js';
+export * from './icons/compass-tool-duotone.js';
+export * from './icons/compass-rose-duotone.js';
+export * from './icons/compass-duotone.js';
+export * from './icons/command-duotone.js';
+export * from './icons/columns-plus-right-duotone.js';
+export * from './icons/columns-plus-left-duotone.js';
+export * from './icons/columns-duotone.js';
+export * from './icons/coins-duotone.js';
+export * from './icons/coin-vertical-duotone.js';
+export * from './icons/coin-duotone.js';
+export * from './icons/coffee-duotone.js';
+export * from './icons/coffee-bean-duotone.js';
+export * from './icons/codesandbox-logo-duotone.js';
+export * from './icons/codepen-logo-duotone.js';
+export * from './icons/code-simple-duotone.js';
+export * from './icons/code-duotone.js';
+export * from './icons/code-block-duotone.js';
+export * from './icons/coda-logo-duotone.js';
+export * from './icons/coat-hanger-duotone.js';
+export * from './icons/club-duotone.js';
+export * from './icons/clover-duotone.js';
+export * from './icons/cloud-x-duotone.js';
+export * from './icons/cloud-warning-duotone.js';
+export * from './icons/cloud-sun-duotone.js';
+export * from './icons/cloud-snow-duotone.js';
+export * from './icons/cloud-slash-duotone.js';
+export * from './icons/cloud-rain-duotone.js';
+export * from './icons/cloud-moon-duotone.js';
+export * from './icons/cloud-lightning-duotone.js';
+export * from './icons/cloud-fog-duotone.js';
+export * from './icons/cloud-duotone.js';
+export * from './icons/cloud-check-duotone.js';
+export * from './icons/cloud-arrow-up-duotone.js';
+export * from './icons/cloud-arrow-down-duotone.js';
+export * from './icons/closed-captioning-duotone.js';
+export * from './icons/clock-user-duotone.js';
+export * from './icons/clock-duotone.js';
+export * from './icons/clock-counter-clockwise-duotone.js';
+export * from './icons/clock-countdown-duotone.js';
+export * from './icons/clock-clockwise-duotone.js';
+export * from './icons/clock-afternoon-duotone.js';
+export * from './icons/clipboard-text-duotone.js';
+export * from './icons/clipboard-duotone.js';
+export * from './icons/city-duotone.js';
+export * from './icons/circuitry-duotone.js';
+export * from './icons/circles-three-plus-duotone.js';
+export * from './icons/circles-three-duotone.js';
+export * from './icons/circles-four-duotone.js';
+export * from './icons/circle-notch-duotone.js';
+export * from './icons/circle-half-tilt-duotone.js';
+export * from './icons/circle-half-duotone.js';
+export * from './icons/circle-duotone.js';
+export * from './icons/circle-dashed-duotone.js';
+export * from './icons/cigarette-slash-duotone.js';
+export * from './icons/cigarette-duotone.js';
+export * from './icons/church-duotone.js';
+export * from './icons/cherries-duotone.js';
+export * from './icons/chef-hat-duotone.js';
+export * from './icons/cheese-duotone.js';
+export * from './icons/cheers-duotone.js';
+export * from './icons/checks-duotone.js';
+export * from './icons/checkerboard-duotone.js';
+export * from './icons/check-square-offset-duotone.js';
+export * from './icons/check-square-duotone.js';
+export * from './icons/check-fat-duotone.js';
+export * from './icons/check-duotone.js';
+export * from './icons/check-circle-duotone.js';
+export * from './icons/chats-teardrop-duotone.js';
+export * from './icons/chats-duotone.js';
+export * from './icons/chats-circle-duotone.js';
+export * from './icons/chat-text-duotone.js';
+export * from './icons/chat-teardrop-text-duotone.js';
+export * from './icons/chat-teardrop-slash-duotone.js';
+export * from './icons/chat-teardrop-duotone.js';
+export * from './icons/chat-teardrop-dots-duotone.js';
+export * from './icons/chat-slash-duotone.js';
+export * from './icons/chat-duotone.js';
+export * from './icons/chat-dots-duotone.js';
+export * from './icons/chat-circle-text-duotone.js';
+export * from './icons/chat-circle-slash-duotone.js';
+export * from './icons/chat-circle-duotone.js';
+export * from './icons/chat-circle-dots-duotone.js';
+export * from './icons/chat-centered-text-duotone.js';
+export * from './icons/chat-centered-slash-duotone.js';
+export * from './icons/chat-centered-duotone.js';
+export * from './icons/chat-centered-dots-duotone.js';
+export * from './icons/chart-scatter-duotone.js';
+export * from './icons/chart-polar-duotone.js';
+export * from './icons/chart-pie-slice-duotone.js';
+export * from './icons/chart-pie-duotone.js';
+export * from './icons/chart-line-up-duotone.js';
+export * from './icons/chart-line-duotone.js';
+export * from './icons/chart-line-down-duotone.js';
+export * from './icons/chart-donut-duotone.js';
+export * from './icons/chart-bar-horizontal-duotone.js';
+export * from './icons/chart-bar-duotone.js';
+export * from './icons/charging-station-duotone.js';
+export * from './icons/champagne-duotone.js';
+export * from './icons/chalkboard-teacher-duotone.js';
+export * from './icons/chalkboard-simple-duotone.js';
+export * from './icons/chalkboard-duotone.js';
+export * from './icons/chair-duotone.js';
+export * from './icons/certificate-duotone.js';
+export * from './icons/cell-tower-duotone.js';
+export * from './icons/cell-signal-x-duotone.js';
+export * from './icons/cell-signal-slash-duotone.js';
+export * from './icons/cell-signal-none-duotone.js';
+export * from './icons/cell-signal-medium-duotone.js';
+export * from './icons/cell-signal-low-duotone.js';
+export * from './icons/cell-signal-high-duotone.js';
+export * from './icons/cell-signal-full-duotone.js';
+export * from './icons/cat-duotone.js';
+export * from './icons/castle-turret-duotone.js';
+export * from './icons/cassette-tape-duotone.js';
+export * from './icons/cash-register-duotone.js';
+export * from './icons/carrot-duotone.js';
+export * from './icons/caret-up-duotone.js';
+export * from './icons/caret-up-down-duotone.js';
+export * from './icons/caret-right-duotone.js';
+export * from './icons/caret-line-up-duotone.js';
+export * from './icons/caret-line-right-duotone.js';
+export * from './icons/caret-line-left-duotone.js';
+export * from './icons/caret-line-down-duotone.js';
+export * from './icons/caret-left-duotone.js';
+export * from './icons/caret-down-duotone.js';
+export * from './icons/caret-double-up-duotone.js';
+export * from './icons/caret-double-right-duotone.js';
+export * from './icons/caret-double-left-duotone.js';
+export * from './icons/caret-double-down-duotone.js';
+export * from './icons/caret-circle-up-duotone.js';
+export * from './icons/caret-circle-up-down-duotone.js';
+export * from './icons/caret-circle-right-duotone.js';
+export * from './icons/caret-circle-left-duotone.js';
+export * from './icons/caret-circle-down-duotone.js';
+export * from './icons/caret-circle-double-up-duotone.js';
+export * from './icons/caret-circle-double-right-duotone.js';
+export * from './icons/caret-circle-double-left-duotone.js';
+export * from './icons/caret-circle-double-down-duotone.js';
+export * from './icons/cards-three-duotone.js';
+export * from './icons/cards-duotone.js';
+export * from './icons/cardholder-duotone.js';
+export * from './icons/car-simple-duotone.js';
+export * from './icons/car-profile-duotone.js';
+export * from './icons/car-duotone.js';
+export * from './icons/car-battery-duotone.js';
+export * from './icons/campfire-duotone.js';
+export * from './icons/camera-slash-duotone.js';
+export * from './icons/camera-rotate-duotone.js';
+export * from './icons/camera-plus-duotone.js';
+export * from './icons/camera-duotone.js';
+export * from './icons/call-bell-duotone.js';
+export * from './icons/calendar-x-duotone.js';
+export * from './icons/calendar-star-duotone.js';
+export * from './icons/calendar-slash-duotone.js';
+export * from './icons/calendar-plus-duotone.js';
+export * from './icons/calendar-minus-duotone.js';
+export * from './icons/calendar-heart-duotone.js';
+export * from './icons/calendar-duotone.js';
+export * from './icons/calendar-dots-duotone.js';
+export * from './icons/calendar-dot-duotone.js';
+export * from './icons/calendar-check-duotone.js';
+export * from './icons/calendar-blank-duotone.js';
+export * from './icons/calculator-duotone.js';
+export * from './icons/cake-duotone.js';
+export * from './icons/cactus-duotone.js';
+export * from './icons/cable-car-duotone.js';
+export * from './icons/butterfly-duotone.js';
+export * from './icons/bus-duotone.js';
+export * from './icons/bulldozer-duotone.js';
+export * from './icons/buildings-duotone.js';
+export * from './icons/building-office-duotone.js';
+export * from './icons/building-duotone.js';
+export * from './icons/building-apartment-duotone.js';
+export * from './icons/bug-duotone.js';
+export * from './icons/bug-droid-duotone.js';
+export * from './icons/bug-beetle-duotone.js';
+export * from './icons/browsers-duotone.js';
+export * from './icons/browser-duotone.js';
+export * from './icons/broom-duotone.js';
+export * from './icons/broadcast-duotone.js';
+export * from './icons/briefcase-metal-duotone.js';
+export * from './icons/briefcase-duotone.js';
+export * from './icons/bridge-duotone.js';
+export * from './icons/bread-duotone.js';
+export * from './icons/brandy-duotone.js';
+export * from './icons/brain-duotone.js';
+export * from './icons/brackets-square-duotone.js';
+export * from './icons/brackets-round-duotone.js';
+export * from './icons/brackets-curly-duotone.js';
+export * from './icons/brackets-angle-duotone.js';
+export * from './icons/boxing-glove-duotone.js';
+export * from './icons/box-arrow-up-duotone.js';
+export * from './icons/box-arrow-down-duotone.js';
+export * from './icons/bowling-ball-duotone.js';
+export * from './icons/bowl-steam-duotone.js';
+export * from './icons/bowl-food-duotone.js';
+export * from './icons/bounding-box-duotone.js';
+export * from './icons/boules-duotone.js';
+export * from './icons/boot-duotone.js';
+export * from './icons/books-duotone.js';
+export * from './icons/bookmarks-simple-duotone.js';
+export * from './icons/bookmarks-duotone.js';
+export * from './icons/bookmark-simple-duotone.js';
+export * from './icons/bookmark-duotone.js';
+export * from './icons/book-open-user-duotone.js';
+export * from './icons/book-open-text-duotone.js';
+export * from './icons/book-open-duotone.js';
+export * from './icons/book-duotone.js';
+export * from './icons/book-bookmark-duotone.js';
+export * from './icons/bone-duotone.js';
+export * from './icons/bomb-duotone.js';
+export * from './icons/boat-duotone.js';
+export * from './icons/bluetooth-x-duotone.js';
+export * from './icons/bluetooth-slash-duotone.js';
+export * from './icons/bluetooth-duotone.js';
+export * from './icons/bluetooth-connected-duotone.js';
+export * from './icons/blueprint-duotone.js';
+export * from './icons/bird-duotone.js';
+export * from './icons/biohazard-duotone.js';
+export * from './icons/binoculars-duotone.js';
+export * from './icons/binary-duotone.js';
+export * from './icons/bicycle-duotone.js';
+export * from './icons/bezier-curve-duotone.js';
+export * from './icons/belt-duotone.js';
+export * from './icons/bell-z-duotone.js';
+export * from './icons/bell-slash-duotone.js';
+export * from './icons/bell-simple-z-duotone.js';
+export * from './icons/bell-simple-slash-duotone.js';
+export * from './icons/bell-simple-ringing-duotone.js';
+export * from './icons/bell-simple-duotone.js';
+export * from './icons/bell-ringing-duotone.js';
+export * from './icons/bell-duotone.js';
+export * from './icons/behance-logo-duotone.js';
+export * from './icons/beer-stein-duotone.js';
+export * from './icons/beer-bottle-duotone.js';
+export * from './icons/bed-duotone.js';
+export * from './icons/beanie-duotone.js';
+export * from './icons/beach-ball-duotone.js';
+export * from './icons/battery-warning-vertical-duotone.js';
+export * from './icons/battery-warning-duotone.js';
+export * from './icons/battery-vertical-medium-duotone.js';
+export * from './icons/battery-vertical-low-duotone.js';
+export * from './icons/battery-vertical-high-duotone.js';
+export * from './icons/battery-vertical-full-duotone.js';
+export * from './icons/battery-vertical-empty-duotone.js';
+export * from './icons/battery-plus-vertical-duotone.js';
+export * from './icons/battery-plus-duotone.js';
+export * from './icons/battery-medium-duotone.js';
+export * from './icons/battery-low-duotone.js';
+export * from './icons/battery-high-duotone.js';
+export * from './icons/battery-full-duotone.js';
+export * from './icons/battery-empty-duotone.js';
+export * from './icons/battery-charging-vertical-duotone.js';
+export * from './icons/battery-charging-duotone.js';
+export * from './icons/bathtub-duotone.js';
+export * from './icons/basketball-duotone.js';
+export * from './icons/basket-duotone.js';
+export * from './icons/baseball-helmet-duotone.js';
+export * from './icons/baseball-duotone.js';
+export * from './icons/baseball-cap-duotone.js';
+export * from './icons/barricade-duotone.js';
+export * from './icons/barn-duotone.js';
+export * from './icons/barcode-duotone.js';
+export * from './icons/barbell-duotone.js';
+export * from './icons/bank-duotone.js';
+export * from './icons/bandaids-duotone.js';
+export * from './icons/balloon-duotone.js';
+export * from './icons/bag-simple-duotone.js';
+export * from './icons/bag-duotone.js';
+export * from './icons/backspace-duotone.js';
+export * from './icons/backpack-duotone.js';
+export * from './icons/baby-duotone.js';
+export * from './icons/baby-carriage-duotone.js';
+export * from './icons/axe-duotone.js';
+export * from './icons/avocado-duotone.js';
+export * from './icons/atom-duotone.js';
+export * from './icons/at-duotone.js';
+export * from './icons/asterisk-simple-duotone.js';
+export * from './icons/asterisk-duotone.js';
+export * from './icons/asclepius-duotone.js';
+export * from './icons/article-ny-times-duotone.js';
+export * from './icons/article-medium-duotone.js';
+export * from './icons/article-duotone.js';
+export * from './icons/arrows-vertical-duotone.js';
+export * from './icons/arrows-split-duotone.js';
+export * from './icons/arrows-out-simple-duotone.js';
+export * from './icons/arrows-out-line-vertical-duotone.js';
+export * from './icons/arrows-out-line-horizontal-duotone.js';
+export * from './icons/arrows-out-duotone.js';
+export * from './icons/arrows-out-cardinal-duotone.js';
+export * from './icons/arrows-merge-duotone.js';
+export * from './icons/arrows-left-right-duotone.js';
+export * from './icons/arrows-in-simple-duotone.js';
+export * from './icons/arrows-in-line-vertical-duotone.js';
+export * from './icons/arrows-in-line-horizontal-duotone.js';
+export * from './icons/arrows-in-duotone.js';
+export * from './icons/arrows-in-cardinal-duotone.js';
+export * from './icons/arrows-horizontal-duotone.js';
+export * from './icons/arrows-down-up-duotone.js';
+export * from './icons/arrows-counter-clockwise-duotone.js';
+export * from './icons/arrows-clockwise-duotone.js';
+export * from './icons/arrow-up-right-duotone.js';
+export * from './icons/arrow-up-left-duotone.js';
+export * from './icons/arrow-up-duotone.js';
+export * from './icons/arrow-u-up-right-duotone.js';
+export * from './icons/arrow-u-up-left-duotone.js';
+export * from './icons/arrow-u-right-up-duotone.js';
+export * from './icons/arrow-u-right-down-duotone.js';
+export * from './icons/arrow-u-left-up-duotone.js';
+export * from './icons/arrow-u-left-down-duotone.js';
+export * from './icons/arrow-u-down-right-duotone.js';
+export * from './icons/arrow-u-down-left-duotone.js';
+export * from './icons/arrow-square-up-right-duotone.js';
+export * from './icons/arrow-square-up-left-duotone.js';
+export * from './icons/arrow-square-up-duotone.js';
+export * from './icons/arrow-square-right-duotone.js';
+export * from './icons/arrow-square-out-duotone.js';
+export * from './icons/arrow-square-left-duotone.js';
+export * from './icons/arrow-square-in-duotone.js';
+export * from './icons/arrow-square-down-right-duotone.js';
+export * from './icons/arrow-square-down-left-duotone.js';
+export * from './icons/arrow-square-down-duotone.js';
+export * from './icons/arrow-right-duotone.js';
+export * from './icons/arrow-line-up-right-duotone.js';
+export * from './icons/arrow-line-up-left-duotone.js';
+export * from './icons/arrow-line-up-duotone.js';
+export * from './icons/arrow-line-right-duotone.js';
+export * from './icons/arrow-line-left-duotone.js';
+export * from './icons/arrow-line-down-right-duotone.js';
+export * from './icons/arrow-line-down-left-duotone.js';
+export * from './icons/arrow-line-down-duotone.js';
+export * from './icons/arrow-left-duotone.js';
+export * from './icons/arrow-fat-up-duotone.js';
+export * from './icons/arrow-fat-right-duotone.js';
+export * from './icons/arrow-fat-lines-up-duotone.js';
+export * from './icons/arrow-fat-lines-right-duotone.js';
+export * from './icons/arrow-fat-lines-left-duotone.js';
+export * from './icons/arrow-fat-lines-down-duotone.js';
+export * from './icons/arrow-fat-line-up-duotone.js';
+export * from './icons/arrow-fat-line-right-duotone.js';
+export * from './icons/arrow-fat-line-left-duotone.js';
+export * from './icons/arrow-fat-line-down-duotone.js';
+export * from './icons/arrow-fat-left-duotone.js';
+export * from './icons/arrow-fat-down-duotone.js';
+export * from './icons/arrow-elbow-up-right-duotone.js';
+export * from './icons/arrow-elbow-up-left-duotone.js';
+export * from './icons/arrow-elbow-right-up-duotone.js';
+export * from './icons/arrow-elbow-right-duotone.js';
+export * from './icons/arrow-elbow-right-down-duotone.js';
+export * from './icons/arrow-elbow-left-up-duotone.js';
+export * from './icons/arrow-elbow-left-duotone.js';
+export * from './icons/arrow-elbow-left-down-duotone.js';
+export * from './icons/arrow-elbow-down-right-duotone.js';
+export * from './icons/arrow-elbow-down-left-duotone.js';
+export * from './icons/arrow-down-right-duotone.js';
+export * from './icons/arrow-down-left-duotone.js';
+export * from './icons/arrow-down-duotone.js';
+export * from './icons/arrow-counter-clockwise-duotone.js';
+export * from './icons/arrow-clockwise-duotone.js';
+export * from './icons/arrow-circle-up-right-duotone.js';
+export * from './icons/arrow-circle-up-left-duotone.js';
+export * from './icons/arrow-circle-up-duotone.js';
+export * from './icons/arrow-circle-right-duotone.js';
+export * from './icons/arrow-circle-left-duotone.js';
+export * from './icons/arrow-circle-down-right-duotone.js';
+export * from './icons/arrow-circle-down-left-duotone.js';
+export * from './icons/arrow-circle-down-duotone.js';
+export * from './icons/arrow-bend-up-right-duotone.js';
+export * from './icons/arrow-bend-up-left-duotone.js';
+export * from './icons/arrow-bend-right-up-duotone.js';
+export * from './icons/arrow-bend-right-down-duotone.js';
+export * from './icons/arrow-bend-left-up-duotone.js';
+export * from './icons/arrow-bend-left-down-duotone.js';
+export * from './icons/arrow-bend-down-right-duotone.js';
+export * from './icons/arrow-bend-down-left-duotone.js';
+export * from './icons/arrow-bend-double-up-right-duotone.js';
+export * from './icons/arrow-bend-double-up-left-duotone.js';
+export * from './icons/arrow-arc-right-duotone.js';
+export * from './icons/arrow-arc-left-duotone.js';
+export * from './icons/armchair-duotone.js';
+export * from './icons/archive-duotone.js';
+export * from './icons/approximate-equals-duotone.js';
+export * from './icons/apple-podcasts-logo-duotone.js';
+export * from './icons/apple-logo-duotone.js';
+export * from './icons/app-window-duotone.js';
+export * from './icons/app-store-logo-duotone.js';
+export * from './icons/aperture-duotone.js';
+export * from './icons/angular-logo-duotone.js';
+export * from './icons/angle-duotone.js';
+export * from './icons/android-logo-duotone.js';
+export * from './icons/anchor-simple-duotone.js';
+export * from './icons/anchor-duotone.js';
+export * from './icons/ambulance-duotone.js';
+export * from './icons/amazon-logo-duotone.js';
+export * from './icons/align-top-simple-duotone.js';
+export * from './icons/align-top-duotone.js';
+export * from './icons/align-right-simple-duotone.js';
+export * from './icons/align-right-duotone.js';
+export * from './icons/align-left-simple-duotone.js';
+export * from './icons/align-left-duotone.js';
+export * from './icons/align-center-vertical-simple-duotone.js';
+export * from './icons/align-center-vertical-duotone.js';
+export * from './icons/align-center-horizontal-simple-duotone.js';
+export * from './icons/align-center-horizontal-duotone.js';
+export * from './icons/align-bottom-simple-duotone.js';
+export * from './icons/align-bottom-duotone.js';
+export * from './icons/alien-duotone.js';
+export * from './icons/alarm-duotone.js';
+export * from './icons/airplay-duotone.js';
+export * from './icons/airplane-tilt-duotone.js';
+export * from './icons/airplane-taxiing-duotone.js';
+export * from './icons/airplane-takeoff-duotone.js';
+export * from './icons/airplane-landing-duotone.js';
+export * from './icons/airplane-in-flight-duotone.js';
+export * from './icons/airplane-duotone.js';
+export * from './icons/air-traffic-control-duotone.js';
+export * from './icons/address-book-tabs-duotone.js';
+export * from './icons/address-book-duotone.js';
+export * from './icons/acorn-duotone.js';
+export * from './icons/youtube-logo-bold.js';
+export * from './icons/yin-yang-bold.js';
+export * from './icons/yarn-bold.js';
+export * from './icons/x-square-bold.js';
+export * from './icons/x-logo-bold.js';
+export * from './icons/x-circle-bold.js';
+export * from './icons/x-bold.js';
+export * from './icons/wrench-bold.js';
+export * from './icons/wine-bold.js';
+export * from './icons/windows-logo-bold.js';
+export * from './icons/windmill-bold.js';
+export * from './icons/wind-bold.js';
+export * from './icons/wifi-x-bold.js';
+export * from './icons/wifi-slash-bold.js';
+export * from './icons/wifi-none-bold.js';
+export * from './icons/wifi-medium-bold.js';
+export * from './icons/wifi-low-bold.js';
+export * from './icons/wifi-high-bold.js';
+export * from './icons/wheelchair-motion-bold.js';
+export * from './icons/wheelchair-bold.js';
+export * from './icons/whatsapp-logo-bold.js';
+export * from './icons/wechat-logo-bold.js';
+export * from './icons/webhooks-logo-bold.js';
+export * from './icons/webcam-slash-bold.js';
+export * from './icons/webcam-bold.js';
+export * from './icons/waves-bold.js';
+export * from './icons/waveform-slash-bold.js';
+export * from './icons/waveform-bold.js';
+export * from './icons/wave-triangle-bold.js';
+export * from './icons/wave-square-bold.js';
+export * from './icons/wave-sine-bold.js';
+export * from './icons/wave-sawtooth-bold.js';
+export * from './icons/watch-bold.js';
+export * from './icons/washing-machine-bold.js';
+export * from './icons/warning-octagon-bold.js';
+export * from './icons/warning-diamond-bold.js';
+export * from './icons/warning-circle-bold.js';
+export * from './icons/warning-bold.js';
+export * from './icons/warehouse-bold.js';
+export * from './icons/wallet-bold.js';
+export * from './icons/wall-bold.js';
+export * from './icons/volleyball-bold.js';
+export * from './icons/voicemail-bold.js';
+export * from './icons/visor-bold.js';
+export * from './icons/virus-bold.js';
+export * from './icons/virtual-reality-bold.js';
+export * from './icons/vinyl-record-bold.js';
+export * from './icons/vignette-bold.js';
+export * from './icons/video-conference-bold.js';
+export * from './icons/video-camera-slash-bold.js';
+export * from './icons/video-camera-bold.js';
+export * from './icons/video-bold.js';
+export * from './icons/vibrate-bold.js';
+export * from './icons/vector-two-bold.js';
+export * from './icons/vector-three-bold.js';
+export * from './icons/vault-bold.js';
+export * from './icons/van-bold.js';
+export * from './icons/users-three-bold.js';
+export * from './icons/users-four-bold.js';
+export * from './icons/users-bold.js';
+export * from './icons/user-switch-bold.js';
+export * from './icons/user-square-bold.js';
+export * from './icons/user-sound-bold.js';
+export * from './icons/user-rectangle-bold.js';
+export * from './icons/user-plus-bold.js';
+export * from './icons/user-minus-bold.js';
+export * from './icons/user-list-bold.js';
+export * from './icons/user-gear-bold.js';
+export * from './icons/user-focus-bold.js';
+export * from './icons/user-circle-plus-bold.js';
+export * from './icons/user-circle-minus-bold.js';
+export * from './icons/user-circle-gear-bold.js';
+export * from './icons/user-circle-dashed-bold.js';
+export * from './icons/user-circle-check-bold.js';
+export * from './icons/user-circle-bold.js';
+export * from './icons/user-check-bold.js';
+export * from './icons/user-bold.js';
+export * from './icons/usb-bold.js';
+export * from './icons/upload-simple-bold.js';
+export * from './icons/upload-bold.js';
+export * from './icons/unite-square-bold.js';
+export * from './icons/unite-bold.js';
+export * from './icons/union-bold.js';
+export * from './icons/umbrella-simple-bold.js';
+export * from './icons/umbrella-bold.js';
+export * from './icons/twitter-logo-bold.js';
+export * from './icons/twitch-logo-bold.js';
+export * from './icons/tumblr-logo-bold.js';
+export * from './icons/truck-trailer-bold.js';
+export * from './icons/truck-bold.js';
+export * from './icons/trophy-bold.js';
+export * from './icons/trolley-suitcase-bold.js';
+export * from './icons/trolley-bold.js';
+export * from './icons/triangle-dashed-bold.js';
+export * from './icons/triangle-bold.js';
+export * from './icons/trend-up-bold.js';
+export * from './icons/trend-down-bold.js';
+export * from './icons/tree-view-bold.js';
+export * from './icons/tree-structure-bold.js';
+export * from './icons/tree-palm-bold.js';
+export * from './icons/tree-evergreen-bold.js';
+export * from './icons/tree-bold.js';
+export * from './icons/treasure-chest-bold.js';
+export * from './icons/tray-bold.js';
+export * from './icons/tray-arrow-up-bold.js';
+export * from './icons/tray-arrow-down-bold.js';
+export * from './icons/trash-simple-bold.js';
+export * from './icons/trash-bold.js';
+export * from './icons/translate-bold.js';
+export * from './icons/tram-bold.js';
+export * from './icons/train-simple-bold.js';
+export * from './icons/train-regional-bold.js';
+export * from './icons/train-bold.js';
+export * from './icons/traffic-signal-bold.js';
+export * from './icons/traffic-sign-bold.js';
+export * from './icons/traffic-cone-bold.js';
+export * from './icons/trademark-registered-bold.js';
+export * from './icons/trademark-bold.js';
+export * from './icons/tractor-bold.js';
+export * from './icons/towel-bold.js';
+export * from './icons/tote-simple-bold.js';
+export * from './icons/tote-bold.js';
+export * from './icons/tornado-bold.js';
+export * from './icons/tooth-bold.js';
+export * from './icons/toolbox-bold.js';
+export * from './icons/toilet-paper-bold.js';
+export * from './icons/toilet-bold.js';
+export * from './icons/toggle-right-bold.js';
+export * from './icons/toggle-left-bold.js';
+export * from './icons/tire-bold.js';
+export * from './icons/tipi-bold.js';
+export * from './icons/tip-jar-bold.js';
+export * from './icons/timer-bold.js';
+export * from './icons/tilde-bold.js';
+export * from './icons/tiktok-logo-bold.js';
+export * from './icons/tidal-logo-bold.js';
+export * from './icons/ticket-bold.js';
+export * from './icons/thumbs-up-bold.js';
+export * from './icons/thumbs-down-bold.js';
+export * from './icons/three-d-bold.js';
+export * from './icons/threads-logo-bold.js';
+export * from './icons/thermometer-simple-bold.js';
+export * from './icons/thermometer-hot-bold.js';
+export * from './icons/thermometer-cold-bold.js';
+export * from './icons/thermometer-bold.js';
+export * from './icons/textbox-bold.js';
+export * from './icons/text-underline-bold.js';
+export * from './icons/text-t-slash-bold.js';
+export * from './icons/text-t-bold.js';
+export * from './icons/text-superscript-bold.js';
+export * from './icons/text-subscript-bold.js';
+export * from './icons/text-strikethrough-bold.js';
+export * from './icons/text-outdent-bold.js';
+export * from './icons/text-italic-bold.js';
+export * from './icons/text-indent-bold.js';
+export * from './icons/text-h-two-bold.js';
+export * from './icons/text-h-three-bold.js';
+export * from './icons/text-h-six-bold.js';
+export * from './icons/text-h-one-bold.js';
+export * from './icons/text-h-four-bold.js';
+export * from './icons/text-h-five-bold.js';
+export * from './icons/text-h-bold.js';
+export * from './icons/text-columns-bold.js';
+export * from './icons/text-b-bold.js';
+export * from './icons/text-align-right-bold.js';
+export * from './icons/text-align-left-bold.js';
+export * from './icons/text-align-justify-bold.js';
+export * from './icons/text-align-center-bold.js';
+export * from './icons/text-aa-bold.js';
+export * from './icons/text-a-underline-bold.js';
+export * from './icons/test-tube-bold.js';
+export * from './icons/terminal-window-bold.js';
+export * from './icons/terminal-bold.js';
+export * from './icons/tent-bold.js';
+export * from './icons/tennis-ball-bold.js';
+export * from './icons/television-simple-bold.js';
+export * from './icons/television-bold.js';
+export * from './icons/telegram-logo-bold.js';
+export * from './icons/tea-bag-bold.js';
+export * from './icons/taxi-bold.js';
+export * from './icons/target-bold.js';
+export * from './icons/tag-simple-bold.js';
+export * from './icons/tag-chevron-bold.js';
+export * from './icons/tag-bold.js';
+export * from './icons/tabs-bold.js';
+export * from './icons/table-bold.js';
+export * from './icons/t-shirt-bold.js';
+export * from './icons/syringe-bold.js';
+export * from './icons/synagogue-bold.js';
+export * from './icons/sword-bold.js';
+export * from './icons/swimming-pool-bold.js';
+export * from './icons/swatches-bold.js';
+export * from './icons/swap-bold.js';
+export * from './icons/superset-proper-of-bold.js';
+export * from './icons/superset-of-bold.js';
+export * from './icons/sunglasses-bold.js';
+export * from './icons/sun-horizon-bold.js';
+export * from './icons/sun-dim-bold.js';
+export * from './icons/sun-bold.js';
+export * from './icons/suitcase-simple-bold.js';
+export * from './icons/suitcase-rolling-bold.js';
+export * from './icons/suitcase-bold.js';
+export * from './icons/subway-bold.js';
+export * from './icons/subtract-square-bold.js';
+export * from './icons/subtract-bold.js';
+export * from './icons/subtitles-slash-bold.js';
+export * from './icons/subtitles-bold.js';
+export * from './icons/subset-proper-of-bold.js';
+export * from './icons/subset-of-bold.js';
+export * from './icons/student-bold.js';
+export * from './icons/stripe-logo-bold.js';
+export * from './icons/strategy-bold.js';
+export * from './icons/storefront-bold.js';
+export * from './icons/stop-circle-bold.js';
+export * from './icons/stop-bold.js';
+export * from './icons/stool-bold.js';
+export * from './icons/sticker-bold.js';
+export * from './icons/stethoscope-bold.js';
+export * from './icons/steps-bold.js';
+export * from './icons/steering-wheel-bold.js';
+export * from './icons/steam-logo-bold.js';
+export * from './icons/star-of-david-bold.js';
+export * from './icons/star-half-bold.js';
+export * from './icons/star-four-bold.js';
+export * from './icons/star-bold.js';
+export * from './icons/star-and-crescent-bold.js';
+export * from './icons/standard-definition-bold.js';
+export * from './icons/stamp-bold.js';
+export * from './icons/stairs-bold.js';
+export * from './icons/stack-simple-bold.js';
+export * from './icons/stack-plus-bold.js';
+export * from './icons/stack-overflow-logo-bold.js';
+export * from './icons/stack-minus-bold.js';
+export * from './icons/stack-bold.js';
+export * from './icons/squares-four-bold.js';
+export * from './icons/square-split-vertical-bold.js';
+export * from './icons/square-split-horizontal-bold.js';
+export * from './icons/square-logo-bold.js';
+export * from './icons/square-half-bottom-bold.js';
+export * from './icons/square-half-bold.js';
+export * from './icons/square-bold.js';
+export * from './icons/spray-bottle-bold.js';
+export * from './icons/spotify-logo-bold.js';
+export * from './icons/split-vertical-bold.js';
+export * from './icons/split-horizontal-bold.js';
+export * from './icons/spiral-bold.js';
+export * from './icons/spinner-gap-bold.js';
+export * from './icons/spinner-bold.js';
+export * from './icons/spinner-ball-bold.js';
+export * from './icons/sphere-bold.js';
+export * from './icons/speedometer-bold.js';
+export * from './icons/speaker-x-bold.js';
+export * from './icons/speaker-slash-bold.js';
+export * from './icons/speaker-simple-x-bold.js';
+export * from './icons/speaker-simple-slash-bold.js';
+export * from './icons/speaker-simple-none-bold.js';
+export * from './icons/speaker-simple-low-bold.js';
+export * from './icons/speaker-simple-high-bold.js';
+export * from './icons/speaker-none-bold.js';
+export * from './icons/speaker-low-bold.js';
+export * from './icons/speaker-high-bold.js';
+export * from './icons/speaker-hifi-bold.js';
+export * from './icons/sparkle-bold.js';
+export * from './icons/spade-bold.js';
+export * from './icons/soundcloud-logo-bold.js';
+export * from './icons/sort-descending-bold.js';
+export * from './icons/sort-ascending-bold.js';
+export * from './icons/solar-roof-bold.js';
+export * from './icons/solar-panel-bold.js';
+export * from './icons/sock-bold.js';
+export * from './icons/soccer-ball-bold.js';
+export * from './icons/snowflake-bold.js';
+export * from './icons/sneaker-move-bold.js';
+export * from './icons/sneaker-bold.js';
+export * from './icons/snapchat-logo-bold.js';
+export * from './icons/smiley-x-eyes-bold.js';
+export * from './icons/smiley-wink-bold.js';
+export * from './icons/smiley-sticker-bold.js';
+export * from './icons/smiley-sad-bold.js';
+export * from './icons/smiley-nervous-bold.js';
+export * from './icons/smiley-melting-bold.js';
+export * from './icons/smiley-meh-bold.js';
+export * from './icons/smiley-bold.js';
+export * from './icons/smiley-blank-bold.js';
+export * from './icons/smiley-angry-bold.js';
+export * from './icons/slideshow-bold.js';
+export * from './icons/sliders-horizontal-bold.js';
+export * from './icons/sliders-bold.js';
+export * from './icons/slack-logo-bold.js';
+export * from './icons/skype-logo-bold.js';
+export * from './icons/skull-bold.js';
+export * from './icons/skip-forward-circle-bold.js';
+export * from './icons/skip-forward-bold.js';
+export * from './icons/skip-back-circle-bold.js';
+export * from './icons/skip-back-bold.js';
+export * from './icons/sketch-logo-bold.js';
+export * from './icons/siren-bold.js';
+export * from './icons/sim-card-bold.js';
+export * from './icons/signpost-bold.js';
+export * from './icons/signature-bold.js';
+export * from './icons/sign-out-bold.js';
+export * from './icons/sign-in-bold.js';
+export * from './icons/sigma-bold.js';
+export * from './icons/sidebar-simple-bold.js';
+export * from './icons/sidebar-bold.js';
+export * from './icons/shuffle-simple-bold.js';
+export * from './icons/shuffle-bold.js';
+export * from './icons/shuffle-angular-bold.js';
+export * from './icons/shrimp-bold.js';
+export * from './icons/shower-bold.js';
+export * from './icons/shovel-bold.js';
+export * from './icons/shopping-cart-simple-bold.js';
+export * from './icons/shopping-cart-bold.js';
+export * from './icons/shopping-bag-open-bold.js';
+export * from './icons/shopping-bag-bold.js';
+export * from './icons/shooting-star-bold.js';
+export * from './icons/shirt-folded-bold.js';
+export * from './icons/shipping-container-bold.js';
+export * from './icons/shield-warning-bold.js';
+export * from './icons/shield-star-bold.js';
+export * from './icons/shield-slash-bold.js';
+export * from './icons/shield-plus-bold.js';
+export * from './icons/shield-chevron-bold.js';
+export * from './icons/shield-checkered-bold.js';
+export * from './icons/shield-check-bold.js';
+export * from './icons/shield-bold.js';
+export * from './icons/share-network-bold.js';
+export * from './icons/share-fat-bold.js';
+export * from './icons/share-bold.js';
+export * from './icons/shapes-bold.js';
+export * from './icons/selection-slash-bold.js';
+export * from './icons/selection-plus-bold.js';
+export * from './icons/selection-inverse-bold.js';
+export * from './icons/selection-foreground-bold.js';
+export * from './icons/selection-bold.js';
+export * from './icons/selection-background-bold.js';
+export * from './icons/selection-all-bold.js';
+export * from './icons/security-camera-bold.js';
+export * from './icons/seatbelt-bold.js';
+export * from './icons/seat-bold.js';
+export * from './icons/seal-warning-bold.js';
+export * from './icons/seal-question-bold.js';
+export * from './icons/seal-percent-bold.js';
+export * from './icons/seal-check-bold.js';
+export * from './icons/seal-bold.js';
+export * from './icons/scroll-bold.js';
+export * from './icons/scribble-loop-bold.js';
+export * from './icons/scribble-bold.js';
+export * from './icons/screwdriver-bold.js';
+export * from './icons/screencast-bold.js';
+export * from './icons/scooter-bold.js';
+export * from './icons/scissors-bold.js';
+export * from './icons/scan-smiley-bold.js';
+export * from './icons/scan-bold.js';
+export * from './icons/scales-bold.js';
+export * from './icons/sailboat-bold.js';
+export * from './icons/ruler-bold.js';
+export * from './icons/rug-bold.js';
+export * from './icons/rss-simple-bold.js';
+export * from './icons/rss-bold.js';
+export * from './icons/rows-plus-top-bold.js';
+export * from './icons/rows-plus-bottom-bold.js';
+export * from './icons/rows-bold.js';
+export * from './icons/rocket-launch-bold.js';
+export * from './icons/rocket-bold.js';
+export * from './icons/robot-bold.js';
+export * from './icons/road-horizon-bold.js';
+export * from './icons/rewind-circle-bold.js';
+export * from './icons/rewind-bold.js';
+export * from './icons/resize-bold.js';
+export * from './icons/replit-logo-bold.js';
+export * from './icons/repeat-once-bold.js';
+export * from './icons/repeat-bold.js';
+export * from './icons/reddit-logo-bold.js';
+export * from './icons/recycle-bold.js';
+export * from './icons/rectangle-dashed-bold.js';
+export * from './icons/rectangle-bold.js';
+export * from './icons/record-bold.js';
+export * from './icons/receipt-x-bold.js';
+export * from './icons/receipt-bold.js';
+export * from './icons/read-cv-logo-bold.js';
+export * from './icons/ranking-bold.js';
+export * from './icons/rainbow-cloud-bold.js';
+export * from './icons/rainbow-bold.js';
+export * from './icons/radioactive-bold.js';
+export * from './icons/radio-button-bold.js';
+export * from './icons/radio-bold.js';
+export * from './icons/radical-bold.js';
+export * from './icons/racquet-bold.js';
+export * from './icons/rabbit-bold.js';
+export * from './icons/quotes-bold.js';
+export * from './icons/queue-bold.js';
+export * from './icons/question-mark-bold.js';
+export * from './icons/question-bold.js';
+export * from './icons/qr-code-bold.js';
+export * from './icons/puzzle-piece-bold.js';
+export * from './icons/push-pin-slash-bold.js';
+export * from './icons/push-pin-simple-slash-bold.js';
+export * from './icons/push-pin-simple-bold.js';
+export * from './icons/push-pin-bold.js';
+export * from './icons/pulse-bold.js';
+export * from './icons/projector-screen-chart-bold.js';
+export * from './icons/projector-screen-bold.js';
+export * from './icons/prohibit-inset-bold.js';
+export * from './icons/prohibit-bold.js';
+export * from './icons/printer-bold.js';
+export * from './icons/presentation-chart-bold.js';
+export * from './icons/presentation-bold.js';
+export * from './icons/prescription-bold.js';
+export * from './icons/power-bold.js';
+export * from './icons/potted-plant-bold.js';
+export * from './icons/popsicle-bold.js';
+export * from './icons/popcorn-bold.js';
+export * from './icons/polygon-bold.js';
+export * from './icons/police-car-bold.js';
+export * from './icons/poker-chip-bold.js';
+export * from './icons/plus-square-bold.js';
+export * from './icons/plus-minus-bold.js';
+export * from './icons/plus-circle-bold.js';
+export * from './icons/plus-bold.js';
+export * from './icons/plugs-connected-bold.js';
+export * from './icons/plugs-bold.js';
+export * from './icons/plug-charging-bold.js';
+export * from './icons/plug-bold.js';
+export * from './icons/playlist-bold.js';
+export * from './icons/play-pause-bold.js';
+export * from './icons/play-circle-bold.js';
+export * from './icons/play-bold.js';
+export * from './icons/plant-bold.js';
+export * from './icons/planet-bold.js';
+export * from './icons/placeholder-bold.js';
+export * from './icons/pizza-bold.js';
+export * from './icons/pix-logo-bold.js';
+export * from './icons/pipe-wrench-bold.js';
+export * from './icons/pipe-bold.js';
+export * from './icons/pinwheel-bold.js';
+export * from './icons/pinterest-logo-bold.js';
+export * from './icons/pint-glass-bold.js';
+export * from './icons/ping-pong-bold.js';
+export * from './icons/pill-bold.js';
+export * from './icons/piggy-bank-bold.js';
+export * from './icons/picture-in-picture-bold.js';
+export * from './icons/picnic-table-bold.js';
+export * from './icons/piano-keys-bold.js';
+export * from './icons/pi-bold.js';
+export * from './icons/phosphor-logo-bold.js';
+export * from './icons/phone-x-bold.js';
+export * from './icons/phone-transfer-bold.js';
+export * from './icons/phone-slash-bold.js';
+export * from './icons/phone-plus-bold.js';
+export * from './icons/phone-pause-bold.js';
+export * from './icons/phone-outgoing-bold.js';
+export * from './icons/phone-list-bold.js';
+export * from './icons/phone-incoming-bold.js';
+export * from './icons/phone-disconnect-bold.js';
+export * from './icons/phone-call-bold.js';
+export * from './icons/phone-bold.js';
+export * from './icons/perspective-bold.js';
+export * from './icons/person-simple-walk-bold.js';
+export * from './icons/person-simple-throw-bold.js';
+export * from './icons/person-simple-tai-chi-bold.js';
+export * from './icons/person-simple-swim-bold.js';
+export * from './icons/person-simple-snowboard-bold.js';
+export * from './icons/person-simple-ski-bold.js';
+export * from './icons/person-simple-run-bold.js';
+export * from './icons/person-simple-hike-bold.js';
+export * from './icons/person-simple-circle-bold.js';
+export * from './icons/person-simple-bold.js';
+export * from './icons/person-simple-bike-bold.js';
+export * from './icons/person-bold.js';
+export * from './icons/person-arms-spread-bold.js';
+export * from './icons/percent-bold.js';
+export * from './icons/pepper-bold.js';
+export * from './icons/pentagram-bold.js';
+export * from './icons/pentagon-bold.js';
+export * from './icons/pencil-slash-bold.js';
+export * from './icons/pencil-simple-slash-bold.js';
+export * from './icons/pencil-simple-line-bold.js';
+export * from './icons/pencil-simple-bold.js';
+export * from './icons/pencil-ruler-bold.js';
+export * from './icons/pencil-line-bold.js';
+export * from './icons/pencil-circle-bold.js';
+export * from './icons/pencil-bold.js';
+export * from './icons/pen-nib-straight-bold.js';
+export * from './icons/pen-nib-bold.js';
+export * from './icons/pen-bold.js';
+export * from './icons/peace-bold.js';
+export * from './icons/paypal-logo-bold.js';
+export * from './icons/paw-print-bold.js';
+export * from './icons/pause-circle-bold.js';
+export * from './icons/pause-bold.js';
+export * from './icons/patreon-logo-bold.js';
+export * from './icons/path-bold.js';
+export * from './icons/password-bold.js';
+export * from './icons/park-bold.js';
+export * from './icons/parallelogram-bold.js';
+export * from './icons/paragraph-bold.js';
+export * from './icons/parachute-bold.js';
+export * from './icons/paperclip-horizontal-bold.js';
+export * from './icons/paperclip-bold.js';
+export * from './icons/paper-plane-tilt-bold.js';
+export * from './icons/paper-plane-right-bold.js';
+export * from './icons/paper-plane-bold.js';
+export * from './icons/pants-bold.js';
+export * from './icons/panorama-bold.js';
+export * from './icons/palette-bold.js';
+export * from './icons/paint-roller-bold.js';
+export * from './icons/paint-bucket-bold.js';
+export * from './icons/paint-brush-household-bold.js';
+export * from './icons/paint-brush-broad-bold.js';
+export * from './icons/paint-brush-bold.js';
+export * from './icons/package-bold.js';
+export * from './icons/oven-bold.js';
+export * from './icons/orange-slice-bold.js';
+export * from './icons/orange-bold.js';
+export * from './icons/option-bold.js';
+export * from './icons/open-ai-logo-bold.js';
+export * from './icons/onigiri-bold.js';
+export * from './icons/office-chair-bold.js';
+export * from './icons/octagon-bold.js';
+export * from './icons/ny-times-logo-bold.js';
+export * from './icons/nut-bold.js';
+export * from './icons/numpad-bold.js';
+export * from './icons/number-zero-bold.js';
+export * from './icons/number-two-bold.js';
+export * from './icons/number-three-bold.js';
+export * from './icons/number-square-zero-bold.js';
+export * from './icons/number-square-two-bold.js';
+export * from './icons/number-square-three-bold.js';
+export * from './icons/number-square-six-bold.js';
+export * from './icons/number-square-seven-bold.js';
+export * from './icons/number-square-one-bold.js';
+export * from './icons/number-square-nine-bold.js';
+export * from './icons/number-square-four-bold.js';
+export * from './icons/number-square-five-bold.js';
+export * from './icons/number-square-eight-bold.js';
+export * from './icons/number-six-bold.js';
+export * from './icons/number-seven-bold.js';
+export * from './icons/number-one-bold.js';
+export * from './icons/number-nine-bold.js';
+export * from './icons/number-four-bold.js';
+export * from './icons/number-five-bold.js';
+export * from './icons/number-eight-bold.js';
+export * from './icons/number-circle-zero-bold.js';
+export * from './icons/number-circle-two-bold.js';
+export * from './icons/number-circle-three-bold.js';
+export * from './icons/number-circle-six-bold.js';
+export * from './icons/number-circle-seven-bold.js';
+export * from './icons/number-circle-one-bold.js';
+export * from './icons/number-circle-nine-bold.js';
+export * from './icons/number-circle-four-bold.js';
+export * from './icons/number-circle-five-bold.js';
+export * from './icons/number-circle-eight-bold.js';
+export * from './icons/nuclear-plant-bold.js';
+export * from './icons/notion-logo-bold.js';
+export * from './icons/notification-bold.js';
+export * from './icons/notepad-bold.js';
+export * from './icons/notebook-bold.js';
+export * from './icons/note-pencil-bold.js';
+export * from './icons/note-bold.js';
+export * from './icons/note-blank-bold.js';
+export * from './icons/notches-bold.js';
+export * from './icons/not-superset-of-bold.js';
+export * from './icons/not-subset-of-bold.js';
+export * from './icons/not-member-of-bold.js';
+export * from './icons/not-equals-bold.js';
+export * from './icons/newspaper-clipping-bold.js';
+export * from './icons/newspaper-bold.js';
+export * from './icons/network-x-bold.js';
+export * from './icons/network-slash-bold.js';
+export * from './icons/network-bold.js';
+export * from './icons/needle-bold.js';
+export * from './icons/navigation-arrow-bold.js';
+export * from './icons/music-notes-simple-bold.js';
+export * from './icons/music-notes-plus-bold.js';
+export * from './icons/music-notes-minus-bold.js';
+export * from './icons/music-notes-bold.js';
+export * from './icons/music-note-simple-bold.js';
+export * from './icons/music-note-bold.js';
+export * from './icons/mouse-simple-bold.js';
+export * from './icons/mouse-scroll-bold.js';
+export * from './icons/mouse-right-click-bold.js';
+export * from './icons/mouse-middle-click-bold.js';
+export * from './icons/mouse-left-click-bold.js';
+export * from './icons/mouse-bold.js';
+export * from './icons/mountains-bold.js';
+export * from './icons/motorcycle-bold.js';
+export * from './icons/mosque-bold.js';
+export * from './icons/moped-front-bold.js';
+export * from './icons/moped-bold.js';
+export * from './icons/moon-stars-bold.js';
+export * from './icons/moon-bold.js';
+export * from './icons/monitor-play-bold.js';
+export * from './icons/monitor-bold.js';
+export * from './icons/monitor-arrow-up-bold.js';
+export * from './icons/money-wavy-bold.js';
+export * from './icons/money-bold.js';
+export * from './icons/minus-square-bold.js';
+export * from './icons/minus-circle-bold.js';
+export * from './icons/minus-bold.js';
+export * from './icons/microsoft-word-logo-bold.js';
+export * from './icons/microsoft-teams-logo-bold.js';
+export * from './icons/microsoft-powerpoint-logo-bold.js';
+export * from './icons/microsoft-outlook-logo-bold.js';
+export * from './icons/microsoft-excel-logo-bold.js';
+export * from './icons/microscope-bold.js';
+export * from './icons/microphone-stage-bold.js';
+export * from './icons/microphone-slash-bold.js';
+export * from './icons/microphone-bold.js';
+export * from './icons/metronome-bold.js';
+export * from './icons/meteor-bold.js';
+export * from './icons/meta-logo-bold.js';
+export * from './icons/messenger-logo-bold.js';
+export * from './icons/memory-bold.js';
+export * from './icons/member-of-bold.js';
+export * from './icons/megaphone-simple-bold.js';
+export * from './icons/megaphone-bold.js';
+export * from './icons/medium-logo-bold.js';
+export * from './icons/medal-military-bold.js';
+export * from './icons/medal-bold.js';
+export * from './icons/matrix-logo-bold.js';
+export * from './icons/math-operations-bold.js';
+export * from './icons/mastodon-logo-bold.js';
+export * from './icons/mask-sad-bold.js';
+export * from './icons/mask-happy-bold.js';
+export * from './icons/martini-bold.js';
+export * from './icons/marker-circle-bold.js';
+export * from './icons/markdown-logo-bold.js';
+export * from './icons/map-trifold-bold.js';
+export * from './icons/map-pin-simple-line-bold.js';
+export * from './icons/map-pin-simple-bold.js';
+export * from './icons/map-pin-simple-area-bold.js';
+export * from './icons/map-pin-plus-bold.js';
+export * from './icons/map-pin-line-bold.js';
+export * from './icons/map-pin-bold.js';
+export * from './icons/map-pin-area-bold.js';
+export * from './icons/mailbox-bold.js';
+export * from './icons/magnifying-glass-plus-bold.js';
+export * from './icons/magnifying-glass-minus-bold.js';
+export * from './icons/magnifying-glass-bold.js';
+export * from './icons/magnet-straight-bold.js';
+export * from './icons/magnet-bold.js';
+export * from './icons/magic-wand-bold.js';
+export * from './icons/log-bold.js';
+export * from './icons/lockers-bold.js';
+export * from './icons/lock-simple-open-bold.js';
+export * from './icons/lock-simple-bold.js';
+export * from './icons/lock-open-bold.js';
+export * from './icons/lock-laminated-open-bold.js';
+export * from './icons/lock-laminated-bold.js';
+export * from './icons/lock-key-open-bold.js';
+export * from './icons/lock-key-bold.js';
+export * from './icons/lock-bold.js';
+export * from './icons/list-star-bold.js';
+export * from './icons/list-plus-bold.js';
+export * from './icons/list-numbers-bold.js';
+export * from './icons/list-magnifying-glass-bold.js';
+export * from './icons/list-heart-bold.js';
+export * from './icons/list-dashes-bold.js';
+export * from './icons/list-checks-bold.js';
+export * from './icons/list-bullets-bold.js';
+export * from './icons/list-bold.js';
+export * from './icons/linux-logo-bold.js';
+export * from './icons/linktree-logo-bold.js';
+export * from './icons/linkedin-logo-bold.js';
+export * from './icons/link-simple-horizontal-break-bold.js';
+export * from './icons/link-simple-horizontal-bold.js';
+export * from './icons/link-simple-break-bold.js';
+export * from './icons/link-simple-bold.js';
+export * from './icons/link-break-bold.js';
+export * from './icons/link-bold.js';
+export * from './icons/line-vertical-bold.js';
+export * from './icons/line-segments-bold.js';
+export * from './icons/line-segment-bold.js';
+export * from './icons/lightning-slash-bold.js';
+export * from './icons/lightning-bold.js';
+export * from './icons/lightning-a-bold.js';
+export * from './icons/lighthouse-bold.js';
+export * from './icons/lightbulb-filament-bold.js';
+export * from './icons/lightbulb-bold.js';
+export * from './icons/lifebuoy-bold.js';
+export * from './icons/letter-circle-v-bold.js';
+export * from './icons/letter-circle-p-bold.js';
+export * from './icons/letter-circle-h-bold.js';
+export * from './icons/less-than-or-equal-bold.js';
+export * from './icons/less-than-bold.js';
+export * from './icons/lego-smiley-bold.js';
+export * from './icons/lego-bold.js';
+export * from './icons/lectern-bold.js';
+export * from './icons/leaf-bold.js';
+export * from './icons/layout-bold.js';
+export * from './icons/lastfm-logo-bold.js';
+export * from './icons/lasso-bold.js';
+export * from './icons/laptop-bold.js';
+export * from './icons/lamp-pendant-bold.js';
+export * from './icons/lamp-bold.js';
+export * from './icons/ladder-simple-bold.js';
+export * from './icons/ladder-bold.js';
+export * from './icons/knife-bold.js';
+export * from './icons/keyhole-bold.js';
+export * from './icons/keyboard-bold.js';
+export * from './icons/key-return-bold.js';
+export * from './icons/key-bold.js';
+export * from './icons/kanban-bold.js';
+export * from './icons/joystick-bold.js';
+export * from './icons/jeep-bold.js';
+export * from './icons/jar-label-bold.js';
+export * from './icons/jar-bold.js';
+export * from './icons/island-bold.js';
+export * from './icons/invoice-bold.js';
+export * from './icons/intersection-bold.js';
+export * from './icons/intersect-three-bold.js';
+export * from './icons/intersect-square-bold.js';
+export * from './icons/intersect-bold.js';
+export * from './icons/instagram-logo-bold.js';
+export * from './icons/info-bold.js';
+export * from './icons/infinity-bold.js';
+export * from './icons/images-square-bold.js';
+export * from './icons/images-bold.js';
+export * from './icons/image-square-bold.js';
+export * from './icons/image-broken-bold.js';
+export * from './icons/image-bold.js';
+export * from './icons/identification-card-bold.js';
+export * from './icons/identification-badge-bold.js';
+export * from './icons/ice-cream-bold.js';
+export * from './icons/hurricane-bold.js';
+export * from './icons/house-simple-bold.js';
+export * from './icons/house-line-bold.js';
+export * from './icons/house-bold.js';
+export * from './icons/hourglass-simple-medium-bold.js';
+export * from './icons/hourglass-simple-low-bold.js';
+export * from './icons/hourglass-simple-high-bold.js';
+export * from './icons/hourglass-simple-bold.js';
+export * from './icons/hourglass-medium-bold.js';
+export * from './icons/hourglass-low-bold.js';
+export * from './icons/hourglass-high-bold.js';
+export * from './icons/hourglass-bold.js';
+export * from './icons/hospital-bold.js';
+export * from './icons/horse-bold.js';
+export * from './icons/hoodie-bold.js';
+export * from './icons/hockey-bold.js';
+export * from './icons/highlighter-circle-bold.js';
+export * from './icons/highlighter-bold.js';
+export * from './icons/high-heel-bold.js';
+export * from './icons/high-definition-bold.js';
+export * from './icons/hexagon-bold.js';
+export * from './icons/heartbeat-bold.js';
+export * from './icons/heart-straight-break-bold.js';
+export * from './icons/heart-straight-bold.js';
+export * from './icons/heart-half-bold.js';
+export * from './icons/heart-break-bold.js';
+export * from './icons/heart-bold.js';
+export * from './icons/headset-bold.js';
+export * from './icons/headphones-bold.js';
+export * from './icons/headlights-bold.js';
+export * from './icons/head-circuit-bold.js';
+export * from './icons/hash-straight-bold.js';
+export * from './icons/hash-bold.js';
+export * from './icons/hard-hat-bold.js';
+export * from './icons/hard-drives-bold.js';
+export * from './icons/hard-drive-bold.js';
+export * from './icons/handshake-bold.js';
+export * from './icons/hands-praying-bold.js';
+export * from './icons/hands-clapping-bold.js';
+export * from './icons/handbag-simple-bold.js';
+export * from './icons/handbag-bold.js';
+export * from './icons/hand-withdraw-bold.js';
+export * from './icons/hand-waving-bold.js';
+export * from './icons/hand-tap-bold.js';
+export * from './icons/hand-swipe-right-bold.js';
+export * from './icons/hand-swipe-left-bold.js';
+export * from './icons/hand-soap-bold.js';
+export * from './icons/hand-pointing-bold.js';
+export * from './icons/hand-peace-bold.js';
+export * from './icons/hand-palm-bold.js';
+export * from './icons/hand-heart-bold.js';
+export * from './icons/hand-grabbing-bold.js';
+export * from './icons/hand-fist-bold.js';
+export * from './icons/hand-eye-bold.js';
+export * from './icons/hand-deposit-bold.js';
+export * from './icons/hand-coins-bold.js';
+export * from './icons/hand-bold.js';
+export * from './icons/hand-arrow-up-bold.js';
+export * from './icons/hand-arrow-down-bold.js';
+export * from './icons/hammer-bold.js';
+export * from './icons/hamburger-bold.js';
+export * from './icons/hair-dryer-bold.js';
+export * from './icons/guitar-bold.js';
+export * from './icons/grid-nine-bold.js';
+export * from './icons/grid-four-bold.js';
+export * from './icons/greater-than-or-equal-bold.js';
+export * from './icons/greater-than-bold.js';
+export * from './icons/graphics-card-bold.js';
+export * from './icons/graph-bold.js';
+export * from './icons/grains-slash-bold.js';
+export * from './icons/grains-bold.js';
+export * from './icons/graduation-cap-bold.js';
+export * from './icons/gradient-bold.js';
+export * from './icons/gps-slash-bold.js';
+export * from './icons/gps-fix-bold.js';
+export * from './icons/gps-bold.js';
+export * from './icons/google-podcasts-logo-bold.js';
+export * from './icons/google-play-logo-bold.js';
+export * from './icons/google-photos-logo-bold.js';
+export * from './icons/google-logo-bold.js';
+export * from './icons/google-drive-logo-bold.js';
+export * from './icons/google-chrome-logo-bold.js';
+export * from './icons/google-cardboard-logo-bold.js';
+export * from './icons/goodreads-logo-bold.js';
+export * from './icons/golf-bold.js';
+export * from './icons/goggles-bold.js';
+export * from './icons/globe-x-bold.js';
+export * from './icons/globe-stand-bold.js';
+export * from './icons/globe-simple-x-bold.js';
+export * from './icons/globe-simple-bold.js';
+export * from './icons/globe-hemisphere-west-bold.js';
+export * from './icons/globe-hemisphere-east-bold.js';
+export * from './icons/globe-bold.js';
+export * from './icons/gitlab-logo-simple-bold.js';
+export * from './icons/gitlab-logo-bold.js';
+export * from './icons/github-logo-bold.js';
+export * from './icons/git-pull-request-bold.js';
+export * from './icons/git-merge-bold.js';
+export * from './icons/git-fork-bold.js';
+export * from './icons/git-diff-bold.js';
+export * from './icons/git-commit-bold.js';
+export * from './icons/git-branch-bold.js';
+export * from './icons/gift-bold.js';
+export * from './icons/gif-bold.js';
+export * from './icons/ghost-bold.js';
+export * from './icons/gender-transgender-bold.js';
+export * from './icons/gender-nonbinary-bold.js';
+export * from './icons/gender-neuter-bold.js';
+export * from './icons/gender-male-bold.js';
+export * from './icons/gender-intersex-bold.js';
+export * from './icons/gender-female-bold.js';
+export * from './icons/gear-six-bold.js';
+export * from './icons/gear-fine-bold.js';
+export * from './icons/gear-bold.js';
+export * from './icons/gavel-bold.js';
+export * from './icons/gauge-bold.js';
+export * from './icons/gas-pump-bold.js';
+export * from './icons/gas-can-bold.js';
+export * from './icons/garage-bold.js';
+export * from './icons/game-controller-bold.js';
+export * from './icons/funnel-x-bold.js';
+export * from './icons/funnel-simple-x-bold.js';
+export * from './icons/funnel-simple-bold.js';
+export * from './icons/funnel-bold.js';
+export * from './icons/function-bold.js';
+export * from './icons/framer-logo-bold.js';
+export * from './icons/frame-corners-bold.js';
+export * from './icons/four-k-bold.js';
+export * from './icons/fork-knife-bold.js';
+export * from './icons/footprints-bold.js';
+export * from './icons/football-helmet-bold.js';
+export * from './icons/football-bold.js';
+export * from './icons/folders-bold.js';
+export * from './icons/folder-user-bold.js';
+export * from './icons/folder-star-bold.js';
+export * from './icons/folder-simple-user-bold.js';
+export * from './icons/folder-simple-star-bold.js';
+export * from './icons/folder-simple-plus-bold.js';
+export * from './icons/folder-simple-minus-bold.js';
+export * from './icons/folder-simple-lock-bold.js';
+export * from './icons/folder-simple-dashed-bold.js';
+export * from './icons/folder-simple-bold.js';
+export * from './icons/folder-plus-bold.js';
+export * from './icons/folder-open-bold.js';
+export * from './icons/folder-minus-bold.js';
+export * from './icons/folder-lock-bold.js';
+export * from './icons/folder-dashed-bold.js';
+export * from './icons/folder-bold.js';
+export * from './icons/flying-saucer-bold.js';
+export * from './icons/flower-tulip-bold.js';
+export * from './icons/flower-lotus-bold.js';
+export * from './icons/flower-bold.js';
+export * from './icons/flow-arrow-bold.js';
+export * from './icons/floppy-disk-bold.js';
+export * from './icons/floppy-disk-back-bold.js';
+export * from './icons/flip-vertical-bold.js';
+export * from './icons/flip-horizontal-bold.js';
+export * from './icons/flask-bold.js';
+export * from './icons/flashlight-bold.js';
+export * from './icons/flame-bold.js';
+export * from './icons/flag-pennant-bold.js';
+export * from './icons/flag-checkered-bold.js';
+export * from './icons/flag-bold.js';
+export * from './icons/flag-banner-fold-bold.js';
+export * from './icons/flag-banner-bold.js';
+export * from './icons/fish-simple-bold.js';
+export * from './icons/fish-bold.js';
+export * from './icons/first-aid-kit-bold.js';
+export * from './icons/first-aid-bold.js';
+export * from './icons/fire-truck-bold.js';
+export * from './icons/fire-simple-bold.js';
+export * from './icons/fire-extinguisher-bold.js';
+export * from './icons/fire-bold.js';
+export * from './icons/finn-the-human-bold.js';
+export * from './icons/fingerprint-simple-bold.js';
+export * from './icons/fingerprint-bold.js';
+export * from './icons/film-strip-bold.js';
+export * from './icons/film-slate-bold.js';
+export * from './icons/film-script-bold.js';
+export * from './icons/film-reel-bold.js';
+export * from './icons/files-bold.js';
+export * from './icons/file-zip-bold.js';
+export * from './icons/file-xls-bold.js';
+export * from './icons/file-x-bold.js';
+export * from './icons/file-vue-bold.js';
+export * from './icons/file-video-bold.js';
+export * from './icons/file-txt-bold.js';
+export * from './icons/file-tsx-bold.js';
+export * from './icons/file-ts-bold.js';
+export * from './icons/file-text-bold.js';
+export * from './icons/file-svg-bold.js';
+export * from './icons/file-sql-bold.js';
+export * from './icons/file-rs-bold.js';
+export * from './icons/file-py-bold.js';
+export * from './icons/file-ppt-bold.js';
+export * from './icons/file-png-bold.js';
+export * from './icons/file-plus-bold.js';
+export * from './icons/file-pdf-bold.js';
+export * from './icons/file-minus-bold.js';
+export * from './icons/file-md-bold.js';
+export * from './icons/file-magnifying-glass-bold.js';
+export * from './icons/file-lock-bold.js';
+export * from './icons/file-jsx-bold.js';
+export * from './icons/file-js-bold.js';
+export * from './icons/file-jpg-bold.js';
+export * from './icons/file-ini-bold.js';
+export * from './icons/file-image-bold.js';
+export * from './icons/file-html-bold.js';
+export * from './icons/file-doc-bold.js';
+export * from './icons/file-dashed-bold.js';
+export * from './icons/file-csv-bold.js';
+export * from './icons/file-css-bold.js';
+export * from './icons/file-cpp-bold.js';
+export * from './icons/file-code-bold.js';
+export * from './icons/file-cloud-bold.js';
+export * from './icons/file-c-sharp-bold.js';
+export * from './icons/file-c-bold.js';
+export * from './icons/file-bold.js';
+export * from './icons/file-audio-bold.js';
+export * from './icons/file-arrow-up-bold.js';
+export * from './icons/file-arrow-down-bold.js';
+export * from './icons/file-archive-bold.js';
+export * from './icons/figma-logo-bold.js';
+export * from './icons/fediverse-logo-bold.js';
+export * from './icons/feather-bold.js';
+export * from './icons/fast-forward-circle-bold.js';
+export * from './icons/fast-forward-bold.js';
+export * from './icons/farm-bold.js';
+export * from './icons/fan-bold.js';
+export * from './icons/fallout-shelter-bold.js';
+export * from './icons/faders-horizontal-bold.js';
+export * from './icons/faders-bold.js';
+export * from './icons/factory-bold.js';
+export * from './icons/facebook-logo-bold.js';
+export * from './icons/face-mask-bold.js';
+export * from './icons/eyes-bold.js';
+export * from './icons/eyeglasses-bold.js';
+export * from './icons/eyedropper-sample-bold.js';
+export * from './icons/eyedropper-bold.js';
+export * from './icons/eye-slash-bold.js';
+export * from './icons/eye-closed-bold.js';
+export * from './icons/eye-bold.js';
+export * from './icons/export-bold.js';
+export * from './icons/exclude-square-bold.js';
+export * from './icons/exclude-bold.js';
+export * from './icons/exclamation-mark-bold.js';
+export * from './icons/exam-bold.js';
+export * from './icons/escalator-up-bold.js';
+export * from './icons/escalator-down-bold.js';
+export * from './icons/eraser-bold.js';
+export * from './icons/equals-bold.js';
+export * from './icons/equalizer-bold.js';
+export * from './icons/envelope-simple-open-bold.js';
+export * from './icons/envelope-simple-bold.js';
+export * from './icons/envelope-open-bold.js';
+export * from './icons/envelope-bold.js';
+export * from './icons/engine-bold.js';
+export * from './icons/empty-bold.js';
+export * from './icons/elevator-bold.js';
+export * from './icons/eject-simple-bold.js';
+export * from './icons/eject-bold.js';
+export * from './icons/egg-crack-bold.js';
+export * from './icons/egg-bold.js';
+export * from './icons/ear-slash-bold.js';
+export * from './icons/ear-bold.js';
+export * from './icons/dropbox-logo-bold.js';
+export * from './icons/drop-slash-bold.js';
+export * from './icons/drop-simple-bold.js';
+export * from './icons/drop-half-bottom-bold.js';
+export * from './icons/drop-half-bold.js';
+export * from './icons/drop-bold.js';
+export * from './icons/drone-bold.js';
+export * from './icons/dribbble-logo-bold.js';
+export * from './icons/dresser-bold.js';
+export * from './icons/dress-bold.js';
+export * from './icons/download-simple-bold.js';
+export * from './icons/download-bold.js';
+export * from './icons/dots-three-vertical-bold.js';
+export * from './icons/dots-three-outline-vertical-bold.js';
+export * from './icons/dots-three-outline-bold.js';
+export * from './icons/dots-three-circle-vertical-bold.js';
+export * from './icons/dots-three-circle-bold.js';
+export * from './icons/dots-three-bold.js';
+export * from './icons/dots-six-vertical-bold.js';
+export * from './icons/dots-six-bold.js';
+export * from './icons/dots-nine-bold.js';
+export * from './icons/dot-outline-bold.js';
+export * from './icons/dot-bold.js';
+export * from './icons/door-open-bold.js';
+export * from './icons/door-bold.js';
+export * from './icons/dog-bold.js';
+export * from './icons/dna-bold.js';
+export * from './icons/divide-bold.js';
+export * from './icons/discord-logo-bold.js';
+export * from './icons/disco-ball-bold.js';
+export * from './icons/disc-bold.js';
+export * from './icons/dice-two-bold.js';
+export * from './icons/dice-three-bold.js';
+export * from './icons/dice-six-bold.js';
+export * from './icons/dice-one-bold.js';
+export * from './icons/dice-four-bold.js';
+export * from './icons/dice-five-bold.js';
+export * from './icons/diamonds-four-bold.js';
+export * from './icons/diamond-bold.js';
+export * from './icons/devices-bold.js';
+export * from './icons/device-tablet-speaker-bold.js';
+export * from './icons/device-tablet-camera-bold.js';
+export * from './icons/device-tablet-bold.js';
+export * from './icons/device-rotate-bold.js';
+export * from './icons/device-mobile-speaker-bold.js';
+export * from './icons/device-mobile-slash-bold.js';
+export * from './icons/device-mobile-camera-bold.js';
+export * from './icons/device-mobile-bold.js';
+export * from './icons/dev-to-logo-bold.js';
+export * from './icons/detective-bold.js';
+export * from './icons/desktop-tower-bold.js';
+export * from './icons/desktop-bold.js';
+export * from './icons/desk-bold.js';
+export * from './icons/database-bold.js';
+export * from './icons/cylinder-bold.js';
+export * from './icons/cursor-text-bold.js';
+export * from './icons/cursor-click-bold.js';
+export * from './icons/cursor-bold.js';
+export * from './icons/currency-rub-bold.js';
+export * from './icons/currency-ngn-bold.js';
+export * from './icons/currency-kzt-bold.js';
+export * from './icons/currency-krw-bold.js';
+export * from './icons/currency-jpy-bold.js';
+export * from './icons/currency-inr-bold.js';
+export * from './icons/currency-gbp-bold.js';
+export * from './icons/currency-eur-bold.js';
+export * from './icons/currency-eth-bold.js';
+export * from './icons/currency-dollar-simple-bold.js';
+export * from './icons/currency-dollar-bold.js';
+export * from './icons/currency-cny-bold.js';
+export * from './icons/currency-circle-dollar-bold.js';
+export * from './icons/currency-btc-bold.js';
+export * from './icons/cube-transparent-bold.js';
+export * from './icons/cube-focus-bold.js';
+export * from './icons/cube-bold.js';
+export * from './icons/crown-simple-bold.js';
+export * from './icons/crown-cross-bold.js';
+export * from './icons/crown-bold.js';
+export * from './icons/crosshair-simple-bold.js';
+export * from './icons/crosshair-bold.js';
+export * from './icons/cross-bold.js';
+export * from './icons/crop-bold.js';
+export * from './icons/cricket-bold.js';
+export * from './icons/credit-card-bold.js';
+export * from './icons/crane-tower-bold.js';
+export * from './icons/crane-bold.js';
+export * from './icons/cpu-bold.js';
+export * from './icons/cowboy-hat-bold.js';
+export * from './icons/cow-bold.js';
+export * from './icons/court-basketball-bold.js';
+export * from './icons/couch-bold.js';
+export * from './icons/corners-out-bold.js';
+export * from './icons/corners-in-bold.js';
+export * from './icons/copyright-bold.js';
+export * from './icons/copyleft-bold.js';
+export * from './icons/copy-simple-bold.js';
+export * from './icons/copy-bold.js';
+export * from './icons/cooking-pot-bold.js';
+export * from './icons/cookie-bold.js';
+export * from './icons/control-bold.js';
+export * from './icons/contactless-payment-bold.js';
+export * from './icons/confetti-bold.js';
+export * from './icons/computer-tower-bold.js';
+export * from './icons/compass-tool-bold.js';
+export * from './icons/compass-rose-bold.js';
+export * from './icons/compass-bold.js';
+export * from './icons/command-bold.js';
+export * from './icons/columns-plus-right-bold.js';
+export * from './icons/columns-plus-left-bold.js';
+export * from './icons/columns-bold.js';
+export * from './icons/coins-bold.js';
+export * from './icons/coin-vertical-bold.js';
+export * from './icons/coin-bold.js';
+export * from './icons/coffee-bold.js';
+export * from './icons/coffee-bean-bold.js';
+export * from './icons/codesandbox-logo-bold.js';
+export * from './icons/codepen-logo-bold.js';
+export * from './icons/code-simple-bold.js';
+export * from './icons/code-bold.js';
+export * from './icons/code-block-bold.js';
+export * from './icons/coda-logo-bold.js';
+export * from './icons/coat-hanger-bold.js';
+export * from './icons/club-bold.js';
+export * from './icons/clover-bold.js';
+export * from './icons/cloud-x-bold.js';
+export * from './icons/cloud-warning-bold.js';
+export * from './icons/cloud-sun-bold.js';
+export * from './icons/cloud-snow-bold.js';
+export * from './icons/cloud-slash-bold.js';
+export * from './icons/cloud-rain-bold.js';
+export * from './icons/cloud-moon-bold.js';
+export * from './icons/cloud-lightning-bold.js';
+export * from './icons/cloud-fog-bold.js';
+export * from './icons/cloud-check-bold.js';
+export * from './icons/cloud-bold.js';
+export * from './icons/cloud-arrow-up-bold.js';
+export * from './icons/cloud-arrow-down-bold.js';
+export * from './icons/closed-captioning-bold.js';
+export * from './icons/clock-user-bold.js';
+export * from './icons/clock-counter-clockwise-bold.js';
+export * from './icons/clock-countdown-bold.js';
+export * from './icons/clock-clockwise-bold.js';
+export * from './icons/clock-bold.js';
+export * from './icons/clock-afternoon-bold.js';
+export * from './icons/clipboard-text-bold.js';
+export * from './icons/clipboard-bold.js';
+export * from './icons/city-bold.js';
+export * from './icons/circuitry-bold.js';
+export * from './icons/circles-three-plus-bold.js';
+export * from './icons/circles-three-bold.js';
+export * from './icons/circles-four-bold.js';
+export * from './icons/circle-notch-bold.js';
+export * from './icons/circle-half-tilt-bold.js';
+export * from './icons/circle-half-bold.js';
+export * from './icons/circle-dashed-bold.js';
+export * from './icons/circle-bold.js';
+export * from './icons/cigarette-slash-bold.js';
+export * from './icons/cigarette-bold.js';
+export * from './icons/church-bold.js';
+export * from './icons/cherries-bold.js';
+export * from './icons/chef-hat-bold.js';
+export * from './icons/cheese-bold.js';
+export * from './icons/cheers-bold.js';
+export * from './icons/checks-bold.js';
+export * from './icons/checkerboard-bold.js';
+export * from './icons/check-square-offset-bold.js';
+export * from './icons/check-square-bold.js';
+export * from './icons/check-fat-bold.js';
+export * from './icons/check-circle-bold.js';
+export * from './icons/check-bold.js';
+export * from './icons/chats-teardrop-bold.js';
+export * from './icons/chats-circle-bold.js';
+export * from './icons/chats-bold.js';
+export * from './icons/chat-text-bold.js';
+export * from './icons/chat-teardrop-text-bold.js';
+export * from './icons/chat-teardrop-slash-bold.js';
+export * from './icons/chat-teardrop-dots-bold.js';
+export * from './icons/chat-teardrop-bold.js';
+export * from './icons/chat-slash-bold.js';
+export * from './icons/chat-dots-bold.js';
+export * from './icons/chat-circle-text-bold.js';
+export * from './icons/chat-circle-slash-bold.js';
+export * from './icons/chat-circle-dots-bold.js';
+export * from './icons/chat-circle-bold.js';
+export * from './icons/chat-centered-text-bold.js';
+export * from './icons/chat-centered-slash-bold.js';
+export * from './icons/chat-centered-dots-bold.js';
+export * from './icons/chat-centered-bold.js';
+export * from './icons/chat-bold.js';
+export * from './icons/chart-scatter-bold.js';
+export * from './icons/chart-polar-bold.js';
+export * from './icons/chart-pie-slice-bold.js';
+export * from './icons/chart-pie-bold.js';
+export * from './icons/chart-line-up-bold.js';
+export * from './icons/chart-line-down-bold.js';
+export * from './icons/chart-line-bold.js';
+export * from './icons/chart-donut-bold.js';
+export * from './icons/chart-bar-horizontal-bold.js';
+export * from './icons/chart-bar-bold.js';
+export * from './icons/charging-station-bold.js';
+export * from './icons/champagne-bold.js';
+export * from './icons/chalkboard-teacher-bold.js';
+export * from './icons/chalkboard-simple-bold.js';
+export * from './icons/chalkboard-bold.js';
+export * from './icons/chair-bold.js';
+export * from './icons/certificate-bold.js';
+export * from './icons/cell-tower-bold.js';
+export * from './icons/cell-signal-x-bold.js';
+export * from './icons/cell-signal-slash-bold.js';
+export * from './icons/cell-signal-none-bold.js';
+export * from './icons/cell-signal-medium-bold.js';
+export * from './icons/cell-signal-low-bold.js';
+export * from './icons/cell-signal-high-bold.js';
+export * from './icons/cell-signal-full-bold.js';
+export * from './icons/cat-bold.js';
+export * from './icons/castle-turret-bold.js';
+export * from './icons/cassette-tape-bold.js';
+export * from './icons/cash-register-bold.js';
+export * from './icons/carrot-bold.js';
+export * from './icons/caret-up-down-bold.js';
+export * from './icons/caret-up-bold.js';
+export * from './icons/caret-right-bold.js';
+export * from './icons/caret-line-up-bold.js';
+export * from './icons/caret-line-right-bold.js';
+export * from './icons/caret-line-left-bold.js';
+export * from './icons/caret-line-down-bold.js';
+export * from './icons/caret-left-bold.js';
+export * from './icons/caret-down-bold.js';
+export * from './icons/caret-double-up-bold.js';
+export * from './icons/caret-double-right-bold.js';
+export * from './icons/caret-double-left-bold.js';
+export * from './icons/caret-double-down-bold.js';
+export * from './icons/caret-circle-up-down-bold.js';
+export * from './icons/caret-circle-up-bold.js';
+export * from './icons/caret-circle-right-bold.js';
+export * from './icons/caret-circle-left-bold.js';
+export * from './icons/caret-circle-down-bold.js';
+export * from './icons/caret-circle-double-up-bold.js';
+export * from './icons/caret-circle-double-right-bold.js';
+export * from './icons/caret-circle-double-left-bold.js';
+export * from './icons/caret-circle-double-down-bold.js';
+export * from './icons/cards-three-bold.js';
+export * from './icons/cards-bold.js';
+export * from './icons/cardholder-bold.js';
+export * from './icons/car-simple-bold.js';
+export * from './icons/car-profile-bold.js';
+export * from './icons/car-bold.js';
+export * from './icons/car-battery-bold.js';
+export * from './icons/campfire-bold.js';
+export * from './icons/camera-slash-bold.js';
+export * from './icons/camera-rotate-bold.js';
+export * from './icons/camera-plus-bold.js';
+export * from './icons/camera-bold.js';
+export * from './icons/call-bell-bold.js';
+export * from './icons/calendar-x-bold.js';
+export * from './icons/calendar-star-bold.js';
+export * from './icons/calendar-slash-bold.js';
+export * from './icons/calendar-plus-bold.js';
+export * from './icons/calendar-minus-bold.js';
+export * from './icons/calendar-heart-bold.js';
+export * from './icons/calendar-dots-bold.js';
+export * from './icons/calendar-dot-bold.js';
+export * from './icons/calendar-check-bold.js';
+export * from './icons/calendar-bold.js';
+export * from './icons/calendar-blank-bold.js';
+export * from './icons/calculator-bold.js';
+export * from './icons/cake-bold.js';
+export * from './icons/cactus-bold.js';
+export * from './icons/cable-car-bold.js';
+export * from './icons/butterfly-bold.js';
+export * from './icons/bus-bold.js';
+export * from './icons/bulldozer-bold.js';
+export * from './icons/buildings-bold.js';
+export * from './icons/building-office-bold.js';
+export * from './icons/building-bold.js';
+export * from './icons/building-apartment-bold.js';
+export * from './icons/bug-droid-bold.js';
+export * from './icons/bug-bold.js';
+export * from './icons/bug-beetle-bold.js';
+export * from './icons/browsers-bold.js';
+export * from './icons/browser-bold.js';
+export * from './icons/broom-bold.js';
+export * from './icons/broadcast-bold.js';
+export * from './icons/briefcase-metal-bold.js';
+export * from './icons/briefcase-bold.js';
+export * from './icons/bridge-bold.js';
+export * from './icons/bread-bold.js';
+export * from './icons/brandy-bold.js';
+export * from './icons/brain-bold.js';
+export * from './icons/brackets-square-bold.js';
+export * from './icons/brackets-round-bold.js';
+export * from './icons/brackets-curly-bold.js';
+export * from './icons/brackets-angle-bold.js';
+export * from './icons/boxing-glove-bold.js';
+export * from './icons/box-arrow-up-bold.js';
+export * from './icons/box-arrow-down-bold.js';
+export * from './icons/bowling-ball-bold.js';
+export * from './icons/bowl-steam-bold.js';
+export * from './icons/bowl-food-bold.js';
+export * from './icons/bounding-box-bold.js';
+export * from './icons/boules-bold.js';
+export * from './icons/boot-bold.js';
+export * from './icons/books-bold.js';
+export * from './icons/bookmarks-simple-bold.js';
+export * from './icons/bookmarks-bold.js';
+export * from './icons/bookmark-simple-bold.js';
+export * from './icons/bookmark-bold.js';
+export * from './icons/book-open-user-bold.js';
+export * from './icons/book-open-text-bold.js';
+export * from './icons/book-open-bold.js';
+export * from './icons/book-bookmark-bold.js';
+export * from './icons/book-bold.js';
+export * from './icons/bone-bold.js';
+export * from './icons/bomb-bold.js';
+export * from './icons/boat-bold.js';
+export * from './icons/bluetooth-x-bold.js';
+export * from './icons/bluetooth-slash-bold.js';
+export * from './icons/bluetooth-connected-bold.js';
+export * from './icons/bluetooth-bold.js';
+export * from './icons/blueprint-bold.js';
+export * from './icons/bird-bold.js';
+export * from './icons/biohazard-bold.js';
+export * from './icons/binoculars-bold.js';
+export * from './icons/binary-bold.js';
+export * from './icons/bicycle-bold.js';
+export * from './icons/bezier-curve-bold.js';
+export * from './icons/belt-bold.js';
+export * from './icons/bell-z-bold.js';
+export * from './icons/bell-slash-bold.js';
+export * from './icons/bell-simple-z-bold.js';
+export * from './icons/bell-simple-slash-bold.js';
+export * from './icons/bell-simple-ringing-bold.js';
+export * from './icons/bell-simple-bold.js';
+export * from './icons/bell-ringing-bold.js';
+export * from './icons/bell-bold.js';
+export * from './icons/behance-logo-bold.js';
+export * from './icons/beer-stein-bold.js';
+export * from './icons/beer-bottle-bold.js';
+export * from './icons/bed-bold.js';
+export * from './icons/beanie-bold.js';
+export * from './icons/beach-ball-bold.js';
+export * from './icons/battery-warning-vertical-bold.js';
+export * from './icons/battery-warning-bold.js';
+export * from './icons/battery-vertical-medium-bold.js';
+export * from './icons/battery-vertical-low-bold.js';
+export * from './icons/battery-vertical-high-bold.js';
+export * from './icons/battery-vertical-full-bold.js';
+export * from './icons/battery-vertical-empty-bold.js';
+export * from './icons/battery-plus-vertical-bold.js';
+export * from './icons/battery-plus-bold.js';
+export * from './icons/battery-medium-bold.js';
+export * from './icons/battery-low-bold.js';
+export * from './icons/battery-high-bold.js';
+export * from './icons/battery-full-bold.js';
+export * from './icons/battery-empty-bold.js';
+export * from './icons/battery-charging-vertical-bold.js';
+export * from './icons/battery-charging-bold.js';
+export * from './icons/bathtub-bold.js';
+export * from './icons/basketball-bold.js';
+export * from './icons/basket-bold.js';
+export * from './icons/baseball-helmet-bold.js';
+export * from './icons/baseball-cap-bold.js';
+export * from './icons/baseball-bold.js';
+export * from './icons/barricade-bold.js';
+export * from './icons/barn-bold.js';
+export * from './icons/barcode-bold.js';
+export * from './icons/barbell-bold.js';
+export * from './icons/bank-bold.js';
+export * from './icons/bandaids-bold.js';
+export * from './icons/balloon-bold.js';
+export * from './icons/bag-simple-bold.js';
+export * from './icons/bag-bold.js';
+export * from './icons/backspace-bold.js';
+export * from './icons/backpack-bold.js';
+export * from './icons/baby-carriage-bold.js';
+export * from './icons/baby-bold.js';
+export * from './icons/axe-bold.js';
+export * from './icons/avocado-bold.js';
+export * from './icons/atom-bold.js';
+export * from './icons/at-bold.js';
+export * from './icons/asterisk-simple-bold.js';
+export * from './icons/asterisk-bold.js';
+export * from './icons/asclepius-bold.js';
+export * from './icons/article-ny-times-bold.js';
+export * from './icons/article-medium-bold.js';
+export * from './icons/article-bold.js';
+export * from './icons/arrows-vertical-bold.js';
+export * from './icons/arrows-split-bold.js';
+export * from './icons/arrows-out-simple-bold.js';
+export * from './icons/arrows-out-line-vertical-bold.js';
+export * from './icons/arrows-out-line-horizontal-bold.js';
+export * from './icons/arrows-out-cardinal-bold.js';
+export * from './icons/arrows-out-bold.js';
+export * from './icons/arrows-merge-bold.js';
+export * from './icons/arrows-left-right-bold.js';
+export * from './icons/arrows-in-simple-bold.js';
+export * from './icons/arrows-in-line-vertical-bold.js';
+export * from './icons/arrows-in-line-horizontal-bold.js';
+export * from './icons/arrows-in-cardinal-bold.js';
+export * from './icons/arrows-in-bold.js';
+export * from './icons/arrows-horizontal-bold.js';
+export * from './icons/arrows-down-up-bold.js';
+export * from './icons/arrows-counter-clockwise-bold.js';
+export * from './icons/arrows-clockwise-bold.js';
+export * from './icons/arrow-up-right-bold.js';
+export * from './icons/arrow-up-left-bold.js';
+export * from './icons/arrow-up-bold.js';
+export * from './icons/arrow-u-up-right-bold.js';
+export * from './icons/arrow-u-up-left-bold.js';
+export * from './icons/arrow-u-right-up-bold.js';
+export * from './icons/arrow-u-right-down-bold.js';
+export * from './icons/arrow-u-left-up-bold.js';
+export * from './icons/arrow-u-left-down-bold.js';
+export * from './icons/arrow-u-down-right-bold.js';
+export * from './icons/arrow-u-down-left-bold.js';
+export * from './icons/arrow-square-up-right-bold.js';
+export * from './icons/arrow-square-up-left-bold.js';
+export * from './icons/arrow-square-up-bold.js';
+export * from './icons/arrow-square-right-bold.js';
+export * from './icons/arrow-square-out-bold.js';
+export * from './icons/arrow-square-left-bold.js';
+export * from './icons/arrow-square-in-bold.js';
+export * from './icons/arrow-square-down-right-bold.js';
+export * from './icons/arrow-square-down-left-bold.js';
+export * from './icons/arrow-square-down-bold.js';
+export * from './icons/arrow-right-bold.js';
+export * from './icons/arrow-line-up-right-bold.js';
+export * from './icons/arrow-line-up-left-bold.js';
+export * from './icons/arrow-line-up-bold.js';
+export * from './icons/arrow-line-right-bold.js';
+export * from './icons/arrow-line-left-bold.js';
+export * from './icons/arrow-line-down-right-bold.js';
+export * from './icons/arrow-line-down-left-bold.js';
+export * from './icons/arrow-line-down-bold.js';
+export * from './icons/arrow-left-bold.js';
+export * from './icons/arrow-fat-up-bold.js';
+export * from './icons/arrow-fat-right-bold.js';
+export * from './icons/arrow-fat-lines-up-bold.js';
+export * from './icons/arrow-fat-lines-right-bold.js';
+export * from './icons/arrow-fat-lines-left-bold.js';
+export * from './icons/arrow-fat-lines-down-bold.js';
+export * from './icons/arrow-fat-line-up-bold.js';
+export * from './icons/arrow-fat-line-right-bold.js';
+export * from './icons/arrow-fat-line-left-bold.js';
+export * from './icons/arrow-fat-line-down-bold.js';
+export * from './icons/arrow-fat-left-bold.js';
+export * from './icons/arrow-fat-down-bold.js';
+export * from './icons/arrow-elbow-up-right-bold.js';
+export * from './icons/arrow-elbow-up-left-bold.js';
+export * from './icons/arrow-elbow-right-up-bold.js';
+export * from './icons/arrow-elbow-right-down-bold.js';
+export * from './icons/arrow-elbow-right-bold.js';
+export * from './icons/arrow-elbow-left-up-bold.js';
+export * from './icons/arrow-elbow-left-down-bold.js';
+export * from './icons/arrow-elbow-left-bold.js';
+export * from './icons/arrow-elbow-down-right-bold.js';
+export * from './icons/arrow-elbow-down-left-bold.js';
+export * from './icons/arrow-down-right-bold.js';
+export * from './icons/arrow-down-left-bold.js';
+export * from './icons/arrow-down-bold.js';
+export * from './icons/arrow-counter-clockwise-bold.js';
+export * from './icons/arrow-clockwise-bold.js';
+export * from './icons/arrow-circle-up-right-bold.js';
+export * from './icons/arrow-circle-up-left-bold.js';
+export * from './icons/arrow-circle-up-bold.js';
+export * from './icons/arrow-circle-right-bold.js';
+export * from './icons/arrow-circle-left-bold.js';
+export * from './icons/arrow-circle-down-right-bold.js';
+export * from './icons/arrow-circle-down-left-bold.js';
+export * from './icons/arrow-circle-down-bold.js';
+export * from './icons/arrow-bend-up-right-bold.js';
+export * from './icons/arrow-bend-up-left-bold.js';
+export * from './icons/arrow-bend-right-up-bold.js';
+export * from './icons/arrow-bend-right-down-bold.js';
+export * from './icons/arrow-bend-left-up-bold.js';
+export * from './icons/arrow-bend-left-down-bold.js';
+export * from './icons/arrow-bend-down-right-bold.js';
+export * from './icons/arrow-bend-down-left-bold.js';
+export * from './icons/arrow-bend-double-up-right-bold.js';
+export * from './icons/arrow-bend-double-up-left-bold.js';
+export * from './icons/arrow-arc-right-bold.js';
+export * from './icons/arrow-arc-left-bold.js';
+export * from './icons/armchair-bold.js';
+export * from './icons/archive-bold.js';
+export * from './icons/approximate-equals-bold.js';
+export * from './icons/apple-podcasts-logo-bold.js';
+export * from './icons/apple-logo-bold.js';
+export * from './icons/app-window-bold.js';
+export * from './icons/app-store-logo-bold.js';
+export * from './icons/aperture-bold.js';
+export * from './icons/angular-logo-bold.js';
+export * from './icons/angle-bold.js';
+export * from './icons/android-logo-bold.js';
+export * from './icons/anchor-simple-bold.js';
+export * from './icons/anchor-bold.js';
+export * from './icons/ambulance-bold.js';
+export * from './icons/amazon-logo-bold.js';
+export * from './icons/align-top-simple-bold.js';
+export * from './icons/align-top-bold.js';
+export * from './icons/align-right-simple-bold.js';
+export * from './icons/align-right-bold.js';
+export * from './icons/align-left-simple-bold.js';
+export * from './icons/align-left-bold.js';
+export * from './icons/align-center-vertical-simple-bold.js';
+export * from './icons/align-center-vertical-bold.js';
+export * from './icons/align-center-horizontal-simple-bold.js';
+export * from './icons/align-center-horizontal-bold.js';
+export * from './icons/align-bottom-simple-bold.js';
+export * from './icons/align-bottom-bold.js';
+export * from './icons/alien-bold.js';
+export * from './icons/alarm-bold.js';
+export * from './icons/airplay-bold.js';
+export * from './icons/airplane-tilt-bold.js';
+export * from './icons/airplane-taxiing-bold.js';
+export * from './icons/airplane-takeoff-bold.js';
+export * from './icons/airplane-landing-bold.js';
+export * from './icons/airplane-in-flight-bold.js';
+export * from './icons/airplane-bold.js';
+export * from './icons/air-traffic-control-bold.js';
+export * from './icons/address-book-tabs-bold.js';
+export * from './icons/address-book-bold.js';
+export * from './icons/acorn-bold.js';
