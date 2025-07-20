@@ -9,7 +9,7 @@ export default defineConfig({
       fileName: "index",
     },
     rollupOptions: {
-      external: (id) => id.includes("/icons/") && id.endsWith(".js"),
+      external: (id) => id.endsWith("icons.js"),
     },
   },
 });

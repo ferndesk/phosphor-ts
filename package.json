@@ -17,7 +17,7 @@
       "require": "./dist/index.umd.js",
       "types": "./dist/index.d.ts"
     },
-    "./icons/*": "./dist/icons/*.js",
+    "./icons.js": "./dist/icons.js",
     "./assets/bold/*.svg": "./assets/bold/*.svg",
     "./assets/duotone/*.svg": "./assets/duotone/*.svg",
     "./assets/fill/*.svg": "./assets/fill/*.svg",
@@ -52,7 +52,8 @@
   ],
   "packageManager": "bun",
   "scripts": {
-    "prebuild": "npx tsx ./scripts/gen-icons.ts",
+    "prebuild": "bun x tsx ./scripts/gen-icons.ts",
+    "postbuild": "cp ./src/icons.* ./dist/",
     "collate": "tsx ./scripts/collate.ts",
     "catalog": "tsx ./scripts/catalog.ts && pnpm format",
     "format": "prettier --write ./src/** ./scripts/**",
