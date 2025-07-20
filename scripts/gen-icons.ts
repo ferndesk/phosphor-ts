@@ -37,24 +37,34 @@ const main = async () => {
 
     const svgContent = content.match(/<svg[^>]*>([\s\S]*)<\/svg>/)?.[1] ?? "";
 
-    const iconFile = `import type { PhosphorIcon } from '../types.js';
-
-export const ${componentName}: PhosphorIcon = {
+    // Generate JavaScript file with the actual icon data
+    const iconFile = `const icon = {
   name: '${name}',
   content: \`${svgContent}\`
-}
+};
+
+export default icon;
+`;
+
+    // Generate lightweight TypeScript declaration stub
+    const dtsFile = `import type { PhosphorIcon } from '../types.js';
+declare const _default: PhosphorIcon;
+export default _default;
 `;
 
     icons.push({
       name: componentName,
-      file: `${name}.ts`,
+      file: `${name}.js`,
     });
-    await outputFile(resolve(ICONS_PATH, `${name}.ts`), iconFile);
+
+    // Output both JS and .d.ts files
+    await outputFile(resolve(ICONS_PATH, `${name}.js`), iconFile);
+    await outputFile(resolve(ICONS_PATH, `${name}.d.ts`), dtsFile);
   }
 
-  const iconsTs = icons.map(icon => `export * from './icons/${icon.file.replace(".ts", "")}.js';`).join("\n");
-  const indexTs = `export * from './icons.js';
-export * from './types.js';`;
+  // Generate barrel export file with .js extensions for proper ESM resolution
+  const iconsTs = icons.map(icon => `export { default as ${upperFirst(camelCase(icon.file.replace('.js', '')))} } from './icons/${icon.file}';`).join("\n");
+  const indexTs = `export * from './icons.js';`;
 
   await outputFile(ICONS_TS_PATH, iconsTs);
   await outputFile(INDEX_TS_PATH, indexTs);

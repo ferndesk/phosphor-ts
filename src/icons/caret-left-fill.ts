@@ -1,6 +1,0 @@
-import type { PhosphorIcon } from '../types.js';
-
-export const CaretLeftFill: PhosphorIcon = {
-  name: 'caret-left-fill',
-  content: `<path d="M168,48V208a8,8,0,0,1-13.66,5.66l-80-80a8,8,0,0,1,0-11.32l80-80A8,8,0,0,1,168,48Z"/>`
-}

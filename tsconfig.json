@@ -1,5 +1,6 @@
 {
     "include": ["src"],
+    "exclude": ["src/icons/**/*.js"],
     "compilerOptions": {
         "module": "ESNext",
         "lib": ["ESNext"],
