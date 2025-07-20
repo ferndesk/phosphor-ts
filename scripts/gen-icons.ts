@@ -53,7 +53,8 @@ export const ${componentName}: PhosphorIcon = {
   }
 
   const iconsTs = icons.map(icon => `export * from './icons/${icon.file.replace(".ts", "")}.js';`).join("\n");
-  const indexTs = `export * from './icons.js';`;
+  const indexTs = `export * from './icons.js';
+export * from './types.js';`;
 
   await outputFile(ICONS_TS_PATH, iconsTs);
   await outputFile(INDEX_TS_PATH, indexTs);
