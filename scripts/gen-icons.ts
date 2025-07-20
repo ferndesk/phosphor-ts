@@ -13,12 +13,12 @@ const ICONS_TS_PATH = resolve(__dirname, "..", "src", "icons.ts");
 const INDEX_TS_PATH = resolve(__dirname, "..", "src", "index.ts");
 const DTS_TS_PATH = resolve(__dirname, "..", "src", "types.ts");
 
-const ICONS_JS_PATH = resolve(__dirname, "..", "src", "icons.js");
-const ICONS_DTS_PATH = resolve(__dirname, "..", "src", "icons.d.ts");
+const ICONS_JS_PATH = resolve(__dirname, "..", "src", "icons.mjs");
+const ICONS_DTS_PATH = resolve(__dirname, "..", "src", "icons.mjs.d.ts");
 
 const DIST_PATH = resolve(__dirname, "..", "dist");
-const DIST_ICONS_JS_PATH = resolve(DIST_PATH, "icons.js");
-const DIST_ICONS_DTS_PATH = resolve(DIST_PATH, "icons.d.ts");
+const DIST_ICONS_JS_PATH = resolve(DIST_PATH, "icons.mjs");
+const DIST_ICONS_DTS_PATH = resolve(DIST_PATH, "icons.mjs.d.ts");
 
 const iconInterface = `export interface PhosphorIcon {
   name: string;
@@ -64,7 +64,7 @@ const main = async () => {
   await outputFile(DTS_TS_PATH, iconInterface);
 
   // Rewrite index.ts to export from the new single file
-  await outputFile(INDEX_TS_PATH, `export * from './icons.js';\n`);
+  await outputFile(INDEX_TS_PATH, `export * from './icons.mjs';\n`);
 
   console.log("Single-file icon bundle generated!");
 };
